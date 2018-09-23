@@ -22,10 +22,10 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <time.h>
-#include <tinyara/ttrace.h>
+#include <tizenrt/ttrace.h>
 #include "tc_common.h"
 
 /****************************************************************************

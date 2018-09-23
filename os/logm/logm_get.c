@@ -15,7 +15,7 @@
  * language governing permissions and limitations under the License.
  *
  ****************************************************************************/
-#include <tinyara/logm.h>
+#include <tizenrt/logm.h>
 #include "logm.h"
 
 /* This will be moved to upper layer or changed for protected build  */

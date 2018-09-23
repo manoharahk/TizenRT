@@ -19,7 +19,7 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <errno.h>
 #include <debug.h>
@@ -27,7 +27,7 @@
 #include <string.h>
 #include <sys/time.h>
 
-#include <tinyara/sensors/ppd42ns.h>
+#include <tizenrt/sensors/ppd42ns.h>
 
 /****************************************************************************
  * Pre-processor Definitions

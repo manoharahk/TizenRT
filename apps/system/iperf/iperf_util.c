@@ -85,7 +85,7 @@ void make_cookie(char *cookie)
 	/* Generate a string based on hostname, time, randomness, and filler. */
 	(void)gethostname(hostname, sizeof(hostname));
 #else
-	snprintf(hostname, sizeof(hostname), "tinyara");
+	snprintf(hostname, sizeof(hostname), "tizenrt");
 #endif
 	(void)gettimeofday(&tv, 0);
 	(void)snprintf(temp, sizeof(temp), "%s.%ld.%06ld.%08lx%08lx.%s", hostname, (unsigned long int)tv.tv_sec, (unsigned long int)tv.tv_usec, (unsigned long int)rand(), (unsigned long int)rand(), "1234567890123456789012345678901234567890");

@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -69,10 +69,10 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/kmalloc.h>
-#include <tinyara/fs/fs.h>
-#include <tinyara/arch.h>
-#include <tinyara/audio/audio.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/audio/audio.h>
 
 #include <arch/irq.h>
 

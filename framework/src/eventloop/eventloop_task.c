@@ -24,7 +24,7 @@
 #include <signal.h>
 #include <libtuv/uv.h>
 #include <eventloop/eventloop.h>
-#include <tinyara/eventloop.h>
+#include <tizenrt/eventloop.h>
 
 #include "eventloop_internal.h"
 

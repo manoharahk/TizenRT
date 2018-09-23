@@ -49,14 +49,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  *
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <fcntl.h>
 #include <poll.h>
 #include <sys/types.h>
 #include <unistd.h>
 
-#include <tinyara/gpio.h>
+#include <tizenrt/gpio.h>
 
 void switch_main(int argc, char *argv[])
 {

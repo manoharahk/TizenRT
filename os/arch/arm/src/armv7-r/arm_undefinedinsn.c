@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 /* Output debug info if stack dump is selected -- even if debug is not
  * selected.

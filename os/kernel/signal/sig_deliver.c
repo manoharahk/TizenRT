@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <signal.h>
@@ -62,7 +62,7 @@
 #include <sched.h>
 #include <string.h>
 #include <debug.h>
-#include <tinyara/arch.h>
+#include <tizenrt/arch.h>
 
 #include "semaphore/semaphore.h"
 #include "signal/signal.h"

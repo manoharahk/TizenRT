@@ -18,7 +18,7 @@
 
 /// @file tc_net_dup.c
 /// @brief Test Case Example for dup() API
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <errno.h>
 #include <sys/stat.h>

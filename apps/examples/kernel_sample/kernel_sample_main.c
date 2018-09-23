@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdbool.h>
 #include <stdio.h>
@@ -65,7 +65,7 @@
 #include <sched.h>
 #include <errno.h>
 
-#include <tinyara/init.h>
+#include <tizenrt/init.h>
 #include "kernel_sample.h"
 
 /****************************************************************************

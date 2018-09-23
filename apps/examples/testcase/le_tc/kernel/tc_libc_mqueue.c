@@ -22,7 +22,7 @@
 /**************************************************************************
 * Included Files
 **************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <mqueue.h>
 #include <fcntl.h>
 #include "tc_internal.h"

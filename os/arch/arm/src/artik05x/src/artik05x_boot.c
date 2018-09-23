@@ -54,13 +54,13 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <debug.h>
 #include <assert.h>
 
-#include <tinyara/gpio.h>
-#include <tinyara/board.h>
+#include <tizenrt/gpio.h>
+#include <tizenrt/board.h>
 
 #include "up_arch.h"
 #include "s5j_gpio.h"

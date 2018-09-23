@@ -54,14 +54,14 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <pthread.h>
 #include <string.h>
 #include <debug.h>
 #include <errno.h>
 
-#include <tinyara/pthread.h>
+#include <tizenrt/pthread.h>
 
 /****************************************************************************
  * Definitions
@@ -75,7 +75,7 @@
  * Global Variables
  ****************************************************************************/
 
-/* Default pthread attributes (see include/tinyara/pthread.h).  When configured
+/* Default pthread attributes (see include/tizenrt/pthread.h).  When configured
  * to build separate kernel- and user-address spaces, this global is
  * duplicated in each address spaced.  This copy can only be shared within
  * the user address space.

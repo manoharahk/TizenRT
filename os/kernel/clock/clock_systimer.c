@@ -54,19 +54,19 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/clock.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/clock.h>
 
 #include "clock/clock.h"
 
 /****************************************************************************
  * Pre-processor Definitions
  ****************************************************************************/
-/* See include/tinyara/clock.h */
+/* See include/tizenrt/clock.h */
 
 #undef clock_systimer
 

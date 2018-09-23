@@ -55,8 +55,8 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/clock.h>
+#include <tizenrt/config.h>
+#include <tizenrt/clock.h>
 
 /****************************************************************************
  * Pre-processor Definitions

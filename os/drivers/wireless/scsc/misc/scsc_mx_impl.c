@@ -29,7 +29,7 @@
 #include "suspendmon.h"
 #include "debug_scsc.h"
 
-#include <tinyara/kmalloc.h>
+#include <tizenrt/kmalloc.h>
 
 struct scsc_mx {
 	struct scsc_mif_abs *mif_abs;

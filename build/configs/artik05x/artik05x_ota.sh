@@ -23,7 +23,7 @@
 # Remember, make is invoked from "os" directory
 OS_DIR_PATH=${PWD}
 OUTPUT_BINARY_PATH=${OS_DIR_PATH}/../build/output/bin
-TIZENRT_BIN=${OUTPUT_BINARY_PATH}/tinyara_head.bin
+TIZENRT_BIN=${OUTPUT_BINARY_PATH}/tizenrt_head.bin
 
 TARGET_NAME=ota
 OUTPUT_BIN=${OUTPUT_BINARY_PATH}/${TARGET_NAME}.bin

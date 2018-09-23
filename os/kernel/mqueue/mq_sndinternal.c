@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdint.h>
@@ -65,11 +65,11 @@
 #include <sched.h>
 #include <debug.h>
 
-#include <tinyara/kmalloc.h>
-#include <tinyara/arch.h>
-#include <tinyara/sched.h>
-#include <tinyara/cancelpt.h>
-#include <tinyara/ttrace.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/sched.h>
+#include <tizenrt/cancelpt.h>
+#include <tizenrt/ttrace.h>
 #include "sched/sched.h"
 #ifndef CONFIG_DISABLE_SIGNALS
 #include "signal/signal.h"

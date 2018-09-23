@@ -57,7 +57,7 @@
  * Included Files
  ********************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 /* Architecture specific limits */
 
@@ -167,10 +167,10 @@
  * _POSIX_TIMER_MAX is the per-process number of timers.
  *
  * _POSIX_CLOCKRES_MIN is the resolution of the CLOCK_REALTIME clock in
- *    nanoseconds.  CLOCK_REALTIME is controlled by the TinyAra system time.
+ *    nanoseconds.  CLOCK_REALTIME is controlled by the TizenRT system time.
  *    The default value is the system timer which has a resolution of 1000
  *    microseconds.  This default setting can be overridden by defining the
- *    clock interval in microseconds as CONFIG_USEC_PER_TICK in the TinyAra
+ *    clock interval in microseconds as CONFIG_USEC_PER_TICK in the TizenRT
  *    configuration file.
  */
 

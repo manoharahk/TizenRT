@@ -50,7 +50,7 @@ void ipmcast_sender_thread(int num_packets)
 	struct in_addr localInterface;
 	struct sockaddr_in groupSock;
 	int sd;
-	char *databuf = "Test Data: IP Multicast from TinyAra Node to Linux";
+	char *databuf = "Test Data: IP Multicast from TizenRT Node to Linux";
 
 	socklen_t addrlen = sizeof(struct sockaddr_in);
 	printf("\n[MCASTSENDER] start multicast sender\n");

@@ -74,7 +74,7 @@
 #include <pthread.h>
 #include <sys/time.h>
 #include <semaphore.h>
-#include <tinyara/clock.h>
+#include <tizenrt/clock.h>
 #include <errno.h>
 
 #ifdef CONFIG_NET_LWIP
@@ -1725,7 +1725,7 @@ static int init_mdns_context(int domain)
 		ndbg("ERROR: pthread_attr_init() failed.\n");
 		goto errout_with_mutex;
 	}
-#if 0							/* PTHREAD_CREATE_DETACHED is not supported in tinyara */
+#if 0							/* PTHREAD_CREATE_DETACHED is not supported in tizenrt */
 	pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_DETACHED);
 #endif
 

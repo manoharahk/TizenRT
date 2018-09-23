@@ -67,7 +67,7 @@ The following is the memory map of ARTIK05x.
                       |               |
            0x04320000 +---------------+
                       |    OS AREA    | TizenRT
-                      |   (TizenRT)   | (build/output/bin/tinyara_head.bin)
+                      |   (TizenRT)   | (build/output/bin/tizenrt_head.bin)
                       |    (2400KB)   |
                       |               |
                       |               |

@@ -54,14 +54,14 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/ioctl.h>
 
 #include <termios.h>
 #include <errno.h>
 
-#include <tinyara/serial/tioctl.h>
+#include <tizenrt/serial/tioctl.h>
 
 /****************************************************************************
  * Pre-processor Definitions

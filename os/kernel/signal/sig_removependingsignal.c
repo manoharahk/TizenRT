@@ -54,7 +54,7 @@
  * Included Files
  ************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <unistd.h>
 #include <signal.h>
@@ -63,9 +63,9 @@
 #include <debug.h>
 #include <sched.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/wdog.h>
-#include <tinyara/kmalloc.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/wdog.h>
+#include <tizenrt/kmalloc.h>
 
 #include "signal/signal.h"
 

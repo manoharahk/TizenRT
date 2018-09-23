@@ -58,11 +58,11 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 
-#include <tinyara/net/ip.h>
+#include <tizenrt/net/ip.h>
 
 #include <net/lwip/netif.h>
 

@@ -54,8 +54,8 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/kmalloc.h>
+#include <tizenrt/config.h>
+#include <tizenrt/kmalloc.h>
 
 #include "sched/sched.h"
 

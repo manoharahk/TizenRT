@@ -57,7 +57,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdbool.h>
@@ -65,14 +65,14 @@
 #include <limits.h>
 #include <semaphore.h>
 
-#include <tinyara/streams.h>
+#include <tizenrt/streams.h>
 
 /****************************************************************************
  * Pre-processor Definitions
  ****************************************************************************/
 /* This configuration directory is used in environment variable processing
  * when we need to reference the user's home directory.  There are no user
- * directories in TinyAra so, by default, this always refers to the root
+ * directories in TizenRT so, by default, this always refers to the root
  * directory.
  */
 
@@ -90,16 +90,16 @@
 #define lib_give_semaphore(s)
 #endif
 
-/* The TinyAra C library an be build in two modes: (1) as a standard, C-library
+/* The TizenRT C library an be build in two modes: (1) as a standard, C-library
  * that can be used by normal, user-space applications, or (2) as a special,
- * kernel-mode C-library only used within the OS.  If TinyAra is not being
+ * kernel-mode C-library only used within the OS.  If TizenRT is not being
  * built as separated kernel- and user-space modules, then only the first
  * mode is supported.
  */
 
 #if (defined(CONFIG_BUILD_PROTECTED) && defined(__KERNEL__)) || \
 	 defined(CONFIG_BUILD_KERNEL)
-#include <tinyara/kmalloc.h>
+#include <tizenrt/kmalloc.h>
 
 /* Domain-specific allocations */
 

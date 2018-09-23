@@ -54,14 +54,14 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <queue.h>
 #include <assert.h>
 #include <errno.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/wqueue.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/wqueue.h>
 
 #include "wqueue/wqueue.h"
 

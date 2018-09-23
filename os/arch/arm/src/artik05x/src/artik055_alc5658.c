@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdbool.h>
 #include <stdio.h>
@@ -62,9 +62,9 @@
 #include <assert.h>
 #include <errno.h>
 
-#include <tinyara/irq.h>
-#include <tinyara/audio/i2s.h>
-#include <tinyara/audio/alc5658.h>
+#include <tizenrt/irq.h>
+#include <tizenrt/audio/i2s.h>
+#include <tizenrt/audio/alc5658.h>
 
 #include <arch/board/board.h>
 #include "s5j_i2c.h"

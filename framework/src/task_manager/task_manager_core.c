@@ -18,7 +18,7 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -34,12 +34,12 @@
 #include <sys/types.h>
 #include <sys/ioctl.h>
 #include <apps/builtin.h>
-#include <tinyara/fs/ioctl.h>
-#include <tinyara/clock.h>
+#include <tizenrt/fs/ioctl.h>
+#include <tizenrt/clock.h>
 #if defined(CONFIG_SCHED_WORKQUEUE) || defined(CONFIG_LIB_USRWORK)
-#include <tinyara/wqueue.h>
+#include <tizenrt/wqueue.h>
 #endif
-#include <tinyara/task_manager_internal.h>
+#include <tizenrt/task_manager_internal.h>
 #include <task_manager/task_manager.h>
 #ifdef CONFIG_TASK_MANAGER_USER_SPECIFIC_BROADCAST
 #include <task_manager/task_manager_broadcast_list.h>

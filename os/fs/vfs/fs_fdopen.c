@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdio.h>
 #include <string.h>
@@ -62,9 +62,9 @@
 #include <fcntl.h>
 #include <errno.h>
 
-#include <tinyara/kmalloc.h>
-#include <tinyara/fs/fs.h>
-#include <tinyara/net/net.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/net/net.h>
 
 /****************************************************************************
  * Private Functions

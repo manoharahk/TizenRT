@@ -54,16 +54,16 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdio.h>
 #include <string.h>
 #include <errno.h>
 
-#include <tinyara/kmalloc.h>
-#include <tinyara/sched.h>
-#include <tinyara/fs/fs.h>
-#include <tinyara/lib.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/sched.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/lib.h>
 
 #include "lib_internal.h"
 

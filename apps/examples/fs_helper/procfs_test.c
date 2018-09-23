@@ -29,7 +29,7 @@
 #include <string.h>
 #include <sys/mount.h>
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 /****************************************************************************
  * Pre-processor Definitions

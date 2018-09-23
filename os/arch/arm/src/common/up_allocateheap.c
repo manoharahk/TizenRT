@@ -54,20 +54,20 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdint.h>
 #include <assert.h>
 #include <debug.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/userspace.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/userspace.h>
 
 #include <arch/board/board.h>
 
 #if CONFIG_MM_REGIONS > 1
-#include <tinyara/kmalloc.h>
+#include <tizenrt/kmalloc.h>
 #endif
 
 #if defined(CONFIG_BUILD_PROTECTED) && defined(CONFIG_MM_KERNEL_HEAP)

@@ -53,7 +53,7 @@
 -include $(TOPDIR)/.config
 -include $(TOPDIR)/Make.defs
 
-# Sub-directories from the TinyAra export package
+# Sub-directories from the TizenRT export package
 
 SUBDIRS = arch build include libs startup tmp
 FILES   = .config

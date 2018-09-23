@@ -67,7 +67,7 @@
 #include <stdbool.h>
 #include <time.h>
 
-#include <tinyara/wdog.h>
+#include <tizenrt/wdog.h>
 
 #include <netinet/in.h>
 

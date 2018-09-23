@@ -57,7 +57,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #ifdef CONFIG_ARCH_L2CACHE
 

@@ -87,10 +87,10 @@
  *   This function will return exactly the value in the termios data
  *   structure, without interpretation.
  *
- *   NOTE 1: TinyAra does not control input/output baud independently.  Both
+ *   NOTE 1: TizenRT does not control input/output baud independently.  Both
  *   must be the same.  The POSIX standard interfaces, cfisetispeed() and
  *   cfisetospeed() are defined to be cfgetspeed() in termios.h.
- *   NOTE 2.  In TinyAra, the speed_t is defined to be uint32_t and the baud
+ *   NOTE 2.  In TizenRT, the speed_t is defined to be uint32_t and the baud
  *   encodings of termios.h are the actual baud values themselves.  Therefore,
  *   any baud value may be returned here... not just those enumerated in
  *   termios.h

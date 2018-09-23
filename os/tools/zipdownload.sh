@@ -87,8 +87,8 @@ fi
 unset ELF
 unset MAP
 if [ "${DEBUG}" == "y" ]; then
-	ELF=${BINDIR}/tinyara
-	MAP=${BINDIR}/tinyara.map
+	ELF=${BINDIR}/tizenrt
+	MAP=${BINDIR}/tizenrt.map
 fi
 
 # Get configuration
@@ -129,22 +129,22 @@ if [ "${BOARD}" == "artik05x" ]; then
 	FLASHTOOLDIR="${BUILDDIR}/tools/openocd"
 	if [ "${CONFIG_ARCH_BOARD_ARTIK053S}" == "y" ]; then
 		BOARDSCRIPT+=" ${BUILDDIR}/configs/artik053s"
-		BOARDBIN="${BINDIR}/tinyara_head.bin-signed"
+		BOARDBIN="${BINDIR}/tizenrt_head.bin-signed"
 		echo "set BOARD=artik053s" > ${BOARDBAT}
 	elif [ "${CONFIG_ARCH_BOARD_ARTIK055S}" == "y" ]; then
 		BOARDSCRIPT+=" ${BUILDDIR}/configs/artik055s"
-		BOARDBIN="${BINDIR}/tinyara_head.bin-signed"
+		BOARDBIN="${BINDIR}/tizenrt_head.bin-signed"
 		echo "set BOARD=artik055s" > ${BOARDBAT}
 	else
 		BOARDSCRIPT+=" ${BUILDDIR}/configs/artik053"
-		BOARDBIN="${BINDIR}/tinyara_head.bin"
+		BOARDBIN="${BINDIR}/tizenrt_head.bin"
 		echo "set BOARD=artik053" > ${BOARDBAT}
 	fi
 
 	# make partition_map.cfg
 	${BUILDDIR}/configs/${BOARD}/scripts/partition_gen.sh
 elif [ "${BOARD}" == "cy4390x" ]; then
-	BOARDBIN="${BINDIR}/tinyara_master_strip"
+	BOARDBIN="${BINDIR}/tizenrt_master_strip"
 	echo "set BOARD=cy4390x" > ${BOARDBAT}
 fi
 
@@ -162,10 +162,10 @@ fi
 
 BINARIES="${BOARDBIN} ${ROMFSIMG} ${OTABIN}"
 DEBUGFILES="${ELF} ${MAP}"
-TINYARAFILES="${CONFIG} ${MAKEFILES} ${DOWNLOADSCRIPTS} ${TOOLCHAINDEFS}"
+TIZENRTFILES="${CONFIG} ${MAKEFILES} ${DOWNLOADSCRIPTS} ${TOOLCHAINDEFS}"
 BOARDSPECIFIC="${BOARDSCRIPT}"
 
-${TAR} ${TAROPT} ${FILENAME} ${TINYARAFILES} ${BINARIES} ${DEBUGFILES} ${FLASHTOOLDIR} ${BOARDSPECIFIC} ${BOARDBAT} || exit 1
+${TAR} ${TAROPT} ${FILENAME} ${TIZENRTFILES} ${BINARIES} ${DEBUGFILES} ${FLASHTOOLDIR} ${BOARDSPECIFIC} ${BOARDBAT} || exit 1
 
 rm ${BOARDBAT}
 echo "${FILENAME} zipped!"

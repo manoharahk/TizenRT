@@ -58,7 +58,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <netinet/in.h>
 
 #ifdef CONFIG_NET_IGMP

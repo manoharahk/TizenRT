@@ -326,7 +326,7 @@ int ftpc_socklisten(struct ftpc_socket_s *sock)
 		return ERROR;
 	}
 
-	/* Then get the local address selected by TinyAra */
+	/* Then get the local address selected by TizenRT */
 
 	ret = ftpc_sockgetsockname(sock, &sock->laddr);
 	return ret;

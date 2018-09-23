@@ -54,13 +54,13 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <assert.h>
 #include <errno.h>
 #include <debug.h>
-#include <tinyara/i2c.h>
-#include <tinyara/fs/fs.h>
-#include <tinyara/fs/ioctl.h>
+#include <tizenrt/i2c.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/fs/ioctl.h>
 
 #include <semaphore.h>
 

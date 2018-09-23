@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -64,13 +64,13 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/kmalloc.h>
-#include <tinyara/fs/fs.h>
-#include <tinyara/arch.h>
-#include <tinyara/wqueue.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/wqueue.h>
 
-#include <tinyara/usb/usb.h>
-#include <tinyara/usb/usbhost.h>
+#include <tizenrt/usb/usb.h>
+#include <tizenrt/usb/usbhost.h>
 
 /****************************************************************************
  * Pre-processor Definitions
@@ -176,7 +176,7 @@ static struct usbhost_class_s *usbhost_create(FAR struct usbhost_hubport_s *hpor
 static int usbhost_connect(FAR struct usbhost_class_s *usbclass, FAR const uint8_t *configdesc, int desclen);
 static int usbhost_disconnected(FAR struct usbhost_class_s *usbclass);
 
-/* Driver methods -- depend upon the type of TinyAra driver interface exported */
+/* Driver methods -- depend upon the type of TizenRT driver interface exported */
 
 /****************************************************************************
  * Private Data
@@ -923,7 +923,7 @@ static int usbhost_connect(FAR struct usbhost_class_s *usbclass, FAR const uint8
 	if (ret < 0) {
 		udbg("usbhost_cfgdesc() failed: %d\n", ret);
 	} else {
-		/* Now configure the device and register the TinyAra driver */
+		/* Now configure the device and register the TizenRT driver */
 
 		ret = usbhost_devinit(priv);
 		if (ret < 0) {

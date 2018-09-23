@@ -62,9 +62,9 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
-#include <tinyara/i2c.h>
+#include <tizenrt/i2c.h>
 
 #ifdef CONFIG_S5J_S5JT200
 #include "chip/s5jt200_i2c.h"

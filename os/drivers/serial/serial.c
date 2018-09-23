@@ -54,7 +54,7 @@
  * Included Files
  ************************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdint.h>
@@ -66,12 +66,12 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/irq.h>
-#include <tinyara/arch.h>
-#include <tinyara/semaphore.h>
-#include <tinyara/fs/fs.h>
-#include <tinyara/serial/serial.h>
-#include <tinyara/fs/ioctl.h>
+#include <tizenrt/irq.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/semaphore.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/serial/serial.h>
+#include <tizenrt/fs/ioctl.h>
 
 /************************************************************************************
  * Definitions
@@ -684,7 +684,7 @@ static ssize_t uart_read(FAR struct file *filep, FAR char *buffer, size_t buflen
 				} else
 #endif
 				{
-					/* Now wait with the Rx interrupt re-enabled.  TinyAra will
+					/* Now wait with the Rx interrupt re-enabled.  TizenRT will
 					 * automatically re-enable global interrupts when this
 					 * thread goes to sleep.
 					 */

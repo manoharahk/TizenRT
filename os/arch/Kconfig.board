@@ -78,7 +78,7 @@ config ARCH_LEDS
 	default y
 	depends on ARCH_HAVE_LEDS
 	---help---
-		Use board LEDs to show TinyAra execution status state. Unique to boards that have LEDs
+		Use board LEDs to show TizenRT execution status state. Unique to boards that have LEDs
 
 config ARCH_HAVE_BUTTONS
 	bool

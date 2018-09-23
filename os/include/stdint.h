@@ -57,12 +57,12 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #ifdef CONFIG_ARCH_STDINT_H
 #include <arch/stdint.h>
 #else
-#include <tinyara/compiler.h>
+#include <tizenrt/compiler.h>
 #include <arch/types.h>
 #include <limits.h>
 

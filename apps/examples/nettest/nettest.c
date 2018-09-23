@@ -83,7 +83,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <unistd.h>
 #include <stdio.h>
@@ -93,10 +93,10 @@
 #include <debug.h>
 #include <sched.h>
 
-#include <tinyara/progmem.h>
-#include <tinyara/fs/smart.h>
-#include <tinyara/fs/ioctl.h>
-#include <tinyara/spi/spi.h>
+#include <tizenrt/progmem.h>
+#include <tizenrt/fs/smart.h>
+#include <tizenrt/fs/ioctl.h>
+#include <tizenrt/spi/spi.h>
 
 #include <sys/stat.h>
 #include <net/if.h>
@@ -342,7 +342,7 @@ void ipmcast_sender_thread(int num_packets, uint32_t sleep_time, const char *int
 	struct sockaddr_in groupSock;
 	int sd;
 	char loopch = 0;
-	char *databuf = "Test Data: IP Multicast from TinyAra Node to Linux";
+	char *databuf = "Test Data: IP Multicast from TizenRT Node to Linux";
 
 	socklen_t addrlen = sizeof(struct sockaddr_in);
 	printf("[MCASTCLIENT] start multicast sender\n");
@@ -612,7 +612,7 @@ void udp_client_thread(int num_packets, uint32_t sleep_time)
 
 	memset(buf, 0, APP_MSG_SIZE);
 
-	sprintf(buf, "Test Data: UDP send from TinyAra Node to Linux");
+	sprintf(buf, "Test Data: UDP send from TizenRT Node to Linux");
 
 	clilen = sizeof(serveraddr);
 
@@ -782,7 +782,7 @@ void tcp_client_thread(int num_packets, uint32_t sleep_time)
 
 	/* Then send num_packets number of messages */
 
-	sprintf(buf, "Test Data: TCP send from TinyAra Node to Linux");
+	sprintf(buf, "Test Data: TCP send from TizenRT Node to Linux");
 
 	for (i = 1; i <= num_packets; i++) {
 		sbuf_size = strlen(buf);

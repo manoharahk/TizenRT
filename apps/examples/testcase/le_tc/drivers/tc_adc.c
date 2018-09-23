@@ -18,8 +18,8 @@
 
 /// @file tc_adc.c
 /// @brief Test Case Example for adc driver
-#include <tinyara/analog/adc.h>
-#include <tinyara/analog/ioctl.h>
+#include <tizenrt/analog/adc.h>
+#include <tizenrt/analog/ioctl.h>
 #include <stdio.h>
 #include <fcntl.h>
 #include <sys/ioctl.h>

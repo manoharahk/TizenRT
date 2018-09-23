@@ -6,7 +6,7 @@
  * README for terms of use.
  */
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <string.h>
 #include <stdlib.h>
@@ -37,7 +37,7 @@
 #define COAP_STANDARD_PORT "5683"
 #define COAP_SECURITY_PORT "5684"
 
-#if defined(__TINYARA__)
+#if defined(__TIZENRT__)
 #define COAP_CLIENT_SCHED_PRI    100
 #define COAP_CLIENT_SCHED_POLICY SCHED_RR
 #define COAP_CLIENT_STACK_SIZE   (1024 * 16)
@@ -47,7 +47,7 @@ struct coap_client_input {
 	int argc;
 	char **argv;
 };
-#endif /* __TINYARA__ */
+#endif /* __TIZENRT__ */
 
 int flags = 0;
 
@@ -119,7 +119,7 @@ int append_to_output(const unsigned char *data, size_t len)
 	return 0;
 }
 
-#if defined(__TINYARA__)
+#if defined(__TIZENRT__)
 /*
  * separate close_output function
  * to prevent data abort when file descriptor is either stdout or stderr
@@ -151,7 +151,7 @@ void close_output(void)
 		fclose(file);
 	}
 }
-#endif /* __TINYARA__ */
+#endif /* __TIZENRT__ */
 
 coap_pdu_t *new_ack(coap_context_t *ctx, coap_queue_t *node)
 {
@@ -585,7 +585,7 @@ void usage(const char *program, const char *version)
 
 	fprintf(stderr, "%s v%s -- a small CoAP implementation\n"
 			"(c) 2010-2013 Olaf Bergmann <bergmann@tzi.org>\n\n"
-#if defined(__TINYARA__)
+#if defined(__TIZENRT__)
 			"usage: %s [-A type...] [-t type] [-B seconds] [-e text]\n"
 			"\t\t[-m method] [-N] [-p port] [-T string] [-v num] URI\n\n"
 			"\tURI can be an absolute or relative coap URI,\n"
@@ -636,7 +636,7 @@ void usage(const char *program, const char *version)
 			, program, version, program, wait_seconds);
 }
 
-#if !defined(__TINYARA__)
+#if !defined(__TIZENRT__)
 int join(coap_context_t *ctx, char *group_name)
 {
 	struct ipv6_mreq mreq;
@@ -1038,7 +1038,7 @@ method_t cmdline_method(char *arg)
 	return i;					/* note that we do not prevent illegal methods */
 }
 
-#if defined(__TINYARA__)
+#if defined(__TIZENRT__)
 int coap_client_test_run(void *arg)
 #else
 int main(int argc, char **argv)
@@ -1068,7 +1068,7 @@ int main(int argc, char **argv)
 
 	coap_protocol_t protocol = COAP_PROTO_UDP;
 
-#if defined(__TINYARA__)
+#if defined(__TIZENRT__)
 	int argc;
 	char **argv;
 
@@ -1465,7 +1465,7 @@ error_exit:
 	return 0;
 }
 
-#if defined(__TINYARA__)
+#if defined(__TIZENRT__)
 int coap_client_test_main(int argc, char **argv)
 {
 	int status;
@@ -1511,4 +1511,4 @@ int coap_client_test_main(int argc, char **argv)
 
 	return 0;
 }
-#endif /* __TINYARA__ */
+#endif /* __TIZENRT__ */

@@ -58,7 +58,7 @@ USAGE: ${0} [-d] [-a <app-dir>] <board-name>/<config-name>
 Where:
   <board-name> is the name of the board in the configs directory
   <config-name> is the name of the board configuration sub-directory
-  <app-dir> is the path to the apps/ directory, relative to the tinyara directory
+  <app-dir> is the path to the apps/ directory, relative to the tizenrt directory
 
 "
 

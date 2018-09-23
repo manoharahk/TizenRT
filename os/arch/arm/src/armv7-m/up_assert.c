@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 /* Output debug info if stack dump is selected -- even if debug is not
  * selected.
@@ -77,8 +77,8 @@
 #include <assert.h>
 #include <debug.h>
 
-#include <tinyara/irq.h>
-#include <tinyara/arch.h>
+#include <tizenrt/irq.h>
+#include <tizenrt/arch.h>
 
 #include <arch/board/board.h>
 #ifdef CONFIG_BOARD_ASSERT_AUTORESET

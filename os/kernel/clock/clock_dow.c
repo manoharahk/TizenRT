@@ -54,11 +54,11 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 
-#include <tinyara/clock.h>
+#include <tizenrt/clock.h>
 
 #include "clock/clock.h"
 

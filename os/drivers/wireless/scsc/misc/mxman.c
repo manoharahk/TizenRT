@@ -33,8 +33,8 @@
 #include <unistd.h>
 #include <errno.h>
 #include <pthread.h>
-#include <tinyara/wqueue.h>
-#include "tinyara_wrapper.h"
+#include <tizenrt/wqueue.h>
+#include "tizenrt_wrapper.h"
 #include "utils_scsc.h"
 #include "debug_scsc.h"
 

@@ -20,7 +20,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/socket.h>
 #include <sys/ioctl.h>

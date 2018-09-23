@@ -69,8 +69,8 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/compiler.h>
+#include <tizenrt/config.h>
+#include <tizenrt/compiler.h>
 
 /* Inclusion of the <netdb.h> header may also make visible all symbols from
  * <netinet/in.h>, <sys/socket.h>, and <inttypes.h>.

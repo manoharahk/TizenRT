@@ -52,7 +52,7 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 #include <stdbool.h>
@@ -61,8 +61,8 @@
 #include <errno.h>
 
 #include <arch/irq.h>
-#include <tinyara/gpio.h>
-#include <tinyara/kmalloc.h>
+#include <tizenrt/gpio.h>
+#include <tizenrt/kmalloc.h>
 
 #include "up_arch.h"
 #include "s5j_gpio.h"
@@ -233,7 +233,7 @@ static const struct gpio_ops_s s5j_gpio_ops = {
  *   Instantiate the GPIO lower half driver for the S5J.
  *   General usage:
  *
- *     #include <tinyara/gpio.h>
+ *     #include <tizenrt/gpio.h>
  *     #include "s5j_gpio.h"
  *
  *     struct gpio_lowerhalf_s *lower;

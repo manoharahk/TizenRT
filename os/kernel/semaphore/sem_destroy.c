@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <semaphore.h>
 #include <errno.h>
@@ -63,7 +63,7 @@
 
 #ifdef CONFIG_SEMAPHORE_HISTORY
 #include "sched/sched.h"
-#include <tinyara/debug/sysdbg.h>
+#include <tizenrt/debug/sysdbg.h>
 #endif
 
 /****************************************************************************

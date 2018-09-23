@@ -54,14 +54,14 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sched.h>
 #include <aio.h>
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/wqueue.h>
+#include <tizenrt/wqueue.h>
 
 #include "aio/aio.h"
 

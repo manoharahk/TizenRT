@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <sys/statfs.h>
@@ -71,10 +71,10 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/clock.h>
-#include <tinyara/kmalloc.h>
-#include <tinyara/fs/fs.h>
-#include <tinyara/fs/procfs.h>
+#include <tizenrt/clock.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/fs/procfs.h>
 
 #if !defined(CONFIG_DISABLE_MOUNTPOINT) && defined(CONFIG_FS_PROCFS)
 #ifndef CONFIG_FS_PROCFS_EXCLUDE_UPTIME

@@ -23,9 +23,9 @@
 /**************************************************************************
 * Included Files
 **************************************************************************/
-#include <tinyara/config.h>
-#include <tinyara/clock.h>
-#include <tinyara/wqueue.h>
+#include <tizenrt/config.h>
+#include <tizenrt/clock.h>
+#include <tizenrt/wqueue.h>
 #include <stdio.h>
 #include <sys/types.h>
 #include "tc_internal.h"

@@ -57,13 +57,13 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <signal.h>
 #include <time.h>
 
-#include <tinyara/wqueue.h>
+#include <tizenrt/wqueue.h>
 
 /****************************************************************************
  * Pre-processor Definitions

@@ -23,11 +23,11 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <errno.h>
-#include <tinyara/mm/mm.h>
+#include <tizenrt/mm/mm.h>
 #include <apps/shell/tash.h>
 #include "tc_internal.h"
 

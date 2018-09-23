@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -63,8 +63,8 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/fs/mtd.h>
-#include <tinyara/fs/ioctl.h>
+#include <tizenrt/fs/mtd.h>
+#include <tizenrt/fs/ioctl.h>
 
 /****************************************************************************
  * Pre-processor Definitions

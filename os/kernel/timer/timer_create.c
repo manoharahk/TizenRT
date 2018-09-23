@@ -54,7 +54,7 @@
  * Included Files
  ********************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 #include <unistd.h>
@@ -62,8 +62,8 @@
 #include <string.h>
 #include <errno.h>
 
-#include <tinyara/wdog.h>
-#include <tinyara/kmalloc.h>
+#include <tizenrt/wdog.h>
+#include <tizenrt/kmalloc.h>
 
 #include "timer/timer.h"
 

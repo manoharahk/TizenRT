@@ -73,7 +73,7 @@
 
 */
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdio.h>
 #include <string.h>
@@ -89,7 +89,7 @@
 #include <sys/stat.h>
 #include <errno.h>
 #include <signal.h>
-#include <tinyara/ascii.h>
+#include <tizenrt/ascii.h>
 
 #include "lwm2m_client_main.h"
 

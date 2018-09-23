@@ -54,12 +54,12 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sched.h>
 #include <errno.h>
 
-#include <tinyara/cancelpt.h>
+#include <tizenrt/cancelpt.h>
 
 #include "task/task.h"
 

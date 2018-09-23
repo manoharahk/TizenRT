@@ -51,7 +51,7 @@
  ****************************************************************************/
 
 /* This file should never be included directed but, rather, only indirectly
- * through include/tinyara/irq.h
+ * through include/tizenrt/irq.h
  */
 
 #ifndef __ARCH_ARM_INCLUDE_IRQ_H
@@ -61,9 +61,9 @@
  * Included Files
  ****************************************************************************/
 
-/* Include TinyAra-specific IRQ definitions */
+/* Include TizenRT-specific IRQ definitions */
 
-#include <tinyara/irq.h>
+#include <tizenrt/irq.h>
 
 /* Include chip-specific IRQ definitions (including IRQ numbers) */
 

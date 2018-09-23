@@ -16,16 +16,16 @@
  *
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <errno.h>
 
-#include <tinyara/fs/fs.h>
-#include <tinyara/fs/mtd.h>
-#include <tinyara/fs/ioctl.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/fs/mtd.h>
+#include <tizenrt/fs/ioctl.h>
 
 #include "isp_driver_error.h"
 #include "sss_driver_io.h"

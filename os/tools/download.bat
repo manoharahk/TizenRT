@@ -31,11 +31,11 @@ if "%BOARD%"=="cy4390x" goto :DownloadCypress
 goto :NoBoard
 
 :DownloadARTIK_SECURE
-set RTBIN=tinyara_head.bin-signed
+set RTBIN=tizenrt_head.bin-signed
 goto DownloadARTIK
 
 :DownloadARTIK_NONSECURE
-set RTBIN=tinyara_head.bin
+set RTBIN=tizenrt_head.bin
 goto DownloadARTIK
 
 :DownloadARTIK
@@ -67,7 +67,7 @@ set OPENOCDPATH=%CYTOOLSPATH%\OpenOCD\%OSBIT%
 set CFGFILE1=%CYTOOLSPATH%\OpenOCD\BCM9WCD1EVAL1.cfg
 set CFGFILE2=%CYTOOLSPATH%\OpenOCD\BCM4390x.cfg
 set CFGFILE3=%CYTOOLSPATH%\OpenOCD\BCM4390x_gdb_jtag.cfg
-set STRIPFILE=tinyara_master_strip
+set STRIPFILE=tizenrt_master_strip
 set ROMFSFILE=romfs.img
 set BLFILE=waf.bootloader.43909.trx.bin
 

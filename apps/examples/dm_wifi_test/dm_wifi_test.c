@@ -20,7 +20,7 @@
  ****************************************************************************/
 
 #include <stdlib.h>
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <sys/socket.h>
 #include <arpa/inet.h>
 

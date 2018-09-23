@@ -18,7 +18,7 @@
 
 /// @file timer.c
 /// @brief Test Case Example for Timer API
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <errno.h>
 #include "../../os/kernel/timer/timer.h"

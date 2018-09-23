@@ -13,9 +13,9 @@
 /*.hex
 /pcode
 /tags
-/tinyara
-/tinyara_NO_XIP
-/tinyara_memstats.txt
+/tizenrt
+/tizenrt_NO_XIP
+/tizenrt_memstats.txt
 /.appSpec
 /*.log
 /*.log.old

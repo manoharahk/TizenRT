@@ -69,7 +69,7 @@ endif
 
 ifeq ($(CONFIG_WINDOWS_NATIVE),y)
   ARCH_SRCDIR = $(TOPDIR)\arch\$(CONFIG_ARCH)\src
-  TINYARA = "$(TOPDIR)\$(BIN_DIR)\tinyara$(EXEEXT)"
+  TIZENRT = "$(TOPDIR)\$(BIN_DIR)\tizenrt$(EXEEXT)"
   CFLAGS += -I$(ARCH_SRCDIR)\chip
   CFLAGS += -I$(ARCH_SRCDIR)\common
   CFLAGS += -I$(ARCH_SRCDIR)\$(ARCH_SUBDIR)
@@ -77,13 +77,13 @@ ifeq ($(CONFIG_WINDOWS_NATIVE),y)
 else
   ARCH_SRCDIR = $(TOPDIR)/arch/$(CONFIG_ARCH)/src
 ifeq ($(WINTOOL),y)
-  TINYARA = "${shell cygpath -w $(TOPDIR)/$(BIN_DIR)/tinyara$(EXEEXT)}"
+  TIZENRT = "${shell cygpath -w $(TOPDIR)/$(BIN_DIR)/tizenrt$(EXEEXT)}"
   CFLAGS += -I "${shell cygpath -w $(ARCH_SRCDIR)/chip}"
   CFLAGS += -I "${shell cygpath -w $(ARCH_SRCDIR)/common}"
   CFLAGS += -I "${shell cygpath -w $(ARCH_SRCDIR)/$(ARCH_SUBDIR)}"
   CFLAGS += -I "${shell cygpath -w $(TOPDIR)/kernel}"
 else
-  TINYARA = "$(TOPDIR)/$(BIN_DIR)/tinyara$(EXEEXT)"
+  TIZENRT = "$(TOPDIR)/$(BIN_DIR)/tizenrt$(EXEEXT)"
   CFLAGS += -I$(ARCH_SRCDIR)/chip
   CFLAGS += -I$(ARCH_SRCDIR)/common
   CFLAGS += -I$(ARCH_SRCDIR)/$(ARCH_SUBDIR)
@@ -182,13 +182,13 @@ $(UBIN): $(UOBJS)
 board/libboard$(LIBEXT):
 	$(Q) $(MAKE) -C board TOPDIR="$(TOPDIR)" libboard$(LIBEXT) EXTRADEFINES=$(EXTRADEFINES)
 
-$(BIN_DIR)/tinyara$(EXEEXT): $(HEAD_OBJ) board/libboard$(LIBEXT)
-	$(Q) echo "LD: tinyara"
+$(BIN_DIR)/tizenrt$(EXEEXT): $(HEAD_OBJ) board/libboard$(LIBEXT)
+	$(Q) echo "LD: tizenrt"
 	$(Q) $(LD) --entry=__start $(LDFLAGS) $(LIBPATHS) $(EXTRA_LIBPATHS) \
-		-o $(TINYARA) $(HEAD_OBJ) $(EXTRA_OBJS) \
-		--start-group $(LDLIBS) $(EXTRA_LIBS) $(LIBGCC) --end-group -Map $(TOPDIR)/../build/output/bin/tinyara.map
+		-o $(TIZENRT) $(HEAD_OBJ) $(EXTRA_OBJS) \
+		--start-group $(LDLIBS) $(EXTRA_LIBS) $(LIBGCC) --end-group -Map $(TOPDIR)/../build/output/bin/tizenrt.map
 ifneq ($(CONFIG_WINDOWS_NATIVE),y)
-	$(Q) $(NM) $(TINYARA) | \
+	$(Q) $(NM) $(TIZENRT) | \
 	grep -v '\(compiled\)\|\(\$(OBJEXT)$$\)\|\( [aUw] \)\|\(\.\.ng$$\)\|\(LASH[RL]DI\)' | \
 	sort > $(TOPDIR)/$(BIN_DIR)/System.map
 endif

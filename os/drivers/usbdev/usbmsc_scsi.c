@@ -72,7 +72,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdint.h>
@@ -84,12 +84,12 @@
 #include <queue.h>
 #include <debug.h>
 
-#include <tinyara/kthread.h>
-#include <tinyara/arch.h>
-#include <tinyara/scsi.h>
-#include <tinyara/usb/storage.h>
-#include <tinyara/usb/usbdev.h>
-#include <tinyara/usb/usbdev_trace.h>
+#include <tizenrt/kthread.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/scsi.h>
+#include <tizenrt/usb/storage.h>
+#include <tizenrt/usb/usbdev.h>
+#include <tizenrt/usb/usbdev_trace.h>
 
 #include "usbmsc.h"
 

@@ -54,15 +54,15 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <dirent.h>
 #include <errno.h>
 #include <string.h>
 
-#include <tinyara/kmalloc.h>
-#include <tinyara/fs/fs.h>
-#include <tinyara/fs/dirent.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/fs/dirent.h>
 
 #include "inode/inode.h"
 

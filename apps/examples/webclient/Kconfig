@@ -8,7 +8,7 @@ config EXAMPLES_WEBCLIENT
 	depends on NETUTILS_WEBCLIENT
 	default n
 	---help---
-		Enable the TinyAra Webclient example
+		Enable the TizenRT Webclient example
 
 config USER_ENTRYPOINT
 	string

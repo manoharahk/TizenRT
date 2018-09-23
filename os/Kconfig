@@ -3,7 +3,7 @@
 # see kconfig-language at https://www.kernel.org/doc/Documentation/kbuild/kconfig-language.txt
 #
 
-mainmenu "TinyAra Configuration"
+mainmenu "TizenRT Configuration"
 
 config APPSDIR
 	string
@@ -85,7 +85,7 @@ config WINDOWS_MKLINK
 	default n
 	depends on WINDOWS_NATIVE
 	---help---
-		Use the mklink command to set up symbolic links when TinyAra is
+		Use the mklink command to set up symbolic links when TizenRT is
 		configured.  Otherwise, configuration directories will be copied to
 		establish the configuration.
 
@@ -106,14 +106,14 @@ config APPS_DIR
 	default "..\apps" if WINDOWS_NATIVE
 	---help---
 		Identifies the directory that builds the
-		application to link with TinyAra.  Default: ../apps This symbol must be assigned
+		application to link with TizenRT.  Default: ../apps This symbol must be assigned
 		to the path to the application build directory *relative* to
-		the TinyAra top build directory. If you had an application
-		directory and the TinyAra directory each in separate directory
+		the TizenRT top build directory. If you had an application
+		directory and the TizenRT directory each in separate directory
 		trees like this:
 
 			build
-			|-tinyara
+			|-tizenrt
 			|  |
 			|  `- Makefile
 			`-application
@@ -135,7 +135,7 @@ config APPS_DIR
 		3)distclean. Clean everything -- auto-generated files, symbolic
 		links etc. -- so that the directory contents are the same as
 		the contents in your configuration management system.
-		This is only done when you change the TinyAra configuration.
+		This is only done when you change the TizenRT configuration.
 
 		4)depend. Make or update the application build dependencies.
 
@@ -143,7 +143,7 @@ config APPS_DIR
 
 		$(MAKE) -C $(CONFIG_APPS_DIR) TOPDIR="$(TOPDIR)" <target>
 
-		TOPDIR is the full path to the TinyAra directory. It can be used, for
+		TOPDIR is the full path to the TizenRT directory. It can be used, for
 		example, to include makefile fragments (e.g., .config or Make.defs)
 		or to set up include file paths.
 
@@ -164,18 +164,18 @@ choice
 config BUILD_FLAT
 	bool "Flat address space"
 	---help---
-		Build TinyAra as one large, executable "blob".  All of the code
+		Build TizenRT as one large, executable "blob".  All of the code
 		within the blob can interrupt with all of the other code within
 		the blob.  There are no special privileges, protections, or
 		restraints.
 
 config BUILD_PROTECTED
-	bool "TinyAra protected build"
+	bool "TizenRT protected build"
 	depends on ARCH_USE_MPU
 	select LIB_SYSCALL
 	select BUILD_2PASS
 	---help---
-		Builds TinyAra and selected applications as two "blobs":  A protected,
+		Builds TizenRT and selected applications as two "blobs":  A protected,
 		privileged kernel blob and a separate unprivileged, user blob. This
 		require sue of the two pass build with each blob being build on each pass.
 
@@ -184,11 +184,11 @@ config BUILD_PROTECTED
 		implemented on all platforms.
 
 config BUILD_KERNEL
-	bool "TinyAra kernel build"
+	bool "TizenRT kernel build"
 	depends on ARCH_USE_MMU && ARCH_ADDRENV && EXPERIMENTAL
 	select LIB_SYSCALL
 	---help---
-		Builds TinyAra as a separately compiled kernel.  No applications are
+		Builds TizenRT as a separately compiled kernel.  No applications are
 		built.  All user applications must reside in a file system where
 		they can be loaded into memory for execution.
 
@@ -233,14 +233,14 @@ config PASS1_OBJECT
 		from the PASS1_TARGET.  It may be available at link time
 		in the arch/<architecture>/src directory.
 
-config TINYARA_USERSPACE
+config TIZENRT_USERSPACE
 	hex "Beginning of user-space blob"
 	default 0x0
 	depends on BUILD_PROTECTED
 	---help---
-		In the kernel build, the TinyAra kernel and the user-space blob are
-		built separately linked objects.  TINYARA_USERSPACE provides the
-		address where the user-space blob is loaded into memory.  TinyAra will
+		In the kernel build, the TizenRT kernel and the user-space blob are
+		built separately linked objects.  TIZENRT_USERSPACE provides the
+		address where the user-space blob is loaded into memory.  TizenRT will
 		expect to find and instance of struct userspace_s at this location.
 
 endif # Build 2-pass
@@ -252,7 +252,7 @@ config INTELHEX_BINARY
 	bool "Intel HEX binary format"
 	default n
 	---help---
-		Create the tinyara.hex in the Intel HEX binary format that is
+		Create the tizenrt.hex in the Intel HEX binary format that is
 		used with many different loaders. This option will use the GNU objcopy program
 		and should not be selected if you are not using the GNU toolchain.
 
@@ -260,7 +260,7 @@ config MOTOROLA_SREC
 	bool "Motorola S-Record binary format"
 	default n
 	---help---
-		Create the tinyara.srec in the Motorola S-Record binary format that is
+		Create the tizenrt.srec in the Motorola S-Record binary format that is
 		used with many different loaders. This option will use the GNU objcopy program
 		and should not be selected if you are not using the GNU toolchain.
 
@@ -268,7 +268,7 @@ config RAW_BINARY
 	bool "Raw binary format"
 	default n
 	---help---
-		Create the tinyara.bin in the raw binary format that is used with many
+		Create the tizenrt.bin in the raw binary format that is used with many
 		different loaders using the GNU objcopy program.  This option
 		should not be selected if you are not using the GNU toolchain.
 
@@ -314,7 +314,7 @@ config ARCH_STDINT_H
 	bool "stdint.h"
 	default n
 	---help---
-		The stdint.h header file can be found at tinyara/include/stdint.h.
+		The stdint.h header file can be found at tizenrt/include/stdint.h.
 		However, that header includes logic to redirect the inclusion of an
 		architecture specific header file like:
 
@@ -325,13 +325,13 @@ config ARCH_STDINT_H
 			#endif
 
 		Recall that that include path, include/arch, is a symbolic link and
-		will refer to a version of stdint.h at tinyara/arch/<architecture>/include/stdint.h.
+		will refer to a version of stdint.h at tizenrt/arch/<architecture>/include/stdint.h.
 
 config ARCH_STDBOOL_H
 	bool "stdbool.h"
 	default n
 	---help---
-		The stdbool.h header file can be found at tinyara/include/stdbool.h.
+		The stdbool.h header file can be found at tizenrt/include/stdbool.h.
 		However, that header includes logic to redirect the inclusion of an
 		architecture specific header file like:
 
@@ -342,19 +342,19 @@ config ARCH_STDBOOL_H
 			#endif
 
 		Recall that that include path, include/arch, is a symbolic link and
-		will refer to a version of stdbool.h at tinyara/arch/<architecture>/include/stdbool.h.
+		will refer to a version of stdbool.h at tizenrt/arch/<architecture>/include/stdbool.h.
 
 config ARCH_MATH_H
 	bool "math.h"
 	default n
 	---help---
 		There is also a re-directing version of math.h in the source tree.
-		However, it resides out-of-the-way at include/tinyara/math.h because it
+		However, it resides out-of-the-way at include/tizenrt/math.h because it
 		conflicts too often with the system math.h. If ARCH_MATH_H=y is
 		defined, however, the top-level makefile will copy the redirecting
-		math.h header file from include/tinyara/math.h to include/math.h. math.h
+		math.h header file from include/tizenrt/math.h to include/math.h. math.h
 		will then include the architecture-specific version of math.h that you
-		must provide at tinyara/arch/>architecture</include/math.h.
+		must provide at tizenrt/arch/>architecture</include/math.h.
 
 			#ifdef CONFIG_ARCH_MATH_H
 			#  include <arch/math.h>
@@ -363,7 +363,7 @@ config ARCH_MATH_H
 		So for the architectures that define ARCH_MATH_H=y, include/math.h
 		will be the redirecting math.h header file; for the architectures
 		that don't select ARCH_MATH_H, the redirecting math.h header file
-		will stay out-of-the-way in include/tinyara/.
+		will stay out-of-the-way in include/tizenrt/.
 
 config ARCH_FLOAT_H
 	bool "float.h"
@@ -381,19 +381,19 @@ config ARCH_STDARG_H
 	default n
 	---help---
 		There is also a redirecting version of stdarg.h in the source tree
-		as well. It also resides out-of-the-way at include/tinyara/stdarg.h.
+		as well. It also resides out-of-the-way at include/tizenrt/stdarg.h.
 		This is because you should normally use your toolchain's stdarg.h
 		file. But sometimes, your toolchain's stdarg.h file may have other
-		header file dependencies and so may not be usable in the TinyAra build
+		header file dependencies and so may not be usable in the TizenRT build
 		environment. In those cases, you may have to create a architecture-
-		specific stdarg.h header file at tinyara/arch/<architecture>/include/stdarg.h
+		specific stdarg.h header file at tizenrt/arch/<architecture>/include/stdarg.h
 
 		If ARCH_STDARG_H=y is defined, the top-level makefile will copy the
-		re-directing stdarg.h header file from include/tinyara/stdarg.h to
+		re-directing stdarg.h header file from include/tizenrt/stdarg.h to
 		include/stdarg.h. So for the architectures that cannot use their
 		toolchain's stdarg.h file, they can use this alternative by defining
 		ARCH_STDARG_H=y and providing. If ARCH_STDARG_H, is not defined, then
-		the stdarg.h header file will stay out-of-the-way in include/tinyara/.
+		the stdarg.h header file will stay out-of-the-way in include/tizenrt/.
 
 endmenu # Customize Header Files
 

@@ -54,14 +54,14 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sched.h>
 #include <fcntl.h>
 
-#include <tinyara/fs/fs.h>
-#include <tinyara/net/net.h>
-#include <tinyara/lib.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/net/net.h>
+#include <tizenrt/lib.h>
 
 #include "group/group.h"
 

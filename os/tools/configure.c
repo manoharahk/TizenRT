@@ -96,7 +96,7 @@ static const char *g_appdir = NULL;	/* Relative path to the applicatin directory
 static const char *g_boarddir = NULL;	/* Name of board subdirectory */
 static char *g_configdir = NULL;	/* Name of configuration subdirectory */
 
-static char *g_topdir = NULL;	/* Full path to top-level TinyAra build directory */
+static char *g_topdir = NULL;	/* Full path to top-level TizenRT build directory */
 static char *g_apppath = NULL;	/* Full path to the application directory */
 static char *g_configtop = NULL;	/* Full path to the top-level configuration directory */
 static char *g_configpath = NULL;	/* Full path to the configuration sub-directory */
@@ -125,11 +125,11 @@ static void show_usage(const char *progname, int exitcode)
 	fprintf(stderr, "\nWhere:\n");
 	fprintf(stderr, "  <board-name>:\n");
 	fprintf(stderr, "    Identifies the board.  This must correspond to a board directory\n");
-	fprintf(stderr, "    under tinyara%cconfigs%c.\n", g_delim, g_delim);
+	fprintf(stderr, "    under tizenrt%cconfigs%c.\n", g_delim, g_delim);
 	fprintf(stderr, "  <config-name>:\n");
 	fprintf(stderr, "    Identifies the specific configuration for the selected <board-name>.\n");
 	fprintf(stderr, "    This must correspond to a sub-directory under the board directory at\n");
-	fprintf(stderr, "    under tinyara%cconfigs%c<board-name>%c.\n", g_delim, g_delim, g_delim);
+	fprintf(stderr, "    under tizenrt%cconfigs%c<board-name>%c.\n", g_delim, g_delim, g_delim);
 	fprintf(stderr, "  <-d>:\n");
 	fprintf(stderr, "    Enables debug output\n");
 	fprintf(stderr, "  <-w>:\n");
@@ -152,10 +152,10 @@ static void show_usage(const char *progname, int exitcode)
 #endif
 	fprintf(stderr, "  -a <app-dir>:\n");
 	fprintf(stderr, "    Informs the configuration tool where the application build\n");
-	fprintf(stderr, "    directory.  This is a relative path from the top-level tinyara\n");
+	fprintf(stderr, "    directory.  This is a relative path from the top-level tizenrt\n");
 	fprintf(stderr, "    build directory.  But default, this tool will look in the usual\n");
 	fprintf(stderr, "    places to try to locate the application directory:  ..%capps or\n", g_delim);
-	fprintf(stderr, "    ..%capps-xx.yy where xx.yy is the tinyara version number.\n", g_delim);
+	fprintf(stderr, "    ..%capps-xx.yy where xx.yy is the tizenrt version number.\n", g_delim);
 	fprintf(stderr, "  <-h>:\n");
 	fprintf(stderr, "    Prints this message and exits.\n");
 	exit(exitcode);
@@ -320,7 +320,7 @@ static bool verify_file(const char *path)
 
 static void get_topdir(void)
 {
-	/* Get and verify the top-level TinyAra directory */
+	/* Get and verify the top-level TizenRT directory */
 
 	if (getcwd(g_buffer, BUFFER_SIZE) == NULL) {
 		fprintf(stderr, "ERROR: getcwd failed: %s\n", strerror(errno));
@@ -544,7 +544,7 @@ static void check_appdir(void)
 		if (verify_appdir(tmp))
 			return;
 
-		/* Try ../apps-xx.yy where xx.yy are the TinyAra version number */
+		/* Try ../apps-xx.yy where xx.yy are the TizenRT version number */
 
 		fprintf(stderr, "ERROR: Could not find the path to the application directory\n");
 		exit(EXIT_FAILURE);
@@ -760,7 +760,7 @@ int main(int argc, char **argv, char **envp)
 	debug("main: Checking arguments\n");
 	parse_args(argc, argv);
 
-	debug("main: Checking TinyAra Directories\n");
+	debug("main: Checking TizenRT Directories\n");
 	get_topdir();
 	check_configdir();
 

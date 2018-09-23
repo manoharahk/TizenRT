@@ -19,7 +19,7 @@
 /// @brief  functions to treate commands
 
 #include <pthread.h>
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <string.h>
 #include <stdio.h>
 #include <sys/types.h>

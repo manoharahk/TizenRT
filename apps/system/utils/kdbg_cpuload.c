@@ -18,7 +18,7 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <string.h>
 #include <sched.h>
@@ -28,8 +28,8 @@
 #include <pthread.h>
 #endif
 #include <sys/types.h>
-#include <tinyara/clock.h>
-#include <tinyara/sched.h>
+#include <tizenrt/clock.h>
+#include <tizenrt/sched.h>
 #include "kdbg_utils.h"
 
 /****************************************************************************

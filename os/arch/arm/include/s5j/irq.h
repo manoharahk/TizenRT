@@ -52,7 +52,7 @@
 
 /*
  * This file should never be included directed but, rather, only indirectly
- * through tinyara/irq.h
+ * through tizenrt/irq.h
  */
 
 #ifndef __ARCH_ARM_INCLUDE_S5J_IRQ_H
@@ -61,7 +61,7 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 /****************************************************************************
  * Pre-processor Definitions

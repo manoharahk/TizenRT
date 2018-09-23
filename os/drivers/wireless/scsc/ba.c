@@ -28,7 +28,7 @@
 #include <string.h>
 #include <pthread.h>
 #include <errno.h>
-#include <tinyara/kmalloc.h>
+#include <tizenrt/kmalloc.h>
 
 /* Age value for frames in MPDU reorder buffer */
 #define BA_MPDU_FRAME_AGE_TIMEOUT  30	/* 30 milliseconds */

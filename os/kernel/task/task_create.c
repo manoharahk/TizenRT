@@ -54,21 +54,21 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <sched.h>
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/kmalloc.h>
-#include <tinyara/kthread.h>
-#include <tinyara/ttrace.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/kthread.h>
+#include <tizenrt/ttrace.h>
 #ifdef CONFIG_DEBUG_MM_HEAPINFO
-#include <tinyara/mm/mm.h>
+#include <tizenrt/mm/mm.h>
 #ifdef CONFIG_HEAPINFO_USER_GROUP
-#include <tinyara/sched.h>
+#include <tizenrt/sched.h>
 #include <string.h>
 #endif
 #endif

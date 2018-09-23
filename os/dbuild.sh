@@ -23,7 +23,7 @@ CONFIGFILE="${OSDIR}/.config"
 TOPDIR="${OSDIR}/.."
 BUILDDIR="${TOPDIR}/build"
 BINDIR="${BUILDDIR}/output/bin"
-BINFILE="${BINDIR}/tinyara.bin"
+BINFILE="${BINDIR}/tizenrt.bin"
 CONFIGDIR="${BUILDDIR}/configs"
 
 STATUS_LIST="NOT_CONFIGURED BOARD_CONFIGURED CONFIGURED BUILT PREPARE_DL DOWNLOAD"
@@ -62,7 +62,7 @@ function SELECT_OPTION()
 			echo "  \"3. Menuconfig\""
 			echo "  \"4. Build Clean\""
 			echo "  \"5. Build Dist-Clean\""
-			if [ -f ${BINDIR}/tinyara.bin ]; then
+			if [ -f ${BINDIR}/tizenrt.bin ]; then
 				echo "  \"d. Download\""
 			fi
 			echo "  \"x. Exit\""

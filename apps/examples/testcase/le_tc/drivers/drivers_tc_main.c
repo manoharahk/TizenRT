@@ -20,7 +20,7 @@
 
 /// @brief Main Function for Drivers TestCase Example
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include "tc_internal.h"
 #include "tc_common.h"
 #include <sys/types.h>

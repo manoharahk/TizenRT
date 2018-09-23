@@ -73,7 +73,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <sys/ioctl.h>
@@ -88,9 +88,9 @@
 
 #include <arch/board/board.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/wqueue.h>
-#include <tinyara/analog/adc.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/wqueue.h>
+#include <tizenrt/analog/adc.h>
 
 #include "up_internal.h"
 #include "up_arch.h"

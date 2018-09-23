@@ -138,6 +138,6 @@ Assuming that the device can connect to a WiFi AP nearby, and there is an endpoi
 Assuming a Linux PC with connection capabilities to TizenRT client end-devices, run the Python script ```error_report.py``` that is located in the ```tools/error_report``` folder. The syntax for running the script is as shown below:
 
 ```
-./error_report.py -p <endpoint_port> -a <endpoint_addr> <path_to_tinyara_binary>
-Example: ./error_report.py -p 8586 -a 192.168.0.25 ../build/output/bin/tinyara
+./error_report.py -p <endpoint_port> -a <endpoint_addr> <path_to_tizenrt_binary>
+Example: ./error_report.py -p 8586 -a 192.168.0.25 ../build/output/bin/tizenrt
 ```

@@ -58,7 +58,7 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <sys/types.h>
 #include <stdbool.h>
 #include <stdio.h>
@@ -66,7 +66,7 @@
 #include <poll.h>
 #include <errno.h>
 #include <debug.h>
-#include <tinyara/pwm.h>
+#include <tizenrt/pwm.h>
 
 #include "chip.h"
 #include "s5j_pwm.h"

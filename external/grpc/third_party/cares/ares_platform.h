@@ -35,7 +35,7 @@ win_platform ares__getplatform(void);
 #endif
 
 // TODO(TizenRT)
-#if defined(_WIN32_WCE) || defined(__TINYARA__)
+#if defined(_WIN32_WCE) || defined(__TIZENRT__)
 struct servent *getservbyport(int port, const char *proto);
 
 #endif

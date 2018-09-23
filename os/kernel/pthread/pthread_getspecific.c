@@ -24,7 +24,7 @@
 #include <pthread.h>
 #include <assert.h>
 
-#include <tinyara/sched.h>
+#include <tizenrt/sched.h>
 
 #include "sched/sched.h"
 

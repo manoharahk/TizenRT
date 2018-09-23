@@ -252,7 +252,7 @@ int uv_cond_init(uv_cond_t *cond)
 		return -err;
 	}
 
-#if !(defined(__ANDROID__) && defined(HAVE_PTHREAD_COND_TIMEDWAIT_MONOTONIC)) && !defined(__TINYARA__)
+#if !(defined(__ANDROID__) && defined(HAVE_PTHREAD_COND_TIMEDWAIT_MONOTONIC)) && !defined(__TIZENRT__)
 	err = pthread_condattr_setclock(&attr, CLOCK_MONOTONIC);
 	if (err) {
 		goto error2;

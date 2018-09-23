@@ -50,8 +50,8 @@
  *
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/init.h>
+#include <tizenrt/config.h>
+#include <tizenrt/init.h>
 #include <apps/platform/cxxinitialize.h>
 
 #include <fcntl.h>

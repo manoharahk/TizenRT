@@ -54,15 +54,15 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <assert.h>
 #include <debug.h>
 
-#include <tinyara/mm/mm.h>
+#include <tizenrt/mm/mm.h>
 
 #ifdef CONFIG_DEBUG_MM_HEAPINFO
-#include  <tinyara/sched.h>
+#include  <tizenrt/sched.h>
 #endif
 /****************************************************************************
  * Pre-processor Definitions

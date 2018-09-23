@@ -16,13 +16,13 @@
  *
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <sys/types.h>
 #include <stdbool.h>
 #include <string.h>
 #include <poll.h>
 #include <errno.h>
-#include <tinyara/fs/fs.h>
+#include <tizenrt/fs/fs.h>
 #include <semaphore.h>
 
 #include "dev.h"
@@ -33,7 +33,7 @@
 #include "fw_test.h"
 #include "debug_scsc.h"
 #include "udi.h"
-#include "tinyara_wrapper.h"
+#include "tizenrt_wrapper.h"
 #include "max_buf.h"
 
 #define UDI_CHAR_DEVICE_NAME0 "s5n2560udi0"

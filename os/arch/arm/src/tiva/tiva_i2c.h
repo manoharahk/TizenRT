@@ -57,8 +57,8 @@
  * Included Files
  ************************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/i2c.h>
+#include <tizenrt/config.h>
+#include <tizenrt/i2c.h>
 
 #include "chip.h"
 #include "chip/tiva_i2c.h"

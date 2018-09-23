@@ -83,7 +83,7 @@
 ** DAMAGE.
 */
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -104,7 +104,7 @@
 #define __bitwise
 #define __user
 
-#include <tinyara/audio/audio.h>
+#include <tizenrt/audio/audio.h>
 #include <tinyalsa/tinyalsa.h>
 
 #define MILLI_TO_NANO	1000000

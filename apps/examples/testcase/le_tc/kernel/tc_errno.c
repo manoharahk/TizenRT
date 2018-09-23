@@ -19,7 +19,7 @@
 /// @file tc_errno.c
 
 /// @brief Test Case Example for Errno API
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <string.h>
 #include <errno.h>

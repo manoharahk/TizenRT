@@ -54,14 +54,14 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #ifdef CONFIG_ARCH_LOWPUTC
 
 #include <stdio.h>
 #include <assert.h>
 #include <errno.h>
-#include <tinyara/arch.h>
+#include <tizenrt/arch.h>
 
 #include "lib_internal.h"
 

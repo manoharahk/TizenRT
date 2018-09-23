@@ -34,7 +34,7 @@ config SPI_BITBANG
 	default n
 	---help---
 		Enable support for a generic SPI bit-bang device.
-		See include/tinyara/spi/spi_bitbang.h for further information.
+		See include/tizenrt/spi/spi_bitbang.h for further information.
 
 if SPI_BITBANG
 

@@ -20,8 +20,8 @@
  ****************************************************************************/
 #include <stdio.h>
 #include <fcntl.h>
-#include <tinyara/config.h>
-#include <tinyara/fs/ioctl.h>
+#include <tizenrt/config.h>
+#include <tizenrt/fs/ioctl.h>
 #ifdef CONFIG_BOARDCTL_RESET
 #include <sys/boardctl.h>
 #include <stdlib.h>

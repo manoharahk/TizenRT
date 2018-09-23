@@ -16,7 +16,7 @@
  *
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <apps/shell/tash.h>
 #include <stdio.h>
 #include <string.h>

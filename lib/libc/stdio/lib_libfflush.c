@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdbool.h>
@@ -62,7 +62,7 @@
 #include <fcntl.h>
 #include <errno.h>
 
-#include <tinyara/fs/fs.h>
+#include <tizenrt/fs/fs.h>
 
 #include "lib_internal.h"
 

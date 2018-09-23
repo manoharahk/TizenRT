@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 #include <string.h>
@@ -62,8 +62,8 @@
 #include <debug.h>
 
 #include <arch/irq.h>
-#include <tinyara/sched.h>
-#include <tinyara/userspace.h>
+#include <tizenrt/sched.h>
+#include <tizenrt/userspace.h>
 
 #ifdef CONFIG_LIB_SYSCALL
 #include <syscall.h>
@@ -80,7 +80,7 @@
 
 /* Debug ********************************************************************/
 /* Debug output from this file may interfere with context switching!  To get
- * debug output you must enabled the following in your TinyAra configuration:
+ * debug output you must enabled the following in your TizenRT configuration:
  *
  * - CONFIG_DEBUG and CONFIG_DEBUG_SYSCALL (shows only syscalls)
  * - CONFIG_DEBUG and CONFIG_DEBUG_SVCALL  (shows everything)
@@ -453,7 +453,7 @@ int up_svcall(int irq, FAR void *context, FAR void *arg)
 	break;
 #endif
 
-	/* This is not an architecture-specific system call.  If TinyAra is built
+	/* This is not an architecture-specific system call.  If TizenRT is built
 	 * as a standalone kernel with a system call interface, then all of the
 	 * additional system calls must be handled as in the default case.
 	 */

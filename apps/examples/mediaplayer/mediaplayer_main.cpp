@@ -19,11 +19,11 @@
 // Included Files
 //***************************************************************************
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <iostream>
 #include <functional>
 
-#include <tinyara/init.h>
+#include <tizenrt/init.h>
 #include <apps/platform/cxxinitialize.h>
 #include <media/FocusManager.h>
 #include <media/MediaPlayer.h>

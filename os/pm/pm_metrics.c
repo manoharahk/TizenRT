@@ -16,7 +16,7 @@
  *
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <time.h>
 #include <queue.h>
 #include <debug.h>

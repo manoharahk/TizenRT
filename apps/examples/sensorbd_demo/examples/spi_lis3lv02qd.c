@@ -50,7 +50,7 @@
  *
  ****************************************************************************/
 
-#include <tinyara/spi/spi.h>
+#include <tizenrt/spi/spi.h>
 
 #define LIS3LV02DQ_CONF_REG_1	0x20
 #define LIS3LV02DQ_WHO_AM_I		0x8F

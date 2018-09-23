@@ -57,8 +57,8 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/compiler.h>
+#include <tizenrt/config.h>
+#include <tizenrt/compiler.h>
 
 #include <sys/types.h>
 #include <stdio.h>
@@ -66,7 +66,7 @@
 #include <stdbool.h>
 #include <errno.h>
 
-#include <tinyara/i2c.h>
+#include <tizenrt/i2c.h>
 
 /****************************************************************************
  * Definitions
@@ -120,7 +120,7 @@
 
 #define MAX_LINELEN 80
 
-/* Are we using the TinyAra console for I/O?  Or some other character device? */
+/* Are we using the TizenRT console for I/O?  Or some other character device? */
 
 #ifdef CONFIG_I2CTOOL_INDEV
 #define INFD(p)      ((p)->ss_infd)

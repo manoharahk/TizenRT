@@ -20,14 +20,14 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <signal.h>
 #include <queue.h>
 #include <sched.h>
 #include <errno.h>
 #include <sys/types.h>
-#include <tinyara/signal.h>
+#include <tizenrt/signal.h>
 
 #include "signal/signal.h"
 /****************************************************************************

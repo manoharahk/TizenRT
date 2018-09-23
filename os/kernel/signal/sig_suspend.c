@@ -54,15 +54,15 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <signal.h>
 #include <assert.h>
 #include <debug.h>
 #include <sched.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/cancelpt.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/cancelpt.h>
 
 #include "sched/sched.h"
 #include "signal/signal.h"

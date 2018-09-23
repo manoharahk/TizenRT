@@ -19,15 +19,15 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
-#include <tinyara/clock.h>
+#include <tizenrt/config.h>
+#include <tizenrt/clock.h>
 #include <debug.h>
 #include <assert.h>
 #include <sys/types.h>
 
-#include <tinyara/board.h>
+#include <tizenrt/board.h>
 #include <arch/board/board.h>
-#include <tinyara/i2c.h>
+#include <tizenrt/i2c.h>
 #include <arch/board/artik055_alc5658_i2c.h>
 
 /****************************************************************************

@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 #include <stdbool.h>
@@ -63,11 +63,11 @@
 #include <assert.h>
 #include <debug.h>
 
-#include <tinyara/sched.h>
-#include <tinyara/clock.h>
-#include <tinyara/cancelpt.h>
-#include <tinyara/semaphore.h>
-#include <tinyara/fs/fs.h>
+#include <tizenrt/sched.h>
+#include <tizenrt/clock.h>
+#include <tizenrt/cancelpt.h>
+#include <tizenrt/semaphore.h>
+#include <tizenrt/fs/fs.h>
 
 #ifdef CONFIG_NET_LWIP
 #include <net/lwip/sockets.h>

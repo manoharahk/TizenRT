@@ -38,7 +38,7 @@
 #include <stdint.h>
 #include <netinet/in.h>
 #include <protocols/wslay/wslay.h>
-#include <tinyara/wqueue.h>
+#include <tizenrt/wqueue.h>
 
 #include "mbedtls/config.h"
 #include "mbedtls/entropy.h"

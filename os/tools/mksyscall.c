@@ -220,7 +220,7 @@ static void generate_proxy(int nparms)
 	/* Generate "up-front" information, include correct header files */
 
 	fprintf(stream, "/* Auto-generated %s proxy file -- do not edit */\n\n", g_parm[NAME_INDEX]);
-	fprintf(stream, "#include <tinyara/config.h>\n");
+	fprintf(stream, "#include <tizenrt/config.h>\n");
 
 	/* Does this function have a variable number of parameters?  If so then the
 	 * final parameter type will be encoded as "..."
@@ -378,7 +378,7 @@ static void generate_stub(int nparms)
 	/* Generate "up-front" information, include correct header files */
 
 	fprintf(stream, "/* Auto-generated %s stub file -- do not edit */\n\n", g_parm[0]);
-	fprintf(stream, "#include <tinyara/config.h>\n");
+	fprintf(stream, "#include <tizenrt/config.h>\n");
 	fprintf(stream, "#include <stdint.h>\n");
 
 	if (g_parm[HEADER_INDEX] && strlen(g_parm[HEADER_INDEX]) > 0)

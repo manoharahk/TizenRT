@@ -54,11 +54,11 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdbool.h>
-#include <tinyara/arch.h>
-#include <tinyara/irq.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/irq.h>
 
 #include "up_internal.h"
 

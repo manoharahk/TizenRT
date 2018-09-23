@@ -826,9 +826,9 @@ config BOOT_SDRAM_DATA
 		This selection should be set if data lies in SDRAM (vs. SRAM) and if
 		SDRAM was not previously initialized by a loader.  Obviously, this
 		does not apply if we booting from SDRAM because SDRAM must have been
-		initialized priority to loading TinyAra into SDRAM.
+		initialized priority to loading TizenRT into SDRAM.
 
-		In the case where SDRAM must be initialized by TinyAra, the
+		In the case where SDRAM must be initialized by TizenRT, the
 		initialization sequence is a little different: Normally, .data and
 		.bss must be initialized before starting the system.  But in this
 		case SDRAM must be configured by board-specific logic before the

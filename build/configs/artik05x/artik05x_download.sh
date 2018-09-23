@@ -30,7 +30,7 @@ OUTPUT_BINARY_PATH=${BUILD_DIR_PATH}/output/bin
 ARTIK05X_DIR_PATH=${CONFIGS_DIR_PATH}/artik05x
 SCRIPTS_PATH=${ARTIK05X_DIR_PATH}/scripts
 
-TIZENRT_BIN=${OUTPUT_BINARY_PATH}/tinyara_head.bin
+TIZENRT_BIN=${OUTPUT_BINARY_PATH}/tizenrt_head.bin
 
 OPENOCD_DIR_PATH=${BUILD_DIR_PATH}/tools/openocd
 if [[ $OSTYPE == "darwin"* ]]; then

@@ -53,7 +53,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdlib.h>
 #include <semaphore.h>
@@ -61,8 +61,8 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/spi/spi.h>
-#include <tinyara/spi/spi_bitbang.h>
+#include <tizenrt/spi/spi.h>
+#include <tizenrt/spi/spi_bitbang.h>
 
 #ifdef CONFIG_SPI_BITBANG
 
@@ -76,22 +76,22 @@
  *    SPI driver framework and not perform any direct bit-bang operations.
  *    Rather, it will could out to board-specific logic to perform the
  *    low level data transfers.
- * 2. include/tinyara/spi/spi_bitbang.h:  This header file provides the
+ * 2. include/tizenrt/spi/spi_bitbang.h:  This header file provides the
  *    data types and function prototypes needed to utilize the logic in
  *    this file.
  * 3. configs/<board>/src/<file>:  The implementation of the low-level
  *    bit-bang logic resides in some file in the board source directory.
  *    This board-specific logic includes the bit-bang skeleton logic
- *    provided in include/tinyara/spi/spi_bitband.c.
- * 4. include/tinyara/spi/spi_bitband.c.  Despite the .c extension, this
+ *    provided in include/tizenrt/spi/spi_bitband.c.
+ * 4. include/tizenrt/spi/spi_bitband.c.  Despite the .c extension, this
  *    really an included file.  It is used in this way:  1) The board-
  *    specific logic in arch/<architecture>/<board>/src/<file> provides some definitions
- *    then 2) includes include/tinyara/spi/spi_bitband.c.  That file will
+ *    then 2) includes include/tizenrt/spi/spi_bitband.c.  That file will
  *    then use those definitions to implement the low-level bit-bang
  *    logic.  the board-specific logic then calls spi_create_bitbang()
  *    in this file to instantiate the complete SPI driver.
  *
- *    See include/tinyara/spi/spi_bitband.c for more detailed usage
+ *    See include/tizenrt/spi/spi_bitband.c for more detailed usage
  *    information.
  */
 

@@ -16,7 +16,7 @@
  *
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <stdarg.h>
 #include <unistd.h>
@@ -24,11 +24,11 @@
 #include <sched.h>
 #endif
 #include <arch/irq.h>
-#include <tinyara/arch.h>
-#include <tinyara/logm.h>
-#include <tinyara/streams.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/logm.h>
+#include <tizenrt/streams.h>
 #ifdef CONFIG_LOGM_TIMESTAMP
-#include <tinyara/clock.h>
+#include <tizenrt/clock.h>
 #endif
 #include "logm.h"
 

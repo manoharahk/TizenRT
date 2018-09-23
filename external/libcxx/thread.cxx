@@ -118,7 +118,7 @@ thread::hardware_concurrency() _NOEXCEPT
 #   if defined(_MSC_VER) && ! defined(__clang__)
         _LIBCPP_WARNING("hardware_concurrency not yet implemented")
 #   else
-#       if !defined(__TINYARA__)
+#       if !defined(__TIZENRT__)
 #           warning hardware_concurrency not yet implemented
 #       endif
 #   endif

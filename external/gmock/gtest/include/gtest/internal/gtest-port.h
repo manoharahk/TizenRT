@@ -194,7 +194,7 @@
 //   StringFromGTestEnv() - parses a string environment variable.
 
 #if defined(__TIZENRT__)
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #if defined(CONFIG_SERIAL_TERMIOS)
 #include <termios.h>
 #endif

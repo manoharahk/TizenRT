@@ -56,11 +56,11 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdio.h>
 
-#include <tinyara/syslog/syslog.h>
+#include <tizenrt/syslog/syslog.h>
 
 #include "nvic.h"
 #include "itm.h"

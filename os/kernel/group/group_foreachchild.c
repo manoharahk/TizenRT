@@ -54,9 +54,9 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
-#include <tinyara/sched.h>
+#include <tizenrt/sched.h>
 
 #include "group/group.h"
 

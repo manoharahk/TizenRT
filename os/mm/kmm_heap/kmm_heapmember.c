@@ -54,11 +54,11 @@
  * Included Files
  ************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdbool.h>
 
-#include <tinyara/mm/mm.h>
+#include <tizenrt/mm/mm.h>
 
 #if defined(CONFIG_MM_KERNEL_HEAP) && defined(CONFIG_DEBUG)
 

@@ -57,7 +57,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #ifdef __cplusplus
 #define EXTERN extern "C"

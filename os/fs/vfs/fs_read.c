@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <sys/types.h>
 #include <sys/socket.h>
 
@@ -62,7 +62,7 @@
 #include <fcntl.h>
 #include <sched.h>
 #include <errno.h>
-#include <tinyara/cancelpt.h>
+#include <tizenrt/cancelpt.h>
 
 #include "inode/inode.h"
 

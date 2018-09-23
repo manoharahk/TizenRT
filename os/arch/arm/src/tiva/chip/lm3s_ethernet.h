@@ -57,8 +57,8 @@
  * Included Files
  ************************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/net/mii.h>
+#include <tizenrt/config.h>
+#include <tizenrt/net/mii.h>
 
 #include "chip.h"
 
@@ -89,7 +89,7 @@
 #define TIVA_MAC_TS_OFFSET  0x03c	/* Ethernet MAC Time Stamp Configuration */
 #endif
 
-/* MII Management Register Offsets (see include/tinyara/net/mii.h) */
+/* MII Management Register Offsets (see include/tizenrt/net/mii.h) */
 
 /* Ethernet Controller Register Addresses *******************************************/
 

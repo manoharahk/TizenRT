@@ -18,7 +18,7 @@
 
 /// @file tc_watchdog.c
 /// @brief Test Case Example for watchdog driver
-#include <tinyara/watchdog.h>
+#include <tizenrt/watchdog.h>
 #include <stdio.h>
 #include <fcntl.h>
 #include <sys/ioctl.h>

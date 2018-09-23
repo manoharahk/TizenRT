@@ -53,15 +53,15 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdlib.h>
 #include <errno.h>
 #include <assert.h>
 #include <debug.h>
 
-#include <tinyara/kmalloc.h>
-#include <tinyara/fs/fs.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/fs/fs.h>
 
 #include "bch.h"
 

@@ -54,9 +54,9 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <signal.h>
-#include <tinyara/cancelpt.h>
+#include <tizenrt/cancelpt.h>
 
 /****************************************************************************
  * Definitions

@@ -56,7 +56,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdint.h>
@@ -70,12 +70,12 @@
 #include <queue.h>
 #include <debug.h>
 
-#include <tinyara/kmalloc.h>
-#include <tinyara/arch.h>
-#include <tinyara/serial/serial.h>
-#include <tinyara/usb/usb.h>
-#include <tinyara/usb/usbdev.h>
-#include <tinyara/usb/usbdev_trace.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/serial/serial.h>
+#include <tizenrt/usb/usb.h>
+#include <tizenrt/usb/usbdev.h>
+#include <tizenrt/usb/usbdev_trace.h>
 
 /****************************************************************************
  * Pre-processor Definitions
@@ -174,7 +174,7 @@
 
 /* Descriptors ****************************************************************/
 
-/* These settings are not modifiable via the TinyAra configuration */
+/* These settings are not modifiable via the TizenRT configuration */
 
 #define PL2303_VERSIONNO           (0x0202)	/* Device version number */
 #define PL2303_CONFIGIDNONE        (0)	/* Config ID means to return to address mode */

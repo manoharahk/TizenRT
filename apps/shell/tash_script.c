@@ -22,7 +22,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
-#include <tinyara/fs/fs_utils.h>
+#include <tizenrt/fs/fs_utils.h>
 #include "tash_internal.h"
 
 #define BUFF_SIZE 80

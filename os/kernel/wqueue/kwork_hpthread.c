@@ -54,16 +54,16 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <errno.h>
 #include <queue.h>
 #include <debug.h>
 
-#include <tinyara/wqueue.h>
-#include <tinyara/kthread.h>
-#include <tinyara/kmalloc.h>
-#include <tinyara/clock.h>
+#include <tizenrt/wqueue.h>
+#include <tizenrt/kthread.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/clock.h>
 
 #include "wqueue/wqueue.h"
 

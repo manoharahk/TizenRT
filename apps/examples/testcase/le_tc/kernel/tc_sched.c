@@ -23,7 +23,7 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <sched.h>
@@ -32,7 +32,7 @@
 #include <sys/wait.h>
 #include <sys/types.h>
 
-#include <tinyara/sched.h>
+#include <tizenrt/sched.h>
 
 #include "tc_internal.h"
 

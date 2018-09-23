@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <sys/types.h>
 #include <stdint.h>
 #include <stdbool.h>
@@ -67,9 +67,9 @@
 #include <debug.h>
 #include <queue.h>
 
-#include <tinyara/kmalloc.h>
-#include <tinyara/fs/fs.h>
-#include <tinyara/fs/ioctl.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/fs/ioctl.h>
 
 #include "smartfs.h"
 

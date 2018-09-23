@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdarg.h>
 #include <stdint.h>
@@ -67,8 +67,8 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/ascii.h>
-#include <tinyara/vt100.h>
+#include <tizenrt/ascii.h>
+#include <tizenrt/vt100.h>
 
 #include <apps/cle.h>
 
@@ -839,7 +839,7 @@ static int cle_editloop(FAR struct cle_s *priv)
  *
  * Description:
  *   EMACS-like command line editor.  This is actually more like readline
- *   than is the TinyAra readline!
+ *   than is the TizenRT readline!
  *
  ****************************************************************************/
 

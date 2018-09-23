@@ -40,7 +40,7 @@
 #include <float.h>
 #include <math.h>
 #include <complex.h>
-#include <tinyara/endian.h>
+#include <tizenrt/endian.h>
 
 /****************************************************************************
  *	Global Type Declarations

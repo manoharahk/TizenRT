@@ -53,7 +53,7 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -64,13 +64,13 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 
-#include <tinyara/board.h>
-#include <tinyara/fs/mtd.h>
-#include <tinyara/fs/ioctl.h>
-#include <tinyara/fs/mksmartfs.h>
-#include <tinyara/rtc.h>
-#include <tinyara/analog/adc.h>
-#include <tinyara/configdata.h>
+#include <tizenrt/board.h>
+#include <tizenrt/fs/mtd.h>
+#include <tizenrt/fs/ioctl.h>
+#include <tizenrt/fs/mksmartfs.h>
+#include <tizenrt/rtc.h>
+#include <tizenrt/analog/adc.h>
+#include <tizenrt/configdata.h>
 #include <chip.h>
 
 #include "s5j_adc.h"

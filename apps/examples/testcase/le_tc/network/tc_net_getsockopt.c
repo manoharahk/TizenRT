@@ -18,7 +18,7 @@
 
 /// @file tc_net_getsockopt.c
 /// @brief Test Case Example for getsockopt() API
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <errno.h>
 

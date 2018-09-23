@@ -16,7 +16,7 @@
  *
  ******************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <protocols/webserver/http_keyvalue_list.h>
 
 int fmwup_http_download_file(const char *download_url);

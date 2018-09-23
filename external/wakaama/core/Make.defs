@@ -56,7 +56,7 @@ else
 CFLAGS+=-DLWM2M_BIG_ENDIAN
 endif
 
-CFLAGS+=-D__TINYARA__
+CFLAGS+=-D__TIZENRT__
 
 DEPPATH += --dep-path core
 VPATH += :core

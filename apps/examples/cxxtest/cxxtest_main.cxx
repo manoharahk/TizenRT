@@ -54,7 +54,7 @@
 // Included Files
 //***************************************************************************
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <cstdio>
 #include <fstream>
@@ -69,7 +69,7 @@
 #include <algorithm>
 #include <list>
 
-#include <tinyara/init.h>
+#include <tizenrt/init.h>
 #include <apps/platform/cxxinitialize.h>
 
 using namespace std;

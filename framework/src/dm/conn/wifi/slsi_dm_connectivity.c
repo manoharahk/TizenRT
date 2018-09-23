@@ -20,7 +20,7 @@
  * @file dm_connectivity.c
  * @brief DM Connectivity APIs
  */
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdio.h>
 #include <stdlib.h>

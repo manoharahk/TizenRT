@@ -19,7 +19,7 @@ config NETUTILS_DHCPD_HOST
 	---help---
 		DHCPD supports a host based build for testing on a PC.  It is
 		enabled by this configuration, however, ti cannot really be used
-		in the context to the TinyAra build as it currently stands.
+		in the context to the TizenRT build as it currently stands.
 
 config NETUTILS_DHCPD_IGNOREBROADCAST
 	bool "Ignore client broadcast"

@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 /* Output debug info if stack dump is selected -- even if debug is not
  * selected.
  */
@@ -78,9 +78,9 @@
 #include <debug.h>
 
 #include <arch/irq.h>
-#include <tinyara/sched.h>
+#include <tizenrt/sched.h>
 #if defined(CONFIG_BUILD_PROTECTED)
-#include <tinyara/userspace.h>
+#include <tizenrt/userspace.h>
 #include <mpu.h>
 #endif
 #include "arm.h"
@@ -446,7 +446,7 @@ uint32_t *arm_syscall(uint32_t *regs)
 	break;
 #endif
 
-	/* This is not an architecture-specific system call.  If TinyAra is built
+	/* This is not an architecture-specific system call.  If TizenRT is built
 	 * as a standalone kernel with a system call interface, then all of the
 	 * additional system calls must be handled as in the default case.
 	 */

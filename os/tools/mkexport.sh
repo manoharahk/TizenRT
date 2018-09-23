@@ -246,7 +246,7 @@ else
 	echo "ARCHCXXFLAGS = ${ARCHCXXFLAGS}" >>"${EXPORTDIR}/build/Make.defs"
 fi
 
-# Copy the TinyAra include directory (retaining attributes and following symbolic links)
+# Copy the TizenRT include directory (retaining attributes and following symbolic links)
 
 cp -LR -p "${TOPDIR}/include" "${EXPORTDIR}/." || \
 	{ echo "MK: 'cp ${TOPDIR}/include' failed"; exit 1; }

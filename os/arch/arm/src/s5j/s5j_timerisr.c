@@ -53,11 +53,11 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 #include <time.h>
-#include <tinyara/arch.h>
+#include <tizenrt/arch.h>
 #include <arch/board/board.h>
 #include "up_arch.h"
 

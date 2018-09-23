@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdarg.h>
 #include <stdio.h>
@@ -63,8 +63,8 @@
 #include <fcntl.h>
 #include <errno.h>
 
-#include <tinyara/mqueue.h>
-#include <tinyara/fs/fs.h>
+#include <tizenrt/mqueue.h>
+#include <tizenrt/fs/fs.h>
 
 #include "inode/inode.h"
 #include "mqueue/mqueue.h"

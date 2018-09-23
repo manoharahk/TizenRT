@@ -82,7 +82,7 @@ Application Configuration -> System Libraries and Add-Ons -> [*] FS shell comman
 #### Dependancy
 - Disable CONFIG_DISABLE_ENVIRON.
 ```
-Kernel Features -> Disable TinyAra interfaces -> [ ] Disable environment variable support
+Kernel Features -> Disable TizenRT interfaces -> [ ] Disable environment variable support
 ```
 - Set a value which is greater than zero on CONFIG_NFILE_DESCRIPTORS.
 ```
@@ -118,7 +118,7 @@ Application Configuration -> System Libraries and Add-Ons -> [*] FS shell comman
 #### Dependancy
 - Disable CONFIG_DISABLE_ENVIRON.
 ```
-Kernel Features -> Disable TinyAra interfaces -> [ ] Disable environment variable support
+Kernel Features -> Disable TizenRT interfaces -> [ ] Disable environment variable support
 ```
 - Set a value which is greater than zero on CONFIG_NFILE_DESCRIPTORS.
 ```
@@ -249,7 +249,7 @@ Application Configuration -> System Libraries and Add-Ons -> [*] FS shell comman
 #### Dependancy
 - Disable CONFIG_DISABLE_ENVIRON.
 ```
-Kernel Features -> Disable TinyAra interfaces -> [ ] Disable environment variable support
+Kernel Features -> Disable TizenRT interfaces -> [ ] Disable environment variable support
 ```
 - Set a value which is greater than zero on CONFIG_NFILE_DESCRIPTORS.
 ```
@@ -316,7 +316,7 @@ Application Configuration -> System Libraries and Add-Ons -> [*] Kernel shell co
 #### Dependency
 Disable CONFIG_DISABLE_ENVIRON.
 ```
-Kernel Features -> Disable TinyAra interfaces -> [ ] Disable environment variable support
+Kernel Features -> Disable TizenRT interfaces -> [ ] Disable environment variable support
 ```
 
 
@@ -477,7 +477,7 @@ Application Configuration -> System Libraries and Add-Ons -> [*] Kernel shell co
 #### Dependency
 - Disable CONFIG_DISABLE_SIGNALS.
 ```
-Kernel Features -> Disable TinyAra interfaces -> [ ] Disable signal support
+Kernel Features -> Disable TizenRT interfaces -> [ ] Disable signal support
 ```
 - The *CONFIG_TASK_NAME_SIZE* should be greater than 0 to use killall.
 ```
@@ -508,7 +508,7 @@ Application Configuration -> System Libraries and Add-Ons -> [*] FS shell comman
 #### Dependancy
 - Disable CONFIG_DISABLE_ENVIRON.
 ```
-Kernel Features -> Disable TinyAra interfaces -> [ ] Disable environment variable support
+Kernel Features -> Disable TizenRT interfaces -> [ ] Disable environment variable support
 ```
 - Set a value which is greater than zero on CONFIG_NFILE_DESCRIPTORS.
 ```
@@ -538,7 +538,7 @@ Application Configuration -> System Libraries and Add-Ons -> [*] FS shell comman
 #### Dependancy
 - Disable CONFIG_DISABLE_ENVIRON.
 ```
-Kernel Features -> Disable TinyAra interfaces -> [ ] Disable environment variable support
+Kernel Features -> Disable TizenRT interfaces -> [ ] Disable environment variable support
 ```
 - Set a value which is greater than zero on CONFIG_NFILE_DESCRIPTORS.
 ```
@@ -564,7 +564,7 @@ File Systems -> [ ] Disable support for mount points
 ```
 - Disable CONFIG_DISABLE_ENVIRON.
 ```
-Kernel Features -> Disable TinyAra interfaces -> [ ] Disable environment variable support
+Kernel Features -> Disable TizenRT interfaces -> [ ] Disable environment variable support
 ```
 - Set a value which is greater than zero on CONFIG_NFILE_DESCRIPTORS.
 ```
@@ -616,7 +616,7 @@ File Systems -> [ ] Disable support for mount points
 ```
 - Disable CONFIG_DISABLE_ENVIRON.
 ```
-Kernel Features -> Disable TinyAra interfaces -> [ ] Disable environment variable support
+Kernel Features -> Disable TizenRT interfaces -> [ ] Disable environment variable support
 ```
 - Set a value which is greater than zero on CONFIG_NFILE_DESCRIPTORS.
 ```
@@ -662,7 +662,7 @@ Application Configuration -> System Libraries and Add-Ons -> [*] FS shell comman
 #### Dependancy
 - Disable CONFIG_DISABLE_ENVIRON.
 ```
-Kernel Features -> Disable TinyAra interfaces -> [ ] Disable environment variable support
+Kernel Features -> Disable TizenRT interfaces -> [ ] Disable environment variable support
 ```
 - Set a value which is greater than zero on CONFIG_NFILE_DESCRIPTORS.
 ```
@@ -725,7 +725,7 @@ Application Configuration -> System Libraries and Add-Ons -> [*] FS shell comman
 #### Dependancy
 - Disable CONFIG_DISABLE_ENVIRON.
 ```
-Kernel Features -> Disable TinyAra interfaces -> [ ] Disable environment variable support
+Kernel Features -> Disable TizenRT interfaces -> [ ] Disable environment variable support
 ```
 - Set a value which is greater than zero on CONFIG_NFILE_DESCRIPTORS.
 ```
@@ -755,7 +755,7 @@ Application Configuration -> System Libraries and Add-Ons -> [*] FS shell comman
 #### Dependancy
 - Disable CONFIG_DISABLE_ENVIRON.
 ```
-Kernel Features -> Disable TinyAra interfaces -> [ ] Disable environment variable support
+Kernel Features -> Disable TizenRT interfaces -> [ ] Disable environment variable support
 ```
 - Set a value which is greater than zero on CONFIG_NFILE_DESCRIPTORS.
 ```
@@ -802,7 +802,7 @@ This command supports sleeping of shell. This has an argument which shows sleepi
 #### Dependency
 Disable CONFIG_DISABLE_SIGNALS.
 ```
-Kernel Features -> Disable TinyAra interfaces -> [ ] Disable signal support
+Kernel Features -> Disable TizenRT interfaces -> [ ] Disable signal support
 ```
 
 
@@ -870,7 +870,7 @@ File Systems -> [ ] Disable support for mount points
 ```
 - Disable CONFIG_DISABLE_ENVIRON.
 ```
-Kernel Features -> Disable TinyAra interfaces -> [ ] Disable environment variable support
+Kernel Features -> Disable TizenRT interfaces -> [ ] Disable environment variable support
 ```
 - Set a value which is greater than zero on CONFIG_NFILE_DESCRIPTORS.
 ```

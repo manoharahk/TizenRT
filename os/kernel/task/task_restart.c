@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <sched.h>
@@ -63,8 +63,8 @@
 #endif
 #include <errno.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/ttrace.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/ttrace.h>
 
 #include "sched/sched.h"
 #include "group/group.h"

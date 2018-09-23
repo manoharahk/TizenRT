@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <pthread.h>
 #include <semaphore.h>
@@ -64,7 +64,7 @@
 #include <debug.h>
 #include <stdbool.h>
 
-#include <tinyara/semaphore.h>
+#include <tizenrt/semaphore.h>
 
 #include "pthread/pthread.h"
 

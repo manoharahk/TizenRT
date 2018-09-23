@@ -4,7 +4,7 @@
 #
 
 menuconfig DISABLE_OS_API
-	bool "Disable TinyAra interfaces"
+	bool "Disable TizenRT interfaces"
 	default y
 	---help---
 		The following can be used to disable categories of
@@ -64,7 +64,7 @@ config SCHED_TICKLESS
 		used to schedule the next OS time event.  This option selects that
 		tick-less OS option.  If the tick-less OS is selected, then there are
 		additional platform specific interfaces that must be provided as
-		defined include/tinyara/arch.h
+		defined include/tizenrt/arch.h
 
 if SCHED_TICKLESS
 
@@ -102,7 +102,7 @@ config USEC_PER_TICK
 		In the "normal" configuration where system time is provided by a
 		periodic timer interrupt, the default system timer is expected to
 		run at 100Hz or USEC_PER_TICK=10000.  This setting must be defined
-		to inform of TinyAra the interval that the the processor hardware is
+		to inform of TizenRT the interval that the the processor hardware is
 		providing system timer interrupts to the OS.
 
 		If SCHED_TICKLESS is selected, then there are no system timer
@@ -161,7 +161,7 @@ config CLOCK_MONOTONIC
 		CLOCK_MONOTONIC is an optional standard POSIX clock.  Unlike
 		CLOCK_REALTIME which can move forward and backward when the
 		time-of-day changes, CLOCK_MONOTONIC is the elapsed time since some
-		arbitrary point in the post (the system start-up time for TinyAra)
+		arbitrary point in the post (the system start-up time for TizenRT)
 		and, hence, is always monotonically increasing.  CLOCK_MONOTONIC
 		is, hence, the more appropriate clock for determining time
 		differences.
@@ -499,7 +499,7 @@ config SCHED_CPULOAD_EXTCLK
 		default, the system clock is used to do that sampling.
 
 		There is a serious issue for the accuracy of measurements if the
-		system clock is used, however.  TinyAra threads are often started at
+		system clock is used, however.  TizenRT threads are often started at
 		the time of the system timer expiration.  Others may be stopped at
 		the time of the system timer expiration (if round-robin time-slicing
 		is enabled).  Such thread behavior occurs synchronously with the
@@ -810,7 +810,7 @@ config SIG_SIGWORK
 	default 17
 	depends on SCHED_WORKQUEUE || LIB_USRWORK
 	---help---
-		SIGWORK is a non-standard signal used to wake up the internal TinyAra
+		SIGWORK is a non-standard signal used to wake up the internal TizenRT
 		worker thread. This setting specifies the signal number that will be
 		used for SIGWORK. Default: 17
 
@@ -847,7 +847,7 @@ config SIG_SIGTM_BROADCAST
 	depends on TASK_MANAGER
 	---help---
 		SIGTM_BROADCAST is a non-standard signal used to send broadcast message to
-		the internal TinyAra task manager. This setting specifies the signal number
+		the internal TizenRT task manager. This setting specifies the signal number
 		that will be used for SIGTM_BROADCAST. Default: 21
 
 config SIG_SIGEL_WAKEUP
@@ -865,7 +865,7 @@ config SIG_SIGTM_TERMINATION
 	depends on TASK_MANAGER
 	---help---
 		SIGTM_TERMINATION is a non-standard signal used to send termination info to
-		the TinyAra task managed by task manager. This setting specifies the signal number
+		the TizenRT task managed by task manager. This setting specifies the signal number
 		that will be used for SIGTM_TERMINATION. Default: 23
 
 config SIG_SIGEL_EVENT
@@ -1022,7 +1022,7 @@ config SCHED_LPWORKPRIORITY
 		before scheduling the work) and then call the matching
 		lpwork_restorepriority() when the work is completed (typically
 		called within the work handler at the completion of the work).
-		Currently, only the TinyAra asynchronous I/O logic uses this dynamic
+		Currently, only the TizenRT asynchronous I/O logic uses this dynamic
 		prioritization feature.
 
 		The higher priority worker thread, on the other hand, is intended

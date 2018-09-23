@@ -54,12 +54,12 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <unistd.h>
 #include <signal.h>
 
-#include <tinyara/cancelpt.h>
+#include <tizenrt/cancelpt.h>
 
 /****************************************************************************
  * Preprocessor Definitions

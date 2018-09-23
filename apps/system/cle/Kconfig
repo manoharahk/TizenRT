@@ -8,7 +8,7 @@ config SYSTEM_CLE
 	default n
 	depends on NFILE_STREAMS != 0
 	---help---
-		Enable support for TinyAra tiny EMACS-like command line editor.
+		Enable support for TizenRT tiny EMACS-like command line editor.
 
 		Omitted features:
 			- No keypad cursor control support

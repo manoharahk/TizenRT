@@ -57,21 +57,21 @@
 // Included Files
 //***************************************************************************
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 //***************************************************************************
 // Definitions
 //***************************************************************************
 
-// The TinyAra C library an be build in two modes: (1) as a standard, C-libary
+// The TizenRT C library an be build in two modes: (1) as a standard, C-libary
 // that can be used by normal, user-space applications, or (2) as a special,
-// kernel-mode C-library only used within the OS.  If TinyAra is not being
+// kernel-mode C-library only used within the OS.  If TizenRT is not being
 // built as separated kernel- and user-space modules, then only the first
 // mode is supported.
 
 #if (defined(CONFIG_BUILD_PROTECTED) && defined(__KERNEL__)) || \
      defined(CONFIG_BUILD_KERNEL)
-#  include <tinyara/kmalloc.h>
+#  include <tizenrt/kmalloc.h>
 #  define lib_malloc(s)    kmm_malloc(s)
 #  define lib_zalloc(s)    kmm_zalloc(s)
 #  define lib_realloc(p,s) kmm_realloc(p,s)

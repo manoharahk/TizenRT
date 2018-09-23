@@ -19,12 +19,12 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-#include <tinyara/sched.h>
-#include <tinyara/config.h>
-#include <tinyara/mm/mm.h>
+#include <tizenrt/sched.h>
+#include <tizenrt/config.h>
+#include <tizenrt/mm/mm.h>
 #ifdef CONFIG_HEAPINFO_USER_GROUP
 #include <stdbool.h>
-#include <tinyara/mm/heapinfo_internal.h>
+#include <tizenrt/mm/heapinfo_internal.h>
 extern struct heapinfo_group_info_s group_info[HEAPINFO_THREAD_NUM];
 static char *ptr = CONFIG_HEAPINFO_USER_GROUP_LIST;
 const static char *end_list = CONFIG_HEAPINFO_USER_GROUP_LIST + sizeof(CONFIG_HEAPINFO_USER_GROUP_LIST) - 1;

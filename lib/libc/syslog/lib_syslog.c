@@ -54,15 +54,15 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdio.h>
 #include <syslog.h>
 
-#include <tinyara/clock.h>
-#include <tinyara/streams.h>
+#include <tizenrt/clock.h>
+#include <tizenrt/streams.h>
 #if defined(CONFIG_LOGM) && defined(CONFIG_SYSLOG2LOGM)
-#include <tinyara/logm.h>
+#include <tizenrt/logm.h>
 #endif
 #include "syslog/syslog.h"
 
@@ -227,7 +227,7 @@ int vsyslog(int priority, FAR const char *fmt, va_list ap)
  *   remaining arguments are a format, as in printf and any arguments to the
  *   format.
  *
- *   The TinyAra implementation does not support any special formatting
+ *   The TizenRT implementation does not support any special formatting
  *   characters beyond those supported by printf.
  *
  ****************************************************************************/

@@ -18,7 +18,7 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdint.h>
 #include <string.h>
 #include <debug.h>
@@ -26,12 +26,12 @@
 #include <sys/types.h>
 
 #include <apps/builtin.h>
-#include <tinyara/sched.h>
-#include <tinyara/signal.h>
-#include <tinyara/fs/fs.h>
-#include <tinyara/fs/ioctl.h>
-#include <tinyara/wdog.h>
-#include <tinyara/task_manager_internal.h>
+#include <tizenrt/sched.h>
+#include <tizenrt/signal.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/fs/ioctl.h>
+#include <tizenrt/wdog.h>
+#include <tizenrt/task_manager_internal.h>
 
 #include "sched/sched.h"
 

@@ -1,7 +1,7 @@
 # builtin
 
 The **builtin** supports registering commands in TASH through Makefile without calling any TASH public API.
-This helps in porting the application directly to TinyAra without changing application's code.  
+This helps in porting the application directly to TizenRT without changing application's code.  
 It is needed only when TASH is enabled.
 
 ## How to use

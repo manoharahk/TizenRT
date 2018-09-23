@@ -54,16 +54,16 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <unistd.h>
 #include <sched.h>
 #include <errno.h>
-#include <tinyara/fs/fs.h>
-#include <tinyara/cancelpt.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/cancelpt.h>
 
 #if defined(CONFIG_NET) && CONFIG_NSOCKET_DESCRIPTORS > 0
-#include <tinyara/net/net.h>
+#include <tizenrt/net/net.h>
 #endif
 
 #include "inode/inode.h"

@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdint.h>
@@ -62,11 +62,11 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/kmalloc.h>
-#include <tinyara/usb/usb.h>
-#include <tinyara/usb/usbdev.h>
-#include <tinyara/usb/usbdev_trace.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/usb/usb.h>
+#include <tizenrt/usb/usbdev.h>
+#include <tizenrt/usb/usbdev_trace.h>
 
 #include "composite.h"
 

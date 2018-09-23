@@ -54,12 +54,12 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdlib.h>
 #include <assert.h>
 
-#include <tinyara/userspace.h>
+#include <tizenrt/userspace.h>
 
 #if defined(CONFIG_BUILD_PROTECTED) && !defined(__KERNEL__)
 

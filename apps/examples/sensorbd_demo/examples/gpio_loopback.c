@@ -52,7 +52,7 @@
 
 #include <stdlib.h>
 #include <fcntl.h>
-#include <tinyara/gpio.h>
+#include <tizenrt/gpio.h>
 
 #define XGPIO1 30
 #define XGPIO2 31

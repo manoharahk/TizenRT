@@ -31,7 +31,7 @@ modes = (
     ("Ramdump",3),
 )
 
-g_elfpath = "../../build/output/bin/tinyara"
+g_elfpath = "../../build/output/bin/tizenrt"
 
 class PathFrame(Frame):
 	def __init__(self, parent, labelname="path", path=None):

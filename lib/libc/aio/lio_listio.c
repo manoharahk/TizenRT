@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <unistd.h>
 #include <signal.h>
@@ -168,7 +168,7 @@ static int lio_checkio(FAR struct aiocb *const *list, int nent)
  * Input Parameters:
  *   signo   - The number of the signal that we caught (SIGPOLL)
  *   info    - Information accompanying the signal
- *   context - Not used in TinyAra
+ *   context - Not used in TizenRT
  *
  * Returned Value:
  *  None

@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <syscall.h>
 
 #ifdef CONFIG_LIB_SYSCALL

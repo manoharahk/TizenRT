@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <unistd.h>
 #include <pthread.h>
@@ -63,7 +63,7 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/sched.h>
+#include <tizenrt/sched.h>
 
 #include "pthread/pthread.h"
 

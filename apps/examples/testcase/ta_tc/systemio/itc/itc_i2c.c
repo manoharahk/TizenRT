@@ -20,7 +20,7 @@
 
 /// @brief Test Case Example for Clock API
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <errno.h>
 #include "itc_internal.h"

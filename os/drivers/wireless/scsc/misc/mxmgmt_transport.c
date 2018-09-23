@@ -25,7 +25,7 @@
 #include <errno.h>
 
 /** Uses */
-//#include <tinyara/module.h>
+//#include <tizenrt/module.h>
 #include "mxmgmt_transport_format.h"
 #include "mifintrbit.h"
 #include "debug_scsc.h"

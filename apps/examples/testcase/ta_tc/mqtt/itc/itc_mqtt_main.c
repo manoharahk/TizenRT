@@ -20,7 +20,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <netdb.h>
 #include <network/mqtt/mqtt_api.h>

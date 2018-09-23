@@ -59,13 +59,13 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
 
-#include <tinyara/net/dns.h>
+#include <tizenrt/net/dns.h>
 #include <netdb.h>
 #include <sys/socket.h>
 #include <netinet/in.h>

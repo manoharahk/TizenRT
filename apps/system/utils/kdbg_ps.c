@@ -50,9 +50,9 @@
  *
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
-#include <tinyara/sched.h>
+#include <tizenrt/sched.h>
 
 static const char *kdbg_statenames[] = {
 	"INVALID ",

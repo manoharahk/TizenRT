@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <fcntl.h>
@@ -65,8 +65,8 @@
 #include <stdarg.h>
 #endif
 
-#include <tinyara/cancelpt.h>
-#include <tinyara/fs/fs.h>
+#include <tizenrt/cancelpt.h>
+#include <tizenrt/fs/fs.h>
 
 #include "inode/inode.h"
 #include "driver/block/driver.h"

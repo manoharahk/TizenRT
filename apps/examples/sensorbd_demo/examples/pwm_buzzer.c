@@ -51,7 +51,7 @@
  ****************************************************************************/
 
 #include <fcntl.h>
-#include <tinyara/pwm.h>
+#include <tizenrt/pwm.h>
 
 #define C4   262
 #define D4   294

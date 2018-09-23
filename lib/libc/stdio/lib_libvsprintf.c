@@ -54,14 +54,14 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/compiler.h>
+#include <tizenrt/compiler.h>
 
 #include <stdint.h>
 #include <stdbool.h>
 #include <stdio.h>
 #include <string.h>
 
-#include <tinyara/arch.h>
+#include <tizenrt/arch.h>
 
 #include "lib_internal.h"
 

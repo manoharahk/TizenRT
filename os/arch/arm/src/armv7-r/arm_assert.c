@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 /* Output debug info if stack dump is selected -- even if debug is not
  * selected.
@@ -78,10 +78,10 @@
 #include <assert.h>
 #include <debug.h>
 
-#include <tinyara/irq.h>
-#include <tinyara/arch.h>
-#include <tinyara/board.h>
-#include <tinyara/usb/usbdev_trace.h>
+#include <tizenrt/irq.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/board.h>
+#include <tizenrt/usb/usbdev_trace.h>
 #include <arch/board/board.h>
 
 #include "up_arch.h"

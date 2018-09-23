@@ -56,7 +56,7 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #if defined(CONFIG_S5J_S5JT200)
 #include "chip/s5jt200_watchdog.h"

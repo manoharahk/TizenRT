@@ -28,7 +28,7 @@
 #include <fcntl.h>
 #include <tinyalsa/tinyalsa.h>
 #include "tc_common.h"
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 /****************************************************************************
  * Definitions

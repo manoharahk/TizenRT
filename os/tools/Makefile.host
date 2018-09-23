@@ -97,7 +97,7 @@ ifdef HOSTEXEEXT
 b16: b16$(HOSTEXEEXT)
 endif
 
-# configure - Instantiate a canned TinyAra configuration
+# configure - Instantiate a canned TizenRT configuration
 
 configure$(HOSTEXEEXT): configure.c cfgparser.c
 	$(Q) $(HOSTCC) $(HOSTCFLAGS) -o configure$(HOSTEXEEXT) configure.c cfgparser.c

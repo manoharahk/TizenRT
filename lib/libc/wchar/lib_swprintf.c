@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdarg.h>
@@ -62,7 +62,7 @@
 #include <wchar.h>
 #include "lib_internal.h"
 
-#include <tinyara/streams.h>
+#include <tizenrt/streams.h>
 
 #ifdef CONFIG_LIBC_WCHAR
 

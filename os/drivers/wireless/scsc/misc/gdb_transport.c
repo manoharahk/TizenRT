@@ -20,11 +20,11 @@
 #include "gdb_transport.h"
 
 /** Uses */
-//#include <tinyara/module.h>
+//#include <tizenrt/module.h>
 #include "mifintrbit.h"
 #include <pthread.h>
 #include <errno.h>
-#include <tinyara/kmalloc.h>
+#include <tizenrt/kmalloc.h>
 #include "debug_scsc.h"
 
 struct clients_node {

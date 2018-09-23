@@ -57,13 +57,13 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 #include <semaphore.h>
 
 #include <arch/types.h>
-#include <tinyara/mm/gran.h>
+#include <tizenrt/mm/gran.h>
 
 /****************************************************************************
  * Pre-processor Definitions

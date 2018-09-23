@@ -64,8 +64,8 @@
 #include <net/if.h>
 #include <net/lwip/netif.h>
 #include <net/lwip/opt.h>
-#include <tinyara/net/net.h>
-#include <tinyara/net/ioctl.h>
+#include <tizenrt/net/net.h>
+#include <tizenrt/net/ioctl.h>
 
 #ifdef CONFIG_LWIP_SOCKET_ERROR_REPORT
 #include <error_report/error_report.h>
@@ -109,7 +109,7 @@
 #endif
 
 #if LWIP_SELECT
-#include <tinyara/clock.h>
+#include <tizenrt/clock.h>
 #endif
 
 /* If the netconn API is not required publicly, then we include the necessary
@@ -782,7 +782,7 @@ int lwip_close(int s)
 
 /*
  * Close socket by struct socket
- * Task in TinyAra need to delete it's socket list when it is destroyed
+ * Task in TizenRT need to delete it's socket list when it is destroyed
  * We need this API, becuase Caller deletes it's socket list
  * if it calls lwip_close().
  */

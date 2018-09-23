@@ -53,7 +53,7 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/stat.h>
 #include <sys/ioctl.h>
@@ -65,8 +65,8 @@
 #include <assert.h>
 #include <debug.h>
 
-#include <tinyara/fs/fs.h>
-#include <tinyara/fs/ioctl.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/fs/ioctl.h>
 
 #include "bch.h"
 

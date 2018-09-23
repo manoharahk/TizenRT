@@ -58,7 +58,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #if defined(CONFIG_NET) && defined(CONFIG_ENC28J60)
 
@@ -74,16 +74,16 @@
 #include <net/if.h>
 #include <arpa/inet.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/irq.h>
-#include <tinyara/wdog.h>
-#include <tinyara/spi/spi.h>
-#include <tinyara/wqueue.h>
-#include <tinyara/clock.h>
-#include <tinyara/net/enc28j60.h>
-#include <tinyara/net/ethernet.h>
-#include <tinyara/net/net.h>
-#include <tinyara/sched.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/irq.h>
+#include <tizenrt/wdog.h>
+#include <tizenrt/spi/spi.h>
+#include <tizenrt/wqueue.h>
+#include <tizenrt/clock.h>
+#include <tizenrt/net/enc28j60.h>
+#include <tizenrt/net/ethernet.h>
+#include <tizenrt/net/net.h>
+#include <tizenrt/sched.h>
 
 #ifdef CONFIG_NET_LWIP
 #include <net/lwip/pbuf.h>
@@ -314,7 +314,7 @@ static void enc_txtimeout(int argc, uint32_t arg, ...);
 static void enc_pollworker(FAR void *arg);
 static void enc_polltimer(int argc, uint32_t arg, ...);
 #endif
-/* TinyAra callback functions */
+/* TizenRT callback functions */
 
 static int enc_ifup(struct net_driver_s *dev);
 static int enc_ifdown(struct net_driver_s *dev);
@@ -1119,7 +1119,7 @@ static int enc_transmit(FAR struct enc_driver_s *priv)
  *   3. During normal TX polling
  *
  * Parameters:
- *   dev  - Reference to the TinyAra driver state structure
+ *   dev  - Reference to the TizenRT driver state structure
  *
  * Returned Value:
  *   OK on success; a negated errno on failure
@@ -1955,11 +1955,11 @@ static void enc_polltimer(int argc, uint32_t arg, ...)
  * Function: enc_ifup
  *
  * Description:
- *   TinyAra Callback: Bring up the Ethernet interface when an IP address is
+ *   TizenRT Callback: Bring up the Ethernet interface when an IP address is
  *   provided
  *
  * Parameters:
- *   dev  - Reference to the TinyAra driver state structure
+ *   dev  - Reference to the TizenRT driver state structure
  *
  * Returned Value:
  *   None
@@ -2030,10 +2030,10 @@ static int enc_ifup(struct net_driver_s *dev)
  * Function: enc_ifdown
  *
  * Description:
- *   TinyAra Callback: Stop the interface.
+ *   TizenRT Callback: Stop the interface.
  *
  * Parameters:
- *   dev  - Reference to the TinyAra driver state structure
+ *   dev  - Reference to the TizenRT driver state structure
  *
  * Returned Value:
  *   None
@@ -2095,7 +2095,7 @@ static int enc_ifdown(struct net_driver_s *dev)
  *   latency.
  *
  * Parameters:
- *   dev  - Reference to the TinyAra driver state structure
+ *   dev  - Reference to the TizenRT driver state structure
  *
  * Returned Value:
  *   None

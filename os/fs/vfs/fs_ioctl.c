@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/ioctl.h>
 #include <sched.h>
@@ -64,7 +64,7 @@
 #include <net/if.h>
 
 #if defined(CONFIG_NET) && CONFIG_NSOCKET_DESCRIPTORS > 0
-#include <tinyara/net/net.h>
+#include <tizenrt/net/net.h>
 #endif
 
 #include "inode/inode.h"

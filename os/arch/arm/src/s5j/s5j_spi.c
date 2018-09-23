@@ -53,7 +53,7 @@
 /*****************************************************************************
  * Included Files
  *****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdio.h>
 #include <sys/types.h>
@@ -62,20 +62,20 @@
 #include <semaphore.h>
 #include <errno.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/spi/spi.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/spi/spi.h>
 
 #include "up_arch.h"
 #include <s5j_spi.h>
 #include <string.h>
 #include <assert.h>
 #include <debug.h>
-#include <tinyara/irq.h>
+#include <tizenrt/irq.h>
 #include <arch/irq.h>
 #include <arch/board/board.h>
-#include <tinyara/kmalloc.h>
+#include <tizenrt/kmalloc.h>
 #include <poll.h>
-#include <tinyara/fs/fs.h>
+#include <tizenrt/fs/fs.h>
 #include <stddef.h>
 #include <chip.h>
 

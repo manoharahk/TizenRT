@@ -19,22 +19,22 @@
 
 #ifdef HAVE_SYS_UIO_H
 // TODO(TizenRT)
-#if defined(__TINYARA__)
+#if defined(__TIZENRT__)
 #  include <uio.h>
 #else
 #  include <sys/uio.h>
-#endif // defined(__TINYARA__)
+#endif // defined(__TIZENRT__)
 #endif
 #ifdef HAVE_NETINET_IN_H
 #  include <netinet/in.h>
 #endif
 #ifdef HAVE_NETINET_TCP_H
 // TODO(TizenRT)
-#if defined(__TINYARA__)
+#if defined(__TIZENRT__)
 #include <net/lwip/tcp.h>
 #else
 #  include <netinet/tcp.h>
-#endif // defined(__TINYARA__)
+#endif // defined(__TIZENRT__)
 #endif
 #ifdef HAVE_NETDB_H
 #  include <netdb.h>
@@ -70,7 +70,7 @@
 #include "ares_private.h"
 
 // TODO(TizenRT)
-#if defined(__TINYARA__)
+#if defined(__TIZENRT__)
 extern const struct ares_in6_addr ares_in6addr_any; /* :: */
 #endif
 

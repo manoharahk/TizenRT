@@ -54,10 +54,10 @@
  * Included Files
  ************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <mqueue.h>
-#include <tinyara/mqueue.h>
+#include <tizenrt/mqueue.h>
 
 /************************************************************************
  * Definitions

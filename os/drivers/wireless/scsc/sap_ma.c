@@ -24,9 +24,9 @@
 #include "mgt.h"
 #include <errno.h>
 #include "utils_scsc.h"
-#include <tinyara/net/netdev.h>
-#include <tinyara/net/ethernet.h>
-#include <tinyara/net/ip.h>
+#include <tizenrt/net/netdev.h>
+#include <tizenrt/net/ethernet.h>
+#include <tizenrt/net/ip.h>
 
 #define SUPPORTED_VERSION       13
 #define SUPPORTED_OLD_VERSION   0

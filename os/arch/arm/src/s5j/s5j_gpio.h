@@ -57,10 +57,10 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
-#include <tinyara/irq.h>
-#include <tinyara/gpio.h>
+#include <tizenrt/irq.h>
+#include <tizenrt/gpio.h>
 
 #include "chip.h"
 #include "chip/s5jt200_gpio.h"

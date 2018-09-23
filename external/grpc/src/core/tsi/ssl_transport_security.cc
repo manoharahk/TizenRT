@@ -15,7 +15,7 @@
  * limitations under the License.
  *
  */
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include "src/core/tsi/ssl_transport_security.h"
 
 #include <grpc/support/port_platform.h>

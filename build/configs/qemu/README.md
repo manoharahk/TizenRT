@@ -64,7 +64,7 @@ See [[Getting the sources]](https://github.com/Samsung/TizenRT#getting-the-sourc
 ### Using QEMU command
 
 ```
-qemu-system-arm -M lm3s6965evb -kernel ../build/output/bin/tinyara -nographic -gdb tcp::3333
+qemu-system-arm -M lm3s6965evb -kernel ../build/output/bin/tizenrt -nographic -gdb tcp::3333
 ```
 
 ### Using make command
@@ -79,7 +79,7 @@ To debug TizenRT on QEMU, GDB should be connected through below commands.
 
 ```
 arm-none-eabi-gdb
-(gdb) file ../build/output/bin/tinyara
+(gdb) file ../build/output/bin/tizenrt
 (gdb) target remote:3333
 ```
 

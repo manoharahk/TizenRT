@@ -57,7 +57,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <sys/types.h>
 
 /* Note that,
@@ -119,7 +119,7 @@
 #define SOCK_PACKET    5		/* Obsolete and should not be used in new programs */
 
 /* Bits in the FLAGS argument to `send', `recv', et al. These are the bits
- * recognized by Linus, not all are supported by TinyAra.
+ * recognized by Linus, not all are supported by TizenRT.
  */
 
 #define MSG_OOB        0x0001	/* Process out-of-band data.  */

@@ -65,8 +65,8 @@
  * Included Files
  ********************************************************************************/
 
-#include <tinyara/config.h>		/* Default settings */
-#include <tinyara/compiler.h>	/* Compiler settings, noreturn_function */
+#include <tizenrt/config.h>		/* Default settings */
+#include <tizenrt/compiler.h>	/* Compiler settings, noreturn_function */
 
 #include <sys/types.h>			/* Needed for general types */
 #include <sys/prctl.h>			/* Needed by pthread_[set|get]name_np */
@@ -77,7 +77,7 @@
 #include <signal.h>				/* Needed for sigset_t */
 #include <time.h>				/* Needed for struct timespec */
 
-#include <tinyara/semaphore.h>	/* For sem_t and SEM_* defines */
+#include <tizenrt/semaphore.h>	/* For sem_t and SEM_* defines */
 
 /********************************************************************************
  * Pre-processor Definitions

@@ -29,7 +29,7 @@
 #include <nghttp2_config.h>
 #endif /* HAVE_CONFIG_H */
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <nghttp2/nghttp2.h>
 
 #ifdef CONFIG_NGHTTP2_DEBUG

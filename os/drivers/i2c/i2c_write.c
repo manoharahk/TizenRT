@@ -54,11 +54,11 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <assert.h>
 
-#include <tinyara/i2c.h>
+#include <tizenrt/i2c.h>
 
 #if defined(CONFIG_I2C_TRANSFER)
 

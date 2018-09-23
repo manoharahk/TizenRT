@@ -19,8 +19,8 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/irq.h>
+#include <tizenrt/config.h>
+#include <tizenrt/irq.h>
 #include "up_internal.h"
 #include "svcall.h"
 #include "mpu.h"

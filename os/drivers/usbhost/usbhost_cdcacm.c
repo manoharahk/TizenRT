@@ -55,7 +55,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -66,17 +66,17 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/kmalloc.h>
-#include <tinyara/arch.h>
-#include <tinyara/wqueue.h>
-#include <tinyara/clock.h>
-#include <tinyara/serial/serial.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/wqueue.h>
+#include <tizenrt/clock.h>
+#include <tizenrt/serial/serial.h>
 
-#include <tinyara/usb/usb.h>
-#include <tinyara/usb/usbhost.h>
-#include <tinyara/usb/cdc.h>
-#include <tinyara/usb/cdcacm.h>
-#include <tinyara/usb/usbhost_devaddr.h>
+#include <tizenrt/usb/usb.h>
+#include <tizenrt/usb/usbhost.h>
+#include <tizenrt/usb/cdc.h>
+#include <tizenrt/usb/cdcacm.h>
+#include <tizenrt/usb/usbhost_devaddr.h>
 
 #ifdef CONFIG_USBHOST_CDCACM
 

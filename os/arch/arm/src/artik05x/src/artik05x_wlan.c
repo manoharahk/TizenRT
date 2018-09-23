@@ -15,7 +15,7 @@
  * language governing permissions and limitations under the License.
  *
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdio.h>
 #include <fcntl.h>
@@ -32,7 +32,7 @@
 #include <net/lwip/netif.h>
 #include <net/lwip/tcpip.h>
 
-#include <tinyara/configdata.h>
+#include <tizenrt/configdata.h>
 
 #include "up_arch.h"
 #include "artik05x.h"

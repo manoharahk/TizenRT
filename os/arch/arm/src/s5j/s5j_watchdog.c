@@ -59,7 +59,7 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <stddef.h>
 #include <sys/types.h>
@@ -70,7 +70,7 @@
 #include "s5j_watchdog.h"
 #include <arch/irq.h>
 #include <chip.h>
-#include <tinyara/clock.h>
+#include <tizenrt/clock.h>
 
 /****************************************************************************
  * Private Functions

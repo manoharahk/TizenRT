@@ -60,7 +60,7 @@
 
 #ifndef __LWIP_NETIF_H__
 #define __LWIP_NETIF_H__
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <net/ethernet.h>
 
 #include <net/lwip/opt.h>

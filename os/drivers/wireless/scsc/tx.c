@@ -22,8 +22,8 @@
 #include "mlme.h"
 #include "netif.h"
 #include "log_clients.h"
-#include <tinyara/wdog.h>
-#include "tinyara/wdog.h"
+#include <tizenrt/wdog.h>
+#include "tizenrt/wdog.h"
 #include "hip4.h"
 
 #ifdef CONFIG_SLSI_WLAN_STATS

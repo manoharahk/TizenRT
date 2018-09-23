@@ -31,7 +31,7 @@
  *    notice, this list of conditions and the following disclaimer in
  *    the documentation and/or other materials provided with the
  *    distribution.
- * 3. Neither the name tinyara nor the names of its contributors may be
+ * 3. Neither the name tizenrt nor the names of its contributors may be
  *    used to endorse or promote products derived from this software
  *    without specific prior written permission.
  *
@@ -53,13 +53,13 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <string.h>
 #include <debug.h>
 #include <errno.h>
-#include <tinyara/irq.h>
-#include <tinyara/progmem.h>
+#include <tizenrt/irq.h>
+#include <tizenrt/progmem.h>
 
 #include "up_arch.h"
 #include "cache.h"

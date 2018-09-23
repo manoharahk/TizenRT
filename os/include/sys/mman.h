@@ -57,14 +57,14 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <sys/types.h>
 
 /****************************************************************************
  * Pre-Processor Definitions
  ****************************************************************************/
 
-/* Protections are chosen from these bits, OR'd together.  TinyAra does not
+/* Protections are chosen from these bits, OR'd together.  TizenRT does not
  * yet support any of these, but are provided for source level compatibility
  */
 
@@ -73,7 +73,7 @@
 #define PROT_WRITE      0x2		/* Page may be written */
 #define PROT_EXEC       0x4		/* Page may be executed */
 
-/* Sharing types -- ignored by TinyAra. */
+/* Sharing types -- ignored by TizenRT. */
 
 #define MAP_SHARED      0x00001	/* Share this mapping */
 #define MAP_PRIVATE     0x00002	/* Create a private copy-on-write mapping */

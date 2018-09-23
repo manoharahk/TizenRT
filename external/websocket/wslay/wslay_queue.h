@@ -42,7 +42,7 @@
 #ifndef WSLAY_QUEUE_H
 #define WSLAY_QUEUE_H
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <protocols/wslay/wslay.h>
 
 struct wslay_queue_cell {

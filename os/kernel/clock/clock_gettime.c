@@ -54,8 +54,8 @@
  * Included Files
  ************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/rtc.h>
+#include <tizenrt/config.h>
+#include <tizenrt/rtc.h>
 
 #include <stdint.h>
 #include <time.h>

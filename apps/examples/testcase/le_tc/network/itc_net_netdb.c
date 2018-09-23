@@ -22,7 +22,7 @@
 
 #include <sys/types.h>
 #include <sys/socket.h>
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #ifdef CONFIG_NET_LWIP_NETDB
 #include <netdb.h>
 #endif

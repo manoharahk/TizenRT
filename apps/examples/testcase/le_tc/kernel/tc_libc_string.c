@@ -23,13 +23,13 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <errno.h>
 #include <stdlib.h>
 #include <string.h>
-#include <tinyara/float.h>
-#include <tinyara/math.h>
+#include <tizenrt/float.h>
+#include <tizenrt/math.h>
 #include "tc_internal.h"
 
 #define BUFF_SIZE 5
@@ -874,12 +874,12 @@ static void tc_libc_string_strtof(void)
 #endif
 	TC_ASSERT_EQ("strtof", strncmp(ptr, "TizenRT", strlen("TizenRT")), 0);
 
-	str = "-78.9123TinyAra";
+	str = "-78.9123TizenRT";
 	value = strtof(str, &ptr);
 #ifdef CONFIG_LIBM
 	TC_ASSERT_LEQ("strtof", roundf((fabsf(value - (-78.9123f)) * 10000) / 10000), FLT_EPSILON);
 #endif
-	TC_ASSERT_EQ("strtof", strncmp(ptr, "TinyAra", strlen("TinyAra")), 0);
+	TC_ASSERT_EQ("strtof", strncmp(ptr, "TizenRT", strlen("TizenRT")), 0);
 
 	TC_SUCCESS_RESULT();
 }
@@ -905,12 +905,12 @@ static void tc_libc_string_strtold(void)
 #endif
 	TC_ASSERT_EQ("strtold", strncmp(ptr, "TizenRT", strlen("TizenRT")), 0);
 
-	str = "-78.9123TinyAra";
+	str = "-78.9123TizenRT";
 	value = strtold(str, &ptr);
 #ifdef CONFIG_LIBM
 	TC_ASSERT_LEQ("strtold", roundl((fabsl(value - (-78.9123)) * 10000) / 10000), DBL_EPSILON);
 #endif
-	TC_ASSERT_EQ("strtold", strncmp(ptr, "TinyAra", strlen("TinyAra")), 0);
+	TC_ASSERT_EQ("strtold", strncmp(ptr, "TizenRT", strlen("TizenRT")), 0);
 
 	TC_SUCCESS_RESULT();
 }

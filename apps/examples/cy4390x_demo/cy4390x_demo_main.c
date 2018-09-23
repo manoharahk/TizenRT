@@ -23,7 +23,7 @@
 #include <fcntl.h>
 #include <string.h>
 #include <sys/types.h>
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <apps/shell/tash.h>
 
 #include <wiced.h>

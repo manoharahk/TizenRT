@@ -54,14 +54,14 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdbool.h>
 #include <time.h>
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/time.h>
+#include <tizenrt/time.h>
 
 /****************************************************************************
  * Definitions

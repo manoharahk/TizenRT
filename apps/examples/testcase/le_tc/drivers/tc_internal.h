@@ -23,7 +23,7 @@
 #define __EXAMPLES_TESTCASE_DRIVERS_TC_INTERNAL_H
 
 #include "tc_common.h"
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 /**********************************************************
 * TC Function Declarations

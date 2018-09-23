@@ -54,9 +54,9 @@
  * Included Files
  ********************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
-#include <tinyara/wdog.h>
+#include <tizenrt/wdog.h>
 
 #include "wdog/wdog.h"
 

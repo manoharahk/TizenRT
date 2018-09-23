@@ -54,14 +54,14 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 #include <string.h>
 #include <assert.h>
 #include <debug.h>
 
-#include <tinyara/userspace.h>
+#include <tizenrt/userspace.h>
 #include <arch/irq.h>
 
 #include "up_arch.h"

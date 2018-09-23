@@ -20,11 +20,11 @@ EXTRA_LIBS += chip/abc/libnew.a
 
 This change makes it add to TizenRT binary by Makefile which is at *os/arch/arm/src* folder.
 ```
-$(BIN_DIR)/tinyara$(EXEEXT): $(HEAD_OBJ) board/libboard$(LIBEXT)
-	$(Q) echo "LD: tinyara"
+$(BIN_DIR)/tizenrt$(EXEEXT): $(HEAD_OBJ) board/libboard$(LIBEXT)
+	$(Q) echo "LD: tizenrt"
 	$(Q) $(LD) --entry=__start $(LDFLAGS) $(LIBPATHS) $(EXTRA_LIBPATHS) \
-		-o $(TINYARA) $(HEAD_OBJ) $(EXTRA_OBJS) \
-		--start-group $(LDLIBS) $(EXTRA_LIBS) $(LIBGCC) --end-group -Map $(TOPDIR)/../build/output/bin/tinyara.map
+		-o $(TIZENRT) $(HEAD_OBJ) $(EXTRA_OBJS) \
+		--start-group $(LDLIBS) $(EXTRA_LIBS) $(LIBGCC) --end-group -Map $(TOPDIR)/../build/output/bin/tizenrt.map
 ```
 
 ## Adding it as a new library
@@ -41,7 +41,7 @@ TizenRT includes it as separated library, not merge it to existed library.
 
     For kernel library,
     ```
-    TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)<LIB_NAME>$(LIBEXT)
+    TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)<LIB_NAME>$(LIBEXT)
     ```
 
     For user library,
@@ -49,7 +49,7 @@ TizenRT includes it as separated library, not merge it to existed library.
     USERLIBS += $(LIBRARIES_DIR)$(DELIM)<LIB_NAME>$(LIBEXT)
     ```
 
-    In flat build, there is no difference between TINYARALIBS and USERLIBS.  
+    In flat build, there is no difference between TIZENRTLIBS and USERLIBS.  
     But in protected build and kernel build, TizenRT splits kernel space and user space. So, new static library should be included at appropriate space.
 
 The *LIB_PATH* should be a relative path from *os*.

@@ -57,7 +57,7 @@
  * Included Files
  ************************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <arch/tiva/chip.h>
 
 /* Include the system control header file for the specific Tiva/Stellaris chip */

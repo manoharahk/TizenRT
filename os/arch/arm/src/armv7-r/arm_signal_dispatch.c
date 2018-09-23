@@ -54,9 +54,9 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/arch.h>
-#include <tinyara/pgalloc.h>
+#include <tizenrt/config.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/pgalloc.h>
 
 #include "svcall.h"
 #include "up_internal.h"

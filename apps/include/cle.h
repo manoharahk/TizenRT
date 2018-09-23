@@ -57,7 +57,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 #include <stdio.h>
@@ -90,7 +90,7 @@ extern "C" {
  *
  * Description:
  *   EMACS-like command line editor.  This is actually more like readline
- *   than is the TinyAra readline!
+ *   than is the TizenRT readline!
  *
  ****************************************************************************/
 

@@ -18,7 +18,7 @@
 
 /// @file tc_net_listen.c
 /// @brief Test Case Example for listen() API
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <errno.h>
 

@@ -54,15 +54,15 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/fs/fs.h>
-#include <tinyara/syslog/syslog.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/syslog/syslog.h>
 
 /****************************************************************************
  * Definitions

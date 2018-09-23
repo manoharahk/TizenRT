@@ -54,15 +54,15 @@
  * Included Files
  ****************************************************************************/
 
-#include  <tinyara/config.h>
+#include  <tizenrt/config.h>
 
 #include  <sys/types.h>
 #include  <mqueue.h>
 #include  <errno.h>
 #include  <debug.h>
 
-#include  <tinyara/arch.h>
-#include  <tinyara/cancelpt.h>
+#include  <tizenrt/arch.h>
+#include  <tizenrt/cancelpt.h>
 
 #include  "mqueue/mqueue.h"
 

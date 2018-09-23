@@ -49,7 +49,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdlib.h>
 #include <wchar.h>
 

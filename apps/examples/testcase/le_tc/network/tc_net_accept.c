@@ -18,7 +18,7 @@
 
 // @file tc_net_accept.c
 // @brief Test Case Example for accept() API
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <errno.h>
 #include <sys/stat.h>
 #include <net/if.h>

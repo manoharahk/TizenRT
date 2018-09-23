@@ -56,7 +56,7 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include "up_arch.h"
 #include "chip/s5jt200_cmu.h"

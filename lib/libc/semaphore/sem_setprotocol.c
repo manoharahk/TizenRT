@@ -54,11 +54,11 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <errno.h>
 
-#include <tinyara/semaphore.h>
+#include <tizenrt/semaphore.h>
 
 #ifndef CONFIG_PRIORITY_INHERITANCE
 

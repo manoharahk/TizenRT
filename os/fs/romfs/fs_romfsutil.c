@@ -56,7 +56,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <sys/types.h>
 
 #include <stdint.h>
@@ -68,9 +68,9 @@
 #include <assert.h>
 #include <debug.h>
 
-#include <tinyara/kmalloc.h>
-#include <tinyara/fs/ioctl.h>
-#include <tinyara/fs/dirent.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/fs/ioctl.h>
+#include <tizenrt/fs/dirent.h>
 
 #include "fs_romfs.h"
 

@@ -18,7 +18,7 @@
 
 // @file tc_net_recvfrom.c
 // @brief Test Case Example for recvfrom() API
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <errno.h>
 #include <sys/stat.h>
 #include <net/if.h>

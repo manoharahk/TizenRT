@@ -16,15 +16,15 @@
  *
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/clock.h>
+#include <tizenrt/config.h>
+#include <tizenrt/clock.h>
 
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
 #include <sys/socket.h>
 
-#include <tinyara/net/dns.h>
+#include <tizenrt/net/dns.h>
 #include <netdb.h>
 #include <slsi_wifi/slsi_wifi_api.h>
 #include "slsiwifi_main.h"

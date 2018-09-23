@@ -54,9 +54,9 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
-#include <tinyara/time.h>
+#include <tizenrt/time.h>
 
 /****************************************************************************
  * Pre-processor Definitions

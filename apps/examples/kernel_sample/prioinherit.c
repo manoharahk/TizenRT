@@ -61,7 +61,7 @@
 #include <errno.h>
 
 #ifdef CONFIG_ARCH_SIM
-#  include <tinyara/arch.h>
+#  include <tizenrt/arch.h>
 #endif
 
 #include "kernel_sample.h"

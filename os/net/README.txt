@@ -4,7 +4,7 @@ README
 Directory Structure
 ===================
 
-  tinyara/os/
+  tizenrt/os/
    |
    `- net/
        |

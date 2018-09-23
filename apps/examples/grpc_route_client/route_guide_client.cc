@@ -50,7 +50,7 @@
  *
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <iostream>
 #include <memory>
 #include <string>
@@ -60,7 +60,7 @@
 #include <thread>
 
 #include <grpc++/grpc++.h>
-#include <tinyara/init.h>
+#include <tizenrt/init.h>
 
 #include "helper.h"
 #include "route_guide.grpc.pb.h"

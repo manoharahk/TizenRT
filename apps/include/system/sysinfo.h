@@ -17,7 +17,7 @@
  ****************************************************************************/
 #ifndef __APPS_INCLUDE_SYSTEM_SYSINFO_H
 #define __APPS_INCLUDE_SYSTEM_SYSINFO_H
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #ifdef CONFIG_SYSTEM_INFORMATION
 extern void sysinfo(void);

@@ -54,14 +54,14 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/shm.h>
 #include <errno.h>
 
-#include <tinyara/sched.h>
-#include <tinyara/arch.h>
-#include <tinyara/pgalloc.h>
+#include <tizenrt/sched.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/pgalloc.h>
 
 #include "shm/shm.h"
 

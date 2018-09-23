@@ -50,7 +50,7 @@ rem POSSIBILITY OF SUCH DAMAGE.
 rem
 
 rem
-rem TinyAra uses symbolic links to configure platform-specific directories into
+rem TizenRT uses symbolic links to configure platform-specific directories into
 rem the build system.  This works great except for when a Windows native
 rem toolchain is used in a Cygwin environment.  In that case, symbolic
 rem links do not work correctly when accessed from the Windows native toolchain;

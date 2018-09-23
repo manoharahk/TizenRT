@@ -64,7 +64,7 @@
 #include "lib_internal.h"
 
 #if defined(CONFIG_LOGM) && defined(CONFIG_PRINTF2LOGM)
-#include <tinyara/logm.h>
+#include <tizenrt/logm.h>
 #endif
 
 /****************************************************************************

@@ -54,15 +54,15 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 #include <assert.h>
 #include <errno.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/mm/mm.h>
-#include <tinyara/pgalloc.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/mm/mm.h>
+#include <tizenrt/pgalloc.h>
 
 #ifdef CONFIG_BUILD_KERNEL
 

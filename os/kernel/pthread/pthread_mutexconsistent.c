@@ -53,14 +53,14 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <pthread.h>
 #include <sched.h>
 #include <assert.h>
 #include <errno.h>
 
-#include <tinyara/semaphore.h>
+#include <tizenrt/semaphore.h>
 
 #include "pthread/pthread.h"
 

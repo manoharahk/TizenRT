@@ -66,8 +66,8 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/arch.h>
-#include <tinyara/analog/adc.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/analog/adc.h>
 
 #include <sys/types.h>
 

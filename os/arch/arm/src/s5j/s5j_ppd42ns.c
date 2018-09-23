@@ -53,9 +53,9 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
-#include <tinyara/irq.h>
-#include <tinyara/sensors/ppd42ns.h>
+#include <tizenrt/config.h>
+#include <tizenrt/irq.h>
+#include <tizenrt/sensors/ppd42ns.h>
 #include <debug.h>
 #include <errno.h>
 #include "s5j_gpio.h"

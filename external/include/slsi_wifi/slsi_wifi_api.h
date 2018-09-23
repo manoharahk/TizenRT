@@ -18,12 +18,12 @@
 
 /**
 * @defgroup WiFi WiFi
-* SLSI WiFi API for TinyAra
+* SLSI WiFi API for TizenRT
 * @{
 *
-* @brief S.LSI WiFi API for TinyARA.
+* @brief S.LSI WiFi API for TizenRT.
 *
-* This is the Samsung LSI WiFi API for TinyARA OS. It contains support for both station and soft-ap
+* This is the Samsung LSI WiFi API for TizenRT OS. It contains support for both station and soft-ap
 * mode on the 2.4Ghz frequency.
 * The API has support for security modes WPA/WPA2/WEP with various ciphers.
 */

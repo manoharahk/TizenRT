@@ -61,7 +61,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <sys/types.h>
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include "aql.h"
 #include "db_options.h"
 #include "db_debug.h"

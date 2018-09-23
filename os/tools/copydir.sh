@@ -51,7 +51,7 @@
 #
 ############################################################################
 #
-# TinyAra uses symbolic links to configure platform-specific directories into
+# TizenRT uses symbolic links to configure platform-specific directories into
 # the build system.  This works great except for when a Windows native
 # toolchain is used in a Cygwin environment.  In that case, symbolic
 # links do not work correctly when accessed from the Windows native toolchain;

@@ -19,16 +19,16 @@
 /* config.h.in.  Generated from configure.in by autoheader.  */
 
 /********************************************************
- *  Tinyara defined configuration
+ *  TizenRT defined configuration
  *********************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 /* Default Configuration : WITH_POSIX and WITH_TCP */
 #define WITH_POSIX
 #define WITH_TCP
 
-#ifndef __TINYARA__
-#define __TINYARA__
+#ifndef __TIZENRT__
+#define __TIZENRT__
 #endif
 
 #ifndef CONFIG_NETUTILS_LIBCOAP_DEBUG

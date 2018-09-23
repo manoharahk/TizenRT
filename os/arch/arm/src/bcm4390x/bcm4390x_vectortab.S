@@ -21,7 +21,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 	.file	"bcm4390x_vectortab.S"
 

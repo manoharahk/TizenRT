@@ -67,7 +67,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdint.h>
@@ -79,7 +79,7 @@
 
 /* File type code for the d_type field in dirent struct.
  * Note that because of the simplified filesystem organization
- * of TinyAra, an inode can be BOTH a file and a directory
+ * of TizenRT, an inode can be BOTH a file and a directory
  */
 
 #define DTYPE_FILE      0x01

@@ -24,4 +24,4 @@ echo "============================================================="
 echo "mktrximage.sh : make download image"
 echo "============================================================="
 
-perl ../tools/tinyara_header.pl ../build/bin/tinyara.bin ../build/bin/tinyara_dl.bin
+perl ../tools/tizenrt_header.pl ../build/bin/tizenrt.bin ../build/bin/tizenrt_dl.bin

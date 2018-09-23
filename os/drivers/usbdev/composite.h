@@ -57,18 +57,18 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdint.h>
 
-#include <tinyara/usb/usb.h>
-#include <tinyara/usb/usbdev_trace.h>
+#include <tizenrt/usb/usb.h>
+#include <tizenrt/usb/usbdev_trace.h>
 
 #ifdef CONFIG_USBDEV_COMPOSITE
 
 #ifdef CONFIG_CDCACM_COMPOSITE
-#include <tinyara/usb/cdcacm.h>
+#include <tizenrt/usb/cdcacm.h>
 #include "cdcacm.h"
 #endif
 
@@ -249,7 +249,7 @@
 #endif
 
 /* Descriptors **************************************************************/
-/* These settings are not modifiable via the TinyAra configuration */
+/* These settings are not modifiable via the TizenRT configuration */
 
 #define COMPOSITE_CONFIGIDNONE        (0)	/* Config ID = 0 means to return to address mode */
 #define COMPOSITE_NCONFIGS            (1)	/* The number of configurations supported */

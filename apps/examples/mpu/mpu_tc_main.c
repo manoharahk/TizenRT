@@ -27,7 +27,7 @@ int mpu_tc_main(int argc, char *argv[])
 #endif
 {
 	char ch;
-	printf("=== TINYARA MPU TC START! ===\n");
+	printf("=== TIZENRT MPU TC START! ===\n");
 	printf("Press R - For Read Test\n");
 	printf("Press W - For Write Test\n");
 
@@ -41,7 +41,7 @@ int mpu_tc_main(int argc, char *argv[])
 		write_main();
 #endif
 
-	printf("\n=== TINYARA MPU TC COMPLETE ===\n");
+	printf("\n=== TIZENRT MPU TC COMPLETE ===\n");
 
 	return 0;
 }

@@ -28,7 +28,7 @@
 
 #include <protocols/libcoap/config.h>
 
-#if defined (__TINYARA__)
+#if defined (__TIZENRT__)
 #include <string.h>
 #else
 #if (BSD >= 199103) || defined(WITH_CONTIKI)
@@ -36,7 +36,7 @@
 #else
 #include <strings.h>
 #endif
-#endif /*__TINYARA__*/
+#endif /*__TIZENRT__*/
 
 #define Nn 8					/* duplicate definition of N if built on sky motes */
 #define E 4

@@ -19,7 +19,7 @@
 #include "platform_mif_module.h"
 #include "platform_mif.h"
 #include <errno.h>
-#include <tinyara/kmalloc.h>
+#include <tizenrt/kmalloc.h>
 
 /* Implements */
 #include "scsc_mif_abs.h"

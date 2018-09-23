@@ -16,7 +16,7 @@
  *
  ******************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <functional>
 #include <debug.h>
 #include "PlayerObserverWorker.h"

@@ -12,7 +12,7 @@
 #ifdef CONFIG_OS_NUTTX
 #include <nuttx/arch.h>
 #else
-#include <tinyara/arch.h>
+#include <tizenrt/arch.h>
 #endif
 #include "common.h"
 #include "trace.h"

@@ -54,18 +54,18 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 #include <time.h>
 #include <errno.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/clock.h>
-#include <tinyara/rtc.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/clock.h>
+#include <tizenrt/rtc.h>
 
 #ifdef CONFIG_RTC_HIRES
-#include <tinyara/rtc.h>
+#include <tizenrt/rtc.h>
 #endif
 
 #include "clock/clock.h"

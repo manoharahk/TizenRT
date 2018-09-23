@@ -55,7 +55,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <string.h>
 #include <semaphore.h>
@@ -64,8 +64,8 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/net/net.h>
-#include <tinyara/kmalloc.h>
+#include <tizenrt/net/net.h>
+#include <tizenrt/kmalloc.h>
 
 #include <sys/socket.h>
 #include "socket/socket.h"

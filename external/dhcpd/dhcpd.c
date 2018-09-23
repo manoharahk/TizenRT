@@ -70,13 +70,13 @@
 #define ERROR (-1)
 #define OK    (0)
 #else
-#include <tinyara/config.h>		/* TinyAra configuration */
+#include <tizenrt/config.h>		/* TizenRT configuration */
 #include <debug.h>				/* For ndbg, vdbg */
-#include <tinyara/compiler.h>	/* For CONFIG_CPP_HAVE_WARNING */
+#include <tizenrt/compiler.h>	/* For CONFIG_CPP_HAVE_WARNING */
 #include <arch/irq.h>			/* For irqstore() and friends -- REVISIT */
-#include <tinyara/net/net.h>	/* For net_lock() and friends */
+#include <tizenrt/net/net.h>	/* For net_lock() and friends */
 #ifndef CONFIG_NET_LWIP
-#include <tinyara/net/arp.h>	/* For low-level ARP interfaces -- REVISIT */
+#include <tizenrt/net/arp.h>	/* For low-level ARP interfaces -- REVISIT */
 #endif
 #include <protocols/dhcpd.h>	/* Advertised DHCPD APIs */
 #undef nvdbg

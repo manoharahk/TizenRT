@@ -101,7 +101,7 @@ fota_download_state_e download_state;
 static const char headerfield_connect[] = "Connect";
 static const char headerfield_close[] = "close";
 static const char headerfield_useragent[] = "User-Agent";
-static const char headerfield_tinyara[] = "TinyARA";
+static const char headerfield_tizenrt[] = "TizenRT";
 
 static const char str_wget[] = "WGET";
 static const char str_get[] = "GET";
@@ -188,7 +188,7 @@ int wget_from_url(char *download_url)
 	 */
 	http_keyvalue_list_init(&headers);
 	http_keyvalue_list_add(&headers, headerfield_connect, headerfield_close);
-	http_keyvalue_list_add(&headers, headerfield_useragent, headerfield_tinyara);
+	http_keyvalue_list_add(&headers, headerfield_useragent, headerfield_tizenrt);
 	request.headers = &headers;
 
 	/* before sending request by sync function,

@@ -63,7 +63,7 @@ class dumpParser:
 		self.ram_end_addr=0x6A0000		# Default RAM end address for ARTIK board
 		self.stacksize=0 			# Stack size set to 0 and it gets updated dynamically while using
 
-		# Check for ELF file existence, if exists open the ELF (tinyara) file in binary format
+		# Check for ELF file existence, if exists open the ELF (tizenrt) file in binary format
 		# As well as open using NM utility so that, we can read the symbols easily
 		if self.elf is not None:
 			self.elf_file_fd = open(elf, 'rb')
@@ -234,10 +234,10 @@ class dumpParser:
 		print '&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&'
 
 
-	# Function to setup the Address to Symbol mapping table from the ELF file ( tinyara in our case)
-	def setup_symbol_table(self,tinyara_elf_file, debug=False):
-		# Reading the tinyara elf and preparing the symbol map table
-		with os.popen(self.nm_path + ' -n ' + tinyara_elf_file) as elf_file_fd_nm:
+	# Function to setup the Address to Symbol mapping table from the ELF file ( tizenrt in our case)
+	def setup_symbol_table(self,tizenrt_elf_file, debug=False):
+		# Reading the tizenrt elf and preparing the symbol map table
+		with os.popen(self.nm_path + ' -n ' + tizenrt_elf_file) as elf_file_fd_nm:
 			symbols = elf_file_fd_nm.readlines()
 			for line in symbols:
 				s = line.split(' ')
@@ -471,7 +471,7 @@ def usage():
 	print '                  OR'
 	print 'Usage: %s -e ELF_FILE -t LOG_FILE [OPTIONS]\n' % sys.argv[0]
 	print 'Following options are available'
-	print '\t-e, --elf                       tinyara elf file along with path'
+	print '\t-e, --elf                       tizenrt elf file along with path'
 	print '\t-r, --dump_file                 RAM/FLASH dump_file along with path'
 	print '\t-t, --log_file                  Enter Logfile which contains stackdump during assert'
 	print '\t-G, --gdb_path                  Enter gdb tool path'
@@ -481,17 +481,17 @@ def usage():
 	print ''
 	print 'syntax :'
 	print '--------'
-	print 'python %s -e <Tinyara elf path> -r Filename_ramBaseAddr_ramEndAddr.bin -G <Gdb path> -N < NM path> ' % sys.argv[0]
+	print 'python %s -e <TizenRT elf path> -r Filename_ramBaseAddr_ramEndAddr.bin -G <Gdb path> -N < NM path> ' % sys.argv[0]
 	print ''
 	print 'I assume, gdb and nm tool exist in your linux machine like /usr/bin/gdb and /usr/bin/nm, so hard coded this path inside script'
 	print ''
 	print 'Below example if you give dump file as path: '
 	print '--------------------------------------------'
-	print 'python dumpParser.py -e build/output/bin/tinyara -r build/output/bin/ramdump_0x4a0000_0x6a0000.bin'
+	print 'python dumpParser.py -e build/output/bin/tizenrt -r build/output/bin/ramdump_0x4a0000_0x6a0000.bin'
 	print ''
 	print 'Below example if you give simple assert log file as path: '
 	print '---------------------------------------------------------'
-	print 'python dumpParser.py -e build/output/bin/tinyara -r log.txt '
+	print 'python dumpParser.py -e build/output/bin/tizenrt -r log.txt '
 	print ''
 	print ''
 	print 'Note:'
@@ -500,7 +500,7 @@ def usage():
 	print ''
 	print 'If you do not have gdb and nm path set, please pass the path as below'
 	print ''
-	print 'python dumpParser.py -r /build/bin/ramdump_0x4a0000_0x6a0000.bin -e build/bin/tinyara -G <your_gdb_path> -N <your_nm_path>'
+	print 'python dumpParser.py -r /build/bin/ramdump_0x4a0000_0x6a0000.bin -e build/bin/tizenrt -G <your_gdb_path> -N <your_nm_path>'
 	print ''
 	print ''
 	print '*************************************************************'
@@ -549,7 +549,7 @@ def main():
 	print '*************************************************************'
 	print 'dump_file         :', dump_file
 	print 'log_file          :', log_file
-	print 'Tinyara_elf_file  :', elf
+	print 'TizenRT_elf_file  :', elf
 	print '*************************************************************'
 	print ''
 

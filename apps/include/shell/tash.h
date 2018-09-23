@@ -18,7 +18,7 @@
 ///@cond
 /**
  * @defgroup TASH SHELL
- * @brief Provides APIs for shell (TASH - TinyAra SHell)
+ * @brief Provides APIs for shell (TASH - TizenRT SHell)
  */
 
 /// @file  tash.h
@@ -27,7 +27,7 @@
 #ifndef __APPS_INCLUDE_SHELL_TASH_H
 #define __APPS_INCLUDE_SHELL_TASH_H
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 /**
  * @brief   Definitions of command execution types

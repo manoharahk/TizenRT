@@ -2,14 +2,14 @@ syscall/README.txt
 ==================
 
 This directory supports a syscall layer from communication between a
-monolithic, kernel-mode TinyAra kernel and a separately built, user-mode
+monolithic, kernel-mode TizenRT kernel and a separately built, user-mode
 application set.
 
-With most MCUs, TinyAra is built as a flat, single executable image
-containing the TinyAra RTOS along with all application code.  The RTOS code
+With most MCUs, TizenRT is built as a flat, single executable image
+containing the TizenRT RTOS along with all application code.  The RTOS code
 and the application run in the same address space and at the same kernel-
 mode privileges.  In order to exploit security features of certain
-processors, an alternative build model is also supported:  TinyAra can
+processors, an alternative build model is also supported:  TizenRT can
 be built separately as a monolithic, kernel-mode module and the applications
 can be added as a separately built, user-mode module.
 
@@ -35,7 +35,7 @@ include/sys/syscall.h
 
   The SWIs received by the kernel are distinguish by a code that identifies
   how to process the SWI.  This header file defines all such codes understood
-  by the TinyAra kernel.
+  by the TizenRT kernel.
 
 include/arch/syscall.h (or arch/<cpu>/include/syscall.h)
 
@@ -124,7 +124,7 @@ database.  Here the following definition is used:
           call into a syscall, marshaling all of the system call parameters
           as necessary.
 
-  Stub  - Another tiny bit of code that executes within the TinyAra kernel
+  Stub  - Another tiny bit of code that executes within the TizenRT kernel
           that is used to map a software interrupt received by the kernel to
           a kernel function call. The stubs receive the marshaled system
           call data, and perform the actually kernel function call (in
@@ -139,7 +139,7 @@ Sub-Directories
 mksyscall
 =========
 
-  mksyscall is C program that is used used during the initial TinyAra build
+  mksyscall is C program that is used used during the initial TizenRT build
   by the logic in the top-level syscall/ directory. Information about the
   stubs and proxies is maintained in a comma separated value (CSV) file
   in the syscall/ directory.  The mksyscall program will accept this CVS

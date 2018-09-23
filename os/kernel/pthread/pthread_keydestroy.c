@@ -23,7 +23,7 @@
 #include <sys/types.h>
 #include <pthread.h>
 
-#include <tinyara/sched.h>
+#include <tizenrt/sched.h>
 
 /************************************************************************
  * Definitions

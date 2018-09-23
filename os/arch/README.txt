@@ -6,12 +6,12 @@ Table of Contents
   o Architecture-Specific Code
   o Summary of Files
   o Supported Architectures
-  o Configuring TinyAra
+  o Configuring TizenRT
 
 Architecture-Specific Code
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The TinyAra configuration consists of:
+The TizenRT configuration consists of:
 
 o Processor architecture specific files.  These are the files contained
   in the arch/<arch-name>/ directory discussed in this README.
@@ -36,7 +36,7 @@ o Board specific files.  In order to be usable, the chip must be
 
 This README will address the processor architecture specific files
 that are contained in the arch/<arch-name>/ directory. The file
-include/tinyara/arch.h identifies all of the APIs that must
+include/tizenrt/arch.h identifies all of the APIs that must
 be provided by this architecture specific logic.  (It also includes
 arch/<arch-name>/arch.h as described below).
 
@@ -76,7 +76,7 @@ include/<chip-name>/
 
 include/arch.h
   This is a hook for any architecture specific definitions that may
-  be needed by the system.  It is included by include/tinyara/arch.h
+  be needed by the system.  It is included by include/tizenrt/arch.h
 
 include/types.h
   This provides architecture/toolchain-specific definitions for

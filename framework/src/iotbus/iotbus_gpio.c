@@ -21,8 +21,8 @@
  * @brief Iotbus APIs for Gpio
  */
 
-#include <tinyara/config.h>
-#include <tinyara/gpio.h>
+#include <tizenrt/config.h>
+#include <tizenrt/gpio.h>
 #include <sys/ioctl.h>
 
 #include <stdio.h>

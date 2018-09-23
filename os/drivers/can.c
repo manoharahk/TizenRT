@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdint.h>
@@ -67,10 +67,10 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/semaphore.h>
-#include <tinyara/fs/fs.h>
-#include <tinyara/can.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/semaphore.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/can.h>
 
 #include <arch/irq.h>
 

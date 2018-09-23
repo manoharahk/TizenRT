@@ -16,8 +16,8 @@
  *
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/irq.h>
+#include <tizenrt/config.h>
+#include <tizenrt/irq.h>
 #include <sys/types.h>
 
 

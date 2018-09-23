@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/mount.h>
 #include <string.h>
@@ -62,7 +62,7 @@
 #include <assert.h>
 #include <debug.h>
 
-#include <tinyara/fs/fs.h>
+#include <tizenrt/fs/fs.h>
 
 #include "inode/inode.h"
 #include "driver/block/driver.h"

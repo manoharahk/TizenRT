@@ -47,7 +47,7 @@
  *
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <netdb.h>
 #include <stdio.h>
 #include <string.h>

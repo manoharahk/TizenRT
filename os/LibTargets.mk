@@ -51,7 +51,7 @@
 ############################################################################
 
 # Archive targets.  The target build sequence will first create a series of
-# libraries, one per configured source file directory.  The final TinyAra
+# libraries, one per configured source file directory.  The final TizenRT
 # execution will then be built from those libraries.  The following targets
 # build those libraries.
 #

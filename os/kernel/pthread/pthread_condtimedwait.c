@@ -54,8 +54,8 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/compiler.h>
+#include <tizenrt/config.h>
+#include <tizenrt/compiler.h>
 
 #include <stdint.h>
 #include <unistd.h>
@@ -66,9 +66,9 @@
 #include <assert.h>
 #include <debug.h>
 
-#include <tinyara/cancelpt.h>
-#include <tinyara/wdog.h>
-#include <tinyara/ttrace.h>
+#include <tizenrt/cancelpt.h>
+#include <tizenrt/wdog.h>
+#include <tizenrt/ttrace.h>
 
 #include "sched/sched.h"
 #include "pthread/pthread.h"

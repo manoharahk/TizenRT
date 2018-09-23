@@ -74,7 +74,7 @@ while [ ! -z "$1" ]; do
 		VERSION=$1
 		;;
 	-h )
-		echo "$0 is a tool for generation of proper version files for the TinyAra build"
+		echo "$0 is a tool for generation of proper version files for the TizenRT build"
 		echo ""
 		echo $USAGE
 		echo ""
@@ -87,7 +87,7 @@ while [ ! -z "$1" ]; do
 		echo "	-h"
 		echo "		show this help message and exit"
 		echo "	-v <major.minor>"
-		echo "		The TinyAra version number expressed as a major and minor number separated"
+		echo "		The TizenRT version number expressed as a major and minor number separated"
 		echo "		by a period"
 		echo " 	<outfile-path>"
 		echo "		The full path to the version file to be created"
@@ -145,7 +145,7 @@ if [ -z "${BUILD}" ]; then
 	fi
 fi
 
-# Write a version file into the TinyAra directoy. The syntax of file is
+# Write a version file into the TizenRT directoy. The syntax of file is
 # such that it may be sourced by a bash script or included by a Makefile.
 
 echo "#!/bin/bash" >${OUTFILE}

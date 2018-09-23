@@ -23,7 +23,7 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <unistd.h>
 #include <dirent.h>
@@ -35,7 +35,7 @@
 #include <sys/stat.h>
 #include "tc_common.h"
 #include <stdbool.h>
-#include <tinyara/fs/mksmartfs.h>
+#include <tizenrt/fs/mksmartfs.h>
 
 #define PROCFS_TEST_MOUNTPOINT "/proc_test"
 #define MTD_PROCFS_PATH PROCFS_TEST_MOUNTPOINT"/mtd"

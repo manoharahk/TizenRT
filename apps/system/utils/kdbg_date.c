@@ -58,7 +58,7 @@
 #include <time.h>
 #include <stdlib.h>
 
-#include <tinyara/time.h>
+#include <tizenrt/time.h>
 
 /****************************************************************************
  * Definitions

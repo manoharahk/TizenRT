@@ -64,7 +64,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <sys/types.h>
 #include <stdint.h>
 
@@ -169,7 +169,7 @@
  * and below are specified by POSIX; values above 38400 are sometimes referred
  * to as extended values and most values appear in most termios.h implementations.
  *
- * NOTE that is TinyAra that the encoding of the speed_t values is simply the
+ * NOTE that is TizenRT that the encoding of the speed_t values is simply the
  * value of the baud itself.  So this opens a window for non-portable abuse
  * of the speed-related interfaces:  The defined values should be used where-
  * ever possible for reasons of portability.
@@ -275,7 +275,7 @@ extern "C" {
 #endif
 
 /* The cfgetspeed() function is a non-POSIX function will extract the baud
- * from the termios structure to which the termiosp argument points. TinyAra
+ * from the termios structure to which the termiosp argument points. TizenRT
  * does not control input/output baud independently.  Both must be the same.
  * The POSIX standard interfaces, cfigetispeed() and cfigetospeed() are
  * supported by simply defining them to be cfgetspeed().
@@ -290,7 +290,7 @@ speed_t cfgetspeed(FAR const struct termios *termiosp);
 #define cfgetospeed(termiosp) cfgetspeed(termiosp)
 
 /* The cfsetspeed() function is a non-POSIX function that sets the baud
- * stored in the structure pointed to by termiosp to speed. TinyAra does
+ * stored in the structure pointed to by termiosp to speed. TizenRT does
  * not control input/output baud independently.  Both must be the same.
  * The POSIX standard interfaces, cfigetispeed() and cfigetospeed() are
  * supported by simply defining them to be cfsetspeed().

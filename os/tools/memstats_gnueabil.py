@@ -28,7 +28,7 @@ parser.add_option("-a", "--all", action="store_true", dest="all", help="Print al
 parser.add_option("-s", "--size", action="store_true", dest="totsize", help="Print total size of data segments.", default=False)
 parser.add_option("-l", "--libsize", action="store_true", dest="libsize", help="Print Library Sizes.", default = False)
 parser.add_option("-d", "--details", action="store_true", dest="details", help="Print details of Object Sizes.",default = False)
-#Example: memstats.py <option {-a / -s / -l / -d}> -f tinyara.map -o memory.txt.
+#Example: memstats.py <option {-a / -s / -l / -d}> -f tizenrt.map -o memory.txt.
 
 (options, args) = parser.parse_args()
 if not options.infilename:

@@ -26,7 +26,7 @@
 #include <errno.h>
 #include <sys/types.h>
 #include <semaphore.h>
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include "tc_internal.h"
 
 /****************************************************************************

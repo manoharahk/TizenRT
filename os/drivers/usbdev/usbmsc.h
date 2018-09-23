@@ -59,7 +59,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdint.h>
@@ -67,9 +67,9 @@
 #include <queue.h>
 #include <semaphore.h>
 
-#include <tinyara/fs/fs.h>
-#include <tinyara/usb/storage.h>
-#include <tinyara/usb/usbdev.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/usb/storage.h>
+#include <tizenrt/usb/usbdev.h>
 
 /****************************************************************************
  * Pre-processor Definitions

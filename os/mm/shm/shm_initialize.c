@@ -54,16 +54,16 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <assert.h>
 #include <errno.h>
 
-#include <tinyara/addrenv.h>
-#include <tinyara/sched.h>
-#include <tinyara/mm/gran.h>
-#include <tinyara/pgalloc.h>
-#include <tinyara/mm/shm.h>
+#include <tizenrt/addrenv.h>
+#include <tizenrt/sched.h>
+#include <tizenrt/mm/gran.h>
+#include <tizenrt/pgalloc.h>
+#include <tizenrt/mm/shm.h>
 
 #include "shm/shm.h"
 

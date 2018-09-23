@@ -54,14 +54,14 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/progmem.h>
+#include <tizenrt/config.h>
+#include <tizenrt/progmem.h>
 #include <sys/stat.h>
 
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <tinyara/fs/mtd.h>
+#include <tizenrt/fs/mtd.h>
 
 /****************************************************************************
  * Pre-processor Definitions

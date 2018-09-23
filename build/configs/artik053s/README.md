@@ -127,7 +127,7 @@ If you can not boot normally, you can change os to the initial version. This is 
 You can download it using OpenOCD. You compress the compiled firmware and download it to the board.
 
 ```bash
-gzip -c tinyara_head.bin-signed > factoryimage.gz
+gzip -c tizenrt_head.bin-signed > factoryimage.gz
 openocd -f artik05x.cfg -s ../build/configs/artik05x/scripts -c ' \
     flash_erase_part ota ;\
     flash_write factory    ../build/configs/artik053/bin/factoryimage.gz;      \
@@ -195,7 +195,7 @@ Before executing below board-specific steps, execute [generic steps](../../../to
 2. Run GDB at another terminal.  
     Please find ```<-- COMMAND``` at below logs.
     ```bash
-    @ubuntu:~/TizenRT/os$ arm-none-eabi-gdb ../build/output/bin/tinyara   <-- COMMAND
+    @ubuntu:~/TizenRT/os$ arm-none-eabi-gdb ../build/output/bin/tizenrt   <-- COMMAND
     GNU gdb (GNU Tools for ARM Embedded Processors) 7.8.0.20150604-cvs
     Copyright (C) 2014 Free Software Foundation, Inc.
     License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
@@ -210,7 +210,7 @@ Before executing below board-specific steps, execute [generic steps](../../../to
     <http://www.gnu.org/software/gdb/documentation/>.
     For help, type "help".
     Type "apropos word" to search for commands related to "word"...
-    Reading symbols from TizenRT/build/output/bin/tinyara...done.
+    Reading symbols from TizenRT/build/output/bin/tizenrt...done.
     (gdb) target remote:3333   <-- COMMAND
     Remote debugging using :3333
     0x00003834 in ?? ()
@@ -269,14 +269,14 @@ sudo make install
 
 ### How to program using OpenOCD
 ```bash
-../build/configs/artik05x/tools/codesigner/artik05x_AppCodesigner ../build/configs/artik05x/tools/codesigner/rsa_private.key ../build/output/bin/tinyara_head.bin
+../build/configs/artik05x/tools/codesigner/artik05x_AppCodesigner ../build/configs/artik05x/tools/codesigner/rsa_private.key ../build/output/bin/tizenrt_head.bin
 
 openocd -f artik05x.cfg -s ../build/configs/artik05x/scripts -c ' \
     flash_write bl1    ../build/configs/artik053s/bin/bl1.bin;  \
     flash_write bl2    ../build/configs/artik053s/bin/bl2.bin;         \
     flash_write sssfw  ../build/configs/artik053s/bin/sssfw.bin;       \
     flash_write wlanfw ../build/configs/artik053s/bin/wlanfw.bin;      \
-    flash_write os     ../build/output/bin/tinyara_head.bin-signed;   \
+    flash_write os     ../build/output/bin/tizenrt_head.bin-signed;   \
     exit'
 ```
 
@@ -284,5 +284,5 @@ Once the complete binaries are successfully programmed, each partition can be up
 
 ```bash
 openocd -f artik05x.cfg -s ../build/configs/artik05x/scripts -c ' \
-    flash_write os ../build/output/bin/tinyara_head.bin-signed; exit'
+    flash_write os ../build/output/bin/tizenrt_head.bin-signed; exit'
 ```

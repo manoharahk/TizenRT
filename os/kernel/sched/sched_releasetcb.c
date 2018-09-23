@@ -54,16 +54,16 @@
  * Included Files
  ************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <sched.h>
 #include <errno.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/sched.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/sched.h>
 #ifdef CONFIG_SCHED_CPULOAD
-#include <tinyara/clock.h>
+#include <tizenrt/clock.h>
 #endif
 
 #include "sched/sched.h"
@@ -73,7 +73,7 @@
 #include <apps/system/utils.h>
 #endif
 #ifdef CONFIG_DEBUG_MM_HEAPINFO
-#include <tinyara/mm/mm.h>
+#include <tizenrt/mm/mm.h>
 #endif
 
 /************************************************************************

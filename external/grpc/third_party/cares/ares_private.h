@@ -36,7 +36,7 @@
 #define writev(s,v,c)     writev_s(s,v,c)
 #define HAVE_WRITEV 1
 // TODO(TizenRT)
-#elif defined (__TINYARA__)
+#elif defined (__TIZENRT__)
 #include <net/lwip/tcp.h>
 #include <sys/ioctl.h>
 #endif

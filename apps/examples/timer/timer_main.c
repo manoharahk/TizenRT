@@ -53,7 +53,7 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/ioctl.h>
 #include <stdio.h>
@@ -64,8 +64,8 @@
 #include <semaphore.h>
 #include <pthread.h>
 
-#include <tinyara/timer.h>
-#include <tinyara/clock.h>
+#include <tizenrt/timer.h>
+#include <tizenrt/clock.h>
 
 /****************************************************************************
  * Pre-processor Definitions

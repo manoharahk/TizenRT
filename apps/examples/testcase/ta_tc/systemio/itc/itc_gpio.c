@@ -20,7 +20,7 @@
 
 /// @brief Test Case Example for gpio API
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include "itc_internal.h"
 #include <iotbus_gpio.h>
 #include <iotbus_error.h>

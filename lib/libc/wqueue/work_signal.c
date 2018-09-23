@@ -54,12 +54,12 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <signal.h>
 #include <errno.h>
 
-#include <tinyara/wqueue.h>
+#include <tizenrt/wqueue.h>
 
 #include "wqueue/wqueue.h"
 

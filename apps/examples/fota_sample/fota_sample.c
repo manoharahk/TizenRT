@@ -19,7 +19,7 @@
  * Included Files
  ****************************************************************************/
 #include <stdio.h>
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #ifdef CONFIG_TASH
 #include <apps/shell/tash.h>
 #endif
@@ -96,7 +96,7 @@ int fota_sample(int argc, char *argv[])
 
 	printf("*******  oh!! Fota Server is Down !!! ******\n");
 	printf(" please download fota binary manually using below step !!! \n");
-	printf("        [ make download TINYARA_OTA%d ]     \n", next_part_id);
+	printf("        [ make download TIZENRT_OTA%d ]     \n", next_part_id);
 	printf("Is OTA%d binary manually downloaded? If yes press Y to continue [Y/N]\n", next_part_id);
 	user_input = getchar();
 	if (user_input != 'Y' && user_input != 'y') {

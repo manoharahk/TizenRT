@@ -69,7 +69,7 @@ menuconfig CAN
 	default n
 	---help---
 		This selection enables building of the "upper-half" CAN driver.
-		See include/tinyara/can.h for further CAN driver information.
+		See include/tizenrt/can.h for further CAN driver information.
 
 if CAN
 config CAN_EXTID
@@ -114,7 +114,7 @@ menuconfig PWM
 	default n
 	---help---
 		This selection enables building of the "upper-half" PWM driver.
-		See include/tinyara/pwm.h for further PWM driver information.
+		See include/tizenrt/pwm.h for further PWM driver information.
 
 if PWM
 config PWM_PULSECOUNT
@@ -158,7 +158,7 @@ menuconfig I2C
 	default n
 	---help---
 		This selection enables building of the "upper-half" I2C driver.
-		See include/tinyara/i2c.h for further I2C driver information.
+		See include/tizenrt/i2c.h for further I2C driver information.
 
 if I2C
 source drivers/i2c/Kconfig
@@ -170,7 +170,7 @@ menuconfig SPI
 	---help---
 		This selection enables selection of common SPI options.  This option
 		should be enabled by all platforms that support SPI interfaces.
-		See include/tinyara/spi/spi.h for further SPI driver information.
+		See include/tizenrt/spi/spi.h for further SPI driver information.
 
 if SPI
 source drivers/spi/Kconfig
@@ -182,7 +182,7 @@ config GPIO
 	depends on NFILE_DESCRIPTORS != 0
 	---help---
 		This selection enables building of the "upper-half" GPIO
-		driver. See include/tinyara/gpio.h for further GPIO driver
+		driver. See include/tizenrt/gpio.h for further GPIO driver
 		information.
 
 menuconfig I2S
@@ -191,7 +191,7 @@ menuconfig I2S
 	---help---
 		This selection enables selection of common I2S options.  This option
 		should be enabled by all platforms that support I2S interfaces.
-		See include/tinyara/audio/i2s.h for further I2S driver information.
+		See include/tizenrt/audio/i2s.h for further I2S driver information.
 
 if I2S
 endif # I2S
@@ -217,7 +217,7 @@ menuconfig BCH
 	---help---
 		Contains logic that may be used to convert a block driver into
 		a character driver. This is the complementary conversion as
-		that performed by loop.c. See include/tinyara/fs/fs.h for
+		that performed by loop.c. See include/tizenrt/fs/fs.h for
 		registration information.
 
 menuconfig RTC
@@ -226,7 +226,7 @@ menuconfig RTC
 	depends on NFILE_DESCRIPTORS != 0
 	---help---
 		This selection enables configuration of a real time clock (RTCdriver.
-		See include/tinyara/rtc.h for further watchdog timer driver information.
+		See include/tizenrt/rtc.h for further watchdog timer driver information.
 		Most RTC drivers are MCU specific and may require other specific
 		settings.
 
@@ -277,7 +277,7 @@ config RTC_DRIVER
 	default n
 	---help---
 		This selection enables building of the "upper-half" RTC
-		driver. See os/include/tinyara/rtc.h for further RTC driver
+		driver. See os/include/tizenrt/rtc.h for further RTC driver
 		information.
 
 if RTC_DRIVER
@@ -326,7 +326,7 @@ menuconfig WATCHDOG
 	default n
 	---help---
 		This selection enables building of the "upper-half" watchdog timer
-		driver. See include/tinyara/watchdog.h for further watchdog timer driver
+		driver. See include/tizenrt/watchdog.h for further watchdog timer driver
 		information.
 
 if WATCHDOG
@@ -342,7 +342,7 @@ config TIMER
 	default n
 	---help---
 		This selection enables building of the "upper-half" timer
-		driver. See include/tinyara/timer.h for further timer driver
+		driver. See include/tizenrt/timer.h for further timer driver
 		information.
 
 menuconfig ANALOG
@@ -352,7 +352,7 @@ menuconfig ANALOG
 		This directory holds implementations of analog device drivers.
 		This includes drivers for Analog to Digital Conversion (ADC)as
 		well as drivers for Digital to Analog Conversion (DAC).
-		See include/tinyara/analog/*.h for registration information.
+		See include/tizenrt/analog/*.h for registration information.
 
 if ANALOG
 source drivers/analog/Kconfig
@@ -425,7 +425,7 @@ menuconfig USBDEV
 	bool "USB Device Driver Support"
 	default n
 	---help---
-		USB device drivers.  See also include/tinyara/usb/usbdev.h
+		USB device drivers.  See also include/tizenrt/usb/usbdev.h
 
 if USBDEV
 source drivers/usbdev/Kconfig

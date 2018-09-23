@@ -16,9 +16,9 @@
  *
  ******************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
-#include <tinyara/gpio.h>
+#include <tizenrt/gpio.h>
 #include <iotbus/iotbus_gpio.h>
 
 #if !defined(CONFIG_EXAMPLES_ST_THINGS_RED_LED_GPIO_NUM)

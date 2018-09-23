@@ -57,8 +57,8 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/compiler.h>
+#include <tizenrt/config.h>
+#include <tizenrt/compiler.h>
 
 #include <sys/types.h>
 #include <stdint.h>
@@ -70,7 +70,7 @@
 
 /* Verify TFTP configuration settings ***************************************/
 /* The settings beginning with CONFIG_NETUTILS_TFTP_* can all be set in the
- * TinyAra configuration file.  If they are are defined in the configuration
+ * TizenRT configuration file.  If they are are defined in the configuration
  * then default values are assigned here.
  */
 

@@ -54,11 +54,11 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/wdog.h>
-#include <tinyara/sched.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/wdog.h>
+#include <tizenrt/sched.h>
 
 #include "wdog/wdog.h"
 

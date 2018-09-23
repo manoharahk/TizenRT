@@ -58,16 +58,16 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #ifdef CONFIG_AUDIO_CX20921
 #include <stdint.h>
 #include <stdbool.h>
 #include <semaphore.h>
 #include <queue.h>
-#include <tinyara/audio/i2s.h>
-#include <tinyara/audio/audio.h>
-#include <tinyara/fs/ioctl.h>
+#include <tizenrt/audio/i2s.h>
+#include <tizenrt/audio/audio.h>
+#include <tizenrt/fs/ioctl.h>
 
 /****************************************************************************
  * Pre-processor Definitions

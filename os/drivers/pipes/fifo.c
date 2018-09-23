@@ -54,13 +54,13 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <sys/stat.h>
 
 #include <stdint.h>
-#include <tinyara/fs/fs.h>
+#include <tizenrt/fs/fs.h>
 #include <errno.h>
 
 #include "pipe_common.h"

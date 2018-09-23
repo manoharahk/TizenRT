@@ -57,15 +57,15 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdint.h>
 #include <stdbool.h>
 #include <semaphore.h>
 
-#include <tinyara/fs/mtd.h>
-#include <tinyara/fs/smart.h>
+#include <tizenrt/fs/mtd.h>
+#include <tizenrt/fs/smart.h>
 
 /****************************************************************************
  * Pre-processor Definitions

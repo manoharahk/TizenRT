@@ -17,7 +17,7 @@
  *
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <libgen.h>
 #include <wifi_manager/wifi_manager.h>

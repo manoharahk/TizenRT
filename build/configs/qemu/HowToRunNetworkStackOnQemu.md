@@ -47,7 +47,7 @@ save and execute the shell script with tap0 as argument(ex: sudo ./net_up.sh tap
 
 ### Run Qemu with netwrok interface as below
 ```
-$sudo qemu-system-arm -M lm3s6965evb -kernel ../build/output/bin/tinyara.bin -nographic -net nic -net tap,ifname=tap0,script=no
+$sudo qemu-system-arm -M lm3s6965evb -kernel ../build/output/bin/tizenrt.bin -nographic -net nic -net tap,ifname=tap0,script=no
 ```
 ### Bringup Interface on QEMU
 ```

@@ -54,12 +54,12 @@
  * Included Files
  ********************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <queue.h>
 #include <errno.h>
 
-#include <tinyara/kmalloc.h>
+#include <tizenrt/kmalloc.h>
 
 #include "timer/timer.h"
 

@@ -52,16 +52,16 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
-#include <tinyara/sched.h>
-#include <tinyara/mm/mm.h>
-#include <tinyara/arch.h>
+#include <tizenrt/config.h>
+#include <tizenrt/sched.h>
+#include <tizenrt/mm/mm.h>
+#include <tizenrt/arch.h>
 #include <unistd.h>
 #include <stdint.h>
 #include <stdio.h>
 #ifdef CONFIG_HEAPINFO_USER_GROUP
 #include <string.h>
-#include <tinyara/mm/heapinfo_internal.h>
+#include <tizenrt/mm/heapinfo_internal.h>
 #endif
 
 /****************************************************************************

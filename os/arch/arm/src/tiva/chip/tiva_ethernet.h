@@ -57,7 +57,7 @@
  * Included Files
  ************************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #if defined(CONFIG_ARCH_CHIP_TM4C)
 #include "chip/tm4c_ethernet.h"

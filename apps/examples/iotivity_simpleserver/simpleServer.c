@@ -50,7 +50,7 @@
    * @postcondition	   :
    */
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -110,7 +110,7 @@ static bool observeThreadStarted = false;
 
 char *gResourceUri = (char *)"/a/light";
 const char *dateOfManufacture = "2016-12-16";
-const char *deviceName = "artik053_tinyara";
+const char *deviceName = "artik053_tizenrt";
 const char *deviceUUID = "51b55ddc-ccbb-4cb3-a57f-494eeca13a21";
 const char *firmwareVersion = "LSI_1.0";
 const char *manufacturerName = "Samsung LSI";
@@ -119,7 +119,7 @@ const char *hardwareVersion = "ARTIK_LSI_053";
 const char *platformID = "0A3E0D6F-DBF5-404E-8719-D6880042463A";
 const char *manufacturerLink = "https://www.iotivity.org";
 const char *modelNumber = "ARTIK053";
-const char *platformVersion = "TINYARA_1.0";
+const char *platformVersion = "TIZENRT_1.0";
 const char *supportLink = "https://www.iotivity.org";
 const char *version = "IOTIVITY_1.2.1";
 const char *systemTime = "2016-12-16T00.00";

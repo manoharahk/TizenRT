@@ -67,7 +67,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 #include <stdarg.h>
@@ -184,7 +184,7 @@ void closelog(void);
  *   remaining arguments are a format, as in printf and any arguments to the
  *   format.
  *
- *   The TinyAra implementation does not support any special formatting
+ *   The TizenRT implementation does not support any special formatting
  *   characters beyond those supported by printf.
  *
  *   The function vsyslog() performs the same task as syslog() with the
@@ -286,7 +286,7 @@ int lowvsyslog(int priority, FAR const char *format, va_list ap);
  *   priorities in the above list up to and including p.
  *
  *   REVISIT: Per POSIX the syslog mask should be a per-process value but in
- *   TinyAra, the scope of the mask is dependent on the nature of the build.
+ *   TizenRT, the scope of the mask is dependent on the nature of the build.
  *
  *   Flat Build:  There is one, global SYSLOG mask that controls all output.
  *   Protected Build:  There are two SYSLOG masks.  One within the kernel

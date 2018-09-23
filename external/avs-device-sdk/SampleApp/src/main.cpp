@@ -12,8 +12,8 @@
  * express or implied. See the License for the specific language governing
  * permissions and limitations under the License.
  */
-#include <tinyara/config.h>
-#include <tinyara/init.h>
+#include <tizenrt/config.h>
+#include <tizenrt/init.h>
 #include <apps/platform/cxxinitialize.h>
 
 #include <iostream>

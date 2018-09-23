@@ -58,8 +58,8 @@
 
 #include <assert.h>
 
-#include <tinyara/sched.h>
-#include <tinyara/kmalloc.h>
+#include <tizenrt/sched.h>
+#include <tizenrt/kmalloc.h>
 
 #include "sched/sched.h"
 #include "group/group.h"

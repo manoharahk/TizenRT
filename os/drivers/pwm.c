@@ -58,7 +58,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdint.h>
@@ -72,11 +72,11 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/kmalloc.h>
-#include <tinyara/semaphore.h>
-#include <tinyara/fs/fs.h>
-#include <tinyara/pwm.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/semaphore.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/pwm.h>
 
 #include <arch/irq.h>
 
@@ -561,7 +561,7 @@ static int pwm_ioctl(FAR struct file *filep, int cmd, unsigned long arg)
  *   reset state (as if the shutdown() method had already been called).
  *
  * Input parameters:
- *   path - The full path to the driver to be registered in the TinyAra pseudo-
+ *   path - The full path to the driver to be registered in the TizenRT pseudo-
  *     filesystem.  The recommended convention is to name all PWM drivers
  *     as "/dev/pwm0", "/dev/pwm1", etc.  where the driver path differs only
  *     in the "minor" number at the end of the device name.

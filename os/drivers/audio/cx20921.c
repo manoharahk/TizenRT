@@ -56,7 +56,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <sys/types.h>
 #include <sys/ioctl.h>
 #include <stdint.h>
@@ -67,12 +67,12 @@
 #include <errno.h>
 #include <fixedmath.h>
 #include <debug.h>
-#include <tinyara/kmalloc.h>
-#include <tinyara/fs/ioctl.h>
-#include <tinyara/audio/i2s.h>
-#include <tinyara/audio/audio.h>
-#include <tinyara/audio/cx20921.h>
-#include <tinyara/math.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/fs/ioctl.h>
+#include <tizenrt/audio/i2s.h>
+#include <tizenrt/audio/audio.h>
+#include <tizenrt/audio/cx20921.h>
+#include <tizenrt/math.h>
 #include <math.h>
 
 #include "cx20921.h"

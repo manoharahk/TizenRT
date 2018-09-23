@@ -18,8 +18,8 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <syslog.h>
-#include <tinyara/kthread.h>
-#include <tinyara/logm.h>
+#include <tizenrt/kthread.h>
+#include <tizenrt/logm.h>
 
 #include "logm.h"
 

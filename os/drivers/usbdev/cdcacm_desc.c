@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdint.h>
@@ -62,10 +62,10 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/usb/usb.h>
-#include <tinyara/usb/cdc.h>
-#include <tinyara/usb/cdcacm.h>
-#include <tinyara/usb/usbdev_trace.h>
+#include <tizenrt/usb/usb.h>
+#include <tizenrt/usb/cdc.h>
+#include <tizenrt/usb/cdcacm.h>
+#include <tizenrt/usb/usbdev_trace.h>
 
 #include "cdcacm.h"
 

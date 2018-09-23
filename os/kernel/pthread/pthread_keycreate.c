@@ -26,7 +26,7 @@
 #include <assert.h>
 #include <errno.h>
 
-#include <tinyara/sched.h>
+#include <tizenrt/sched.h>
 
 #include "sched/sched.h"
 

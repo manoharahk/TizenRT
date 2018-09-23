@@ -23,7 +23,7 @@
 #include <string.h>
 #include <errno.h>
 #include <sys/types.h>
-#include <tinyara/wqueue.h>
+#include <tizenrt/wqueue.h>
 
 #ifdef __cplusplus
 extern "C" {

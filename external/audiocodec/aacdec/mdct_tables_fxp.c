@@ -105,7 +105,7 @@ extern "C"
 
 
 
-#ifndef __TINYARA__
+#ifndef __TIZENRT__
     extern const Int32 exp_rotation_N_256[64] =
 #else
     const Int32 exp_rotation_N_256[64] =
@@ -134,7 +134,7 @@ extern "C"
 
 
 
-#ifndef __TINYARA__
+#ifndef __TIZENRT__
     extern const Int32 exp_rotation_N_2048[512] =
 #else
     const Int32 exp_rotation_N_2048[512] =

@@ -54,10 +54,10 @@
  * Included Files
  ************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <debug.h>
-#include <tinyara/kmalloc.h>
+#include <tizenrt/kmalloc.h>
 #include "mqueue/mqueue.h"
 
 /************************************************************************

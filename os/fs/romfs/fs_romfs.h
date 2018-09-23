@@ -59,12 +59,12 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 #include <stdbool.h>
 
-#include <tinyara/fs/dirent.h>
+#include <tizenrt/fs/dirent.h>
 
 #include "inode/inode.h"
 
@@ -119,7 +119,7 @@
 #define IS_EXECUTABLE(rfn) (((rfn) & RFNEXT_EXEC) != 0)
 
 /* RFNEXT_SOFTLINK, RFNEXT_BLOCKDEV, RFNEXT_CHARDEV, RFNEXT_SOCKET, and
- * RFNEXT_FIFO are not presently supported in TinyAra.
+ * RFNEXT_FIFO are not presently supported in TizenRT.
  */
 
 /* Alignment macros */

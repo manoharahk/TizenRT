@@ -53,13 +53,13 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 #include <assert.h>
 #include <debug.h>
 
-#include <tinyara/init.h>
+#include <tizenrt/init.h>
 
 #include "up_arch.h"
 #include "up_internal.h"

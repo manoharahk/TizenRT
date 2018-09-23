@@ -27,7 +27,7 @@
 #include <fcntl.h>
 
 #include <sys/types.h>
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <apps/shell/tash.h>
 
 #include <protocols/dhcpc.h>
@@ -1003,7 +1003,7 @@ int artik_demo_main(int argc, char *argv[])
      *
      * 14. Set ARTIK_CLOUD_BEARER, ARTIK_CLOUD_DID in 'artik_demo.c'
      *
-     * 15. build and run tinyara.
+     * 15. build and run tizenrt.
      *
      * 16. TASH>> artik_demo
      *
@@ -1012,7 +1012,7 @@ int artik_demo_main(int argc, char *argv[])
      *
      * [How To Run]
      *
-     * 1. tinyara/os$ make menuconfig
+     * 1. tizenrt/os$ make menuconfig
      *  (use base configuration with 'sidk_s5jt200/sidk_tash_wlan')
      *
      * 2. External Functions -> DM
@@ -1023,9 +1023,9 @@ int artik_demo_main(int argc, char *argv[])
      *
      * 5. Set up Artik Cloud's bearer, device id
      *
-     * 6. Build tinyara.
+     * 6. Build tizenrt.
      *
-     * 7. Install tinyara.
+     * 7. Install tizenrt.
      *
      * 8. TASH>> artik_demo
      *

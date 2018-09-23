@@ -54,15 +54,15 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <assert.h>
 #include <queue.h>
 #include <errno.h>
 
-#include <tinyara/sched.h>
-#include <tinyara/ttrace.h>
+#include <tizenrt/sched.h>
+#include <tizenrt/ttrace.h>
 
 #include <arch/irq.h>
 

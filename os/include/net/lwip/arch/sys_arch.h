@@ -19,7 +19,7 @@
 #ifndef __ARCH_SYS_ARCH_H__
 #define __ARCH_SYS_ARCH_H__
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <debug.h>
 #include <sys/types.h>
 #include <pthread.h>

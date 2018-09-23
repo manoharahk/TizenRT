@@ -54,22 +54,22 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/spi/spi.h>
+#include <tizenrt/config.h>
+#include <tizenrt/spi/spi.h>
 #include <debug.h>
 #include <assert.h>
 
-#include <tinyara/board.h>
+#include <tizenrt/board.h>
 #include <arch/board/board.h>
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <fcntl.h>
 #include <stdbool.h>
 #include <stdio.h>
 #include <debug.h>
 
-#include <tinyara/configdata.h>
+#include <tizenrt/configdata.h>
 
 #include "sidk_s5jt200.h"
 
@@ -77,7 +77,7 @@
 
 #include <errno.h>
 
-#include <tinyara/kmalloc.h>
+#include <tizenrt/kmalloc.h>
 
 /****************************************************************************
  * Pre-processor Definitions
@@ -190,7 +190,7 @@ struct ee_dev_s {
  * Private Functions
  ****************************************************************************/
 
-#include <tinyara/spi/spi_bitbang.c>
+#include <tizenrt/spi/spi_bitbang.c>
 
 /****************************************************************************
 * Name: spi_select

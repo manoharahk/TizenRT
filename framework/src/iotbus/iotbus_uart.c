@@ -21,7 +21,7 @@
  * @brief Iotbus APIs for UART
  */
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <unistd.h>
 #include <stdlib.h>
 #include <fcntl.h>

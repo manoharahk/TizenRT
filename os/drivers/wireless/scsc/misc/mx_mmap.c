@@ -23,7 +23,7 @@
 #include "gdb_transport.h"
 #include "utils_misc.h"
 #include <semaphore.h>
-#include <tinyara/fs/fs.h>
+#include <tizenrt/fs/fs.h>
 #include <poll.h>
 #include "debug_scsc.h"
 

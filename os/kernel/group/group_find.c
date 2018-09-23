@@ -54,14 +54,14 @@
  * Included Files
  *****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sched.h>
 #include <assert.h>
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/kmalloc.h>
+#include <tizenrt/kmalloc.h>
 
 #include "group/group.h"
 #include "environ/environ.h"

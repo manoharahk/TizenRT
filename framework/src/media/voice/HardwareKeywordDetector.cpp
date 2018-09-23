@@ -16,7 +16,7 @@
  *
  ******************************************************************/
 #include <pthread.h>
-#include <tinyara/audio/audio.h>
+#include <tizenrt/audio/audio.h>
 #include <sys/types.h>
 #include <debug.h>
 #include <unistd.h>

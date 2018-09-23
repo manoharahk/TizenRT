@@ -54,11 +54,11 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdlib.h>
 #include <semaphore.h>
 #include <debug.h>
-#include <tinyara/pm/pm.h>
+#include <tizenrt/pm/pm.h>
 #include <time.h>
 #include "pm_test.h"
 #include "pm.h"

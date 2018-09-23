@@ -57,15 +57,15 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <string.h>
 #include <aio.h>
 #include <queue.h>
 
-#include <tinyara/wqueue.h>
-#include <tinyara/net/net.h>
+#include <tizenrt/wqueue.h>
+#include <tizenrt/net/net.h>
 
 #ifdef CONFIG_FS_AIO
 

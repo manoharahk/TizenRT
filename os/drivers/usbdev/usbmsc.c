@@ -75,7 +75,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdint.h>
@@ -88,20 +88,20 @@
 #include <queue.h>
 #include <debug.h>
 
-#include <tinyara/kmalloc.h>
-#include <tinyara/kthread.h>
-#include <tinyara/arch.h>
-#include <tinyara/semaphore.h>
-#include <tinyara/fs/fs.h>
-#include <tinyara/usb/usb.h>
-#include <tinyara/usb/storage.h>
-#include <tinyara/usb/usbdev.h>
-#include <tinyara/usb/usbdev_trace.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/kthread.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/semaphore.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/usb/usb.h>
+#include <tizenrt/usb/storage.h>
+#include <tizenrt/usb/usbdev.h>
+#include <tizenrt/usb/usbdev_trace.h>
 
 #include "usbmsc.h"
 
 #ifdef CONFIG_USBMSC_COMPOSITE
-#include <tinyara/usb/composite.h>
+#include <tizenrt/usb/composite.h>
 #include "composite.h"
 #endif
 

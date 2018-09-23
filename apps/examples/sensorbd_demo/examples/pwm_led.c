@@ -51,7 +51,7 @@
  ****************************************************************************/
 
 #include <fcntl.h>
-#include <tinyara/pwm.h>
+#include <tizenrt/pwm.h>
 
 void ledpwm_main(int argc, char *argv[])
 {

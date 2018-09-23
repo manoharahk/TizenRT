@@ -16,7 +16,7 @@
 #
 ###########################################################################
 
-CSRCS += l2_packet_tinyara.c
+CSRCS += l2_packet_tizenrt.c
 
 DEPPATH += --dep-path src/l2_packet
 VPATH += :src/l2_packet

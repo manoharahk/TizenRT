@@ -16,7 +16,7 @@
  *
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdlib.h>
 #include <pthread.h>
 #include <sys/select.h>

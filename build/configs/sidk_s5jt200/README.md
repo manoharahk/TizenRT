@@ -148,15 +148,15 @@ Before executing below steps, execute [generic steps](../../../tools/fs/README_R
 3. Run GDB client from another terminal
     ```bash
     cd $TIZENRT_BASEDIR/os/
-    arm-none-eabi-gdb -ex "target remote :3333" $TIZENRT_BASEDIR/build/output/bin/tinyara
+    arm-none-eabi-gdb -ex "target remote :3333" $TIZENRT_BASEDIR/build/output/bin/tizenrt
     ```
-    1. To run tinyara from beginning, set entrypoint to pc register in gdb.
+    1. To run tizenrt from beginning, set entrypoint to pc register in gdb.
     ```bash
     (gdb) set $pc = entry_addr
     ```
     2. entry_addr can be obtained by
     ```bash
-    arm-none-eabi-readelf -h $TIZENRT_BASEDIR/build/output/bin/tinyara
+    arm-none-eabi-readelf -h $TIZENRT_BASEDIR/build/output/bin/tizenrt
     ```
 
 ## Configuration Sets

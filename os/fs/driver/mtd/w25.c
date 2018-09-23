@@ -55,7 +55,7 @@
  * Included Files
  ************************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 
@@ -68,10 +68,10 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/kmalloc.h>
-#include <tinyara/fs/ioctl.h>
-#include <tinyara/spi/spi.h>
-#include <tinyara/fs/mtd.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/fs/ioctl.h>
+#include <tizenrt/spi/spi.h>
+#include <tizenrt/fs/mtd.h>
 
 /************************************************************************************
  * Pre-processor Definitions

@@ -16,7 +16,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <tinyara/fs/fs_utils.h>
+#include <tizenrt/fs/fs_utils.h>
 
 #include "jerryscript.h"
 #include "jerryscript-ext/handler.h"

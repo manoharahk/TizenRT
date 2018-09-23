@@ -22,7 +22,7 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -30,7 +30,7 @@
 #include <signal.h>
 #include <syslog.h>
 #include <time.h>
-#include <tinyara/time.h>
+#include <tizenrt/time.h>
 #include <sys/types.h>
 #include <math.h>
 #include <float.h>

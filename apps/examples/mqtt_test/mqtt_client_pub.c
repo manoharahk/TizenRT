@@ -23,7 +23,7 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -31,7 +31,7 @@
 #include <netdb.h>
 #include <sys/socket.h>
 #include <semaphore.h>
-#include <tinyara/clock.h>
+#include <tizenrt/clock.h>
 #include <errno.h>
 
 #include <network/mqtt/mqtt_api.h>

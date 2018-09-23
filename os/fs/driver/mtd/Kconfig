@@ -12,7 +12,7 @@ menuconfig MTD
 	---help---
 		Memory Technology Device (MTD) drivers.  Some simple drivers for
 		memory technologies like FLASH, EEPROM, NVRAM, etc.  See
-		include/tinyara/fs/mtd.h
+		include/tizenrt/fs/mtd.h
 
 		(Note: This is a simple memory interface and should not be
 		confused with the "real" MTD developed at infradead.org.  This
@@ -34,7 +34,7 @@ config MTD_PARTITION
 		each managed by a separate MTD driver.  The MTD partition interface
 		is described in:
 
-			os/include/tinyara/fs/mtd.h
+			os/include/tizenrt/fs/mtd.h
 			FAR struct mtd_dev_s *mtd_partition(FAR struct mtd_dev_s *mtd,
 						off_t firstblock, off_t nblocks, uint16_t tagno);
 
@@ -57,7 +57,7 @@ config MTD_PROGMEM
 	default n
 	---help---
 		Enable to support an MTD device that supports the on-chip
-		FLASH using the interfaces defined in include/tinyara/progmem.
+		FLASH using the interfaces defined in include/tizenrt/progmem.
 		Those interfaces must be exported by chip-specific logic.
 
 config MTD_FTL

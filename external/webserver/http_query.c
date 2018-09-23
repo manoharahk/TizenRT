@@ -16,8 +16,8 @@
  *
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/progmem.h>
+#include <tizenrt/config.h>
+#include <tizenrt/progmem.h>
 #include <sys/stat.h>
 
 #include <protocols/webserver/http_err.h>

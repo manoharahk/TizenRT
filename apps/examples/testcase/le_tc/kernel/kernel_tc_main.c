@@ -20,7 +20,7 @@
 
 /// @brief Main Function for Kernel TestCase Example
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include "tc_common.h"
 #include "tc_internal.h"

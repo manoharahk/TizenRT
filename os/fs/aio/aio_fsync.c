@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <unistd.h>
 #include <fcntl.h>
@@ -63,7 +63,7 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/fs/fs.h>
+#include <tizenrt/fs/fs.h>
 
 #include "aio/aio.h"
 
@@ -225,7 +225,7 @@ static void aio_fsync_worker(FAR void *arg)
  *   operation, which can be retrieved using aio_error().
  *
  * POSIX Compliance
- * - TinyAra does not currently make any distinction between O_DYSNC and O_SYNC.
+ * - TizenRT does not currently make any distinction between O_DYSNC and O_SYNC.
  *   Hence, the 'op' argument is ignored altogether.
  * - Most errors required in the standard are not detected at this point.
  *   There are no pre-queuing checks for the validity of the operation.

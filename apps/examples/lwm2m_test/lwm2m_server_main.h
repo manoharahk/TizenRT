@@ -51,7 +51,7 @@
 
 */
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #ifndef __LWM2M_SERVER_MAIN
 #define __LWM2M_SERVER_MAIN
@@ -77,7 +77,7 @@
 #include "commandline.h"
 #include "connection.h"
 
-#include <tinyara/ascii.h>
+#include <tizenrt/ascii.h>
 
 #ifdef WITH_MBEDTLS
 #include "mbedtls/certs.h"

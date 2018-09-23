@@ -21,8 +21,8 @@
 #include <protocols/webserver/http_keyvalue_list.h>
 #include <protocols/webclient.h>
 #include <protocols/websocket.h>
-#include <tinyara/fs/fs.h>
-#include <tinyara/fs/dirent.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/fs/dirent.h>
 
 #include "http.h"
 #include "http_client.h"

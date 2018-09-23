@@ -56,7 +56,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <apps/shell/tash.h>
 #include <apps/builtin.h>
 #include <sys/types.h>

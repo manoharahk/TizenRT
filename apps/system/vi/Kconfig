@@ -8,7 +8,7 @@ config SYSTEM_VI
 	default n
 	depends on (NFILE_DESCRIPTORS != 0) && (NFILE_STREAMS != 0)
 	---help---
-		Enable support for TinyAra tiny VI work-alike editor.
+		Enable support for TizenRT tiny VI work-alike editor.
 
 		Omitted features:
 			- No keypad cursor control support

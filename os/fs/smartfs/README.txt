@@ -1,7 +1,7 @@
 SMARTFS README
 ^^^^^^^^^^^^^^
 
-This README file contains information about the implemenation of the TinyAra
+This README file contains information about the implemenation of the TizenRT
 Sector Mapped Allocation for Really Tiny (SMART) FLASH file system, SMARTFS.
 
 Contents:
@@ -125,7 +125,7 @@ General operation
   in the underlying MTD drivers is SUBSECTOR_ERASE and BYTE_WRITE.  Most
   flash devices have a 32K to 128K Erase block size, but some of them
   have a smaller erase size available also.  Vendors have different names
-  for the smaller erase size; In the TinyAra MTD layer it is called
+  for the smaller erase size; In the TizenRT MTD layer it is called
   SUBSECTOR_ERASE.  For FLASH devices that support the smaller erase size,
   this configuration item can be added to the underlying MTD driver, and
   SMART will use it.  As of the writing of this README, only the

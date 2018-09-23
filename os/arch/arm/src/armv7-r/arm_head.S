@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include "arm.h"
 #include "cp15.h"
@@ -379,7 +379,7 @@ __start:
 	 * NOTE:          The ARMv7-A/R Architecture reference many lists the bits
 	 *                bits of the ACTLR as "implementation defined"
 	 *
-	 * REVISIT: I do not think this is needed because the TinyAra vectors do not
+	 * REVISIT: I do not think this is needed because the TizenRT vectors do not
 	 * begin with an LDM instruction.
 	 */
 

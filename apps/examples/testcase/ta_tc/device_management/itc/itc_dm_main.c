@@ -19,7 +19,7 @@
 /// @file itc_dm_main.c
 
 /// @brief Main Function for Device Management TestCase Example
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <semaphore.h>
 

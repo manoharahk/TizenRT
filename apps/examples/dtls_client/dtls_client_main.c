@@ -76,7 +76,7 @@ int dtls_client_main(int argc, char **argv)
 #define SERVER_PORT "4433"
 #define SERVER_NAME "localhost"
 #define SERVER_ADDR "127.0.0.1"	/* forces IPv4 */
-#define MESSAGE     "TinyARA test echo packet"
+#define MESSAGE     "TizenRT test echo packet"
 
 #define READ_TIMEOUT_MS 1000
 #define MAX_RETRY       5

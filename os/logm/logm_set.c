@@ -15,7 +15,7 @@
  * language governing permissions and limitations under the License.
  *
  ****************************************************************************/
-#include <tinyara/logm.h>
+#include <tizenrt/logm.h>
 #include "logm.h"
 
 volatile int new_logm_bufsize = 0;

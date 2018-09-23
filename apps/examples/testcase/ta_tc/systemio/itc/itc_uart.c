@@ -23,7 +23,7 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <iotbus_uart.h>
 #include "itc_internal.h"
 #include "iotbus_error.h"

@@ -48,7 +48,7 @@
 #include <uv.h>
 
 /* EAI_* constants. */
-//#if !defined(__TINYARA__)
+//#if !defined(__TIZENRT__)
 #include <netdb.h>
 //#endif
 
@@ -131,7 +131,7 @@ static void uv__getaddrinfo_work(struct uv__work *w)
 	int err;
 
 	req = container_of(w, uv_getaddrinfo_t, work_req);
-#if defined(__TINYARA__)
+#if defined(__TIZENRT__)
 	err = 0;
 #else
 	err = getaddrinfo(req->hostname, req->service, req->hints, &req->addrinfo);
@@ -231,7 +231,7 @@ int uv_getaddrinfo(uv_loop_t *loop, uv_getaddrinfo_t *req, uv_getaddrinfo_cb cb,
 void uv_freeaddrinfo(struct addrinfo *ai)
 {
 	if (ai) {
-#if defined(__TINYARA__)
+#if defined(__TIZENRT__)
 
 #else
 		freeaddrinfo(ai);

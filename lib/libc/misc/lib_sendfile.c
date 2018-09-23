@@ -54,7 +54,7 @@
  * Included Files
  ************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/sendfile.h>
 #include <stdbool.h>
@@ -94,7 +94,7 @@
  *   sendfile() basically just wraps a sequence of reads() and writes()
  *   to perform a copy.  It serves a purpose in systems where there is
  *   a penalty for copies to between user and kernal space, but really
- *   nothing in TinyAra but provide some Linux compatible (and adding
+ *   nothing in TizenRT but provide some Linux compatible (and adding
  *   another 'almost standard' interface).
  *
  *   NOTE: This interface is *not* specified in POSIX.1-2001, or other

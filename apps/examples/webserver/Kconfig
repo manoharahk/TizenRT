@@ -8,7 +8,7 @@ config EXAMPLES_WEBSERVER
 	depends on NETUTILS_WEBSERVER
 	default n
 	---help---
-		Enable the TinyAra Webserver example
+		Enable the TizenRT Webserver example
 
 config USER_ENTRYPOINT
 	string

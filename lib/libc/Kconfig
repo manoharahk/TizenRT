@@ -75,7 +75,7 @@ config LIBC_IOCTL_VARIADIC
 	bool "Enable variadic ioctl()"
 	default n
 	---help---
-		By default, TinyAra implements the "old style," three-parameter,
+		By default, TizenRT implements the "old style," three-parameter,
 		ioctl() interface with this function prototype:
 
 			int ioctl(int fd, int req, unsigned long arg);
@@ -425,7 +425,7 @@ config LIB_USRWORK
 	depends on !DISABLE_SIGNALS
 	---help---
 		User space work queues can also be made available for deferred
-		processing in the TinyAra kernel build.
+		processing in the TizenRT kernel build.
 
 if LIB_USRWORK
 

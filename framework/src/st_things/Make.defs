@@ -29,7 +29,7 @@ CSRCS += st_things_request_handler_collection.c
 endif
 
 CFLAGS += -D__TIZENRT__
-CFLAGS += -D__TINYARA__
+CFLAGS += -D__TIZENRT__
 CFLAGS += -D__ST_THINGS_RTOS__
 CFLAGS += -std=c99
 CFLAGS += -w

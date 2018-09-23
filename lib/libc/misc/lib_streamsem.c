@@ -54,14 +54,14 @@
  * Included Files
  ************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdlib.h>
 #include <string.h>
 #include <assert.h>
 #include <semaphore.h>
 #include <errno.h>
-#include <tinyara/fs/fs.h>
+#include <tizenrt/fs/fs.h>
 
 #include "lib_internal.h"
 

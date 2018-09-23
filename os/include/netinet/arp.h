@@ -57,16 +57,16 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
-#include <tinyara/fs/ioctl.h>
+#include <tizenrt/fs/ioctl.h>
 
 /****************************************************************************
  * Pre-processor Definitions
  ****************************************************************************/
 
-/* Three ioctls are available on all PF_INET sockets, but only if the TinyAra
+/* Three ioctls are available on all PF_INET sockets, but only if the TizenRT
  * configuration CONFIG_NET_ARPIOCTLS is defined. Each ioctl takes a pointer
  * to a 'struct arpreq' as its parameter.
  */

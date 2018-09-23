@@ -24,7 +24,7 @@
 
 #if defined(__TIZENRT__)
 #include <iotbus_spi.h>
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #endif
 
 

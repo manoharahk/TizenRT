@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -69,11 +69,11 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/kmalloc.h>
-#include <tinyara/fs/fs.h>
-#include <tinyara/fs/procfs.h>
-#include <tinyara/fs/mtd.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/fs/procfs.h>
+#include <tizenrt/fs/mtd.h>
 
 #if !defined(CONFIG_FS_PROCFS_EXCLUDE_MTD) && defined(CONFIG_FS_PROCFS)
 

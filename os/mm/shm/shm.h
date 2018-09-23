@@ -57,14 +57,14 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/ipc.h>
 #include <sys/shm.h>
 #include <stdint.h>
 #include <semaphore.h>
 
-#include <tinyara/addrenv.h>
+#include <tizenrt/addrenv.h>
 
 #ifdef CONFIG_MM_SHM
 

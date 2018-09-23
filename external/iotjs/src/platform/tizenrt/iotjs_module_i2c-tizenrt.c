@@ -17,7 +17,7 @@
 #error "Module __FILE__ is for TizenRT only"
 #endif
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #if !defined(CONFIG_I2C)
 #error "\n\nTizenRT CONFIG_I2C configuration flag required for I2C module\n\n"

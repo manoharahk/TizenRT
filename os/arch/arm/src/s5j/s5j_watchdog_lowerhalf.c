@@ -52,13 +52,13 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdbool.h>
 #include <errno.h>
 #include <debug.h>
-#include <tinyara/watchdog.h>
-#include <tinyara/kmalloc.h>
+#include <tizenrt/watchdog.h>
+#include <tizenrt/kmalloc.h>
 
 #include "up_arch.h"
 #include "s5j_watchdog.h"

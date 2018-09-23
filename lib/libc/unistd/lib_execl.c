@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdarg.h>
 #include <stdlib.h>
@@ -94,10 +94,10 @@
  *   be no return from a successful exec, because the calling process image
  *   is overlaid by the new process image.
  *
- *   Simplified 'execl()' and 'execv()' functions are provided by TinyAra for
- *   compatibility.  TinyAra is a tiny embedded RTOS that does not support
+ *   Simplified 'execl()' and 'execv()' functions are provided by TizenRT for
+ *   compatibility.  TizenRT is a tiny embedded RTOS that does not support
  *   processes and hence the concept of overlaying a tasks process image with
- *   a new process image does not make any sense.  In TinyAra, these functions
+ *   a new process image does not make any sense.  In TizenRT, these functions
  *   are wrapper functions that:
  *
  *     1. Call the non-standard binfmt function 'exec', and then
@@ -113,7 +113,7 @@
  *   The non-standard binfmt function 'exec()' needs to have (1) a symbol
  *   table that provides the list of symbols exported by the base code, and
  *   (2) the number of symbols in that table.  This information is currently
- *   provided to 'exec()' from 'exec[l|v]()' via TinyAra configuration settings:
+ *   provided to 'exec()' from 'exec[l|v]()' via TizenRT configuration settings:
  *
  *     CONFIG_LIBC_EXECFUNCS     : Enable exec[l|v] support
  *     CONFIG_EXECFUNCS_SYMTAB   : Symbol table used by exec[l|v]
@@ -121,7 +121,7 @@
  *
  *   As a result of the above, the current implementations of 'execl()' and
  *   'execv()' suffer from some incompatibilities that may or may not be
- *   addressed in a future version of TinyAra.  Other than just being an
+ *   addressed in a future version of TizenRT.  Other than just being an
  *   inefficient use of MCU resource, the most serious of these is that
  *   the exec'ed task will not have the same task ID as the vfork'ed
  *   function.  So the parent function cannot know the ID of the exec'ed

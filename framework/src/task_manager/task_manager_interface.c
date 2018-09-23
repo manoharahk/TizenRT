@@ -18,7 +18,7 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <unistd.h>
 #include <debug.h>
 #include <string.h>
@@ -29,7 +29,7 @@
 #include <mqueue.h>
 #include <time.h>
 #include <sys/types.h>
-#include <tinyara/clock.h>
+#include <tizenrt/clock.h>
 #include <task_manager/task_manager.h>
 #include "task_manager_internal.h"
 

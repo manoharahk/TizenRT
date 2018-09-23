@@ -18,7 +18,7 @@
 
 #include <scsc/scsc_mx.h>
 #include <errno.h>
-#include <tinyara/kmalloc.h>
+#include <tizenrt/kmalloc.h>
 #include "scsc_mif_abs.h"
 #include "scsc_mx_impl.h"
 #include "utils_misc.h"

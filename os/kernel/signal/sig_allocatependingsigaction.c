@@ -54,11 +54,11 @@
  * Included Files
  ************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <signal.h>
 #include <assert.h>
-#include <tinyara/arch.h>
+#include <tizenrt/arch.h>
 
 #include "signal/signal.h"
 

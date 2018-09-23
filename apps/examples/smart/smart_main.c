@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/mount.h>
 
@@ -69,10 +69,10 @@
 #include <crc32.h>
 #include <debug.h>
 
-#include <tinyara/fs/mtd.h>
-#include <tinyara/fs/smart.h>
-#include <tinyara/fs/ioctl.h>
-#include <tinyara/fs/mksmartfs.h>
+#include <tizenrt/fs/mtd.h>
+#include <tizenrt/fs/smart.h>
+#include <tizenrt/fs/ioctl.h>
+#include <tizenrt/fs/mksmartfs.h>
 
 /****************************************************************************
  * Pre-processor Definitions

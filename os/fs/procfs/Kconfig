@@ -10,7 +10,7 @@ config FS_PROCFS
 	select FS_READABLE
 	---help---
 		The PROCFS file system provides access to task status and other driver
-		status through the TinyAra file system.  The PROCFS may, for example, be
+		status through the TizenRT file system.  The PROCFS may, for example, be
 		mount at /proc.  Then information about all of the currently active
 		tasks and threads will be available in /proc.
 

@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 /* Output debug info if stack dump is selected -- even if debug is not
  * selected.
@@ -75,7 +75,7 @@
 #include <stdint.h>
 #include <debug.h>
 
-#include <tinyara/irq.h>
+#include <tizenrt/irq.h>
 
 #include "sched/sched.h"
 #include "up_internal.h"

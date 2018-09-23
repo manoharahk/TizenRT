@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <fcntl.h>
@@ -65,9 +65,9 @@
 #include <sched.h>
 #include <debug.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/cancelpt.h>
-#include <tinyara/ttrace.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/cancelpt.h>
+#include <tizenrt/ttrace.h>
 
 #include "sched/sched.h"
 #include "mqueue/mqueue.h"

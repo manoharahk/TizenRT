@@ -16,7 +16,7 @@
  *
  ******************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <string.h>
 #include "Decoder.h"
 #include <debug.h>

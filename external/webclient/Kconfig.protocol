@@ -41,7 +41,7 @@ if NETUTILS_WEBCLIENT
 
 	config WGET_USERAGENT
 	string "User Agent"
-	default "TinyARA"
+	default "TizenRT"
 	---help---
 		Sets user agent. It apply to request message.
 

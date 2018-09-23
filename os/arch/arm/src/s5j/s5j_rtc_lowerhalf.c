@@ -54,14 +54,14 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 #include <stdbool.h>
 #include <errno.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/rtc.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/rtc.h>
 
 #include "up_arch.h"
 
@@ -296,7 +296,7 @@ static struct s5j_lowerhalf_s g_rtc_lowerhalf = {
  *   Instantiate the RTC lower half driver for the S5J.
  *   General usage:
  *
- *     #include <tinyara/rtc.h>
+ *     #include <tizenrt/rtc.h>
  *     #include "s5j_rtc.h"
  *
  *     struct rtc_lowerhalf_s *lower;

@@ -19,7 +19,7 @@
 /// @file tc_libc_syslog.c
 
 /// @brief Test Case Example for Syslog API
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <unistd.h>
 #include <stdarg.h>
 #include <stdio.h>

@@ -23,8 +23,8 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/fs/ramdisk.h>
+#include <tizenrt/config.h>
+#include <tizenrt/fs/ramdisk.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -45,10 +45,10 @@
 #include <sys/select.h>
 #include <sys/types.h>
 
-#include <tinyara/streams.h>
-#include <tinyara/fs/ioctl.h>
-#include <tinyara/fs/fs_utils.h>
-#include <tinyara/configdata.h>
+#include <tizenrt/streams.h>
+#include <tizenrt/fs/ioctl.h>
+#include <tizenrt/fs/fs_utils.h>
+#include <tizenrt/configdata.h>
 #include <time.h>
 #include "tc_common.h"
 #include "tc_internal.h"

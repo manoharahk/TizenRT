@@ -60,16 +60,16 @@
 #include  <assert.h>
 #include  <debug.h>
 
-#include  <tinyara/arch.h>
-#include  <tinyara/compiler.h>
-#include  <tinyara/sched.h>
-#include  <tinyara/fs/fs.h>
-#include  <tinyara/net/net.h>
-#include  <tinyara/lib.h>
-#include  <tinyara/mm/mm.h>
-#include  <tinyara/mm/shm.h>
-#include  <tinyara/kmalloc.h>
-#include  <tinyara/init.h>
+#include  <tizenrt/arch.h>
+#include  <tizenrt/compiler.h>
+#include  <tizenrt/sched.h>
+#include  <tizenrt/fs/fs.h>
+#include  <tizenrt/net/net.h>
+#include  <tizenrt/lib.h>
+#include  <tizenrt/mm/mm.h>
+#include  <tizenrt/mm/shm.h>
+#include  <tizenrt/kmalloc.h>
+#include  <tizenrt/init.h>
 
 #include  "sched/sched.h"
 #include  "signal/signal.h"
@@ -89,10 +89,10 @@
 #endif
 #include  "init/init.h"
 #ifdef CONFIG_DEBUG_SYSTEM
-#include <tinyara/debug/sysdbg.h>
+#include <tizenrt/debug/sysdbg.h>
 #endif
 #ifdef CONFIG_KERNEL_TEST_DRV
-#include <tinyara/testcase_drv.h>
+#include <tizenrt/testcase_drv.h>
 #endif
 
 /****************************************************************************
@@ -265,7 +265,7 @@ static FAR char *g_idleargv[2];
  * Description:
  *   This function is called to initialize the operating system and to spawn
  *   the user initialization thread of execution.  This is the initial entry
- *   point into TinyAra
+ *   point into TizenRT
  *
  * Input Parameters:
  *   None

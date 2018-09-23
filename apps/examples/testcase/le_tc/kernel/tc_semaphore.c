@@ -23,9 +23,9 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
-#include <tinyara/clock.h>
-#include <tinyara/semaphore.h>
+#include <tizenrt/config.h>
+#include <tizenrt/clock.h>
+#include <tizenrt/semaphore.h>
 #include <stdio.h>
 #include <errno.h>
 #include <sys/time.h>

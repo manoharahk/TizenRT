@@ -56,7 +56,7 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #if defined(CONFIG_S5J_S5JT200)
 #include "chip/s5jt200_rtc.h"
@@ -93,7 +93,7 @@ typedef void (*alarmcb_t)(void);
  *   Instantiate the RTC lower half driver for the S5J.
  *   General usage:
  *
- *     #include <tinyara/rtc.h>
+ *     #include <tizenrt/rtc.h>
  *     #include "s5j_rtc.h"
  *
  *     struct rtc_lowerhalf_s *lower;

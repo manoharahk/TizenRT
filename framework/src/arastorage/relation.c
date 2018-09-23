@@ -57,7 +57,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <limits.h>
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <sys/types.h>
 
 #include "index.h"

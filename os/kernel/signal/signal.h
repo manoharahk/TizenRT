@@ -57,13 +57,13 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/compiler.h>
+#include <tizenrt/compiler.h>
 
 #include <stdint.h>
 #include <queue.h>
 #include <sched.h>
 
-#include <tinyara/kmalloc.h>
+#include <tizenrt/kmalloc.h>
 
 /****************************************************************************
  * Definitions

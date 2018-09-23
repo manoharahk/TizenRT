@@ -54,14 +54,14 @@
  * Included Files
  ************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/compiler.h>
+#include <tizenrt/config.h>
+#include <tizenrt/compiler.h>
 #include <time.h>
 
 #if CONFIG_RR_INTERVAL > 0
 #include <sched.h>
-#include <tinyara/arch.h>
-#include <tinyara/ttrace.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/ttrace.h>
 #endif
 
 #include "sched/sched.h"

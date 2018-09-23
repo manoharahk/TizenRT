@@ -57,9 +57,9 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/compiler.h>
-#include <tinyara/fs/fs.h>
+#include <tizenrt/config.h>
+#include <tizenrt/compiler.h>
+#include <tizenrt/fs/fs.h>
 
 /****************************************************************************
  * Pre-processor Definitions

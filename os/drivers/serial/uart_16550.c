@@ -55,7 +55,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdint.h>
@@ -66,11 +66,11 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/irq.h>
-#include <tinyara/arch.h>
-#include <tinyara/serial/serial.h>
-#include <tinyara/fs/ioctl.h>
-#include <tinyara/serial/uart_16550.h>
+#include <tizenrt/irq.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/serial/serial.h>
+#include <tizenrt/fs/ioctl.h>
+#include <tizenrt/serial/uart_16550.h>
 
 #include <arch/board/board.h>
 

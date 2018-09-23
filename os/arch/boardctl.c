@@ -53,7 +53,7 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <sys/boardctl.h>
@@ -61,7 +61,7 @@
 #include <errno.h>
 #include <assert.h>
 
-#include <tinyara/board.h>
+#include <tizenrt/board.h>
 
 #ifdef CONFIG_LIB_BOARDCTL
 /****************************************************************************

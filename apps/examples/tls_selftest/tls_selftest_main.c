@@ -36,7 +36,7 @@
  *  This file is part of mbed TLS (https://tls.mbed.org)
  */
 
-#include "tinyara/config.h"
+#include "tizenrt/config.h"
 
 #include <stdio.h>
 #include <string.h>

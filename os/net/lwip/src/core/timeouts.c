@@ -77,7 +77,7 @@
 #include <net/lwip/pbuf.h>
 #include <net/lwip/netif/etharp.h>
 
-#include <tinyara/clock.h>
+#include <tizenrt/clock.h>
 
 #if LWIP_DEBUG_TIMERNAMES
 #define HANDLER(x) x, #x

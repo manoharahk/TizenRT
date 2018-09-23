@@ -54,11 +54,11 @@
  * Included Files
  ************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 #include <queue.h>
-#include <tinyara/kmalloc.h>
+#include <tizenrt/kmalloc.h>
 
 #include "signal/signal.h"
 

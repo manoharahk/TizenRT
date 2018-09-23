@@ -20,7 +20,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <apps/shell/tash.h>
-#include <tinyara/logm.h>
+#include <tizenrt/logm.h>
 #include "logm.h"
 
 static int logm_tash(int argc, char **args);

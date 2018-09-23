@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #ifndef CONFIG_DISABLE_PTHREAD
 #include <assert.h>

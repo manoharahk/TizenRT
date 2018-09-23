@@ -23,7 +23,7 @@
  * Included Files
  *****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #ifndef __ASSEMBLY__
 #include <stdint.h>

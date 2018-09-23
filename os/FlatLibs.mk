@@ -50,8 +50,8 @@
 #
 ############################################################################
 
-# TINYARALIBS is the list of TinyAra libraries that is passed to the
-#   processor-specific Makefile to build the final TinyAra target.
+# TIZENRTLIBS is the list of TizenRT libraries that is passed to the
+#   processor-specific Makefile to build the final TizenRT target.
 #   Libraries in FSDIRS are excluded if file descriptor support
 #   is disabled.
 # USERLIBS is the list of libraries used to build the final user-space
@@ -59,15 +59,15 @@
 # EXPORTLIBS is the list of libraries that should be exported by
 #   'make export' is
 
-TINYARALIBS = $(LIBRARIES_DIR)$(DELIM)libkernel$(LIBEXT)
+TIZENRTLIBS = $(LIBRARIES_DIR)$(DELIM)libkernel$(LIBEXT)
 USERLIBS =
 
 # Add libraries for syscall support.
 
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libc$(LIBEXT) $(LIBRARIES_DIR)$(DELIM)libmm$(LIBEXT)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libarch$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libc$(LIBEXT) $(LIBRARIES_DIR)$(DELIM)libmm$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libarch$(LIBEXT)
 ifeq ($(CONFIG_LIB_SYSCALL),y)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libstubs$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libstubs$(LIBEXT)
 USERLIBS  += $(LIBRARIES_DIR)$(DELIM)libproxies$(LIBEXT)
 endif
 
@@ -75,88 +75,88 @@ endif
 # be defined in Make.defs for this to work!
 
 ifeq ($(CONFIG_HAVE_CXX),y)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libcxx$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libcxx$(LIBEXT)
 endif
 
 # Add library for application support.
 
 ifneq ($(APPDIR),)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libapps$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libapps$(LIBEXT)
 endif
 
 # Add library for external support.
 
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libexternal$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libexternal$(LIBEXT)
 
 # Add libraries for network support
 
 ifeq ($(CONFIG_NET),y)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libnet$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libnet$(LIBEXT)
 endif
 
 # Add libraries for iotivity support
 ifeq ($(CONFIG_ENABLE_IOTIVITY),y)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)liboctbstack$(LIBEXT)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libc_common$(LIBEXT)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libconnectivity_abstraction$(LIBEXT)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libcoap$(LIBEXT)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)liblogger$(LIBEXT)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libocsrm$(LIBEXT)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libroutingmanager$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)liboctbstack$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libc_common$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libconnectivity_abstraction$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libcoap$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)liblogger$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libocsrm$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libroutingmanager$(LIBEXT)
 ifeq ($(CONFIG_ENABLE_IOTIVITY_CLOUD),y)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libresource_directory$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libresource_directory$(LIBEXT)
 endif
 endif
 
 # Add libraries for power management module
 
 ifeq ($(CONFIG_PM),y)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libpm$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libpm$(LIBEXT)
 endif
 
 # Add libraries for logm module
 
 ifeq ($(CONFIG_LOGM),y)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)liblogm$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)liblogm$(LIBEXT)
 endif
 
 # Add libraries for file system support
 
 ifeq ($(CONFIG_NFILE_DESCRIPTORS),0)
 ifneq ($(CONFIG_NSOCKET_DESCRIPTORS),0)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libfs$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libfs$(LIBEXT)
 endif
 ifeq ($(CONFIG_NET),y)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libdrivers$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libdrivers$(LIBEXT)
 endif
 else
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libfs$(LIBEXT) $(LIBRARIES_DIR)$(DELIM)libdrivers$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libfs$(LIBEXT) $(LIBRARIES_DIR)$(DELIM)libdrivers$(LIBEXT)
 endif
 
 # Add libraries for the Audio sub-system
 
 ifeq ($(CONFIG_AUDIO),y)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libaudio$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libaudio$(LIBEXT)
 endif
 
 # Add library for Framework
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libframework$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libframework$(LIBEXT)
 
 # Add libraries for iotjs support
 ifeq ($(CONFIG_ENABLE_IOTJS),y)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libhttpparser$(LIBEXT)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libiotjs$(LIBEXT)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libjerry-core$(LIBEXT)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libtuv$(LIBEXT)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libjerry-libm$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libhttpparser$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libiotjs$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libjerry-core$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libtuv$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libjerry-libm$(LIBEXT)
 endif
 
 # Add library for external bcm support.
 # External WICED Lib builds
 ifeq ($(CONFIG_WL_BCM4390X),y)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libbcmexternal$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libbcmexternal$(LIBEXT)
 endif
 
 # Export all libraries
-EXPORTLIBS = $(TINYARALIBS)
+EXPORTLIBS = $(TIZENRTLIBS)
 

@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 #include <string.h>
@@ -62,8 +62,8 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/sched.h>
-#include <tinyara/arch.h>
+#include <tizenrt/sched.h>
+#include <tizenrt/arch.h>
 #include <arch/irq.h>
 
 #include "up_vfork.h"

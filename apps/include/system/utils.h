@@ -17,7 +17,7 @@
  ****************************************************************************/
 #ifndef __APPS_INCLUDE_SYSTEM_UTILS_H
 #define __APPS_INCLUDE_SYSTEM_UTILS_H
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #ifdef CONFIG_TASH
 #ifdef CONFIG_KERNEL_CMDS

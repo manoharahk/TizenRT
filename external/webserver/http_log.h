@@ -20,7 +20,7 @@
 #define __http_log_h__
 
 /*
- * For TinyAra
+ * For TizenRT
  */
 #ifdef CONFIG_NETUTILS_WEBSERVER_LOGD
 #define HTTP_LOGD(...) printf(__VA_ARGS__)

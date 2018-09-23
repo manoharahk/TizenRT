@@ -54,12 +54,12 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 #include <assert.h>
 
-#include <tinyara/userspace.h>
+#include <tizenrt/userspace.h>
 
 #include "tiva_mpuinit.h"
 #include "tiva_userspace.h"

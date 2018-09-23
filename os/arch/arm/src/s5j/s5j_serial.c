@@ -53,16 +53,16 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 #include <stdbool.h>
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/irq.h>
-#include <tinyara/serial/serial.h>
-#include <tinyara/pm/pm.h>
+#include <tizenrt/irq.h>
+#include <tizenrt/serial/serial.h>
+#include <tizenrt/pm/pm.h>
 
 #ifdef CONFIG_SERIAL_TERMIOS
 #include <termios.h>

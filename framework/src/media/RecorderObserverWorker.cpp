@@ -16,7 +16,7 @@
  *
  ******************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include "RecorderObserverWorker.h"
 
 #ifndef CONFIG_MEDIA_RECORDER_OBSERVER_STACKSIZE

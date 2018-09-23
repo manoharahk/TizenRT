@@ -58,15 +58,15 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/clock.h>
+#include <tizenrt/config.h>
+#include <tizenrt/clock.h>
 #ifdef CONFIG_NET
 
 #include <sys/types.h>
 #include <stdint.h>
 #include <time.h>
 
-#include <tinyara/net/net.h>
+#include <tizenrt/net/net.h>
 
 /****************************************************************************
  * Pre-processor Definitions

@@ -53,15 +53,15 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdint.h>
 #include <sched.h>
 #include <debug.h>
 
-#include <tinyara/kmalloc.h>
-#include <tinyara/arch.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/arch.h>
 #include <arch/board/board.h>
 #include <arch/irq.h>
 

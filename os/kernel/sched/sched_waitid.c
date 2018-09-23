@@ -54,14 +54,14 @@
  * Included Files
  *****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/wait.h>
 #include <signal.h>
 #include <errno.h>
 
-#include <tinyara/sched.h>
-#include <tinyara/cancelpt.h>
+#include <tizenrt/sched.h>
+#include <tizenrt/cancelpt.h>
 
 #include "sched/sched.h"
 #include "group/group.h"

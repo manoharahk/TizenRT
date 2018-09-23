@@ -54,13 +54,13 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sched.h>
 #include <debug.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/kmalloc.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/kmalloc.h>
 
 #include "up_internal.h"
 
@@ -97,7 +97,7 @@
  * Input Parmeters
  *   - dtcb:  The TCB containing information about the stack to be released
  *   - ttype:  The thread type.  This may be one of following (defined in
- *     include/tinyara/sched.h):
+ *     include/tizenrt/sched.h):
  *
  *       TCB_FLAG_TTYPE_TASK     Normal user task
  *       TCB_FLAG_TTYPE_PTHREAD  User pthread

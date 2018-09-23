@@ -6,19 +6,19 @@ what you would expect to find in a standard C library.  The sub-directories
 in this directory contain standard interface that can be executed by user-
 mode programs.
 
-Normally, TinyAra is built with no protection and all threads running in kerne-
+Normally, TizenRT is built with no protection and all threads running in kerne-
 mode.  In that model, there is no real architectural distinction between
 what is a kernel-mode program and what is a user-mode program; the system is
 more like on multi-threaded program that all runs in kernel-mode.
 
-But if the CONFIG_BUILD_PROTECTED option is selected, TinyAra will be built
+But if the CONFIG_BUILD_PROTECTED option is selected, TizenRT will be built
 into distinct user-mode and kernel-mode sections.  In that case, most of the
 code in the os/ directory will run in kernel-mode with with exceptions
 of (1) the user-mode "proxies" found in syscall/proxies, and (2) the
 standard C library functions found in this directory.  In this build model,
 it is critical to separate the user-mode OS interfaces in this way.
 
-If CONFIG_BUILD_KERNEL is selected, then only a TinyAra kernel will be built
+If CONFIG_BUILD_KERNEL is selected, then only a TizenRT kernel will be built
 with no applications.
 
 Sub-Directories
@@ -56,7 +56,7 @@ directory:
 Library Database
 ================
 
-Information about functions available in the TinyAra C library information is
+Information about functions available in the TizenRT C library information is
 maintained in a database.  That "database" is implemented as a simple comma-
 separated-value file, libc.csv.  Most spreadsheets programs will accept this
 format and can be used to maintain the library database.

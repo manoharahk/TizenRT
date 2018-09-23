@@ -54,12 +54,12 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <debug.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/irq.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/irq.h>
 
 #include "nvic.h"
 #include "ram_vectors.h"

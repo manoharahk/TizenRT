@@ -20,7 +20,7 @@
 
 /// @brief Test Case Iotbus APIs for SPI
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include "itc_internal.h"
 #include <iotbus_spi.h>
 #include <iotbus_error.h>

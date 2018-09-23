@@ -594,7 +594,7 @@ void coap_transaction_id2(const coap_address_t *peer, const coap_pdu_t *pdu, coa
 #ifdef WITH_POSIX
 	switch (peer->addr.sa.sa_family) {
 	case AF_INET:
-#if defined (__TINYARA__)
+#if defined (__TIZENRT__)
 		/* Local Fixes : Make hash value using IPv4 addr and port only */
 		coap_hash((const unsigned char *)&peer->addr.sin.sin_addr, sizeof(peer->addr.sin.sin_addr), h);
 		coap_hash((const unsigned char *)&peer->addr.sin.sin_port, sizeof(peer->addr.sin.sin_port), h);

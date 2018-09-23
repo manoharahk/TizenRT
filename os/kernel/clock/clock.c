@@ -56,7 +56,7 @@
 
 #include <time.h>
 #include <sys/types.h>
-#include <tinyara/clock.h>
+#include <tizenrt/clock.h>
 
 /****************************************************************************
  * Public Functions

@@ -55,16 +55,16 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/spi/spi.h>
+#include <tizenrt/config.h>
+#include <tizenrt/spi/spi.h>
 #ifdef CONFIG_MTD_PARTITION
-#include <tinyara/fs/mtd.h>
-#include <tinyara/fs/ioctl.h>
+#include <tizenrt/fs/mtd.h>
+#include <tizenrt/fs/ioctl.h>
 #endif
 #include <debug.h>
 #include <assert.h>
 
-#include <tinyara/board.h>
+#include <tizenrt/board.h>
 #include <arch/board/board.h>
 
 #include <sys/mount.h>

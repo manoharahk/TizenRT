@@ -54,20 +54,20 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <errno.h>
 #include <debug.h>
-#include <tinyara/clock.h>
+#include <tizenrt/clock.h>
 
 #if defined(CONFIG_AUDIO_ALC5658CHAR) && defined(CONFIG_S5J_I2S) && defined(CONFIG_S5J_I2C)
 
-#include <tinyara/i2c.h>
+#include <tizenrt/i2c.h>
 
 #include "s5j_i2s.h"
 #include "s5j_i2c.h"
-#include <tinyara/audio/i2s.h>
+#include <tizenrt/audio/i2s.h>
 
 /****************************************************************************
  * Pre-processor Definitions

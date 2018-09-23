@@ -60,9 +60,9 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
-#include <tinyara/compiler.h>
-#include <tinyara/fs/ioctl.h>
+#include <tizenrt/config.h>
+#include <tizenrt/compiler.h>
+#include <tizenrt/fs/ioctl.h>
 #include <stdint.h>
 
 /****************************************************************************

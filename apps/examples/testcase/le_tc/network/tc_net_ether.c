@@ -18,7 +18,7 @@
 
 /// @file tc_net_ether.c
 /// @brief Test Case Example for ether_ntoa() API
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <errno.h>
 

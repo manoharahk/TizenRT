@@ -55,7 +55,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <unistd.h>
 #include <semaphore.h>
@@ -63,8 +63,8 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/net/net.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/net/net.h>
 
 #include "utils/utils.h"
 

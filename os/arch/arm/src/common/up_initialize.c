@@ -54,14 +54,14 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <debug.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/fs/fs.h>
-#include <tinyara/syslog/ramlog.h>
-#include <tinyara/syslog/syslog_console.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/syslog/ramlog.h>
+#include <tizenrt/syslog/syslog_console.h>
 
 #include <arch/board/board.h>
 
@@ -69,7 +69,7 @@
 #include "up_internal.h"
 
 #ifdef CONFIG_NETDEV_TELNET
-#include <tinyara/net/telnet.h>
+#include <tizenrt/net/telnet.h>
 #endif
 
 /****************************************************************************

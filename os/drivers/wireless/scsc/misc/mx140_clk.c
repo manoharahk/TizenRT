@@ -16,8 +16,8 @@
  *
  ****************************************************************************/
 
-//#include <tinyara/module.h>
-//#include <tinyara/version.h>
+//#include <tizenrt/module.h>
+//#include <tizenrt/version.h>
 
 #include <scsc/scsc_mx.h>
 #include "scsc_mx_impl.h"

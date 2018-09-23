@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <limits.h>
@@ -62,7 +62,7 @@
 #include <errno.h>
 
 #ifdef CONFIG_SEMAPHORE_HISTORY
-#include <tinyara/debug/sysdbg.h>
+#include <tizenrt/debug/sysdbg.h>
 #endif
 
 /****************************************************************************

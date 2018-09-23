@@ -54,7 +54,7 @@
 // Included Files
 //***************************************************************************
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <cstddef>
 #include <debug.h>
 
@@ -77,7 +77,7 @@
 //
 // NOTE:
 //   This should take a type of size_t.  But size_t has an unknown underlying
-//   type.  In the TinyAra sys/types.h header file, size_t is typed as uint32_t
+//   type.  In the TizenRT sys/types.h header file, size_t is typed as uint32_t
 //   (which is determined by architecture-specific logic).  But the C++
 //   compiler may believe that size_t is of a different type resulting in
 //   compilation errors in the operator.  Using the underlying integer type

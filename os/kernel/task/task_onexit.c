@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdlib.h>
 #include <assert.h>
@@ -62,8 +62,8 @@
 #include <debug.h>
 #include <errno.h>
 
-#include <tinyara/fs/fs.h>
-#include <tinyara/ttrace.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/ttrace.h>
 
 #include "sched/sched.h"
 #include "task/task.h"

@@ -53,9 +53,9 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
-#include <tinyara/pm/pm.h>
+#include <tizenrt/pm/pm.h>
 
 #include "up_internal.h"
 #include "s5j_pm.h"
@@ -85,7 +85,7 @@
  ****************************************************************************/
 void up_pminitialize(void)
 {
-	/* Then initialize the TinyAra power management subsystem proper */
+	/* Then initialize the TizenRT power management subsystem proper */
 	pm_initialize();
 }
 #endif /* CONFIG_PM */

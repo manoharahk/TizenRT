@@ -57,11 +57,11 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/irq.h>
-#include <tinyara/compiler.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/irq.h>
+#include <tizenrt/compiler.h>
 
 /****************************************************************************
  * Definitions

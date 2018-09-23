@@ -75,7 +75,7 @@ static bool threadexited = false;
 static void death_of_child(int signo, siginfo_t *info, void *ucontext)
 {
 	/* Use of printf in a signal handler is NOT safe! It can cause deadlocks!
-	 * Also, signals are not queued by TinyAra.  As a consequence, some
+	 * Also, signals are not queued by TizenRT.  As a consequence, some
 	 * notifications will get lost (or the info data can be overwrittedn)!
 	 * Because POSIX  does not require signals to be queued, I do not think
 	 * that this is a bug (the overwriting is a bug, however).

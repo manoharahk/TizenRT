@@ -16,7 +16,7 @@
  *
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <debug.h>
 #include <queue.h>
 #include "pm_metrics.h"

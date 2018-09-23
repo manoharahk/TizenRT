@@ -54,13 +54,13 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdbool.h>
 #include <assert.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/wdog.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/wdog.h>
 
 #include "sched/sched.h"
 #include "wdog/wdog.h"

@@ -58,18 +58,18 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #ifdef CONFIG_AUDIO_TAS5749
 #include <stdint.h>
 #include <stdbool.h>
 #include <semaphore.h>
 #include <queue.h>
-#include <tinyara/fs/ioctl.h>
-#include <tinyara/audio/i2s.h>
-#include <tinyara/audio/audio.h>
+#include <tizenrt/fs/ioctl.h>
+#include <tizenrt/audio/i2s.h>
+#include <tizenrt/audio/audio.h>
 #ifdef TAS5749_USE_FFLOCK_INT
-#include <tinyara/wqueue.h>
+#include <tizenrt/wqueue.h>
 #endif
 
 /****************************************************************************

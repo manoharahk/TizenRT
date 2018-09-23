@@ -28,11 +28,11 @@
 #ifndef __TASK_MANAGER_H__
 #define __TASK_MANAGER_H__
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <signal.h>
 #include <pthread.h>
 
-#include <tinyara/task_manager_internal.h>
+#include <tizenrt/task_manager_internal.h>
 
 /**
  * @brief Task State which managed by Task Manager

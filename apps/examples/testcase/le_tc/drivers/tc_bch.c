@@ -18,8 +18,8 @@
 
 /// @file tc_bch.c
 /// @brief Test Case Example for bch driver
-#include <tinyara/config.h>
-#include <tinyara/fs/ioctl.h>
+#include <tizenrt/config.h>
+#include <tizenrt/fs/ioctl.h>
 #include <stdio.h>
 #include <fcntl.h>
 #include <string.h>

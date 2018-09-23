@@ -54,12 +54,12 @@
  * Included Files
  ************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <assert.h>
 
-#include <tinyara/mqueue.h>
-#include <tinyara/sched.h>
+#include <tizenrt/mqueue.h>
+#include <tizenrt/sched.h>
 
 #include "mqueue/mqueue.h"
 

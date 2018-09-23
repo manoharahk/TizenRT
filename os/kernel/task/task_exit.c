@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <sched.h>
 
 #include  "sched/sched.h"
@@ -63,7 +63,7 @@
 #include "signal/signal.h"
 #endif
 #include "task/task.h"
-#include <tinyara/ttrace.h>
+#include <tizenrt/ttrace.h>
 
 /****************************************************************************
  * Pre-processor Definitions

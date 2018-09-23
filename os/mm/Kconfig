@@ -9,7 +9,7 @@ config MM_KERNEL_HEAP
 	depends on BUILD_PROTECTED || BUILD_KERNEL
 	---help---
 		Partition heap memory into two parts:  (1) a protected, kernel-mode
-		heap accessible only by the TinyAra kernel, and (2) an unprotected
+		heap accessible only by the TizenRT kernel, and (2) an unprotected
 		user-mode heap for use by applications.  If you are only interested
 		in protected the kernel from read access, then this option is not
 		necessary.  If you wish to secure the kernel data as well, then

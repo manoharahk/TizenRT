@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 
@@ -66,9 +66,9 @@
 #include <errno.h>
 #include <assert.h>
 
-#include <tinyara/fs/fs.h>
-#include <tinyara/arch.h>
-#include <tinyara/syslog/syslog.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/syslog/syslog.h>
 
 #include "inode/inode.h"
 
@@ -328,7 +328,7 @@ int syslog_initialize(void)
 			ret = inode->u.i_mops->open(&g_sysdev.sl_file, relpath, SYSLOG_OFLAGS, 0666);
 		}
 
-		/* No... then it must be a character driver in the TinyAra pseudo-
+		/* No... then it must be a character driver in the TizenRT pseudo-
 		 * file system.
 		 */
 

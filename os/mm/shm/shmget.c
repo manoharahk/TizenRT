@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/shm.h>
 #include <sys/ipc.h>
@@ -63,8 +63,8 @@
 #include <string.h>
 #include <errno.h>
 
-#include <tinyara/pgalloc.h>
-#include <tinyara/mm/shm.h>
+#include <tizenrt/pgalloc.h>
+#include <tizenrt/mm/shm.h>
 
 #include "shm/shm.h"
 
@@ -376,8 +376,8 @@ static int shm_create(key_t key, size_t size, int shmflg)
  *     - The values of shm_perm.cuid, shm_perm.uid, shm_perm.cgid, and
  *       shm_perm.gid should be set equal to the effective user ID and
  *       effective group ID, respectively, of the calling process.
- *       The TinyAra ipc_perm structure, however, does not support these
- *       fields because user and group IDs are not yet supported by TinyAra.
+ *       The TizenRT ipc_perm structure, however, does not support these
+ *       fields because user and group IDs are not yet supported by TizenRT.
  *
  ****************************************************************************/
 

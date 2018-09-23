@@ -52,11 +52,11 @@
 
 # All add-on directories.
 #
-# TINYARA_ADDONS is the list of directories built into the TinyAra kernel.
+# TIZENRT_ADDONS is the list of directories built into the TizenRT kernel.
 # USER_ADDONS is the list of directories that will be built into the user
 #   application
 
-TINYARA_ADDONS :=
+TIZENRT_ADDONS :=
 USER_ADDONS :=
 
 # In the protected build, the applications in the apps/ directory will be
@@ -68,7 +68,7 @@ ifeq ($(CONFIG_BUILD_PROTECTED),y)
 USER_ADDONS += $(APPDIR)
 else
 ifneq ($(CONFIG_BUILD_KERNEL),y)
-TINYARA_ADDONS += $(APPDIR)
+TIZENRT_ADDONS += $(APPDIR)
 endif
 endif
 
@@ -91,16 +91,16 @@ endif
 else
 
 ifneq ($(CONFIG_BUILD_KERNEL),y)
-TINYARA_ADDONS += $(EXTDIR)
+TIZENRT_ADDONS += $(EXTDIR)
 ifeq ($(CONFIG_HAVE_CXX),y)
 # libc++ library is added in external directory as an add-on.
-TINYARA_ADDONS += $(EXTDIR)$(DELIM)libcxx
+TIZENRT_ADDONS += $(EXTDIR)$(DELIM)libcxx
 endif
 ifeq ($(CONFIG_ENABLE_IOTIVITY),y)
-TINYARA_ADDONS += $(EXTDIR)$(DELIM)iotivity
+TIZENRT_ADDONS += $(EXTDIR)$(DELIM)iotivity
 endif
 ifeq ($(CONFIG_ENABLE_IOTJS),y)
-TINYARA_ADDONS += $(EXTDIR)$(DELIM)iotjs$(DELIM)config$(DELIM)tizenrt
+TIZENRT_ADDONS += $(EXTDIR)$(DELIM)iotjs$(DELIM)config$(DELIM)tizenrt
 endif
 endif # CONFIG_BUILD_KERNEL
 
@@ -112,7 +112,7 @@ ifeq ($(CONFIG_BUILD_PROTECTED),y)
 USER_ADDONS += $(FRAMEWORK_LIB_DIR)
 else
 ifneq ($(CONFIG_BUILD_KERNEL),y)
-TINYARA_ADDONS += $(FRAMEWORK_LIB_DIR)
+TIZENRT_ADDONS += $(FRAMEWORK_LIB_DIR)
 endif
 endif
 
@@ -122,7 +122,7 @@ ifeq ($(CONFIG_BUILD_PROTECTED),y)
 USER_ADDONS += $(TOOLSDIR)
 else
 ifneq ($(CONFIG_BUILD_KERNEL),y)
-TINYARA_ADDONS += $(TOOLSDIR)
+TIZENRT_ADDONS += $(TOOLSDIR)
 endif
 endif
 
@@ -134,13 +134,13 @@ endif
 # CONTEXTDIRS include directories that have special, one-time pre-build
 #   requirements.  Normally this includes things like auto-generation of
 #   configuration specific files or creation of configurable symbolic links
-# USERDIRS - When TinyAra is build is a monolithic kernel, this provides the
+# USERDIRS - When TizenRT is build is a monolithic kernel, this provides the
 #   list of directories that must be built
 # OTHERDIRS - These are directories that are not built but probably should
 #   be cleaned to prevent garbage from collecting in them when changing
 #   configurations.
 
-NONFSDIRS = kernel $(ARCH_SRC) $(TINYARA_ADDONS)
+NONFSDIRS = kernel $(ARCH_SRC) $(TIZENRT_ADDONS)
 FSDIRS = fs drivers
 CONTEXTDIRS = $(APPDIR)
 CONTEXTDIRS += $(TOOLSDIR)
@@ -193,10 +193,10 @@ endif
 # CLEANDIRS are the directories that will clean in.  These are
 #   all directories that we know about.
 # KERNDEPDIRS are the directories in which we will build target dependencies.
-#   If TinyAra and applications are built separately (CONFIG_BUILD_PROTECTED or
+#   If TizenRT and applications are built separately (CONFIG_BUILD_PROTECTED or
 #   CONFIG_BUILD_KERNEL), then this holds only the directories containing
 #   kernel files.
-# USERDEPDIRS. If TinyAra and applications are built separately (CONFIG_BUILD_PROTECTED),
+# USERDEPDIRS. If TizenRT and applications are built separately (CONFIG_BUILD_PROTECTED),
 #   then this holds only the directories containing user files. If
 #   CONFIG_BUILD_KERNEL is selected, then applications are not build at all.
 

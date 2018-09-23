@@ -55,15 +55,15 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <string.h>
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/kmalloc.h>
-#include <tinyara/usb/usbhost.h>
-#include <tinyara/usb/usbhost_devaddr.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/usb/usbhost.h>
+#include <tizenrt/usb/usbhost_devaddr.h>
 
 /****************************************************************************
  * Pre-processor Definitions

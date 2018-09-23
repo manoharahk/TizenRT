@@ -67,7 +67,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 #include <semaphore.h>
@@ -102,12 +102,12 @@
  *     Invalid fd member (revents only).
  */
 
-#define POLLIN       (0x01)		/* TinyAra does not make priority distinctions */
+#define POLLIN       (0x01)		/* TizenRT does not make priority distinctions */
 #define POLLRDNORM   (0x01)
 #define POLLRDBAND   (0x01)
 #define POLLPRI      (0x01)
 
-#define POLLOUT      (0x02)		/* TinyAra does not make priority distinctions */
+#define POLLOUT      (0x02)		/* TizenRT does not make priority distinctions */
 #define POLLWRNORM   (0x02)
 #define POLLWRBAND   (0x02)
 
@@ -130,7 +130,7 @@ typedef unsigned int nfds_t;
 
 typedef uint8_t pollevent_t;
 
-/* This is the TinyAra variant of the standard pollfd structure. */
+/* This is the TizenRT variant of the standard pollfd structure. */
 
 struct pollfd {
 	int fd;						/* The descriptor being polled */

@@ -9,7 +9,7 @@
 #include <stdint.h>
 #include <string.h>
 #include <sys/types.h>
-#include <tinyara/irq.h>
+#include <tizenrt/irq.h>
 
 #include <stdint.h>
 #include <stdbool.h>
@@ -22,9 +22,9 @@
 #include <errno.h>
 #include <debug.h>
 #include <math.h>
-#include <tinyara/compiler.h>
+#include <tizenrt/compiler.h>
 #include <arch/chip/irq.h>
-#include <tinyara/kmalloc.h>
+#include <tizenrt/kmalloc.h>
 #include "utils_scsc.h"
 
 #define __bitwise

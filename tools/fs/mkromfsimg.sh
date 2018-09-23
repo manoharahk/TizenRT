@@ -84,7 +84,7 @@ genromfs -h 1>/dev/null 2>&1 || { \
 
 # Now we are ready to make the ROMFS image
 
-genromfs -f ${romfsimg} -d ${contentsdir} -x .gitignore -V "TinyAraROMVol" || { echo "genromfs failed" ; exit 1 ; }
+genromfs -f ${romfsimg} -d ${contentsdir} -x .gitignore -V "TizenRTROMVol" || { echo "genromfs failed" ; exit 1 ; }
 
 # And, finally, create the header file
 echo "${romfsimg} was made."

@@ -28,8 +28,8 @@
 #include <errno.h>
 #include <pthread.h>
 #include <stdlib.h>
-#include <tinyara/pthread.h>
-#include <tinyara/config.h>
+#include <tizenrt/pthread.h>
+#include <tizenrt/config.h>
 #include "tc_internal.h"
 #include <sys/types.h>
 #include <stdbool.h>

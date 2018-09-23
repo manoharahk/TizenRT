@@ -18,7 +18,7 @@
 
 /// @file itc_semaphore.c
 /// @brief Test Case Example for semaphore API
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <semaphore.h>
 #include <pthread.h>
 #include "tc_internal.h"

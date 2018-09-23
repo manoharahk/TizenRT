@@ -59,8 +59,8 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/cancelpt.h>
-#include <tinyara/ttrace.h>
+#include <tizenrt/cancelpt.h>
+#include <tizenrt/ttrace.h>
 
 #include "sched/sched.h"
 #include "group/group.h"

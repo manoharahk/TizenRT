@@ -57,14 +57,14 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 /****************************************************************************
  * Pre-processor Definitions
  ****************************************************************************/
-/* This is a mindless little wrapper around include/tinyara/config.h.  Every
+/* This is a mindless little wrapper around include/tizenrt/config.h.  Every
  * file in the ftpc directory includes this file at the very beginning of
- * of the file (instead of include/tinyara/config.h).  The only purpose of
+ * of the file (instead of include/tizenrt/config.h).  The only purpose of
  * this file is to muck with some of the settings to support some debug
  * features.
  *

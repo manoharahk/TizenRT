@@ -50,13 +50,13 @@
  *
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <iostream>
 #include <memory>
 #include <string>
 
 #include <grpc++/grpc++.h>
-#include <tinyara/init.h>
+#include <tizenrt/init.h>
 
 #include <apps/platform/cxxinitialize.h>
 #include <stdlib.h>

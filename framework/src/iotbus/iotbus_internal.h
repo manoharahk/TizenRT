@@ -16,7 +16,7 @@
  *
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <debug.h>
 
 #ifdef CONFIG_CPP_HAVE_VARARGS

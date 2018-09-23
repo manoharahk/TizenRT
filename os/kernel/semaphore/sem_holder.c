@@ -54,13 +54,13 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <semaphore.h>
 #include <sched.h>
 #include <assert.h>
 #include <debug.h>
-#include <tinyara/arch.h>
+#include <tizenrt/arch.h>
 
 #include "sched/sched.h"
 #include "semaphore/semaphore.h"

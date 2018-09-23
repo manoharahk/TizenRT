@@ -67,7 +67,7 @@
  * Included Files
  ********************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdint.h>
@@ -90,7 +90,7 @@
 #define O_NONBLOCK  (1 << 6)	/* Don't wait for data */
 #define O_NDELAY    O_NONBLOCK	/* Synonym for O_NONBLOCK */
 #define O_SYNC      (1 << 7)	/* Synchronize output on write */
-#define O_DSYNC     O_SYNC		/* Equivalent to OSYNC in TinyAra */
+#define O_DSYNC     O_SYNC		/* Equivalent to OSYNC in TizenRT */
 #define O_BINARY    (1 << 8)	/* Open the file in binary (untranslated) mode. */
 
 /* Unsupported, but required open flags */
@@ -101,7 +101,7 @@
 #define O_TEXT      0			/* Open the file in text (translated) mode. */
 
 /* This is the highest bit number used in the open flags bitset.  Bits above
- * this bit number may be used within TinyAra for other, internal purposes.
+ * this bit number may be used within TizenRT for other, internal purposes.
  */
 
 #define _O_MAXBIT   8
@@ -112,7 +112,7 @@
 #define FNONBLOCK   O_NONBLOCK	/* Don't wait for data */
 #define FAPPEND     O_APPEND	/* Keep contents, append to end */
 #define FSYNC       O_SYNC		/* Synchronize output on write */
-#define FASYNC      0			/* No counterpart in TinyAra */
+#define FASYNC      0			/* No counterpart in TizenRT */
 
 /* FFCNTL is all the bits that may be set via fcntl. */
 

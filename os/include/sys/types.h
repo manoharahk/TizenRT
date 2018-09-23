@@ -57,8 +57,8 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/compiler.h>
+#include <tizenrt/config.h>
+#include <tizenrt/compiler.h>
 
 #ifndef __ASSEMBLY__
 #include <stdint.h>
@@ -291,14 +291,14 @@ typedef uint32_t clock_t;
 typedef uint32_t useconds_t;
 typedef int32_t suseconds_t;
 
-/* BSD types provided only to support porting to TinyAra. */
+/* BSD types provided only to support porting to TizenRT. */
 
 typedef unsigned char u_char;
 typedef unsigned short u_short;
 typedef unsigned int u_int;
 typedef unsigned long u_long;
 
-/* SYSV types provided only to support porting to TinyAra.  */
+/* SYSV types provided only to support porting to TizenRT.  */
 
 typedef unsigned char unchar;
 typedef unsigned short ushort;

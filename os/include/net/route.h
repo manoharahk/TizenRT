@@ -57,11 +57,11 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/socket.h>
 
-#include <tinyara/net/ioctl.h>
+#include <tizenrt/net/ioctl.h>
 
 #ifdef CONFIG_NET_ROUTE
 
@@ -74,7 +74,7 @@
  ****************************************************************************/
 
 /* This structure describes the route information passed with the SIOCADDRT
- * and SIOCDELRT ioctl commands (see include/tinyara/net/ioctl.h).
+ * and SIOCDELRT ioctl commands (see include/tizenrt/net/ioctl.h).
  */
 
 struct rtentry {

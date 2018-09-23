@@ -19,7 +19,7 @@
 /// @file network_tc_main.c
 
 /// @brief Main Function for Network TestCase Example
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include "tc_common.h"
 #include "tc_internal.h"

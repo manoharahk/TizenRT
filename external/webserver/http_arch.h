@@ -23,7 +23,7 @@
 #include <stdlib.h>
 
 /*
- * Below is for TinyAra
+ * Below is for TizenRT
  */
 #define HTTP_MALLOC malloc
 #define HTTP_MEMSET memset

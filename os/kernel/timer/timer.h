@@ -57,13 +57,13 @@
  * Included Files
  ********************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdint.h>
 
-#include <tinyara/compiler.h>
-#include <tinyara/wdog.h>
+#include <tizenrt/compiler.h>
+#include <tizenrt/wdog.h>
 
 /********************************************************************************
  * Definitions

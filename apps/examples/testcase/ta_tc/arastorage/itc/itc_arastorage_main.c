@@ -18,11 +18,11 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <string.h>
 #include <arastorage/arastorage.h>
-#include <tinyara/fs/fs_utils.h>
+#include <tizenrt/fs/fs_utils.h>
 #include "tc_common.h"
 
 /****************************************************************************

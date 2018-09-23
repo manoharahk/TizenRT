@@ -20,13 +20,13 @@
 #include "ares_setup.h"
 #include "ares.h"
 // TODO(TizenRT)
-#if defined(__TINYARA__)
+#if defined(__TIZENRT__)
 #include <uio.h>
 #endif
 
 #ifndef HAVE_WRITEV
 // TODO(TizenRT)
-#if !defined(__TINYARA__)
+#if !defined(__TIZENRT__)
 /* Structure for scatter/gather I/O. */
 struct iovec
 {

@@ -19,7 +19,7 @@
 #ifndef __MEDIA_DECODER_H
 #define __MEDIA_DECODER_H
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <memory>
 

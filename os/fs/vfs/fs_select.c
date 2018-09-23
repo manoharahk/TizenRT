@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/select.h>
 #include <sys/time.h>
@@ -65,9 +65,9 @@
 #include <assert.h>
 #include <debug.h>
 
-#include <tinyara/kmalloc.h>
-#include <tinyara/cancelpt.h>
-#include <tinyara/fs/fs.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/cancelpt.h>
+#include <tizenrt/fs/fs.h>
 
 #include "inode/inode.h"
 

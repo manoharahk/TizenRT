@@ -56,7 +56,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <sys/ioctl.h>
@@ -72,13 +72,13 @@
 #include <crc8.h>
 #include <crc16.h>
 #include <crc32.h>
-#include <tinyara/math.h>
-#include <tinyara/kmalloc.h>
-#include <tinyara/fs/fs.h>
-#include <tinyara/fs/ioctl.h>
-#include <tinyara/fs/mtd.h>
-#include <tinyara/fs/smart_procfs.h>
-#include <tinyara/fs/smart.h>
+#include <tizenrt/math.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/fs/ioctl.h>
+#include <tizenrt/fs/mtd.h>
+#include <tizenrt/fs/smart_procfs.h>
+#include <tizenrt/fs/smart.h>
 
 /****************************************************************************
  * Private Definitions

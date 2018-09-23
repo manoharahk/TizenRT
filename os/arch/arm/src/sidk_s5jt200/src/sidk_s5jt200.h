@@ -56,7 +56,7 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 enum configdata_id {
 	SIDK_S5JT200_CONFIGDATA_PLATFORM	= 0xff00,

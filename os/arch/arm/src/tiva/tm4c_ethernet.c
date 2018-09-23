@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #if defined(CONFIG_NET) && defined(CONFIG_TIVA_ETHERNET)
 
 #include <stdint.h>
@@ -67,19 +67,19 @@
 
 #include <arpa/inet.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/irq.h>
-#include <tinyara/wdog.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/irq.h>
+#include <tizenrt/wdog.h>
 
 #ifdef CONFIG_NET_NOINTS
-#include <tinyara/wqueue.h>
+#include <tizenrt/wqueue.h>
 #endif
 
-#include <tinyara/net/mii.h>
-#include <tinyara/net/netdev.h>
+#include <tizenrt/net/mii.h>
+#include <tizenrt/net/netdev.h>
 
 #ifdef CONFIG_TIVA_PHY_INTERRUPTS
-#include <tinyara/net/phy.h>
+#include <tizenrt/net/phy.h>
 #endif
 
 #include "up_internal.h"

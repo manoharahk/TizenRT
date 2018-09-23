@@ -15,7 +15,7 @@
  * language governing permissions and limitations under the License.
  *
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -25,7 +25,7 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <sched.h>
-#include <tinyara/sched.h>
+#include <tizenrt/sched.h>
 #include <error_report/error_report.h>
 
 #define ERR_IP_ADRR_LEN 16

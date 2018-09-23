@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <sys/socket.h>
@@ -74,7 +74,7 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 
-#include <tinyara/net/telnet.h>
+#include <tizenrt/net/telnet.h>
 
 #include <protocols/telnetd.h>
 #include <netutils/netlib.h>
@@ -172,7 +172,7 @@ static int telnetd_daemon(int argc, char *argv[])
 	 *
 	 * NOTE: If the SA_NOCLDWAIT flag is set when establishing a handler for
 	 * SIGCHLD, POSIX.1 leaves it unspecified whether a SIGCHLD signal is
-	 * generated when a child process terminates.  On both Linux and TinyAra, a
+	 * generated when a child process terminates.  On both Linux and TizenRT, a
 	 * SIGCHLD signal will be generated in this case.
 	 */
 

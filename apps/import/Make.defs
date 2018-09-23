@@ -209,7 +209,7 @@ else
   LDLIBPATH = -L $(APPDIR) -L $(TOPDIR)$(DELIM)libs
 endif
 
-LDLIBS = -lapps -ltinyara
+LDLIBS = -lapps -ltizenrt
 
 # Try to get the path to libgcc.a.  Of course, this only works for GCC
 # toolchains.

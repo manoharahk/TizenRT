@@ -59,7 +59,7 @@ CSRCS		=
 CSRCS += $(notdir $(wildcard ./mp3dec/*.c))
 CSRCS += $(notdir $(wildcard ./aacdec/*.c))
 
-CFLAGS += -D__TINYARA__
+CFLAGS += -D__TIZENRT__
 CFLAGS += -std=c99
 
 AOBJS		= $(ASRCS:.S=$(OBJEXT))

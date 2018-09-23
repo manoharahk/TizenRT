@@ -23,7 +23,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <sys/time.h>
@@ -38,11 +38,11 @@
 #include <semaphore.h>
 #include <errno.h>
 
-#include <tinyara/irq.h>
-#include <tinyara/kmalloc.h>
-#include <tinyara/clock.h>
-#include <tinyara/fs/fs.h>
-#include <tinyara/spi/spi.h>
+#include <tizenrt/irq.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/clock.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/spi/spi.h>
 #include <arpa/inet.h>
 #include "dev.h"
 

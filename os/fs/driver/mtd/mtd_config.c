@@ -65,7 +65,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdbool.h>
@@ -73,12 +73,12 @@
 #include <poll.h>
 #include <errno.h>
 #include <debug.h>
-#include <tinyara/fs/fs.h>
+#include <tizenrt/fs/fs.h>
 
-#include <tinyara/kmalloc.h>
-#include <tinyara/fs/ioctl.h>
-#include <tinyara/fs/mtd.h>
-#include <tinyara/configdata.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/fs/ioctl.h>
+#include <tizenrt/fs/mtd.h>
+#include <tizenrt/configdata.h>
 
 #ifdef CONFIG_MTD_CONFIG
 

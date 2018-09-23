@@ -54,14 +54,14 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <unistd.h>
 #include <errno.h>
 
-#include <tinyara/cancelpt.h>
-#include <tinyara/fs/fs.h>
+#include <tizenrt/cancelpt.h>
+#include <tizenrt/fs/fs.h>
 
 /****************************************************************************
  * Private Functions

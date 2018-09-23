@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/stat.h>
 #include <sys/statfs.h>
@@ -68,10 +68,10 @@
 #include <debug.h>
 #include <unistd.h>
 
-#include <tinyara/kmalloc.h>
-#include <tinyara/fs/fs.h>
-#include <tinyara/fs/dirent.h>
-#include <tinyara/fs/ioctl.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/fs/dirent.h>
+#include <tizenrt/fs/ioctl.h>
 
 #include "fs_tmpfs.h"
 

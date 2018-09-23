@@ -51,8 +51,8 @@
  ****************************************************************************/
 
 #include <apps/shell/tash.h>
-#include <tinyara/arch.h>
-#include <tinyara/config.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/config.h>
 
 #include <setjmp.h>
 #include <stdio.h>

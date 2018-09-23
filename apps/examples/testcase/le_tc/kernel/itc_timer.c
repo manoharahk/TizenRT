@@ -19,7 +19,7 @@
 /// @file itc_timer.c
 /// @brief Test Case Example for Timer API
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <errno.h>
 #include "tc_internal.h"
 #include <unistd.h>

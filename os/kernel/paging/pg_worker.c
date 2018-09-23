@@ -55,7 +55,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 #include <stdbool.h>
@@ -65,9 +65,9 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/page.h>
-#include <tinyara/clock.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/page.h>
+#include <tizenrt/clock.h>
 
 #include "sched/sched.h"
 #include "paging/paging.h"

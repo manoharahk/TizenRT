@@ -308,7 +308,7 @@
 #define GPR_ARCH_32 1
 #endif /* _LP64 */
 #elif defined(__TizenRT__)
-#include <tinyara/features.h>
+#include <tizenrt/features.h>
 #define GPR_PLATFORM_STRING "tizenrt"
 #define GPR_TIZENRT 1
 #define GPR_CPU_TIZENRT 1

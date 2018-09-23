@@ -18,8 +18,8 @@
 
 /// @file tc_loop.c
 /// @brief Test Case Example for loop driver
-#include <tinyara/config.h>
-#include <tinyara/fs/fs.h>
+#include <tizenrt/config.h>
+#include <tizenrt/fs/fs.h>
 #include <stdio.h>
 #include <fcntl.h>
 #include <string.h>

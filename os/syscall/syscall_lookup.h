@@ -56,7 +56,7 @@
 
 /* SYSCALL_LOOKUP must be defined before including this file.
  *
- * These first system calls are supported regardless of the TinyAra
+ * These first system calls are supported regardless of the TizenRT
  * configuration
  */
 
@@ -126,7 +126,7 @@ SYSCALL_LOOKUP(waitid,                  4, STUB_waitid)
 #  endif
 #endif
 
-/* The following are only defined is signals are supported in the TinyAra
+/* The following are only defined is signals are supported in the TizenRT
  * configuration.
  */
 
@@ -143,7 +143,7 @@ SYSCALL_LOOKUP(nanosleep,               2, STUB_nanosleep)
 #endif
 
 /* The following are only defined if the system clock is enabled in the
- * TinyAra configuration.
+ * TizenRT configuration.
  */
 
 SYSCALL_LOOKUP(syscall_clock,           0, STUB_clock)

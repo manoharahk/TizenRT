@@ -19,7 +19,7 @@
  ******************************************************************/
 
 #ifdef __TIZENRT__
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #endif
 
 #include "iotivity_config.h"

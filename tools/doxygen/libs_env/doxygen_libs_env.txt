@@ -803,11 +803,11 @@ INPUT                  = . \
                          ../../../os/include/unistd.h \
                          ../../../os/include/sys/prctl.h \
                          ../../../os/include/sys/time.h \
-                         ../../../os/include/tinyara/time.h \
+                         ../../../os/include/tizenrt/time.h \
                          ../../../os/include/sys/wait.h \
-                         ../../../os/include/tinyara/clock.h \
-                         ../../../os/include/tinyara/sched.h \
-                         ../../../os/include/tinyara/math.h \
+                         ../../../os/include/tizenrt/clock.h \
+                         ../../../os/include/tizenrt/sched.h \
+                         ../../../os/include/tizenrt/math.h \
                          ../../../os/include/assert.h \
                          ../../../os/include/termios.h \
                          ../../../apps/include/netutils/dhcpc.h \
@@ -827,9 +827,9 @@ INPUT                  = . \
                          ../../../os/include/dirent.h \
                          ../../../os/include/sys/ioctl.h \
                          ../../../os/include/sys/select.h \
-                         ../../../os/include/tinyara/regex.h \
-                         ../../../os/include/tinyara/ttrace.h \
-                         ../../../os/include/tinyara/streams.h \
+                         ../../../os/include/tizenrt/regex.h \
+                         ../../../os/include/tizenrt/ttrace.h \
+                         ../../../os/include/tizenrt/streams.h \
                          ../../../os/include/net/lwip/netif.h \
                          ../../../os/include/fixedmath.h \
                          ../../../external/iotjs/include/iotjs.h \

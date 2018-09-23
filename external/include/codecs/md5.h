@@ -78,7 +78,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #ifdef CONFIG_CODECS_HASH_MD5
 

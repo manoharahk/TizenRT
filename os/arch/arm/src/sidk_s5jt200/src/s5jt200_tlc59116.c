@@ -54,14 +54,14 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <debug.h>
 #include <assert.h>
 #include <sys/types.h>
 
-#include <tinyara/board.h>
+#include <tizenrt/board.h>
 #include <arch/board/board.h>
-#include <tinyara/i2c.h>
+#include <tizenrt/i2c.h>
 #include <iotbus/iotbus_i2c.h>
 #include <sidk_s5jt200.h>
 

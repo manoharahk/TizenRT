@@ -15,12 +15,12 @@
  * language governing permissions and limitations under the License.
  *
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
 #if defined(CONFIG_SYSLOG) && defined(CONFIG_RAMLOG_SYSLOG)
-#include <tinyara/syslog/ramlog.h>
+#include <tizenrt/syslog/ramlog.h>
 
 #if CONFIG_STDIO_BUFFER_SIZE > 0
 #define BUFFER_LEN  CONFIG_STDIO_BUFFER_SIZE

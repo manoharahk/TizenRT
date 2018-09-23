@@ -58,7 +58,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #ifndef __ASSEMBLY__
 #include <stdint.h>
@@ -80,7 +80,7 @@
 
 /* System call numbers
  *
- * These first system calls are supported regardless of the TinyAra
+ * These first system calls are supported regardless of the TizenRT
  * configuration
  */
 
@@ -183,7 +183,7 @@
 #define __SYS_signals                   __SYS_waitpid
 #endif
 
-/* The following are only defined is signals are supported in the TinyAra
+/* The following are only defined is signals are supported in the TizenRT
  * configuration.
  */
 
@@ -203,7 +203,7 @@
 #endif
 
 /* The following are only defined if the system clock is enabled in the
- * TinyAra configuration.
+ * TizenRT configuration.
  */
 
 #define SYS_clock                      (__SYS_clock+0)

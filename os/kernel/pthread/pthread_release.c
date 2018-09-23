@@ -54,12 +54,12 @@
  * Included Files
  ************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sched.h>
 #include <debug.h>
 
-#include <tinyara/kmalloc.h>
+#include <tizenrt/kmalloc.h>
 
 #include "pthread/pthread.h"
 

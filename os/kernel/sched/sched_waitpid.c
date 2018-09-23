@@ -54,15 +54,15 @@
  * Included Files
  *****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/wait.h>
 #include <semaphore.h>
 #include <signal.h>
 #include <errno.h>
 
-#include <tinyara/sched.h>
-#include <tinyara/cancelpt.h>
+#include <tizenrt/sched.h>
+#include <tizenrt/cancelpt.h>
 
 #include "sched/sched.h"
 #include "group/group.h"
@@ -285,7 +285,7 @@ errout:
  * signal.  It can also handle the pid == (pid_t)-1 arguement.  This is
  * slightly more spec-compliant.
  *
- * But then I have to be concerned about the fact that TinyAra does not queue
+ * But then I have to be concerned about the fact that TizenRT does not queue
  * signals.  This means that a flurry of signals can cause signals to be
  * lost (or to have the data in the struct siginfo to be overwritten by
  * the next signal).
@@ -395,7 +395,7 @@ pid_t waitpid(pid_t pid, int *stat_loc, int options)
 	for (;;) {
 #ifdef CONFIG_SCHED_CHILD_STATUS
 		/* Check if the task has already died. Signals are not queued in
-		 * TinyAra.  So a possibility is that the child has died and we
+		 * TizenRT.  So a possibility is that the child has died and we
 		 * missed the death of child signal (we got some other signal
 		 * instead).
 		 */
@@ -466,7 +466,7 @@ pid_t waitpid(pid_t pid, int *stat_loc, int options)
 #else							/* CONFIG_SCHED_CHILD_STATUS */
 
 		/* Check if the task has already died. Signals are not queued in
-		 * TinyAra.  So a possibility is that the child has died and we
+		 * TizenRT.  So a possibility is that the child has died and we
 		 * missed the death of child signal (we got some other signal
 		 * instead).
 		 */

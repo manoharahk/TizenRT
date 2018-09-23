@@ -20,12 +20,12 @@
 
 /// @brief Test Case Example for Clock API
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <errno.h>
 #include <time.h>
-#include <tinyara/time.h>
+#include <tizenrt/time.h>
 #include <sys/time.h>
 #include "../../../../../os/kernel/clock/clock.h"
 #include "tc_internal.h"

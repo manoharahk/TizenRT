@@ -54,12 +54,12 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 #include <string.h>
 
-#include <tinyara/arch.h>
+#include <tizenrt/arch.h>
 
 #include "arm.h"
 #include "up_internal.h"
@@ -130,7 +130,7 @@ void up_initial_state(struct tcb_s *tcb)
 	}
 #endif
 
-	/* Set supervisor-mode and disable FIQs, regardless of how TinyAra is
+	/* Set supervisor-mode and disable FIQs, regardless of how TizenRT is
 	 * configured and of what kind of thread is being started.  That is
 	 * because all threads, even user-mode threads will start in kernel
 	 * trampoline at task_start() or pthread_start().  The thread's

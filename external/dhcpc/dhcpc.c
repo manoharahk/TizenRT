@@ -75,7 +75,7 @@
 #include <netutils/netlib.h>
 
 #if defined(CONFIG_NETDB_DNSCLIENT) && defined(CONFIG_NETDB_DNSSERVER_BY_DHCP)
-#include <tinyara/net/dns.h>
+#include <tizenrt/net/dns.h>
 #endif
 /****************************************************************************
  * Definitions

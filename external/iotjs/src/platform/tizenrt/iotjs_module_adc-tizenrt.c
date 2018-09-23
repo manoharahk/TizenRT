@@ -19,8 +19,8 @@
 #include <fcntl.h>
 #include <stdlib.h>
 #include <sys/ioctl.h>
-#include <tinyara/analog/adc.h>
-#include <tinyara/analog/ioctl.h>
+#include <tizenrt/analog/adc.h>
+#include <tizenrt/analog/ioctl.h>
 
 #include "iotjs_def.h"
 #include "modules/iotjs_module_adc.h"

@@ -26,7 +26,7 @@ DEPPATH += --dep-path src/media/streaming
 VPATH += :src/media/streaming
 endif
 
-CFLAGS += -D__TINYARA__
+CFLAGS += -D__TIZENRT__
 
 ifeq ($(CONFIG_MEDIA), y)
 CXXSRCS += MediaQueue.cpp DataSource.cpp MediaWorker.cpp

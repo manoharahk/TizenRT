@@ -18,7 +18,7 @@
 
 /// @file tc_dev_zero.c
 /// @brief Test Case Example for dev_zero driver
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <fcntl.h>
 #include "tc_internal.h"

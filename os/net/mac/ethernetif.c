@@ -23,7 +23,7 @@
 #include <debug.h>
 #include <assert.h>
 #include <net/if.h>
-#include <tinyara/net/ethernet.h>
+#include <tizenrt/net/ethernet.h>
 
 #ifdef CONFIG_NET_LWIP
 

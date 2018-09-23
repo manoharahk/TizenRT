@@ -1,7 +1,7 @@
 mm/README.txt
 =============
 
-This directory contains the TinyAra memory management logic.  This include:
+This directory contains the TizenRT memory management logic.  This include:
 
 1) Standard Memory Management Functions:
 
@@ -24,7 +24,7 @@ This directory contains the TinyAra memory management logic.  This include:
        then the small memory model is automatically used.  The maximum size
        of the heap is then 64K.  The small memory model can also be forced
        MCUs with wider addressing by defining CONFIG_SMALL_MEMORY in the
-       TinyAra configuration file.
+       TizenRT configuration file.
      o Large Memory Model.  Otherwise, the allocator uses a model that
        supports a heap of up to 4G.
 
@@ -40,11 +40,11 @@ This directory contains the TinyAra memory management logic.  This include:
 
      This allocator can be used to manage multiple heaps (albeit with some
      non-standard interfaces).  A heap is represented by struct mm_heap_s
-     as defined in the file include/tinyara/mm/mm.h.  To create another heap
+     as defined in the file include/tizenrt/mm/mm.h.  To create another heap
      instance, you would allocate a heap structure, most likely statically
      in memory:
 
-       include <tinyara/mm/mm.h>
+       include <tizenrt/mm/mm.h>
        static struct mm_heap_s g_myheap;
 
      Then initialize the heap using:
@@ -52,7 +52,7 @@ This directory contains the TinyAra memory management logic.  This include:
        mm_initialize(&g_myheap, myheap_start, myheap_size);
 
      Where mm_initialize() and all related interfaces are prototyped in the
-     header file include/tinyara/mm/mm.h.
+     header file include/tizenrt/mm/mm.h.
 
      After the new heap instance has been initialized, it can then be used
      with these almost familiar interfaces: mm_malloc(), mm_realloc(), mm_free(),
@@ -65,7 +65,7 @@ This directory contains the TinyAra memory management logic.  This include:
 
    User/Kernel Heaps
 
-     This multiple heap capability is exploited in some of the more complex TinyAra
+     This multiple heap capability is exploited in some of the more complex TizenRT
      build configurations to provide separate kernel-mode and user-mode heaps.
 
    Sub-Directories:
@@ -80,13 +80,13 @@ This directory contains the TinyAra memory management logic.  This include:
      granule allocator allocates memory in units of a fixed sized block ("granule").
      Allocations may be aligned to a user-provided address boundary.
 
-     The granule allocator interfaces are defined in include/tinyara/mm/gran.h.
+     The granule allocator interfaces are defined in include/tizenrt/mm/gran.h.
      The granule allocator consists of these files in this directory:
 
        mm_gran.h, mm_granalloc.c, mm_grancritical.c, mm_granfree.c
        mm_graninit.c
 
-     The granule allocator is not used anywhere within the base TinyAra code
+     The granule allocator is not used anywhere within the base TizenRT code
      as of this writing.  The intent of the granule allocator is to provide
      a tool to support platform-specific management of aligned DMA memory.
 
@@ -141,7 +141,7 @@ This directory contains the TinyAra memory management logic.  This include:
 
 4) Shared Memory Management
 
-   When TinyAra is build in kernel mode with a separate, privileged, kernel-
+   When TizenRT is build in kernel mode with a separate, privileged, kernel-
    mode address space and multiple, unprivileged, user-mode address spaces,
    then shared memory regions must also be managed.  Shared memory regions
    are user-accessible memory regions that can be attached into the user

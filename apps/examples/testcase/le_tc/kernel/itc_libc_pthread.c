@@ -29,8 +29,8 @@
 #include <string.h>
 #include <sys/types.h>
 #include <stdbool.h>
-#include <tinyara/pthread.h>
-#include <tinyara/config.h>
+#include <tizenrt/pthread.h>
+#include <tizenrt/config.h>
 #include "tc_internal.h"
 
 #define LOOP_SIZE CONFIG_ITC_LIBC_PTHREAD_LOOP_SIZE

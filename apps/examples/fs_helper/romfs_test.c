@@ -30,9 +30,9 @@
 #include <string.h>
 #include <sys/mount.h>
 
-#include <tinyara/config.h>
-#include <tinyara/fs/fs_utils.h>
-#include <tinyara/fs/ramdisk.h>
+#include <tizenrt/config.h>
+#include <tizenrt/fs/fs_utils.h>
+#include <tizenrt/fs/ramdisk.h>
 
 /****************************************************************************
  * Pre-processor Definitions

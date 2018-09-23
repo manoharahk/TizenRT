@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <syscall.h>
@@ -73,7 +73,7 @@
  * Stub Function Prototypes
  ****************************************************************************/
 
-/* These first system calls are supported regardless of the TinyAra
+/* These first system calls are supported regardless of the TizenRT
  * configuration
  */
 
@@ -124,7 +124,7 @@ uintptr_t STUB_wait(int nbr, uintptr_t parm1);
 uintptr_t STUB_waitid(int nbr, uintptr_t parm1, uintptr_t parm2,
 					  uintptr_t parm3, uintptr_t parm4);
 
-/* The following are only defined is signals are supported in the TinyAra
+/* The following are only defined is signals are supported in the TizenRT
  * configuration.
  */
 
@@ -143,7 +143,7 @@ uintptr_t STUB_sigwaitinfo(int nbr, uintptr_t parm1, uintptr_t parm2);
 uintptr_t STUB_nanosleep(int nbr, uintptr_t parm1, uintptr_t parm2);
 
 /* The following are only defined if the system clock is enabled in the
- * TinyAra configuration.
+ * TizenRT configuration.
  */
 
 uintptr_t STUB_clock(int nbr);

@@ -40,7 +40,7 @@
 #include <string.h>
 #include <sys/socket.h>
 #include <sys/types.h>
-#if !defined(__TINYARA__)
+#if !defined(__TIZENRT__)
 #include <sys/uio.h>
 #endif
 #include <sys/un.h>
@@ -401,7 +401,7 @@ static void uv__drain(uv_stream_t *stream)
 		uv__req_unregister(stream->loop, req);
 
 		err = 0;
-#if defined(__TINYARA__)
+#if defined(__TIZENRT__)
 		TDLOG("uv__drain, shutdown() is not supported in NuttX");
 		assert(false);
 #else
@@ -442,7 +442,7 @@ static void uv__stream_eof(uv_stream_t *stream, const uv_buf_t *buf)
 	stream->flags &= ~UV_STREAM_READING;
 }
 
-#if !defined(__TINYARA__)
+#if !defined(__TIZENRT__)
 static int uv__stream_queue_fd(uv_stream_t *stream, int fd)
 {
 	uv__stream_queued_fds_t *queued_fds;
@@ -589,8 +589,8 @@ static int uv__getiovmax(void)
 		iovmax = sysconf(_SC_IOV_MAX);
 	}
 	return iovmax;
-#elif defined(TUV_TINYARA_IOV_MAX)
-	return TUV_TINYARA_IOV_MAX;
+#elif defined(TUV_TIZENRT_IOV_MAX)
+	return TUV_TIZENRT_IOV_MAX;
 #else
 	return 1024;
 #endif
@@ -636,7 +636,7 @@ start:
 	 * inside the iov each time we write. So there is no need to offset it.
 	 */
 
-#if defined(__TINYARA__)
+#if defined(__TIZENRT__)
 	do {
 		if (iovcnt == 1) {
 			n = write(uv__stream_fd(stream), iov[0].iov_base, iov[0].iov_len);
@@ -761,7 +761,7 @@ start:
 
 }
 
-#if !defined(__TINYARA__)
+#if !defined(__TIZENRT__)
 static int uv__stream_recv_cmsg(uv_stream_t *stream, struct msghdr *msg)
 {
 	struct cmsghdr *cmsg;
@@ -813,7 +813,7 @@ static int uv__stream_recv_cmsg(uv_stream_t *stream, struct msghdr *msg)
 }
 #endif
 
-#if defined(__TINYARA__)
+#if defined(__TIZENRT__)
 #define READ_ALLOC_CB_SIZE (2 * 1024)
 #else
 #define READ_ALLOC_CB_SIZE (64 * 1024)
@@ -829,7 +829,7 @@ static void uv__read(uv_stream_t *stream)
 	int count;
 	int err;
 	int is_ipc;
-#if !defined(__TINYARA__)
+#if !defined(__TIZENRT__)
 	struct msghdr msg;
 	char cmsg_space[CMSG_SPACE(UV__CMSG_FD_SIZE)];
 #endif
@@ -842,7 +842,7 @@ static void uv__read(uv_stream_t *stream)
 	count = 32;
 
 	is_ipc = stream->type == UV_NAMED_PIPE && ((uv_pipe_t *) stream)->ipc;
-#if defined(__TINYARA__)
+#if defined(__TIZENRT__)
 	/* IPC for nuttx is not supported for now */
 	assert(!is_ipc);
 #endif
@@ -864,7 +864,7 @@ static void uv__read(uv_stream_t *stream)
 		assert(buf.base != NULL);
 		assert(uv__stream_fd(stream) >= 0);
 
-#if !defined(__TINYARA__)
+#if !defined(__TIZENRT__)
 		if (!is_ipc) {
 			do {
 				nread = read(uv__stream_fd(stream), buf.base, buf.len);
@@ -919,7 +919,7 @@ static void uv__read(uv_stream_t *stream)
 			/* Successful read */
 			ssize_t buflen = buf.len;
 
-#if !defined(__TINYARA__)
+#if !defined(__TIZENRT__)
 			if (is_ipc) {
 				err = uv__stream_recv_cmsg(stream, &msg);
 				if (err != 0) {

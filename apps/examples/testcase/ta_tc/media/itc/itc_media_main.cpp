@@ -19,8 +19,8 @@
 // Included Files
 //***************************************************************************
 
-#include <tinyara/config.h>
-#include <tinyara/init.h>
+#include <tizenrt/config.h>
+#include <tizenrt/init.h>
 #include <stdio.h>
 #include <apps/platform/cxxinitialize.h>
 #include <errno.h>

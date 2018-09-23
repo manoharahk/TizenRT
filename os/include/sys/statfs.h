@@ -57,7 +57,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdint.h>
@@ -113,7 +113,7 @@
 #define XFS_SUPER_MAGIC       0x58465342
 #define _XIAFS_SUPER_MAGIC    0x012fd16d
 
-/* TinyAra specific file-systems */
+/* TizenRT specific file-systems */
 
 #define BINFS_MAGIC           0x4242
 #define PROCFS_MAGIC          0x434f5250

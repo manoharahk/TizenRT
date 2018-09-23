@@ -82,13 +82,13 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sched.h>
 #include <errno.h>
 
-#include <tinyara/irq.h>
-#include <tinyara/cancelpt.h>
+#include <tizenrt/irq.h>
+#include <tizenrt/cancelpt.h>
 
 #include "sched/sched.h"
 #include "semaphore/semaphore.h"

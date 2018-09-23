@@ -62,7 +62,7 @@ int uv_cancel(uv_req_t *req);
 /*
  * for embed systems that need cleanup before exit
  */
-#if defined(__TINYARA__)
+#if defined(__TIZENRT__)
 void uv_cleanup(void);
 #endif
 

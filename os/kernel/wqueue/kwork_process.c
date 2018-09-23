@@ -53,7 +53,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 #include <unistd.h>
@@ -61,8 +61,8 @@
 #include <assert.h>
 #include <queue.h>
 
-#include <tinyara/clock.h>
-#include <tinyara/wqueue.h>
+#include <tizenrt/clock.h>
+#include <tizenrt/wqueue.h>
 
 #include <arch/irq.h>
 

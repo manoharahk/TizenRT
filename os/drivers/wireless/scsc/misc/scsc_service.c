@@ -27,7 +27,7 @@
 #include "mxmgmt_transport.h"
 #include "debug_scsc.h"
 #include <errno.h>
-#include <tinyara/kmalloc.h>
+#include <tizenrt/kmalloc.h>
 
 /* Timeout Service Manager start/stop (ms) - default 1000. 0 = infinite */
 static ulong sm_completion_timeout_ms = 1000;

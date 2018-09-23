@@ -54,15 +54,15 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdio.h>
 #include <unistd.h>
 #include <assert.h>
 #include <errno.h>
 
-#include <tinyara/syslog/syslog.h>
-#include <tinyara/streams.h>
+#include <tizenrt/syslog/syslog.h>
+#include <tizenrt/streams.h>
 
 #include "syslog/syslog.h"
 

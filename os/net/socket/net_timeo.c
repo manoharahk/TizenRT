@@ -55,13 +55,13 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #if defined(CONFIG_NET)
 
 #include <stdint.h>
 #include <debug.h>
 
-#include <tinyara/clock.h>
+#include <tizenrt/clock.h>
 
 #include "socket/socket.h"
 

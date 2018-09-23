@@ -23,10 +23,10 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <string.h>
-#include <tinyara/regex.h>
+#include <tizenrt/regex.h>
 #include <unistd.h>
 #include <errno.h>
 #include <libgen.h>

@@ -3,12 +3,12 @@ drivers/syslog README File
 
 This README file discusses the SYLOG drivers that can be found in the
 drivers/syslog directory.  The syslogging interfaces are defined in the
-header file include/syslog.h.  In TinyAra, "syslog output" is really
+header file include/syslog.h.  In TizenRT, "syslog output" is really
 synonymous to "debug output" and, therefore, the debugging interfaces
 defined in the header file include/debug.h are also sysloggin interfaces.
 
 By default, all system log output goes to console (/dev/console).  But that
-behavior can be changed by the defining CONFIG_SYSLOG in the TinyAra
+behavior can be changed by the defining CONFIG_SYSLOG in the TizenRT
 configuration.  In that, case all low-level debug output will go through
 syslog_putc().
 
@@ -47,7 +47,7 @@ ramlog.c
   debugging output in a FIFO in RAM.  It differs from a pipe in numerous
   details as needed to support logging.
 
-  This driver is built when CONFIG_RAMLOG is defined in the TinyAra
+  This driver is built when CONFIG_RAMLOG is defined in the TizenRT
   configuration.
 
   Configuration options:

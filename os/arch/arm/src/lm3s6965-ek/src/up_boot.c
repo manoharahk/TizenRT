@@ -55,15 +55,15 @@
  * Included Files
  ************************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <debug.h>
 
 #include <arch/board/board.h>
 
 #ifdef CONFIG_MTD
-#include <tinyara/fs/mtd.h>
-#include <tinyara/fs/ioctl.h>
+#include <tizenrt/fs/mtd.h>
+#include <tizenrt/fs/ioctl.h>
 #endif
 
 #include "up_arch.h"

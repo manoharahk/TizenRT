@@ -57,12 +57,12 @@
  * Included Files
  ********************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 
-#include <tinyara/clock.h>
-#include <tinyara/compiler.h>
+#include <tizenrt/clock.h>
+#include <tizenrt/compiler.h>
 
 /********************************************************************************
  * Pre-processor Definitions
@@ -86,7 +86,7 @@
 
 #if !defined(CONFIG_SCHED_TICKLESS) && !defined(__HAVE_KERNEL_GLOBALS)
 /* The system clock exists (CONFIG_SCHED_TICKLESS), but it not prototyped
- * globally in include/tinyara/clock.h.
+ * globally in include/tizenrt/clock.h.
  */
 
 #ifdef CONFIG_SYSTEM_TIME64

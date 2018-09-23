@@ -54,8 +54,8 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/audio/audio.h>
+#include <tizenrt/config.h>
+#include <tizenrt/audio/audio.h>
 
 #include <sys/types.h>
 #include <stdio.h>

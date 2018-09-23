@@ -18,8 +18,8 @@
 
 /// @file tc_rtc.c
 /// @brief Test Case Example for rtc driver
-#include <tinyara/config.h>
-#include <tinyara/rtc.h>
+#include <tizenrt/config.h>
+#include <tizenrt/rtc.h>
 #include <stdio.h>
 #include <fcntl.h>
 #include <sys/ioctl.h>

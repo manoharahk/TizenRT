@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdint.h>
@@ -67,9 +67,9 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/kmalloc.h>
-#include <tinyara/wqueue.h>
-#include <tinyara/rwbuffer.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/wqueue.h>
+#include <tizenrt/rwbuffer.h>
 
 #if defined(CONFIG_DRVR_WRITEBUFFER) || defined(CONFIG_DRVR_READAHEAD)
 

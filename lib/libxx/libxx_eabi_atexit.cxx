@@ -54,7 +54,7 @@
 // Included Files
 //***************************************************************************
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <cstdlib>
 
 #include "libxx_internal.hxx"

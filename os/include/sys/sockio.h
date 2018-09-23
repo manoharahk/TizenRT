@@ -57,13 +57,13 @@
  * Included Files
  ****************************************************************************/
 
-/* Get TinyAra configuration and TinyAra-specific network IOCTL definitions */
+/* Get TizenRT configuration and TizenRT-specific network IOCTL definitions */
 
 #include <netinet/in.h>
 
-#include <tinyara/config.h>
-#include <tinyara/fs/ioctl.h>
-#include <tinyara/net/ioctl.h>
+#include <tizenrt/config.h>
+#include <tizenrt/fs/ioctl.h>
+#include <tizenrt/net/ioctl.h>
 
 /****************************************************************************
  * Pre-Processor Definitions
@@ -93,7 +93,7 @@
  * MCAST_EXCLUDE, which are likewise defined in <netinet/in.h>.
  */
 
-#if 0							/* REVISIT: Current TinyAra implementation is non-standard.
+#if 0							/* REVISIT: Current TizenRT implementation is non-standard.
 								 * Lookup is by device name, not IP address.
 								 */
 

@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdio.h>
 #include <semaphore.h>
@@ -63,7 +63,7 @@
 #include <errno.h>
 #include <assert.h>
 
-#include <tinyara/kmalloc.h>
+#include <tizenrt/kmalloc.h>
 
 #include "inode/inode.h"
 #include "semaphore/semaphore.h"

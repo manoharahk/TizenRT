@@ -21,7 +21,7 @@
  */
 #ifndef __MACHINE_ENDIAN_H__
 
-#ifndef __TINYARA__
+#ifndef __TIZENRT__
 #include <sys/config.h>
 #endif
 

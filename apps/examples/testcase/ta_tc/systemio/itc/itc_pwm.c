@@ -19,7 +19,7 @@
 /// @file iotbus_pwm.h
 /// @brief Test Case of APIs for PWM
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <errno.h>
 #include "itc_internal.h"

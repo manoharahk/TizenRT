@@ -54,10 +54,10 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
-#include <tinyara/arch.h>
+#include <tizenrt/arch.h>
 #include <apps/readline.h>
 
 #include "readline.h"

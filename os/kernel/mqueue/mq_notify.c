@@ -54,14 +54,14 @@
  * Included Files
  ************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <signal.h>
 #include <mqueue.h>
 #include <sched.h>
 #include <errno.h>
 
-#include <tinyara/sched.h>
+#include <tizenrt/sched.h>
 
 #include "sched/sched.h"
 #include "mqueue/mqueue.h"

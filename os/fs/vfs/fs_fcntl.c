@@ -54,17 +54,17 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdarg.h>
 #include <fcntl.h>
 #include <errno.h>
 #include <assert.h>
 
-#include <tinyara/fs/fs.h>
-#include <tinyara/net/net.h>
-#include <tinyara/sched.h>
-#include <tinyara/cancelpt.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/net/net.h>
+#include <tizenrt/sched.h>
+#include <tizenrt/cancelpt.h>
 
 #include "inode/inode.h"
 

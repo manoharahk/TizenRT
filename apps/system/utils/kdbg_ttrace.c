@@ -24,9 +24,9 @@
 #include <debug.h>
 #include <sys/types.h>
 #include <sys/ioctl.h>
-#include <tinyara/config.h>
-#include <tinyara/ttrace.h>
-#include <tinyara/clock.h>
+#include <tizenrt/config.h>
+#include <tizenrt/ttrace.h>
+#include <tizenrt/clock.h>
 
 #define MAX_TAG_NAMESIZE 4
 

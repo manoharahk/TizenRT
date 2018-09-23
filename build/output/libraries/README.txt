@@ -1,12 +1,12 @@
 build/output/libraries/ README File
 ===================================
 
-This directory is reserved for libraries generated during the TinyAra build process
+This directory is reserved for libraries generated during the TizenRT build process
 
 How to add external libraries
 =============================
 
-If you want to add pre-built libraries into TinyAra binary,
+If you want to add pre-built libraries into TizenRT binary,
 please refer belows.
 
 1. place your libraries at build/output/libraries folder
@@ -18,9 +18,9 @@ please refer belows.
    KernelLibs.mk for kernel build
 
   < Contents to modify >
-   TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)<File name of Library>$(LIBEXT)
+   TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)<File name of Library>$(LIBEXT)
    or
    USERLIBS += $(LIBRARIES_DIR)$(DELIM)<File name of Library>$(LIBEXT)
    You should replace <File name of Library> to yours.
 
-3. build the TinyAra
+3. build the TizenRT

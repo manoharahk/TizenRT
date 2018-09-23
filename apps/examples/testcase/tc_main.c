@@ -19,7 +19,7 @@
 /// @file tc_main.c
 
 /// @brief Main Function for TestCase Example
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <unistd.h>
 #include <sched.h>
@@ -93,7 +93,7 @@ extern int tc_network_main(int argc, char *argv[]);
 extern int tc_ttrace_main(int argc, char *argv[]);
 extern int tc_tcp_tls_main(int agrc, char *agrv[]);
 
-/* TinyAra Public API Test Case as ta_tc */
+/* TizenRT Public API Test Case as ta_tc */
 extern int utc_arastorage_main(int argc, char *argv[]);
 extern int itc_arastorage_main(int argc, char *argv[]);
 extern int utc_audio_main(int argc, char *argv[]);

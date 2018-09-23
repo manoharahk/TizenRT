@@ -55,7 +55,7 @@
 #ifndef __LWIP_LWIPOPTS_H__
 #define __LWIP_LWIPOPTS_H__
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 /* --------- PreDefined Configurations -------------*/
 /*

@@ -15,11 +15,11 @@
  * language governing permissions and limitations under the License.
  *
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <time.h>
 #include <sys/types.h>
-#include <tinyara/clock.h>
+#include <tizenrt/clock.h>
 
 int kdbg_uptime(int argc, char **args)
 {

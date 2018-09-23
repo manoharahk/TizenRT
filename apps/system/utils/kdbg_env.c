@@ -17,7 +17,7 @@
  ****************************************************************************/
 /// @file   kdbg_env.c
 /// @brief  functions to set/unset a environment value
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #if defined(CONFIG_ENABLE_ENV_GET_CMD) || defined(CONFIG_ENABLE_ENV_SET_CMD) || defined(CONFIG_ENABLE_ENV_UNSET_CMD)
 #include <stdio.h>

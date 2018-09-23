@@ -133,10 +133,10 @@ echo    Informs the tool that it should use POSIX style paths like /usr/local/bi
 echo    By default, Windows style paths like C:\\Program Files are used.
 echo  -a ^<app-dir^>:
 echo    Informs the configuration tool where the application build
-echo    directory.  This is a relative path from the top-level TinyAra
+echo    directory.  This is a relative path from the top-level TizenRT
 echo    build directory.  But default, this tool will look in the usual
 echo    places to try to locate the application directory:  ../apps or
-echo    ../apps-xx.yy where xx.yy is the TinyAra version number.
+echo    ../apps-xx.yy where xx.yy is the TizenRT version number.
 echo  ^<-h^>:
 echo    Prints this message and exits.
 

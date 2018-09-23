@@ -57,13 +57,13 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 
-#include <tinyara/usb/usbdev.h>
-#include <tinyara/usb/cdc.h>
-#include <tinyara/usb/usbdev_trace.h>
+#include <tizenrt/usb/usbdev.h>
+#include <tizenrt/usb/cdc.h>
+#include <tizenrt/usb/usbdev_trace.h>
 
 /****************************************************************************
  * Pre-processor Definitions
@@ -107,7 +107,7 @@
 #endif
 
 /* Descriptors **************************************************************/
-/* These settings are not modifiable via the TinyAra configuration */
+/* These settings are not modifiable via the TizenRT configuration */
 
 #define CDC_VERSIONNO              0x0110	/* CDC version number 1.10 (BCD) */
 #define CDCACM_CONFIGIDNONE        (0)	/* Config ID means to return to address mode */

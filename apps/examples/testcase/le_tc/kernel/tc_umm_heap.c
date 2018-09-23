@@ -23,13 +23,13 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <errno.h>
 #include <sched.h>
-#include <tinyara/mm/mm.h>
+#include <tizenrt/mm/mm.h>
 #include "tc_internal.h"
 
 #define ALLOC_SIZE_VAL 10

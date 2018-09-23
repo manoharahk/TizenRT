@@ -56,7 +56,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <sys/ioctl.h>
@@ -69,11 +69,11 @@
 #include <mqueue.h>
 #include <debug.h>
 
-#include <tinyara/kmalloc.h>
-#include <tinyara/fs/fs.h>
-#include <tinyara/fs/ioctl.h>
-#include <tinyara/audio/audio.h>
-#include <tinyara/audio/audio_null.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/fs/ioctl.h>
+#include <tizenrt/audio/audio.h>
+#include <tizenrt/audio/audio_null.h>
 
 /****************************************************************************
  * Pre-processor Definitions

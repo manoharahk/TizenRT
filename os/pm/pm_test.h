@@ -19,7 +19,7 @@
 #ifndef __OS_PM_PM_TEST_H
 #define __OS_PM_PM_TEST_H
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #define PMTEST_DEVICES (3)
 #define PMTEST_DOMAIN (0)

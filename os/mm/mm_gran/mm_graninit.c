@@ -54,13 +54,13 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <assert.h>
 #include <errno.h>
 
-#include <tinyara/mm/gran.h>
-#include <tinyara/kmalloc.h>
+#include <tizenrt/mm/gran.h>
+#include <tizenrt/kmalloc.h>
 
 #include "mm_gran/mm_gran.h"
 

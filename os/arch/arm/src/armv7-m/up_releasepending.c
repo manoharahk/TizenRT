@@ -54,17 +54,17 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sched.h>
 #include <debug.h>
-#include <tinyara/arch.h>
+#include <tizenrt/arch.h>
 
 #include "sched/sched.h"
 #include "up_internal.h"
 
 #ifdef CONFIG_TASK_SCHED_HISTORY
-#include <tinyara/debug/sysdbg.h>
+#include <tizenrt/debug/sysdbg.h>
 #endif
 
 /****************************************************************************

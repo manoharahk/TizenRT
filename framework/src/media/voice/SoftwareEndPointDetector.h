@@ -18,7 +18,7 @@
 #ifndef __MEDIA_SOFTWARE_ENDPOINT_DETECTOR_H
 #define __MEDIA_SOFTWARE_ENDPOINT_DETECTOR_H
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #ifndef CONFIG_VOICE_SOFTWARE_EPD
 #error "To use S/W EPD, Please enable the External/Software EndPoint Detector(Fixed Float) Support."

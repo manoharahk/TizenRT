@@ -18,7 +18,7 @@
 
 /// @file tc_net_ioctl.c
 /// @brief Test Case Example for ioctl() API
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <errno.h>
 

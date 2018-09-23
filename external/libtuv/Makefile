@@ -60,13 +60,13 @@ ASRCS		=
 CSRCS		=
 
 include source/Make.defs
-include source/tinyara/Make.defs
+include source/tizenrt/Make.defs
 include source/unix/Make.defs
 
-CFLAGS += -D__TINYARA__
+CFLAGS += -D__TIZENRT__
 CFLAGS += -I$(TOPDIR)/$(EXTDIR)/include/libtuv
 CFLAGS += -I$(TOPDIR)/$(EXTDIR)/libtuv/source
-CFLAGS += -I$(TOPDIR)/$(EXTDIR)/libtuv/source/tinyara
+CFLAGS += -I$(TOPDIR)/$(EXTDIR)/libtuv/source/tizenrt
 
 AOBJS		= $(ASRCS:.S=$(OBJEXT))
 COBJS		= $(CSRCS:.c=$(OBJEXT))

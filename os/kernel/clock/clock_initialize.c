@@ -54,8 +54,8 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/compiler.h>
+#include <tizenrt/config.h>
+#include <tizenrt/compiler.h>
 
 #include <stdint.h>
 #include <time.h>
@@ -66,10 +66,10 @@
 #include <arch/irq.h>
 #endif
 
-#include <tinyara/arch.h>
-#include <tinyara/clock.h>
-#include <tinyara/time.h>
-#include <tinyara/rtc.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/clock.h>
+#include <tizenrt/time.h>
+#include <tizenrt/rtc.h>
 
 #include "clock/clock.h"
 

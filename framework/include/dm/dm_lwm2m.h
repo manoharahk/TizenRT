@@ -31,7 +31,7 @@
 #ifndef _DMAPI_H
 #define _DMAPI_H
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #ifdef __cplusplus
 extern "C" {

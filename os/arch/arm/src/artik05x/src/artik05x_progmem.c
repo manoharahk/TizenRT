@@ -31,7 +31,7 @@
  *    notice, this list of conditions and the following disclaimer in
  *    the documentation and/or other materials provided with the
  *    distribution.
- * 3. Neither the name tinyara nor the names of its contributors may be
+ * 3. Neither the name tizenrt nor the names of its contributors may be
  *    used to endorse or promote products derived from this software
  *    without specific prior written permission.
  *
@@ -50,9 +50,9 @@
  *
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdbool.h>
-#include <tinyara/progmem.h>
+#include <tizenrt/progmem.h>
 
 /* mtd_smart sector size cannot be less than this */
 

@@ -15,7 +15,7 @@
  * language governing permissions and limitations under the License.
  *
  ****************************************************************************/
-#include <tinyara/kthread.h>
+#include <tizenrt/kthread.h>
 #include "logm.h"
 
 void logm_start(void)

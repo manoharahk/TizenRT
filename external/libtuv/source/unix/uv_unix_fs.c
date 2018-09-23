@@ -49,7 +49,7 @@
 #include <sys/types.h>
 #include <utime.h>
 #include <sys/time.h>
-#ifndef __TINYARA__
+#ifndef __TIZENRT__
 #include <sys/uio.h>
 #endif
 
@@ -117,14 +117,14 @@ static ssize_t uv__fs_fdatasync(uv_fs_t *req)
 {
 #if defined(__linux__)
 	return fdatasync(req->file);
-#elif defined(__TINYARA__)
+#elif defined(__TIZENRT__)
 	return fsync(req->file);
 #endif
 }
 
 static void uv__to_stat(struct stat *src, uv_stat_t *dst)
 {
-#if !defined(__TINYARA__)
+#if !defined(__TIZENRT__)
 	dst->st_dev = src->st_dev;
 	dst->st_nlink = src->st_nlink;
 	dst->st_uid = src->st_uid;
@@ -148,7 +148,7 @@ static void uv__to_stat(struct stat *src, uv_stat_t *dst)
 	dst->st_birthtim.tv_nsec = src->st_ctim.tv_nsec;
 	dst->st_flags = 0;
 	dst->st_gen = 0;
-#elif defined (__TINYARA__)
+#elif defined (__TIZENRT__)
 	dst->st_atim.tv_sec = src->st_atime;
 	dst->st_atim.tv_nsec = 0;
 	dst->st_mtim.tv_sec = src->st_mtime;
@@ -164,7 +164,7 @@ static void uv__to_stat(struct stat *src, uv_stat_t *dst)
 
 static int uv__fs_fstat(int fd, uv_stat_t *buf)
 {
-#if defined(__TINYARA__)
+#if defined(__TIZENRT__)
 	return -1;
 #else
 	struct stat pbuf;
@@ -406,7 +406,7 @@ skip:
 
 static ssize_t uv__fs_utime(uv_fs_t *req)
 {
-#if defined(__TINYARA__)
+#if defined(__TIZENRT__)
 	return -1;
 #else
 	struct utimbuf buf;
@@ -440,7 +440,7 @@ static void uv__fs_work(struct uv__work *w)
     break;
 
 		switch (req->fs_type) {
-#if !defined(__TINYARA__)
+#if !defined(__TIZENRT__)
 			//X(CHMOD, chmod(req->path, req->mode));
 			//X(CHOWN, chown(req->path, req->uid, req->gid));
 			//X(FCHMOD, fchmod(req->file, req->mode));

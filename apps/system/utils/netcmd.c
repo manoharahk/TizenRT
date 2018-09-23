@@ -16,7 +16,7 @@
  *
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <apps/shell/tash.h>
 
 #include <sys/stat.h>			/* Needed for open */
@@ -40,13 +40,13 @@
 #include <netinet/in.h>
 #include <netinet/ether.h>
 
-#include <tinyara/clock.h>
-#include <tinyara/net/net.h>
+#include <tizenrt/clock.h>
+#include <tizenrt/net/net.h>
 #include <net/lwip/netif.h>
 #include <net/lwip/dhcp.h>
 #include <net/lwip/mld6.h>
 #include <net/lwip/stats.h>
-#include <tinyara/net/ip.h>
+#include <tizenrt/net/ip.h>
 
 #ifdef CONFIG_NETUTILS_NETLIB
 #include <netutils/netlib.h>

@@ -33,7 +33,7 @@
 #undef CONFIG_EXAMPLES_SLSIDEMO_MEM_CHECK
 #endif
 #ifdef CONFIG_EXAMPLES_SLSIDEMO_MEM_CHECK
-#include <tinyara/mm/mm.h>
+#include <tizenrt/mm/mm.h>
 #endif
 
 #include "slsiwifi_main.h"

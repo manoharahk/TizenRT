@@ -58,22 +58,22 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sched.h>
 #include <stdlib.h>
 #include <debug.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/init.h>
-#include <tinyara/kthread.h>
-#include <tinyara/userspace.h>
-#include <tinyara/net/net.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/init.h>
+#include <tizenrt/kthread.h>
+#include <tizenrt/userspace.h>
+#include <tizenrt/net/net.h>
 #ifdef CONFIG_LOGM
-#include <tinyara/logm.h>
+#include <tizenrt/logm.h>
 #endif
 #ifdef CONFIG_TASK_MANAGER
-#include <tinyara/task_manager_internal.h>
+#include <tizenrt/task_manager_internal.h>
 #endif
 #include "wqueue/wqueue.h"
 #include "init/init.h"

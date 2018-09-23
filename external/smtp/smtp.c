@@ -63,7 +63,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/socket.h>
 #include <stdint.h>
@@ -76,7 +76,7 @@
 
 #include <arpa/inet.h>
 
-#include <tinyara/net/ip.h>
+#include <tizenrt/net/ip.h>
 #include <protocols/smtp.h>
 
 /****************************************************************************

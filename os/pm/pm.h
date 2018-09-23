@@ -57,12 +57,12 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <semaphore.h>
 #include <queue.h>
-#include <tinyara/clock.h>
-#include <tinyara/wqueue.h>
-#include <tinyara/pm/pm.h>
+#include <tizenrt/clock.h>
+#include <tizenrt/wqueue.h>
+#include <tizenrt/pm/pm.h>
 
 #ifdef CONFIG_PM
 

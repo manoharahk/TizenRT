@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -71,12 +71,12 @@
 #include <debug.h>
 
 #ifdef CONFIG_DEBUG
-#include <tinyara/arch.h>
+#include <tizenrt/arch.h>
 #endif
-#include <tinyara/kmalloc.h>
-#include <tinyara/semaphore.h>
-#include <tinyara/fs/fs.h>
-#include <tinyara/fs/ioctl.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/semaphore.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/fs/ioctl.h>
 
 #include "pipe_common.h"
 

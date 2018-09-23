@@ -18,7 +18,7 @@ config EXAMPLES_ROUTE_CLIENT_CXXINITIALIZE
 	depends on HAVE_CXX && HAVE_CXXINITIALIZE
 	---help---
 		By default, if CONFIG_HAVE_CXX and CONFIG_HAVE_CXXINITIALIZE are
-		defined, then this example will call the TinyAra function to
+		defined, then this example will call the TizenRT function to
 		initialize static C++ constructors.  This option may be disabled,
 		however, if that static initialization was preformed elsewhere.
 

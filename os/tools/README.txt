@@ -7,10 +7,10 @@ tools/README.txt
  *
  ****************************************************************************/
 
-This README file addresses the contents of the TinyAra tools/ directory.
+This README file addresses the contents of the TizenRT tools/ directory.
 
 The tools/ directory contains miscellaneous scripts and host C programs
-that are necessary parts of the TinyAra build system.  These files
+that are necessary parts of the TizenRT build system.  These files
 include:
 
 README.txt
@@ -22,7 +22,7 @@ Config.mk
 ---------
 
   This file contains common definitions used by many configuration files.
-  This file (along with <tinyara>/.config) must be included at the top of
+  This file (along with <tizenrt>/.config) must be included at the top of
   each configuration-specific Make.defs file like:
 
     -include $(TOPDIR)/.config
@@ -36,7 +36,7 @@ configure.bat
 configure.c, cfgparser.c, and cfgparser.h
 ------------
 
-  configure.sh is a bash script that is used to configure TinyAra for a given
+  configure.sh is a bash script that is used to configure TizenRT for a given
   target board in a environment that supports POSIX paths (Linux, Cygwin,
   OSX, or similar).  See build/configs/README.txt
 
@@ -70,28 +70,28 @@ mkconfig.c, cfgdefine.c, and cfgdefine.h
 ----------------------------------------
 
   These are Cs file that are used to build mkconfig program.  The mkconfig
-  program is used during the initial TinyAra build.
+  program is used during the initial TizenRT build.
 
-  When you configure TinyAra, you will copy a configuration file called .config
+  When you configure TizenRT, you will copy a configuration file called .config
   in the top level os directory (See build/configs/README.txt).
-  The first time you make TinyAra,
+  The first time you make TizenRT,
   the top-level makefile will build the mkconfig executable from mkconfig.c
   (using Makefile.host).  The top-level Makefile will then execute the
   mkconfig program to convert the .config file in the top level directory
-  into include/tinyara/config.h.  config.h is a another version of the
-  TinyAra configuration that can be included by C files.
+  into include/tizenrt/config.h.  config.h is a another version of the
+  TizenRT configuration that can be included by C files.
 
 cmdconfig.c
 -----------
 
-  This C file can be used to build a utility for comparing two TinyAra
+  This C file can be used to build a utility for comparing two TizenRT
   configuration files.
 
 kconfig2html.c
 --------------
 
   This is a C file that can be used build a utility for converting the
-  TinyAra configuration in the Kconfig files to an HTML document.  This
+  TizenRT configuration in the Kconfig files to an HTML document.  This
   auto-generated documentation will, eventually, replace the manually
   updated configuration documentation that is fallling woefully behind.
 
@@ -113,7 +113,7 @@ mkconfigvars.sh
 ---------------
 
   The HTML documentation expects to have a copy of the auto-generated
-  configuration variable documentation docs/TinyAra_Config_Variables.html.
+  configuration variable documentation docs/TizenRT_Config_Variables.html.
   The script mkconfigvars.sh is a simple script that can be used to
   re-generated that file as needed.
 
@@ -124,7 +124,7 @@ mkconfigvars.sh
 
   Where:
     -v <major.minor>
-       The TinyAra version number expressed as a major and minor number separated
+       The TizenRT version number expressed as a major and minor number separated
        by a period
     -d
        Enable script debug
@@ -150,8 +150,8 @@ mkexport.sh and Makefile.export
 -------------------------------
 
   These implement part of the top-level Makefile's 'export' target.  That
-  target will bundle up all of the TinyAra libraries, header files, and the
-  startup object into an export-able, binary TinyAra distribution.  The
+  target will bundle up all of the TizenRT libraries, header files, and the
+  startup object into an export-able, binary TizenRT distribution.  The
   Makefile.export is used only by the mkexport.sh script to parse out
   options from the top-level Make.defs file.
 
@@ -159,26 +159,26 @@ mkversion.c, cfgdefine.c, and cfgdefine.h
 -----------------------------------------
 
   This is C file that is used to build mkversion program.  The mkversion
-  program is used during the initial TinyAra build.
+  program is used during the initial TizenRT build.
 
-  When you build TinyAra there should be a version file called .version in
+  When you build TizenRT there should be a version file called .version in
   the top level os directory.
-  The first time you make TinyAra, the top-level makefile will build th
+  The first time you make TizenRT, the top-level makefile will build th
   mkversion executable from mkversion.c (using Makefile.host).  The top-
   level Makefile will then execute the mkversion program to convert the
-  .version file in the top level directory into include/tinyara/version.h.
+  .version file in the top level directory into include/tizenrt/version.h.
   version.h provides version information that can be included by C files.
 
 mksyscall.c, cvsparser.c, and cvsparser.h
 -----------------------------------------
 
   This is a C file that is used to build mksyscall program.  The mksyscall
-  program is used during the initial TinyAra build by the logic in the top-
+  program is used during the initial TizenRT build by the logic in the top-
   level syscall/ directory.
 
-  If you build TinyAra as a separately compiled, monolithic kernel and separate
+  If you build TizenRT as a separately compiled, monolithic kernel and separate
   applications, then there is a syscall layer that is used to get from the
-  user application space to the TinyAra kernel space.  In the user application
+  user application space to the TizenRT kernel space.  In the user application
   "proxies" for each of the kernel functions are provided.  The proxies have
   the same function signature as the kernel function, but only execute a
   system call.
@@ -196,7 +196,7 @@ mksymtab.c, cvsparser.c, and cvsparser.h
 ----------------------------------------
 
   This is a C file that is used to build symbol tables from common-separated
-  value (CSV) files.  This tool is not used during the TinyAra build, but
+  value (CSV) files.  This tool is not used during the TizenRT build, but
   can be used as needed to generate files.
 
   USAGE: ./mksymtab <cvs-file> <symtab-file>
@@ -235,7 +235,7 @@ mkromfsimg.sh
 
   This script may be used to automate the generate of a ROMFS file system
   image.  It accepts an rcS script "template" and generates and image that
-  may be mounted under /etc in the TinyAra pseudo file system.
+  may be mounted under /etc in the TizenRT pseudo file system.
 
 mkdeps.sh
 mkdeps.bat
@@ -243,15 +243,15 @@ mkdeps.c
 mknulldeps.sh
 -------------
 
-  TinyAra uses the GCC compilers capabilities to create Makefile dependencies.
+  TizenRT uses the GCC compilers capabilities to create Makefile dependencies.
   The bash script mkdeps.sh is used to run GCC in order to create the
-  dependencies.  If a TinyAra configuration uses the GCC toolchain,
+  dependencies.  If a TizenRT configuration uses the GCC toolchain,
   its Make.defs file (see build/configs/README.txt) will include a line like:
 
     MKDEP = $(TOPDIR)/tools/mkdeps.sh, or
     MKDEP = $(TOPDIR)/tools/mkdeps[.exe] (See NOTE below)
 
-  If the TinyAra configuration does not use a GCC compatible toolchain, then
+  If the TizenRT configuration does not use a GCC compatible toolchain, then
   it cannot use the dependencies and instead it uses mknulldeps.sh:
 
     MKDEP = $(TOPDIR)/tools/mknulldeps.sh
@@ -357,7 +357,7 @@ unlink.bat
 kconfig.bat
 -----------
 
-  Recent versions of TinyAra support building TinyAra from a native Windows
+  Recent versions of TizenRT support building TizenRT from a native Windows
   CMD.exe shell.  But kconfig-frontends is a Linux tool and is not yet
   available in the pure CMD.exe environment.  At this point, there are
   only a few options for the Windows user (see the top-level README.txt
@@ -370,7 +370,7 @@ kconfig.bat
   then run kconfig-mconf outside of the Make system.
 
   kconfig.bat is a Windows batch file at tools/kconfig.bat that automates
-  these steps.  It is used from the top-level TinyAra directory like:
+  these steps.  It is used from the top-level TizenRT directory like:
 
     tools/kconfig menuconfig
 
@@ -400,7 +400,7 @@ refresh.sh
   The steps to refresh the file are:
 
   1. Make tools/cmpconfig if it is not already built.
-  2. Copy the the defconfig file to the top-level TinyAra
+  2. Copy the the defconfig file to the top-level TizenRT
      directory as .config (being careful to save any previous
      .config file that you might want to keep!).
   3. Execute 'make oldconfig' to update the configuration.
@@ -426,6 +426,6 @@ refresh.sh
 zipme.sh
 --------
 
-  I use this script to create the tinyara-xx.yy.tar.gz tarballs for
+  I use this script to create the tizenrt-xx.yy.tar.gz tarballs for
   release on SourceForge.  It is handy because it also does the
   kind of clean that you need to do to make a clean code release.

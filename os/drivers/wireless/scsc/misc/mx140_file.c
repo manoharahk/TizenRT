@@ -30,10 +30,10 @@
 #include <string.h>
 #include <errno.h>
 
-#include <tinyara/kmalloc.h>
-#include <tinyara/fs/fs.h>
-#include <tinyara/fs/procfs.h>
-#include <tinyara/fs/dirent.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/fs/procfs.h>
+#include <tizenrt/fs/dirent.h>
 
 #include "scsc_mx_impl.h"
 #include "utils_misc.h"

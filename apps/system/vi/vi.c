@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/stat.h>
 
@@ -71,8 +71,8 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/ascii.h>
-#include <tinyara/vt100.h>
+#include <tizenrt/ascii.h>
+#include <tizenrt/vt100.h>
 
 /****************************************************************************
  * Pre-processor Definitions

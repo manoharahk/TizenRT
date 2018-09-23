@@ -47,7 +47,7 @@
  * Author: Adam Dunkels <adam@sics.se>
  *
  */
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <string.h>
 #include <stdint.h>

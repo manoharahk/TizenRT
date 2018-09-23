@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdint.h>
@@ -64,11 +64,11 @@
 #include <assert.h>
 #include <debug.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/usb/usb.h>
-#include <tinyara/usb/usbhost.h>
-#include <tinyara/usb/hub.h>
-#include <tinyara/usb/usbhost_devaddr.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/usb/usb.h>
+#include <tizenrt/usb/usbhost.h>
+#include <tizenrt/usb/hub.h>
+#include <tizenrt/usb/usbhost_devaddr.h>
 
 /****************************************************************************
  * Pre-processor Definitions

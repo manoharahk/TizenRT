@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <string.h>
 #include <signal.h>
@@ -63,7 +63,7 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/arch.h>
+#include <tizenrt/arch.h>
 
 #include "sched/sched.h"
 #include "group/group.h"

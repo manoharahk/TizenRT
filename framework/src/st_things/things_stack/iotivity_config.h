@@ -19,7 +19,7 @@
 #ifndef IOTIVITY_CONFIG_H__
 #define IOTIVITY_CONFIG_H__
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #define HAVE_ARPA_INET_H 1
 

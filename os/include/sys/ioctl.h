@@ -67,15 +67,15 @@
  * Included Files
  ****************************************************************************/
 
-/* Get TinyAra configuration and TinyAra-specific IOCTL definitions */
+/* Get TizenRT configuration and TizenRT-specific IOCTL definitions */
 
-#include <tinyara/config.h>
-#include <tinyara/fs/ioctl.h>
+#include <tizenrt/config.h>
+#include <tizenrt/fs/ioctl.h>
 
 /* Include network ioctls info */
 
 #if defined(CONFIG_NET) && CONFIG_NSOCKET_DESCRIPTORS > 0
-#include <tinyara/net/ioctl.h>
+#include <tizenrt/net/ioctl.h>
 #endif
 
 /****************************************************************************

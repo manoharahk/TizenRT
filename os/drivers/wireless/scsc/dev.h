@@ -24,11 +24,11 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <pthread.h>
-#include <tinyara/net/net.h>
-#include <tinyara/net/netdev.h>
-#include <tinyara/kmalloc.h>
+#include <tizenrt/net/net.h>
+#include <tizenrt/net/netdev.h>
+#include <tizenrt/kmalloc.h>
 #include <scsc/scsc_mx.h>
-#include <tinyara/wdog.h>
+#include <tizenrt/wdog.h>
 #include <net/lwip/netif.h>
 
 #include "max_buf.h"
@@ -41,7 +41,7 @@
 #include "scsc_wifi_cm_if.h"
 #include "hip4.h"
 #include "wlan_80211_utils.h"
-#include "tinyara_wrapper.h"
+#include "tizenrt_wrapper.h"
 #ifdef CONFIG_SLSI_WLAN_STATS
 #include "stats.h"
 #endif
@@ -586,7 +586,7 @@ struct slsi_dev {
 	char *mib_file_name;
 	char *local_mib_file_name;
 	char *maddr_file_name;
-	struct max_buff *tx_mbuf;	/* On TinyARA allocating the mbuf during runtime fails */
+	struct max_buff *tx_mbuf;	/* On TizenRT allocating the mbuf during runtime fails */
 #ifdef CONFIG_SLSI_WLAN_STATS
 	struct data_path_stats dp_stats;
 #endif

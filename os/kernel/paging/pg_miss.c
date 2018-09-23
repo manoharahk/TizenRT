@@ -54,14 +54,14 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/sched.h>
-#include <tinyara/page.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/sched.h>
+#include <tizenrt/page.h>
 
 #ifdef CONFIG_PAGING
 

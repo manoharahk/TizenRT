@@ -19,9 +19,9 @@
  * Included Files
  ****************************************************************************/
 #include <stdio.h>
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #ifdef CONFIG_LIB_USRWORK
-#include <tinyara/wqueue.h>
+#include <tizenrt/wqueue.h>
 #endif
 #ifdef CONFIG_TASH
 #include <apps/shell/tash.h>
@@ -37,7 +37,7 @@
 #include <apps/system/sysinfo.h>
 #endif
 #ifdef CONFIG_EVENTLOOP
-#include <tinyara/eventloop.h>
+#include <tizenrt/eventloop.h>
 #endif
 
 /****************************************************************************

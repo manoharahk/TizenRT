@@ -21,7 +21,7 @@
 #include "NSProviderScheduler.h"
 
 #ifdef __TIZENRT__
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #endif
 
 pthread_t NSThread[THREAD_COUNT];

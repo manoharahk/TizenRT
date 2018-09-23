@@ -114,7 +114,7 @@ static void post(QUEUE *q)
 	uv_cond_signal(&_cond);
 }
 
-#if defined(__TINYARA__)
+#if defined(__TIZENRT__)
 static void cleanup(void)
 {
 #else
@@ -338,7 +338,7 @@ int uv_cancel(uv_req_t *req)
 }
 
 //-----------------------------------------------------------------------------
-#if defined(__TINYARA__)
+#if defined(__TIZENRT__)
 void uv_cleanup(void)
 {
 	cleanup();

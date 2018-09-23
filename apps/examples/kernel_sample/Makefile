@@ -60,7 +60,7 @@ APPNAME = kernel_sample
 FUNCNAME = $(APPNAME)_main
 THREADEXEC = TASH_EXECMD_ASYNC
 
-# TinyAra OS Test
+# TizenRT OS Test
 
 ASRCS =
 CSRCS = dev_null.c restart.c

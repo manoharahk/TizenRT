@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdlib.h>
 #include <unistd.h>
@@ -62,8 +62,8 @@
 #include <debug.h>
 #include <errno.h>
 
-#include <tinyara/sched.h>
-#include <tinyara/fs/fs.h>
+#include <tizenrt/sched.h>
+#include <tizenrt/fs/fs.h>
 
 #include "sched/sched.h"
 #include "group/group.h"
@@ -72,7 +72,7 @@
 
 #ifdef CONFIG_TASK_MANAGER
 #include <task_manager/task_manager.h>
-#include <tinyara/task_manager_internal.h>
+#include <tizenrt/task_manager_internal.h>
 #endif
 
 /****************************************************************************

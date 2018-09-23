@@ -54,14 +54,14 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <unistd.h>
 #include <sched.h>
 #include <errno.h>
 
-#include <tinyara/arch.h>
+#include <tizenrt/arch.h>
 
 #include "sched/sched.h"
 #include "clock/clock.h"

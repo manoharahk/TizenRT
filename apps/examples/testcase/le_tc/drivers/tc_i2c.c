@@ -18,11 +18,11 @@
 
 /// @file tc_i2c.c
 /// @brief Test Case Example for i2c driver
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <fcntl.h>
 #include "tc_internal.h"
-#include <tinyara/i2c.h>
+#include <tizenrt/i2c.h>
 
 /**
 * @fn                   :tc_driver_i2c_transfer

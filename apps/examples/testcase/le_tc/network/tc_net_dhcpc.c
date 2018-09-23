@@ -19,7 +19,7 @@
 /// @file tc_net_dhcpc.c
 /// @brief Test Case Example for dhcpc() API
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <errno.h>
 

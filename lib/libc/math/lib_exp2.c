@@ -71,7 +71,7 @@
  * Included Files
  ************************************************************************/
 
-#include <tinyara/compiler.h>
+#include <tizenrt/compiler.h>
 
 #include "libm.h"
 

@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/shm.h>
 #include <sys/ipc.h>
@@ -65,8 +65,8 @@
 #include <errno.h>
 #include <assert.h>
 
-#include <tinyara/mm/shm.h>
-#include <tinyara/pgalloc.h>
+#include <tizenrt/mm/shm.h>
+#include <tizenrt/pgalloc.h>
 
 #include "shm/shm.h"
 
@@ -141,15 +141,15 @@
  * POSIX Deviations:
  *     - IPC_SET.  Does not set the the shm_perm.uid or shm_perm.gid
  *       members of the shmid_ds data structure associated with shmid
- *       because user and group IDs are not yet supported by TinyAra
+ *       because user and group IDs are not yet supported by TizenRT
  *     - IPC_SET.  Does not restrict the operation to processes with
  *       appropriate privileges or matching user IDs in shmid_ds data
  *       structure associated with shmid.  Again because user IDs and
- *       user/group privileges are are not yet supported by TinyAra
+ *       user/group privileges are are not yet supported by TizenRT
  *     - IPC_RMID.  Does not restrict the operation to processes with
  *       appropriate privileges or matching user IDs in shmid_ds data
  *       structure associated with shmid.  Again because user IDs and
- *       user/group privileges are are not yet supported by TinyAra
+ *       user/group privileges are are not yet supported by TizenRT
  *
  ****************************************************************************/
 

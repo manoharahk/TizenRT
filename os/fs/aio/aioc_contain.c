@@ -54,13 +54,13 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sched.h>
 #include <errno.h>
 
-#include <tinyara/fs/fs.h>
-#include <tinyara/net/net.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/net/net.h>
 
 #include "aio/aio.h"
 

@@ -64,8 +64,8 @@
 #include <assert.h>
 #include <errno.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/wdog.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/wdog.h>
 
 #include "sched/sched.h"
 #include "wdog/wdog.h"

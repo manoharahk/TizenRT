@@ -57,7 +57,7 @@
  * Included Files
  ************************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 /* The TM4C129 family has a different FLASH register layout */
 

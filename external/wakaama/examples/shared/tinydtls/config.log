@@ -650,7 +650,7 @@ configure:4183: result: yes
 configure:4183: checking for fls
 configure:4183: gcc -o conftest -g -O2  -DDTLSv12 -DWITH_SHA256  conftest.c  >&5
 /tmp/ccyLc4C5.o: In function `main':
-/home/hj/tinyara/external/wakaama/examples/shared/tinydtls/conftest.c:81: undefined reference to `fls'
+/home/hj/tizenrt/external/wakaama/examples/shared/tinydtls/conftest.c:81: undefined reference to `fls'
 collect2: error: ld returned 1 exit status
 configure:4183: $? = 1
 configure: failed program was:

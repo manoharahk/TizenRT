@@ -54,12 +54,12 @@
 // Included Files
 //***************************************************************************
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <cstdio>
 #include <debug.h>
 
-#include <tinyara/init.h>
+#include <tizenrt/init.h>
 
 #include <apps/platform/cxxinitialize.h>
 

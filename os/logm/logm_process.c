@@ -21,8 +21,8 @@
 #include <stdint.h>
 #include <sys/types.h>
 #include <arch/irq.h>
-#include <tinyara/logm.h>
-#include <tinyara/config.h>
+#include <tizenrt/logm.h>
+#include <tizenrt/config.h>
 #include "logm.h"
 #ifdef CONFIG_LOGM_TEST
 #include "logm_test.h"

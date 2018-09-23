@@ -54,11 +54,11 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <debug.h>
 
-#include <tinyara/irq.h>
+#include <tizenrt/irq.h>
 
 #include "irq/irq.h"
 

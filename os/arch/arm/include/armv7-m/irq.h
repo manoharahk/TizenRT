@@ -51,7 +51,7 @@
  ****************************************************************************/
 
 /* This file should never be included directed but, rather, only indirectly
- * through include/tinyara/irq.h
+ * through include/tizenrt/irq.h
  */
 
 #ifndef __ARCH_ARM_INCLUDE_ARMV7_M_IRQ_H
@@ -61,11 +61,11 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
-#include <tinyara/irq.h>
+#include <tizenrt/irq.h>
 #ifndef __ASSEMBLY__
-#include <tinyara/compiler.h>
+#include <tizenrt/compiler.h>
 #include <stdint.h>
 #endif
 

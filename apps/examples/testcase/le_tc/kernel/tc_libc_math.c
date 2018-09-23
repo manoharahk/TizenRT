@@ -23,10 +23,10 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/compiler.h>
+#include <tizenrt/compiler.h>
 #include <stdio.h>
-#include <tinyara/math.h>
-#include <tinyara/float.h>
+#include <tizenrt/math.h>
+#include <tizenrt/float.h>
 #include "tc_internal.h"
 
 #ifdef CONFIG_HAVE_DOUBLE

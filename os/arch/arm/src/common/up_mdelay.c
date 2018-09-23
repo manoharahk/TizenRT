@@ -54,8 +54,8 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/arch.h>
+#include <tizenrt/config.h>
+#include <tizenrt/arch.h>
 
 /****************************************************************************
  * Definitions

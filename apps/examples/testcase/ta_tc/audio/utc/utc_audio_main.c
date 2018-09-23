@@ -31,9 +31,9 @@
 #include <fcntl.h>
 #include <string.h>
 #include <errno.h>
-#include <tinyara/audio/audio.h>
+#include <tizenrt/audio/audio.h>
 #include <tinyalsa/tinyalsa.h>
-#include <tinyara/fs/ioctl.h>
+#include <tizenrt/fs/ioctl.h>
 #include "tc_common.h"
 
 /****************************************************************************

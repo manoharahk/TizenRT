@@ -57,8 +57,8 @@
  * Included Files
  ************************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/audio/i2s.h>
+#include <tizenrt/config.h>
+#include <tizenrt/audio/i2s.h>
 
 #include <arch/chip/irq.h>
 #include <chip.h>

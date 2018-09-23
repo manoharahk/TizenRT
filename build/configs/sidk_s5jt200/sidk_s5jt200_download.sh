@@ -23,7 +23,7 @@
 # Include the configuration file
 source .config
 
-# Board name for which tinyara has been compiled
+# Board name for which tizenrt has been compiled
 BOARD_NAME=${CONFIG_ARCH_BOARD}
 
 # ENV : Set to proper path's
@@ -56,8 +56,8 @@ main()
 			echo "ALL :"
 
 			# check existence of os binary
-			if [ ! -f "${OUTPUT_BIN_PATH}/tinyara_head.bin" ]; then
-				echo "TinyAra binary is not existed, build first"
+			if [ ! -f "${OUTPUT_BIN_PATH}/tizenrt_head.bin" ]; then
+				echo "TizenRT binary is not existed, build first"
 				exit 1
 			fi
 

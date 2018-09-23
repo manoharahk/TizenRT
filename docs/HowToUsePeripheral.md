@@ -70,7 +70,7 @@ void up_serialinit(void)
 
 ### Add UART device structure
 The ```CONSOLE_DEV``` and ```TTYSx_DEV``` are UART device driver structure type named *uart_dev_t*.  
-That is defined in **[serial.h](../os/include/tinyara/serial/serial.h)** under *os/include/tinyara/serial* folder.
+That is defined in **[serial.h](../os/include/tizenrt/serial/serial.h)** under *os/include/tizenrt/serial* folder.
 ```
 struct uart_dev_s {
 	...
@@ -128,8 +128,8 @@ static struct up_dev_s g_uart0priv = {
 
 ## SPI
 All structures and function prototypes to be implemented by the low-level  
-SPI drivers are provided in the header file **[spi.h](../os/include/tinyara/spi/spi.h)**
-under *os/include/tinyara/spi* folder.
+SPI drivers are provided in the header file **[spi.h](../os/include/tizenrt/spi/spi.h)**
+under *os/include/tizenrt/spi* folder.
 
 ### SPI device driver initialization
 Each SPI device driver must implement the definitions of below prototypes for  
@@ -279,9 +279,9 @@ struct i2c_ops_s {
 };
 ```
 
-Above declarations are present in **[i2c.h](../os/include/tinyara/i2c.h)**.  
+Above declarations are present in **[i2c.h](../os/include/tizenrt/i2c.h)**.  
   
-In addition to above, each board level logic shall implement the other functions listed in **[i2c.h](../os/include/tinyara/i2c.h)**.  
+In addition to above, each board level logic shall implement the other functions listed in **[i2c.h](../os/include/tizenrt/i2c.h)**.  
 
 ```
 1. EXTERN FAR struct i2c_dev_s *up_i2cinitialize(int port);
@@ -304,7 +304,7 @@ I2C is initialized by invoking up_i2cinitialize.
 Initialization takes one i2c port and returns a i2c device structure.  
 Initialization is done either as part of _up_initialize()_ or as part of _board_initialize()_.  
 
-Please refer to **[i2c.h](../os/include/tinyara/i2c.h)** to know more about the i2c functions and declarations.  
+Please refer to **[i2c.h](../os/include/tizenrt/i2c.h)** to know more about the i2c functions and declarations.  
 
 ## I2S
 
@@ -351,7 +351,7 @@ struct i2s_ops_s {
 };
 ```
 
-Above declarations are present in **[i2s.h](../os/include/tinyara/audio/i2s.h)**.  
+Above declarations are present in **[i2s.h](../os/include/tizenrt/audio/i2s.h)**.  
 Each board should implement each of the above operations.
 
 Refer **[s5j_i2s.c](../os/arch/arm/src/s5j/s5j_i2s.c)** for sample implementation of i2s operations on s5j chipset.

@@ -54,7 +54,7 @@
  * Included Files
  ************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdlib.h>
 #include <pthread.h>
@@ -114,7 +114,7 @@
 
 void abort(void)
 {
-	/* TinyAra does not support standard signal functionality (like the
+	/* TizenRT does not support standard signal functionality (like the
 	 * behavior of the SIGABRT signal).  So no attempt is made to provide
 	 * a conformant version of abort() at this time.  This version does not
 	 * signal the calling thread all.

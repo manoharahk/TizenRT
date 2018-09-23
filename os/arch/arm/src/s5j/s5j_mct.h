@@ -55,11 +55,11 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdbool.h>
 
-#include <tinyara/irq.h>
+#include <tizenrt/irq.h>
 
 #include "chip.h"
 

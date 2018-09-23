@@ -55,16 +55,16 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdbool.h>
 #include <semaphore.h>
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/fs/fs.h>
-#include <tinyara/power/battery_charger.h>
-#include <tinyara/power/battery_ioctl.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/power/battery_charger.h>
+#include <tizenrt/power/battery_ioctl.h>
 
 /* This driver requires:
  *

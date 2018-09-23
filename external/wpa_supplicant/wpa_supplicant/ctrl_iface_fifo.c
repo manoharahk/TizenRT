@@ -234,7 +234,7 @@ struct ctrl_iface_priv *wpa_supplicant_ctrl_iface_init(struct wpa_supplicant *wp
 	priv->ctrl_dst.monitor_fd = -1;
 
 	eloop_register_read_sock(priv->ctrl_fd_req, wpa_supplicant_ctrl_iface_receive, wpa_s, priv);
-	sem_init(&priv->ctrl_dst.sem_write, 1, 0);	// Shared between processes (tasks in case of tinyara)
+	sem_init(&priv->ctrl_dst.sem_write, 1, 0);	// Shared between processes (tasks in case of tizenrt)
 	wpa_msg_register_cb(wpa_supplicant_monitor_iface_msg_cb);
 
 	return priv;

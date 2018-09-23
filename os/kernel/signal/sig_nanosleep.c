@@ -54,16 +54,16 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <time.h>
 #include <signal.h>
 #include <assert.h>
 #include <errno.h>
 
-#include <tinyara/clock.h>
+#include <tizenrt/clock.h>
 #include <arch/irq.h>
-#include <tinyara/cancelpt.h>
+#include <tizenrt/cancelpt.h>
 
 #include "clock/clock.h"
 

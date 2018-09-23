@@ -82,15 +82,15 @@ CFLAGS += -DROUTING_EP
 else
 CFLAGS += -DROUTING_GW
 endif
-CFLAGS += -D__TINYARA__
+CFLAGS += -D__TIZENRT__
 CFLAGS += -std=c99
 CFLAGS += -w
 CFLAGS += -D__WITH_DTLS__
 
 ifeq ($(CONFIG_EXAMPLES_IOTIVITY),y)
-CSRCS += port_tinyara.c
+CSRCS += port_tizenrt.c
 else
-CSRCS += port_tinyara.c
+CSRCS += port_tizenrt.c
 endif
 
 MAINSRC = simpleServer.c

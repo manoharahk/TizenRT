@@ -53,8 +53,8 @@
  *
  */
 
-#include <tinyara/config.h>
-#include <tinyara/cancelpt.h>
+#include <tizenrt/config.h>
+#include <tizenrt/cancelpt.h>
 
 #ifdef CONFIG_NET
 

@@ -96,7 +96,7 @@ if target_os in ['tizenrt']:
 	cxx_headers.remove('strings.h')
         cxx_headers.remove('grp.h')
         cxx_headers.remove('pwd.h')
-	config_h_body += "#include <tinyara/config.h>\n\n"
+	config_h_body += "#include <tizenrt/config.h>\n\n"
 
 if target_os == 'msys_nt':
 	# WinPThread provides a pthread.h, but we want to use native threads.

@@ -21,13 +21,13 @@
  * @brief Iotbus APIs for PWM
  */
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <fcntl.h>
 #include <sys/ioctl.h>
-#include <tinyara/pwm.h>
+#include <tizenrt/pwm.h>
 #include <iotbus/iotbus_error.h>
 #include <iotbus/iotbus_pwm.h>
 

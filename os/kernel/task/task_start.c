@@ -54,15 +54,15 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdlib.h>
 #include <sched.h>
 #include <debug.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/sched.h>
-#include <tinyara/ttrace.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/sched.h>
+#include <tizenrt/ttrace.h>
 
 #include "sched/sched.h"
 #include "task/task.h"

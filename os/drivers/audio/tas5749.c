@@ -56,7 +56,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <sys/types.h>
 #include <sys/ioctl.h>
 #include <stdint.h>
@@ -68,14 +68,14 @@
 #include <errno.h>
 #include <fixedmath.h>
 #include <debug.h>
-#include <tinyara/kmalloc.h>
-#include <tinyara/fs/ioctl.h>
-#include <tinyara/audio/i2s.h>
-#include <tinyara/audio/audio.h>
-#include <tinyara/audio/tas5749.h>
-#include <tinyara/math.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/fs/ioctl.h>
+#include <tizenrt/audio/i2s.h>
+#include <tizenrt/audio/audio.h>
+#include <tizenrt/audio/tas5749.h>
+#include <tizenrt/math.h>
 #include <math.h>
-#include <tinyara/i2c.h>
+#include <tizenrt/i2c.h>
 
 #include "tas5749.h"
 #include "tas5749scripts.h"

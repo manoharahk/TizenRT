@@ -57,7 +57,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 /****************************************************************************
  * Pre-processor Definitions
@@ -80,7 +80,7 @@
  * Description:
  *   This function is called to initialize the operating system and to spawn
  *   the user initialization thread of execution.  This is the initial entry
- *   point into TinyAra
+ *   point into TizenRT
  *
  * Input Parameters:
  *   None

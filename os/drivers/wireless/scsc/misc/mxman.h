@@ -18,10 +18,10 @@
 
 #ifndef _MAXWELL_MANAGER_H
 #define _MAXWELL_MANAGER_H
-#include <tinyara/wqueue.h>
+#include <tizenrt/wqueue.h>
 #include "fwhdr.h"
 #include "mxmgmt_transport.h"
-#include "tinyara_wrapper.h"
+#include "tizenrt_wrapper.h"
 
 struct mxman;
 

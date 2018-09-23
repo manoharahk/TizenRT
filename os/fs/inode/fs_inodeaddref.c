@@ -54,10 +54,10 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <errno.h>
-#include <tinyara/fs/fs.h>
+#include <tizenrt/fs/fs.h>
 #include "inode/inode.h"
 
 /****************************************************************************

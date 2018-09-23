@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #ifndef CONFIG_DISABLE_ENVIRON
 
@@ -63,7 +63,7 @@
 #include <string.h>
 #include <errno.h>
 
-#include <tinyara/kmalloc.h>
+#include <tizenrt/kmalloc.h>
 
 #include "sched/sched.h"
 #include "environ/environ.h"

@@ -18,7 +18,7 @@
 #ifndef __DRIVERS_AUDIO_TAS5749SCRIPTS_H
 #define __DRIVERS_AUDIO_TAS5749SCRIPTS_H
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #ifdef CONFIG_AUDIO_TAS5749
 

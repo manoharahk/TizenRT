@@ -1240,7 +1240,7 @@ static inline void process_help(FILE * stream, output_t outfunc)
 
 		/* Lines that are indented at greater levels are assumed to be
 		 * pre-formatted text.  This is not part of the Kconfig language but
-		 * rather simply a TinyAra Kconfig convention.
+		 * rather simply a TizenRT Kconfig convention.
 		 */
 
 		if (indent > help_indent) {
@@ -2322,7 +2322,7 @@ int main(int argc, char **argv, char **envp)
 
 	output("<html>\n");
 	output("<head>\n");
-	output("<title>TinyAra Configuration Options</title>\n");
+	output("<title>TizenRT Configuration Options</title>\n");
 	output("</head>\n");
 
 	output("<body background=\"backgd.gif\">\n");
@@ -2330,7 +2330,7 @@ int main(int argc, char **argv, char **envp)
 	output("<table width =\"100%%\">\n");
 	output("<tr align=\"center\" bgcolor=\"#e4e4e4\">\n");
 	output("<td>\n");
-	output("<h1><big><font color=\"#3c34ec\"><i>TinyAra Configuration Variables</i></font></big></h1>\n");
+	output("<h1><big><font color=\"#3c34ec\"><i>TizenRT Configuration Variables</i></font></big></h1>\n");
 	output("<p>FOR INTERNAL USE ONLY</p>\n");
 	output("<p>Last Updated: %s</p>\n", g_scratch);
 	output("</td>\n");
@@ -2399,23 +2399,23 @@ int main(int argc, char **argv, char **envp)
 
 	body("<p>\n");
 	body("  <b>Overview</b>.\n");
-	body("  The TinyAra RTOS is highly configurable.\n");
-	body("  The TinyAra configuration files are maintained using the <a href=\"http://ymorin.is-a-geek.org/projects/kconfig-frontends\">kconfig-frontends</a> tool.\n");
-	body("  That configuration tool uses <code>Kconfig</code> files that can be found through the TinyAra source tree.\n");
+	body("  The TizenRT RTOS is highly configurable.\n");
+	body("  The TizenRT configuration files are maintained using the <a href=\"http://ymorin.is-a-geek.org/projects/kconfig-frontends\">kconfig-frontends</a> tool.\n");
+	body("  That configuration tool uses <code>Kconfig</code> files that can be found through the TizenRT source tree.\n");
 	body("  Each <code>Kconfig</code> files contains declarations of configuration variables.\n");
-	body("  Each configuration variable provides one configuration option for the TinyAra RTOS.\n");
+	body("  Each configuration variable provides one configuration option for the TizenRT RTOS.\n");
 	body("  This configurable options are descrived in this document.\n");
 	body("</p>\n");
 	body("<p>\n");
 	body("  <b>Main Menu</b>.\n");
-	body("  The normal way to start the TinyAra configuration is to enter this command line from the TinyAra os directory: <code>make menuconfig</code>.\n");
-	body("  Note that TinyAra must first be configured <i>before</i> this command so that the configuration file (<code>.config</code>) is present in the os directory.\n");
+	body("  The normal way to start the TizenRT configuration is to enter this command line from the TizenRT os directory: <code>make menuconfig</code>.\n");
+	body("  Note that TizenRT must first be configured <i>before</i> this command so that the configuration file (<code>.config</code>) is present in the os directory.\n");
 	body("  The main menu is the name give to the opening menu display after this command is executed.\n");
 	body("</p>\n");
 	body("<p>\n");
 	body("  <b>Mainenance Note</b>.\n");
 	body("  This documenation was auto-generated using the kconfig2html tool.\n");
-	body("  That tool analyzes the TinyAra <code>Kconfig</code> files and generates this HTML document.\n");
+	body("  That tool analyzes the TizenRT <code>Kconfig</code> files and generates this HTML document.\n");
 	body("  This HTML document file should not be editted manually.\n");
 	body("  In order to make changes to this document, you should instead modify the <code>Kconfig</code> file(s) that were used to generated this document and then execute the <code>kconfig2html</code> again to regenerate the HTML document file.\n");
 	body("</p>\n");

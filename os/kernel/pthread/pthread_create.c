@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdbool.h>
@@ -67,14 +67,14 @@
 #include <queue.h>
 
 #ifdef CONFIG_DEBUG_MM_HEAPINFO
-#include <tinyara/mm/mm.h>
+#include <tizenrt/mm/mm.h>
 #endif
 
-#include <tinyara/arch.h>
-#include <tinyara/semaphore.h>
-#include <tinyara/kmalloc.h>
-#include <tinyara/pthread.h>
-#include <tinyara/ttrace.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/semaphore.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/pthread.h>
+#include <tizenrt/ttrace.h>
 
 #include "sched/sched.h"
 #include "group/group.h"

@@ -17,7 +17,7 @@
  ****************************************************************************/
 #ifndef __APPS_INCLUDE_BUILTIN_H
 #define __APPS_INCLUDE_BUILTIN_H
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 typedef int (*TASK_CALLBACK)(int argc, char **args);
 

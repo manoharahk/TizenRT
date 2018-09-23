@@ -57,7 +57,7 @@
  * Included Files
  ************************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <arch/tiva/chip.h>
 
 /* Then get all of the register definitions */

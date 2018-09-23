@@ -20,7 +20,7 @@
 
 #ifdef ENABLE_DEBUG_LOG
 
-#if defined(__TINYARA__)
+#if defined(__TIZENRT__)
 int tuv_debug_level = TDBGLEV_INFO;
 #else
 int tuv_debug_level = TDBGLEV_ERR;

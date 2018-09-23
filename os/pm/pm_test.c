@@ -18,10 +18,10 @@
 
 #include <apps/shell/tash.h>
 #include <pm_metrics.h>
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <debug.h>
 #include <unistd.h>
-#include <tinyara/kthread.h>
+#include <tizenrt/kthread.h>
 #include <sched.h>
 #include <time.h>
 #include <pm.h>

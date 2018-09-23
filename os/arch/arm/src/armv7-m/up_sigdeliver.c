@@ -54,14 +54,14 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 #include <sched.h>
 #include <debug.h>
 
-#include <tinyara/irq.h>
-#include <tinyara/arch.h>
+#include <tizenrt/irq.h>
+#include <tizenrt/arch.h>
 #include <arch/board/board.h>
 
 #include "sched/sched.h"
@@ -69,7 +69,7 @@
 #include "up_arch.h"
 
 #ifdef CONFIG_TASK_SCHED_HISTORY
-#include <tinyara/debug/sysdbg.h>
+#include <tizenrt/debug/sysdbg.h>
 #endif
 
 #ifndef CONFIG_DISABLE_SIGNALS

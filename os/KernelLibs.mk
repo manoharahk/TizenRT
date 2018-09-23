@@ -50,8 +50,8 @@
 #
 ############################################################################
 
-# TINYARALIBS is the list of TinyAra libraries that is passed to the
-#   processor-specific Makefile to build the final TinyAra target.
+# TIZENRTLIBS is the list of TizenRT libraries that is passed to the
+#   processor-specific Makefile to build the final TizenRT target.
 #   Libraries in FSDIRS are excluded if file descriptor support
 #   is disabled.
 # USERLIBS is the list of libraries used to build the final user-space
@@ -59,15 +59,15 @@
 # EXPORTLIBS is the list of libraries that should be exported by
 #   'make export' is
 
-TINYARALIBS = $(LIBRARIES_DIR)$(DELIM)libkernel$(LIBEXT)
+TIZENRTLIBS = $(LIBRARIES_DIR)$(DELIM)libkernel$(LIBEXT)
 USERLIBS =
 
 # Add libraries for syscall support.  The C library will be needed by
 # both the kernel- and user-space builds.  For now, the memory manager (mm)
 # is placed in user space (only).
 
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libstubs$(LIBEXT) $(LIBRARIES_DIR)$(DELIM)libkc$(LIBEXT)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libkmm$(LIBEXT) $(LIBRARIES_DIR)$(DELIM)libkarch$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libstubs$(LIBEXT) $(LIBRARIES_DIR)$(DELIM)libkc$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libkmm$(LIBEXT) $(LIBRARIES_DIR)$(DELIM)libkarch$(LIBEXT)
 USERLIBS  += $(LIBRARIES_DIR)$(DELIM)libproxies$(LIBEXT) $(LIBRARIES_DIR)$(DELIM)libuc$(LIBEXT)
 USERLIBS  += $(LIBRARIES_DIR)$(DELIM)libumm$(LIBEXT) $(LIBRARIES_DIR)$(DELIM)libuarch$(LIBEXT)
 
@@ -82,40 +82,40 @@ endif
 # Add libraries for audio support
 
 ifeq ($(CONFIG_AUDIO),y)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libaudio$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libaudio$(LIBEXT)
 endif
 
 # Add libraries for network support
 
 ifeq ($(CONFIG_NET),y)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libnet$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libnet$(LIBEXT)
 endif
 
 # Add libraries for power managment module
 
 ifeq ($(CONFIG_PM),y)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libpm$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libpm$(LIBEXT)
 endif
 
 ifeq ($(CONFIG_LOGM),y)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)liblogm$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)liblogm$(LIBEXT)
 endif
 
 # Add libraries for file system support
 
 ifeq ($(CONFIG_NFILE_DESCRIPTORS),0)
 ifneq ($(CONFIG_NSOCKET_DESCRIPTORS),0)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libfs$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libfs$(LIBEXT)
 endif
 ifeq ($(CONFIG_NET),y)
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libdrivers$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libdrivers$(LIBEXT)
 endif
 else
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libfs$(LIBEXT) $(LIBRARIES_DIR)$(DELIM)libdrivers$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libfs$(LIBEXT) $(LIBRARIES_DIR)$(DELIM)libdrivers$(LIBEXT)
 endif
 
 # Add library for wifi driver
-TINYARALIBS += $(LIBRARIES_DIR)$(DELIM)libwifidriver$(LIBEXT)
+TIZENRTLIBS += $(LIBRARIES_DIR)$(DELIM)libwifidriver$(LIBEXT)
 # Add library for wifi stack
 USERLIBS += $(LIBRARIES_DIR)$(DELIM)libwifistack$(LIBEXT)
 # Add library for wifi api

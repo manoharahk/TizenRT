@@ -25,9 +25,9 @@
 #include <string.h>
 #include <sys/ioctl.h>
 #include <sys/types.h>
-#include <tinyara/clock.h>
-#include <tinyara/ttrace.h>
-#include <tinyara/sched.h>
+#include <tizenrt/clock.h>
+#include <tizenrt/ttrace.h>
+#include <tizenrt/sched.h>
 
 /****************************************************************************
  * Pre-processor Definitions

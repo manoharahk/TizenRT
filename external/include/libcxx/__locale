@@ -49,7 +49,7 @@
 #elif defined(__sun__)
 # include <xlocale.h>
 # include <support/solaris/xlocale.h>
-#elif defined(__TINYARA__)
+#elif defined(__TIZENRT__)
 #include <cstdlib>
 #include <clocale>
 #include <cwctype>

@@ -58,8 +58,8 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/net/ip.h>
+#include <tizenrt/config.h>
+#include <tizenrt/net/ip.h>
 
 /****************************************************************************
  * Pre-processor Definitions

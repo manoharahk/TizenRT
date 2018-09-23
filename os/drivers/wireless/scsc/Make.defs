@@ -56,9 +56,9 @@ CSRCS += hip.c \
 CSRCS += \
 	t20_ops.c
 
-# TinyARA Wrappers
+# TizenRT Wrappers
 CSRCS += \
-	tinyara_wrapper.c
+	tizenrt_wrapper.c
 
 # Include wireless devices build support
 

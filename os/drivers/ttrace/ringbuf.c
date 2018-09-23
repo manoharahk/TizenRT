@@ -20,7 +20,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/ringbuf.h>
+#include <tizenrt/ringbuf.h>
 
 inline void printBuf(char *buf, struct ringbuf *rbp)
 {

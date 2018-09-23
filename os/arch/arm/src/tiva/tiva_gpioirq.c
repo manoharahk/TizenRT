@@ -54,9 +54,9 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/arch.h>
-#include <tinyara/irq.h>
+#include <tizenrt/config.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/irq.h>
 
 #include <stdint.h>
 #include <string.h>

@@ -65,7 +65,7 @@
  * Included Files
  ****************************************************************************/
 
-#include "tinyara/config.h"
+#include "tizenrt/config.h"
 #include <stdint.h>
 #include "mpcore.h"
 

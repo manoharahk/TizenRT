@@ -57,12 +57,12 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <semaphore.h>
 #include <pthread.h>
 
-#include <tinyara/wqueue.h>
+#include <tizenrt/wqueue.h>
 
 #if defined(CONFIG_LIB_USRWORK) && !defined(__KERNEL__)
 

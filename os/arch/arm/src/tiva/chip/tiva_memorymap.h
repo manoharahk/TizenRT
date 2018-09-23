@@ -57,7 +57,7 @@
  * Included Files
  ************************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 /* Include the memory map file for the specific Tiva/Stellaris chip */
 

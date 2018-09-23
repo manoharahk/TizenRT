@@ -34,8 +34,8 @@
  * IN THE SOFTWARE.
  */
 
-#ifndef __uv__platform_tinyara_header__
-#define __uv__platform_tinyara_header__
+#ifndef __uv__platform_tizenrt_header__
+#define __uv__platform_tizenrt_header__
 
 #include <pthread.h>
 #include <poll.h>				// nuttx poll // kbuild
@@ -54,7 +54,7 @@
 #define TUV_POLL_EVENTS_SIZE  1024
 #endif
 
-#define TUV_TINYARA_IOV_MAX     TUV_POLL_EVENTS_SIZE	/* check this */
+#define TUV_TIZENRT_IOV_MAX     TUV_POLL_EVENTS_SIZE	/* check this */
 
 //-----------------------------------------------------------------------------
 
@@ -128,4 +128,4 @@ int getpeername(int sockfd, struct sockaddr *addr, socklen_t *addrlen);
 /* Maximum queue length specifiable by listen.  */
 #define SOMAXCONN 8
 
-#endif							// __uv__platform_tinyara_header__
+#endif							// __uv__platform_tizenrt_header__

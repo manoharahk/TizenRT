@@ -17,19 +17,19 @@
  ****************************************************************************/
 /**
 * @defgroup WiFi WiFi
-* SLSI WiFi utility functions for TinyAra
+* SLSI WiFi utility functions for TizenRT
 * @{
 *
-* @brief S.LSI WiFi utility functions for TinyARA.
+* @brief S.LSI WiFi utility functions for TizenRT.
 *
-* This is the utility functions available for the Samsung LSI WiFi API for TinyARA OS.
+* This is the utility functions available for the Samsung LSI WiFi API for TizenRT OS.
 */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
 #include <unistd.h>
-#include <tinyara/mm/mm.h>
+#include <tizenrt/mm/mm.h>
 #include <slsi_wifi/slsi_wifi_api.h>
 
 /* Supported security modes as string */

@@ -52,7 +52,7 @@
 
 #include <stdio.h>
 #include <sys/types.h>
-#include <tinyara/i2c.h>
+#include <tizenrt/i2c.h>
 
 #include "i2c_mpu9250.h"
 

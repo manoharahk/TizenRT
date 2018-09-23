@@ -20,9 +20,9 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/board.h>
-#include <tinyara/arch.h>
+#include <tizenrt/config.h>
+#include <tizenrt/board.h>
+#include <tizenrt/arch.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

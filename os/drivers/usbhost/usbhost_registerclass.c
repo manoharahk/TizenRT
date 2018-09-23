@@ -54,14 +54,14 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <errno.h>
 #include <debug.h>
 
 #include <arch/irq.h>
-#include <tinyara/usb/usbhost.h>
+#include <tizenrt/usb/usbhost.h>
 
 #include "usbhost_registry.h"
 

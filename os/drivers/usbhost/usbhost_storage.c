@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -65,16 +65,16 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/kmalloc.h>
-#include <tinyara/fs/fs.h>
-#include <tinyara/arch.h>
-#include <tinyara/wqueue.h>
-#include <tinyara/scsi.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/wqueue.h>
+#include <tizenrt/scsi.h>
 
-#include <tinyara/usb/usb.h>
-#include <tinyara/usb/usbhost.h>
-#include <tinyara/usb/storage.h>
-#include <tinyara/usb/usbhost_devaddr.h>
+#include <tizenrt/usb/usb.h>
+#include <tizenrt/usb/usbhost.h>
+#include <tizenrt/usb/storage.h>
+#include <tizenrt/usb/usbhost_devaddr.h>
 
 /* Don't compile if prerequisites are not met */
 
@@ -277,7 +277,7 @@ static struct usbhost_registry_s g_storage = {
 	&g_id						/* id[]     */
 };
 
-/* Block driver operations.  This is the interface exposed to TinyAra by the
+/* Block driver operations.  This is the interface exposed to TizenRT by the
  * class that permits it to behave like a block driver.
  */
 

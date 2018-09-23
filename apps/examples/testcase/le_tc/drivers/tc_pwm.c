@@ -18,8 +18,8 @@
 
 /// @file tc_pwm.c
 /// @brief Test Case Example for pwm driver
-#include <tinyara/config.h>
-#include <tinyara/pwm.h>
+#include <tizenrt/config.h>
+#include <tizenrt/pwm.h>
 #include <stdio.h>
 #include <fcntl.h>
 #include <sys/ioctl.h>

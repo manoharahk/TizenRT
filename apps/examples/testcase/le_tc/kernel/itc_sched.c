@@ -24,7 +24,7 @@
  ****************************************************************************/
 #include <stdio.h>
 #include <pthread.h>
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include "tc_internal.h"
 #include <stdbool.h>
 #include <unistd.h>

@@ -63,7 +63,7 @@
  * Included Files
  ************************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 /* The base address of the L2CC implementation must be provided in the chip.h
  * header file as L2CC_BASE.

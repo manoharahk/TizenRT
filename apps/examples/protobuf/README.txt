@@ -4,16 +4,16 @@ examples/protobuf
   This directory contains example code that uses Protocol Buffers to manage an
   address book.
 
-  TinyAra configuration prerequisites:
+  TizenRT configuration prerequisites:
 
     CONFIG_HAVE_CXX -- Enable C++ Support
 
-  Optional TinyAra configuration settings:
+  Optional TizenRT configuration settings:
 
     CONFIG_HAVE_CXXINITIALIZE -- Enable support for static constructors
       (may not be available on all platforms).
 
-  TinyAra configuration settings specific to this example:
+  TizenRT configuration settings specific to this example:
 
     CONFIG_PROTOBUF=y
     CONFIG_EXAMPLES_PROTOBUF=y
@@ -28,7 +28,7 @@ examples/protobuf
     CONFIG_CXX_NEWLONG=y or =n
 
   The argument of the 'new' operators should take a type of size_t.  But size_t
-  has an unknown underlying.  In the TinyAra sys/types.h header file, size_t
+  has an unknown underlying.  In the TizenRT sys/types.h header file, size_t
   is typed as uint32_t (which is determined by architecture-specific logic).
   But the C++ compiler may believe that size_t is of a different type resulting
   in compilation errors in the operator.  Using the underlying integer type

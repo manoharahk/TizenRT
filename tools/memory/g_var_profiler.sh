@@ -31,7 +31,7 @@ then
 	echo "This script parses the global variable which size is greater than [SIZE]"
 	echo -e "\tIf no input params are specified, below is assumed"
 	echo -e "\tSIZE : 256"
-	echo -e "\tELF_PATH : ../../build/output/bin/tinyara"
+	echo -e "\tELF_PATH : ../../build/output/bin/tizenrt"
 	echo -e "\tOUTPUT_FILENAME : var_list_over_SIZEbytes.txt"
 	echo "Output file info"
 	echo -e "\tSIZE : variable size(bytes)"
@@ -46,7 +46,7 @@ fi
 
 if [ -z ${path} ]
 then
-	path="${WD}/../../build/output/bin/tinyara"
+	path="${WD}/../../build/output/bin/tizenrt"
 fi
 
 if [ -z ${output_file} ]

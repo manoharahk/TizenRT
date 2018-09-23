@@ -1,4 +1,4 @@
-# Assumed to run from tinyara/os directory
+# Assumed to run from tizenrt/os directory
 # TODO:
 #   1. Get the code from the git repo
 #   2. Patch the code using the additional changes
@@ -9,15 +9,15 @@ if [ ! -z "${DEBUG}" ]; then
 fi
 
 extract_flags() {
-	if [ -e ${TOPDIR}/include/tinyara/config.h ]; then
-		echo `cat ${TOPDIR}/include/tinyara/config.h | grep -w "$1"  | cut -d " " -f 3`
+	if [ -e ${TOPDIR}/include/tizenrt/config.h ]; then
+		echo `cat ${TOPDIR}/include/tizenrt/config.h | grep -w "$1"  | cut -d " " -f 3`
 	fi
 }
 
 export IOTIVITY_BASE="${TOPDIR}/../external/iotivity"
 CONFIG_IOTIVITY_RELEASE_VERSION='1.2-rel'
 IOTIVITY_RELEASE_VERSION=$(echo "$CONFIG_IOTIVITY_RELEASE_VERSION" | sed 's/"//g')
-export TINYARA_BUILD_DIR="${TOPDIR}"
+export TIZENRT_BUILD_DIR="${TOPDIR}"
 export IOTIVITY_BUILD_DIR="${IOTIVITY_BASE}/iotivity_${IOTIVITY_RELEASE_VERSION}"
 export IOTIVITY_PATCH_DIR="${IOTIVITY_BASE}/patches/${IOTIVITY_RELEASE_VERSION}"
 
@@ -31,18 +31,18 @@ export IOTIVITY_PATCH_DIR="${IOTIVITY_BASE}/patches/${IOTIVITY_RELEASE_VERSION}"
 
 if [ ! -d ${IOTIVITY_BUILD_DIR}/extlibs/mbedtls/mbedtls ]; then
 	mkdir -p ${IOTIVITY_BUILD_DIR}/extlibs/mbedtls/mbedtls/include
-	ln -s ${TINYARA_BUILD_DIR}/../external/include/mbedtls ${IOTIVITY_BUILD_DIR}/extlibs/mbedtls/mbedtls/include/mbedtls
+	ln -s ${TIZENRT_BUILD_DIR}/../external/include/mbedtls ${IOTIVITY_BUILD_DIR}/extlibs/mbedtls/mbedtls/include/mbedtls
 fi
 
-#if [ ! -f ${IOTIVITY_BUILD_DIR}/tinyara_patch.lock ]; then
+#if [ ! -f ${IOTIVITY_BUILD_DIR}/tizenrt_patch.lock ]; then
 #	cd ${IOTIVITY_BUILD_DIR}
-#	touch ${IOTIVITY_BUILD_DIR}/tinyara_patch.lock
+#	touch ${IOTIVITY_BUILD_DIR}/tizenrt_patch.lock
 #	git checkout ${IOTIVITY_RELEASE_VERSION}
 
 	#Apply the Patch
-#	git am ${IOTIVITY_PATCH_DIR}/0001-tinyara-iotivity-${IOTIVITY_RELEASE_VERSION}.patch
+#	git am ${IOTIVITY_PATCH_DIR}/0001-tizenrt-iotivity-${IOTIVITY_RELEASE_VERSION}.patch
 
-	cd ${TINYARA_BUILD_DIR}
+	cd ${TIZENRT_BUILD_DIR}
 #fi
 
 # Set build parameters
@@ -97,22 +97,22 @@ if [ ${CONFIG_ENABLE_IOTIVITY} -eq 1 ]; then
 
 	if [ ${CONFIG_ENABLE_IOTIVITY_SECURED} -eq 0 -a ${CONFIG_ENABLE_IOTIVITY_CLOUD} -eq 0 ]; then
 		#IoTivity - D2D - No Security
-		echo "*********** Iotivity Build for TinyARA (D2D - No Security) *************"
+		echo "*********** Iotivity Build for TizenRT (D2D - No Security) *************"
 		scons ${OPTIONS}
 	elif [ ${CONFIG_ENABLE_IOTIVITY_SECURED} -eq 0 -a ${CONFIG_ENABLE_IOTIVITY_CLOUD} -eq 1 ]; then
 		#IoTivity - D2C - No Security
-		echo "*********** Iotivity Build for TinyARA (D2C - No Security *************"
+		echo "*********** Iotivity Build for TizenRT (D2C - No Security *************"
 		scons WITH_CLOUD=yes WITH_TCP=yes RD_MODE=CLIENT ${OPTIONS}
 	elif [ ${CONFIG_ENABLE_IOTIVITY_SECURED} -eq 1 -a ${CONFIG_ENABLE_IOTIVITY_CLOUD} -eq 0 ]; then
 		#IoTivity - D2D - Security
-		echo "*********** Iotivity Build for TinyARA (D2D - Security *************"
+		echo "*********** Iotivity Build for TizenRT (D2D - Security *************"
 		scons SECURED=1 ${OPTIONS}
 	elif [ ${CONFIG_ENABLE_IOTIVITY_SECURED} -eq 1 -a ${CONFIG_ENABLE_IOTIVITY_CLOUD} -eq 1 ]; then
 		#IoTivity - D2C - Security
-		echo "*********** Iotivity Build for TinyARA (D2C - Security *************"
+		echo "*********** Iotivity Build for TizenRT (D2C - Security *************"
 		scons WITH_CLOUD=yes WITH_TCP=yes RD_MODE=CLIENT SECURED=1 ${OPTIONS}
 	fi
 
-	cd ${TINYARA_BUILD_DIR}
+	cd ${TIZENRT_BUILD_DIR}
 fi
 

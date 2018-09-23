@@ -42,7 +42,7 @@
 #ifndef WSLAY_NET_H
 #define WSLAY_NET_H
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <arpa/inet.h>
 #include <netinet/in.h>
 #include <protocols/wslay/wslay.h>

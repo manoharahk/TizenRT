@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #if defined(CONFIG_NET) && defined(CONFIG_TIVA_ETHERNET)
 
 #include <stdint.h>
@@ -66,15 +66,15 @@
 
 #include <arpa/inet.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/wdog.h>
-#include <tinyara/irq.h>
-#include <tinyara/wqueue.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/wdog.h>
+#include <tizenrt/irq.h>
+#include <tizenrt/wqueue.h>
 #include <arch/board/board.h>
 
-#include <tinyara/net/netdev.h>
+#include <tizenrt/net/netdev.h>
 #include <net/lwip/netif/etharp.h>
-#include <tinyara/net/ethernet.h>
+#include <tizenrt/net/ethernet.h>
 
 #include <net/if.h>
 #include <net/lwip/opt.h>
@@ -82,7 +82,7 @@
 #include <net/lwip/tcpip.h>
 
 #ifdef CONFIG_NET_PKT
-#include <tinyara/net/pkt.h>
+#include <tizenrt/net/pkt.h>
 #endif
 
 #include "chip.h"

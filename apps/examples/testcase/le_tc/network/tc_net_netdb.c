@@ -18,7 +18,7 @@
 
 /// @file tc_net_netdb.c
 /// @brief Test Case Example for getaddrinfo(), freeaddrinfo() API
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <errno.h>
 

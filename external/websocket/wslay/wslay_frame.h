@@ -42,7 +42,7 @@
 #ifndef WSLAY_FRAME_H
 #define WSLAY_FRAME_H
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <protocols/wslay/wslay.h>
 
 enum wslay_frame_state {

@@ -60,7 +60,7 @@
  * Included Files
  ************************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdio.h>
@@ -72,11 +72,11 @@
 #include <assert.h>
 #include <debug.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/irq.h>
-#include <tinyara/i2c.h>
-#include <tinyara/kmalloc.h>
-#include <tinyara/clock.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/irq.h>
+#include <tizenrt/i2c.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/clock.h>
 
 #include <arch/board/board.h>
 

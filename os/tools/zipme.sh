@@ -77,7 +77,7 @@ while [ ! -z "$1" ]; do
         DEBUG=-d
         ;;
     -h )
-        echo "$0 is a tool for generation of release versions of TinyAra"
+        echo "$0 is a tool for generation of release versions of TizenRT"
         echo ""
         echo $USAGE
         echo ""
@@ -90,7 +90,7 @@ while [ ! -z "$1" ]; do
         echo "  -h"
         echo "     show this help message and exit"
         echo "  <major.minor>"
-        echo "     The TinyAra version number expressed as a major and minor number separated"
+        echo "     The TizenRT version number expressed as a major and minor number separated"
         echo "     by a period"
         exit 0
         ;;
@@ -138,18 +138,18 @@ else
    if [ -x ${WD}/tools/${MYNAME} ] ; then
      TRUNKDIR="${WD}/.."
    else
-     if [ -x ${WD}/tinyara-${VERSION}/tools/${MYNAME} ] ; then
+     if [ -x ${WD}/tizenrt-${VERSION}/tools/${MYNAME} ] ; then
        TRUNKDIR="${WD}"
      else
-       echo "You must cd into the tinyara directory to execute this script."
+       echo "You must cd into the tizenrt directory to execute this script."
        exit 1
      fi
    fi
 fi
 
-# Get the TinyAra directory names and the path to the parent directory
+# Get the TizenRT directory names and the path to the parent directory
 
-TINYARA=${TRUNKDIR}/tinyara-${VERSION}
+TIZENRT=${TRUNKDIR}/tizenrt-${VERSION}
 APPDIR=${TRUNKDIR}/apps-${VERSION}
 
 # Make sure that the versioned directory exists
@@ -162,8 +162,8 @@ fi
 cd ${TRUNKDIR} || \
    { echo "Failed to cd to ${TRUNKDIR}" ; exit 1 ; }
 
-if [ ! -d tinyara-${VERSION} ] ; then
-   echo "Directory ${TRUNKDIR}/tinyara-${VERSION} does not exist!"
+if [ ! -d tizenrt-${VERSION} ] ; then
+   echo "Directory ${TRUNKDIR}/tizenrt-${VERSION} does not exist!"
    exit 1
 fi
 
@@ -174,12 +174,12 @@ fi
 
 # Create the versioned tarball names
 
-TINYARA_TARNAME=tinyara-${VERSION}.tar
+TIZENRT_TARNAME=tizenrt-${VERSION}.tar
 APPS_TARNAME=apps-${VERSION}.tar
-TINYARA_ZIPNAME=${TINYARA_TARNAME}.gz
+TIZENRT_ZIPNAME=${TIZENRT_TARNAME}.gz
 APPS_ZIPNAME=${APPS_TARNAME}.gz
 
-# Prepare the tinyara directory -- Remove editor garbage
+# Prepare the tizenrt directory -- Remove editor garbage
 
 find ${TRUNKDIR} -name '*~' -exec rm -f '{}' ';' || \
       { echo "Removal of emacs garbage failed!" ; exit 1 ; }
@@ -188,35 +188,35 @@ find ${TRUNKDIR} -name '*.swp' -exec rm -f '{}' ';' || \
 
 # Make sure that versioned copies of the certain files are in place
 
-cd ${TINYARA}/include || \
-   { echo "Failed to cd to ${TINYARA}/include" ; exit 1 ; }
+cd ${TIZENRT}/include || \
+   { echo "Failed to cd to ${TIZENRT}/include" ; exit 1 ; }
 
-# Write a version file into the TinyAra directory.  The syntax of file is such that it
+# Write a version file into the TizenRT directory.  The syntax of file is such that it
 # may be sourced by a bash script or included by a Makefile.
 
-VERSIONSH=${TINYARA}/tools/version.sh
+VERSIONSH=${TIZENRT}/tools/version.sh
 if [ ! -x "${VERSIONSH}" ]; then
     echo "No executable script was found at: ${VERSIONSH}"
     exit 1
 fi
 
-${VERSIONSH} ${DEBUG} ${BUILD} ${VERSIONOPT} ${TINYARA}/.version || \
-    { echo "${VERSIONSH} failed"; cat ${TINYARA}/.version; exit 1; }
-chmod 755 ${TINYARA}/.version || \
-    { echo "'chmod 755 ${TINYARA}/.version' failed"; exit 1; }
+${VERSIONSH} ${DEBUG} ${BUILD} ${VERSIONOPT} ${TIZENRT}/.version || \
+    { echo "${VERSIONSH} failed"; cat ${TIZENRT}/.version; exit 1; }
+chmod 755 ${TIZENRT}/.version || \
+    { echo "'chmod 755 ${TIZENRT}/.version' failed"; exit 1; }
 
 # Update the configuration variable documentation
 #
-# MKCONFIGVARS=${TINYARA}/tools/mkconfigvars.sh
-# CONFIGVARHTML=${TINYARA}/Documentation/TINYARAConfigVariables.html
+# MKCONFIGVARS=${TIZENRT}/tools/mkconfigvars.sh
+# CONFIGVARHTML=${TIZENRT}/Documentation/TIZENRTConfigVariables.html
 #
 # if [ ! -x "${MKCONFIGVARS}" ]; then
 #     echo "No executable script was found at: ${MKCONFIGVARS}"
 #     exit 1
 # fi
 #
-# cd ${TINYARA} || \
-#    { echo "Failed to cd to ${TINYARA}" ; exit 1 ; }
+# cd ${TIZENRT} || \
+#    { echo "Failed to cd to ${TIZENRT}" ; exit 1 ; }
 #
 # ${MKCONFIGVARS} ${DEBUG} ${VERSIONOPT} || \
 #     { echo "${MKCONFIGVARS} failed"; exit 1; }
@@ -228,20 +228,20 @@ chmod 755 ${TINYARA}/.version || \
 cd ${TRUNKDIR} || \
    { echo "Failed to cd to ${TRUNKDIR}" ; exit 1 ; }
 
-make -C ${TINYARA} distclean
+make -C ${TIZENRT} distclean
 
 # Remove any previous tarballs
 
-if [ -f ${TINYARA_TARNAME} ] ; then
-   echo "Removing ${TRUNKDIR}/${TINYARA_TARNAME}"
-   rm -f ${TINYARA_TARNAME} || \
-      { echo "rm ${TINYARA_TARNAME} failed!" ; exit 1 ; }
+if [ -f ${TIZENRT_TARNAME} ] ; then
+   echo "Removing ${TRUNKDIR}/${TIZENRT_TARNAME}"
+   rm -f ${TIZENRT_TARNAME} || \
+      { echo "rm ${TIZENRT_TARNAME} failed!" ; exit 1 ; }
 fi
 
-if [ -f ${TINYARA_ZIPNAME} ] ; then
-   echo "Removing ${TRUNKDIR}/${TINYARA_ZIPNAME}"
-   rm -f ${TINYARA_ZIPNAME} || \
-      { echo "rm ${TINYARA_ZIPNAME} failed!" ; exit 1 ; }
+if [ -f ${TIZENRT_ZIPNAME} ] ; then
+   echo "Removing ${TRUNKDIR}/${TIZENRT_ZIPNAME}"
+   rm -f ${TIZENRT_ZIPNAME} || \
+      { echo "rm ${TIZENRT_ZIPNAME} failed!" ; exit 1 ; }
 fi
 
 if [ -f ${APPS_TARNAME} ] ; then
@@ -261,15 +261,15 @@ fi
 cd ${TRUNKDIR} || \
    { echo "Failed to cd to ${TRUNKDIR}" ; exit 1 ; }
 
-${TAR} ${TINYARA_TARNAME} tinyara-${VERSION} || \
-      { echo "tar of ${TINYARA_TARNAME} failed!" ; exit 1 ; }
-${ZIP} ${TINYARA_TARNAME} || \
-      { echo "zip of ${TINYARA_TARNAME} failed!" ; exit 1 ; }
+${TAR} ${TIZENRT_TARNAME} tizenrt-${VERSION} || \
+      { echo "tar of ${TIZENRT_TARNAME} failed!" ; exit 1 ; }
+${ZIP} ${TIZENRT_TARNAME} || \
+      { echo "zip of ${TIZENRT_TARNAME} failed!" ; exit 1 ; }
 
 ${TAR} ${APPS_TARNAME} apps-${VERSION} || \
       { echo "tar of ${APPS_TARNAME} failed!" ; exit 1 ; }
 ${ZIP} ${APPS_TARNAME} || \
       { echo "zip of ${APPS_TARNAME} failed!" ; exit 1 ; }
 
-cd ${TINYARA}
+cd ${TIZENRT}
 

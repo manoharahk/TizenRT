@@ -7,7 +7,7 @@ config ARTIK05X_BOOT_FAILURE_DETECTION
 	bool "Clear bootcount when boot completes"
 	default y
 	---help---
-		BL2 sets up a watchdog before it jumps to TinyARA to detect
+		BL2 sets up a watchdog before it jumps to TizenRT to detect
 		boot failures. On a successful boot, the secondary OS should
 		turn the watchdog off and clear the bootcount register that
 		stores the number of tries to boot. Otherwise, the watchdog

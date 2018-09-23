@@ -223,8 +223,8 @@ int main(int argc, char **argv, char **envp)
 	/* Output up-front file boilerplate */
 
 	fprintf(outstream, "/* %s: Auto-generated symbol table.  Do not edit */\n\n", symtab);
-	fprintf(outstream, "#include <tinyara/config.h>\n");
-	fprintf(outstream, "#include <tinyara/compiler.h>\n");
+	fprintf(outstream, "#include <tizenrt/config.h>\n");
+	fprintf(outstream, "#include <tizenrt/compiler.h>\n");
 
 	/* Output all of the require header files */
 

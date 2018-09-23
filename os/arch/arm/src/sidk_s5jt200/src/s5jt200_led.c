@@ -53,16 +53,16 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <debug.h>
 #include <assert.h>
 #include <errno.h>
 #include <sys/types.h>
-#include <tinyara/pwm.h>
-#include <tinyara/kthread.h>
+#include <tizenrt/pwm.h>
+#include <tizenrt/kthread.h>
 
-#include <tinyara/board.h>
+#include <tizenrt/board.h>
 #include <arch/board/board.h>
 
 FAR struct pwm_lowerhalf_s    *ledr;

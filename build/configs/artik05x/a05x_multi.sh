@@ -85,9 +85,9 @@ Options:
 For examples:
     `basename $0` --write
     `basename $0` --board=artik05x --write \\
-                  --set="bl1 ../bl1.bin" --set="os tinyara_head.bin" \\
+                  --set="bl1 ../bl1.bin" --set="os tizenrt_head.bin" \\
                   --flash
-    `basename $0` --board=artik05x --list=serial.txt --set="os tinyara_head.bin" --flash
+    `basename $0` --board=artik05x --list=serial.txt --set="os tizenrt_head.bin" --flash
 
 Options:
    --write                  Write FTDI serial into EEPROM.

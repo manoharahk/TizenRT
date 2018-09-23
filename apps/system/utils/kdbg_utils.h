@@ -19,9 +19,9 @@
 #ifndef __APPS_SYSTEM_UTILS_KDBG_UTILS_H
 #define __APPS_SYSTEM_UTILS_KDBG_UTILS_H
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #ifdef CONFIG_ENABLE_STACKMONITOR_CMD
-#include <tinyara/clock.h>
+#include <tizenrt/clock.h>
 #include <sys/types.h>
 
 struct stkmon_save_s {

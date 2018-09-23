@@ -27,8 +27,8 @@
 #include <stdlib.h>
 #include <errno.h>
 
-#include <tinyara/config.h>
-#include <tinyara/fs/fs_utils.h>
+#include <tizenrt/config.h>
+#include <tizenrt/fs/fs_utils.h>
 
 /****************************************************************************
  * Pre-processor Definitions

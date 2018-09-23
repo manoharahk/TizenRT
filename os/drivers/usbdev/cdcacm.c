@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdint.h>
@@ -68,20 +68,20 @@
 #include <queue.h>
 #include <debug.h>
 
-#include <tinyara/kmalloc.h>
-#include <tinyara/arch.h>
-#include <tinyara/serial/serial.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/serial/serial.h>
 
-#include <tinyara/usb/usb.h>
-#include <tinyara/usb/cdc.h>
-#include <tinyara/usb/usbdev.h>
-#include <tinyara/usb/cdcacm.h>
-#include <tinyara/usb/usbdev_trace.h>
+#include <tizenrt/usb/usb.h>
+#include <tizenrt/usb/cdc.h>
+#include <tizenrt/usb/usbdev.h>
+#include <tizenrt/usb/cdcacm.h>
+#include <tizenrt/usb/usbdev_trace.h>
 
 #include "cdcacm.h"
 
 #ifdef CONFIG_USBMSC_COMPOSITE
-#include <tinyara/usb/composite.h>
+#include <tizenrt/usb/composite.h>
 #include "composite.h"
 #endif
 
@@ -1706,7 +1706,7 @@ static int cdcuart_ioctl(FAR struct file *filep, int cmd, unsigned long arg)
 
 	/* CAIOC_GETLINECODING
 	 *   Get current line coding.  Argument: struct cdc_linecoding_s*.
-	 *   See include/tinyara/usb/cdc.h for structure definition.  This IOCTL
+	 *   See include/tizenrt/usb/cdc.h for structure definition.  This IOCTL
 	 *   should be called to get the data associated with the
 	 *   CDCACM_EVENT_LINECODING event).
 	 */
@@ -1723,7 +1723,7 @@ static int cdcuart_ioctl(FAR struct file *filep, int cmd, unsigned long arg)
 
 	/* CAIOC_GETCTRLLINE
 	 *   Get control line status bits. Argument FAR int*.  See
-	 *   include/tinyara/usb/cdc.h for bit definitions.  This IOCTL should be
+	 *   include/tizenrt/usb/cdc.h for bit definitions.  This IOCTL should be
 	 *   called to get the data associated CDCACM_EVENT_CTRLLINE event.
 	 */
 
@@ -1741,7 +1741,7 @@ static int cdcuart_ioctl(FAR struct file *filep, int cmd, unsigned long arg)
 	 *   Send a serial state to the host via the Interrupt IN endpoint.
 	 *   Argument: int.  This includes the current state of the carrier detect,
 	 *   DSR, break, and ring signal.  See "Table 69: UART State Bitmap Values"
-	 *   and CDC_UART_definitions in include/tinyara/usb/cdc.h.
+	 *   and CDC_UART_definitions in include/tizenrt/usb/cdc.h.
 	 */
 
 	case CAIOC_NOTIFY: {

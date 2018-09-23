@@ -57,8 +57,8 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/compiler.h>
+#include <tizenrt/config.h>
+#include <tizenrt/compiler.h>
 
 #include <sys/types.h>
 #include <stdint.h>
@@ -68,7 +68,7 @@
 #include <sched.h>
 #include <signal.h>
 
-#include <tinyara/mqueue.h>
+#include <tizenrt/mqueue.h>
 
 #if !defined(CONFIG_DISABLE_MQUEUE) && CONFIG_MQ_MAXMSGSIZE > 0
 

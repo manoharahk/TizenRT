@@ -20,17 +20,17 @@
 #include <string.h>
 #include <stdlib.h>
 
-/* tinyara includes */
+/* tizenrt includes */
 #include <errno.h>
 #include <fcntl.h>
 #include <time.h>
 #include <assert.h>
 #include <errno.h>
-#include <tinyara/clock.h>
-#include <tinyara/arch.h>
-#include <tinyara/cancelpt.h>
-#include <tinyara/kthread.h>
-#include <tinyara/semaphore.h>
+#include <tizenrt/clock.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/cancelpt.h>
+#include <tizenrt/kthread.h>
+#include <tizenrt/semaphore.h>
 #include <sys/types.h>
 
 /* lwIP includes. */
@@ -44,7 +44,7 @@
 #include <net/lwip/pbuf.h>
 #include <net/lwip/arch/cc.h>
 
-/* TinyAra RTOS implementation of the lwip operating system abstraction */
+/* TizenRT RTOS implementation of the lwip operating system abstraction */
 #include <net/lwip/arch/sys_arch.h>
 
 /* This is the number of threads that can be started with sys_thread_new() */

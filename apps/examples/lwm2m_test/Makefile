@@ -85,7 +85,7 @@ ifeq ($(CONFIG_NET_SECURITY_TLS),y)
 CFLAGS +=-DWITH_MBEDTLS
 endif
 
-CFLAGS +=-D__TINYARA__
+CFLAGS +=-D__TIZENRT__
 CFLAGS +=-I$(TOPDIR)/../external/wakaama/core
 
 DEPPATH += --dep-path example/lwm2m_test

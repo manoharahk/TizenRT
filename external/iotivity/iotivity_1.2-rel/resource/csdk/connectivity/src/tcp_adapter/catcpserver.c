@@ -23,7 +23,7 @@
 #include <sys/select.h>
 #include <sys/ioctl.h>
 #ifdef __TIZENRT__
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <poll.h>
 #else
 #include <sys/poll.h>

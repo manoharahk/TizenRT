@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 #include <signal.h>
@@ -222,7 +222,7 @@ int sigaction(int signo, FAR const struct sigaction *act, FAR struct sigaction *
 	 * if signo == SIGCHLD and sa_flags == SA_NOCLDWAIT.
 	 *
 	 * POSIX.1 leaves it unspecified whether a SIGCHLD signal is generated
-	 * when a child process terminates.  In TinyAra, a SIGCHLD signal is
+	 * when a child process terminates.  In TizenRT, a SIGCHLD signal is
 	 * generated in this case; but in some other implementations, it may not
 	 * be.
 	 */

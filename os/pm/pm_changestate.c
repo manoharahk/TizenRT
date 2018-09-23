@@ -54,13 +54,13 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <queue.h>
 #include <assert.h>
 #include <time.h>
 #include <debug.h>
-#include <tinyara/pm/pm.h>
-#include <tinyara/irq.h>
+#include <tizenrt/pm/pm.h>
+#include <tizenrt/irq.h>
 
 #include "pm_metrics.h"
 #include "pm.h"

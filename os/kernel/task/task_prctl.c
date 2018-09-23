@@ -54,7 +54,7 @@
  * Included Files
  ************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/prctl.h>
 #include <stdarg.h>
@@ -62,8 +62,8 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/sched.h>
-#include <tinyara/ttrace.h>
+#include <tizenrt/sched.h>
+#include <tizenrt/ttrace.h>
 
 #include "sched/sched.h"
 #include "task/task.h"

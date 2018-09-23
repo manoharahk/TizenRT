@@ -56,10 +56,10 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdint.h>
 
-#include <tinyara/fs/ioctl.h>
+#include <tizenrt/fs/ioctl.h>
 
 #ifdef CONFIG_LIB_BOARDCTL
 

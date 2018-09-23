@@ -55,7 +55,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/socket.h>
 
@@ -66,7 +66,7 @@
 #include <debug.h>
 
 #include <arch/irq.h>
-#include <tinyara/net/net.h>
+#include <tizenrt/net/net.h>
 #include "socket/socket.h"
 
 #if defined(CONFIG_NET) && CONFIG_NSOCKET_DESCRIPTORS > 0

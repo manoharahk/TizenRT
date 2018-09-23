@@ -31,7 +31,7 @@
  *    notice, this list of conditions and the following disclaimer in
  *    the documentation and/or other materials provided with the
  *    distribution.
- * 3. Neither the name tinyara nor the names of its contributors may be
+ * 3. Neither the name tizenrt nor the names of its contributors may be
  *    used to endorse or promote products derived from this software
  *    without specific prior written permission.
  *
@@ -52,7 +52,7 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <string.h>
@@ -60,10 +60,10 @@
 #include <debug.h>
 #include <errno.h>
 
-#include <tinyara/irq.h>
-#include <tinyara/wqueue.h>
-#include <tinyara/analog/adc.h>
-#include <tinyara/analog/ioctl.h>
+#include <tizenrt/irq.h>
+#include <tizenrt/wqueue.h>
+#include <tizenrt/analog/adc.h>
+#include <tizenrt/analog/ioctl.h>
 
 #include "up_arch.h"
 #include "s5j_adc.h"

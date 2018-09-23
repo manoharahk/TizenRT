@@ -54,11 +54,11 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sched.h>
 
-#include <tinyara/wqueue.h>
+#include <tizenrt/wqueue.h>
 
 #include "sched/sched.h"
 #include "wqueue/wqueue.h"

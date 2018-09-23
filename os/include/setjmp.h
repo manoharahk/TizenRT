@@ -61,7 +61,7 @@
 
 #include <arch/types.h>
 #include <arch/setjmp.h>
-#include <tinyara/compiler.h>
+#include <tizenrt/compiler.h>
 
 #ifdef __cplusplus
 extern "C" {

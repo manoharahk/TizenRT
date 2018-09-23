@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdbool.h>
 #include <string.h>
@@ -63,8 +63,8 @@
 #include <assert.h>
 #include <debug.h>
 
-#include <tinyara/ascii.h>
-#include <tinyara/vt100.h>
+#include <tizenrt/ascii.h>
+#include <tizenrt/vt100.h>
 
 #include <apps/readline.h>
 #include "readline.h"

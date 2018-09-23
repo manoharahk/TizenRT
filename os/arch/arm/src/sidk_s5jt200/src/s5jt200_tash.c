@@ -54,14 +54,14 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdio.h>
 #include <syslog.h>
 #include <errno.h>
 
-#include <tinyara/board.h>
-#include <tinyara/rtc.h>
+#include <tizenrt/board.h>
+#include <tizenrt/rtc.h>
 #include <time.h>
 #include <chip.h>
 
@@ -71,7 +71,7 @@
 
 #include <apps/shell/tash.h>
 
-#include <tinyara/fs/mtd.h>
+#include <tizenrt/fs/mtd.h>
 
 #include "sidk_s5jt200.h"
 #include "s5j_mct.h"
@@ -402,7 +402,7 @@ int board_app_initialize(void)
 				tp.tm_year + TM_YEAR_BASE, tp.tm_mon + 1,
 				tp.tm_mday, tp.tm_hour, tp.tm_min, tp.tm_sec);
 		lldbg("Version Info :\n");
-		lldbg("tinyARA %s\n", __TIMESTAMP__);
+		lldbg("TizenRT %s\n", __TIMESTAMP__);
 	}
 #if defined(CONFIG_RTC_DRIVER)
 	{

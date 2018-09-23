@@ -7,13 +7,13 @@ Table of Contents
   o Summary of Files
   o Configuration Variables
   o Supported Boards
-  o Configuring TinyAra
+  o Configuring TizenRT
   o Building Symbol Tables
 
 Board-Specific Configurations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The TinyAra configuration consists of:
+The TizenRT configuration consists of:
 
 o Processor architecture specific files.  These are the files contained
   in the arch/<arch-name>/ directory.
@@ -40,7 +40,7 @@ o Board specific files.  In order to be usable, the chip must be
 
 The configs/ subdirectory contains configuration data for each board.  These
 board-specific configurations plus the architecture-specific configurations in
-the arch/ subdirectory completely define a customized port of TinyAra.
+the arch/ subdirectory completely define a customized port of TizenRT.
 
 Directory Structure
 ^^^^^^^^^^^^^^^^^^^
@@ -94,7 +94,7 @@ Make.defs -- This makefile fragment provides architecture and
   is the path to the root directory of the build.  This makefile
   fragment should include:
 
-    $(TOPDIR)/.config          : TinyAra configuration
+    $(TOPDIR)/.config          : TizenRT configuration
     $(TOPDIR)/tools/Config.mk  : Common definitions
 
   Definitions in the Make.defs file probably depend on some of the
@@ -114,28 +114,28 @@ defconfig -- This is a configuration file similar to the Linux
   This configuration file will be used at build time:
 
     (1) as a makefile fragment included in other makefiles, and
-    (2) to generate include/tinyara/config.h which is included by
+    (2) to generate include/tizenrt/config.h which is included by
         most C files in the system.
 
 Configuration Variables
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-At one time, this section provided a list of all Tinyara configuration
-variables. However, Tinyara has since converted to use the kconfig-frontends
+At one time, this section provided a list of all TizenRT configuration
+variables. However, TizenRT has since converted to use the kconfig-frontends
 tools (See http://ymorin.is-a-geek.org/projects/kconfig-frontends).  Now,
-the TinyAra configuration is determined by a self-documenting set of Kconfig
+the TizenRT configuration is determined by a self-documenting set of Kconfig
 files.
 
-The current TinyAra configuration variables are also documented in separate,
+The current TizenRT configuration variables are also documented in separate,
 auto-generated configuration variable document.  That configuration variable
 document is generated using the kconfig2html tool that can be found in the
-os/tools directory. That tool analyzes the TinyAra Kconfig files and
+os/tools directory. That tool analyzes the TizenRT Kconfig files and
 generates an excruciatingly boring HTML document.
 
 The latest boring configuration variable documentation can be regenerated at
 any time using that tool or, more appropriately, the wrapper script at
 os/tools/mkconfigvars.sh.  That script will generate the file
-docs/TinyAra_Config_Variables.html.
+docs/TizenRT_Config_Variables.html.
 
 Supported Boards
 ^^^^^^^^^^^^^^^^
@@ -147,10 +147,10 @@ configs/sidk_s5jt200
   Samsung IoT Development Kit for S5JT200
 
 
-Configuring TinyAra
+Configuring TizenRT
 ^^^^^^^^^^^^^^^^^^^
 
-Configuring TinyAra requires only copying
+Configuring TizenRT requires only copying
 
   configs/<board-name>/<config-dir>/Make.def to ${TOPDIR}/Make.defs
   configs/<board-name>/<config-dir>/setenv.sh to ${TOPDIR}/setenv.sh
@@ -188,14 +188,14 @@ the number of symbols and the size of the symbol table against the symbols
 required by the applications.
 
 The top-level System.map file is one good source of symbol information
-(which, or course, was just generated from the top-level tinyara file
+(which, or course, was just generated from the top-level tizenrt file
 using the GNU 'nm' tool).
 
 There are also common-separated value (CSV) values in the source try that
 provide information about symbols.  In particular:
 
-  os/syscall/syscall.csv   - Describes the Tinyara RTOS interface, and
-  lib/libc/libc.csv        - Describes the Tinyara C library interface.
+  os/syscall/syscall.csv   - Describes the TizenRT RTOS interface, and
+  lib/libc/libc.csv        - Describes the TizenRT C library interface.
 
 There is a tool at os/tools/mksymtab that will use these CSV files as
 input to generate a generic symbol table.  See os/tools/README.txt for

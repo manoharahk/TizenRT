@@ -20,7 +20,7 @@
 // Included Files
 //***************************************************************************
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <apps/platform/cxxinitialize.h>
 #include "messagetype.pb.h"
 

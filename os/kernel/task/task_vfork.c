@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/wait.h>
 #include <stdint.h>
@@ -64,7 +64,7 @@
 #include <queue.h>
 #include <debug.h>
 
-#include <tinyara/sched.h>
+#include <tizenrt/sched.h>
 
 #include "sched/sched.h"
 #include "group/group.h"

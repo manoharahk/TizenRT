@@ -57,11 +57,11 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #ifndef __ASSEMBLY__
-#include <tinyara/compiler.h>
-#include <tinyara/sched.h>
+#include <tizenrt/compiler.h>
+#include <tizenrt/sched.h>
 #include <sys/types.h>
 #include <stdint.h>
 #endif

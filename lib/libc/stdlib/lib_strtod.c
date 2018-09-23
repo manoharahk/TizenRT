@@ -54,8 +54,8 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/compiler.h>
+#include <tizenrt/config.h>
+#include <tizenrt/compiler.h>
 
 #include <stdlib.h>
 #include <ctype.h>
@@ -69,7 +69,7 @@
 
 /* These are predefined with GCC, but could be issues for other compilers. If
  * not defined, an arbitrary big number is put in for now.  These should be
- * added to tinyara/compiler for your compiler.
+ * added to tizenrt/compiler for your compiler.
  */
 
 #if !defined(__DBL_MIN_EXP__) || !defined(__DBL_MAX_EXP__)

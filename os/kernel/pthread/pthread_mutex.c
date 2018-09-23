@@ -54,15 +54,15 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdbool.h>
 #include <sched.h>
 #include <assert.h>
 #include <errno.h>
 
-#include <tinyara/irq.h>
-#include <tinyara/sched.h>
+#include <tizenrt/irq.h>
+#include <tizenrt/sched.h>
 
 #include "sched/sched.h"
 #include "pthread/pthread.h"

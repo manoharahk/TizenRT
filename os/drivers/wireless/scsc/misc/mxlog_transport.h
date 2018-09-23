@@ -27,8 +27,8 @@
 #define MXLOG_TRANSPORT_H__
 
 /** Uses */
-#include <tinyara/kthread.h>
-#include <tinyara/mm/mm.h>
+#include <tizenrt/kthread.h>
+#include <tizenrt/mm/mm.h>
 #include "mifstream.h"
 
 struct mxlog_transport;

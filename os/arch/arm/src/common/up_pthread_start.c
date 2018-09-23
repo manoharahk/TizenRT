@@ -54,10 +54,10 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdlib.h>
 #include <pthread.h>
-#include <tinyara/arch.h>
+#include <tizenrt/arch.h>
 
 #include "svcall.h"
 #include "up_internal.h"

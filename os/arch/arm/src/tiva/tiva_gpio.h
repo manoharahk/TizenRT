@@ -59,13 +59,13 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/compiler.h>
+#include <tizenrt/config.h>
+#include <tizenrt/compiler.h>
 
 #include <stdint.h>
 #include <stdbool.h>
 
-#include <tinyara/irq.h>
+#include <tizenrt/irq.h>
 
 #include "up_internal.h"
 #include "chip.h"

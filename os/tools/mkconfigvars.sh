@@ -70,7 +70,7 @@ while [ ! -z "$1" ]; do
         echo ""
         echo "Where:"
         echo "  -v <major.minor>"
-        echo "     The TinyAra version number expressed as a major and minor number separated"
+        echo "     The TizenRT version number expressed as a major and minor number separated"
         echo "     by a period"
         echo "  -d"
         echo "     Enable script debug"
@@ -97,15 +97,15 @@ KCONFIG2HTML1=tools/kconfig2html
 KCONFIG2HTML2=tools/kconfig2html.exe
 KCONFIG2MAKEFILE=Makefile.host
 KCONFIG2MAKEDIR=tools
-HTMLFILE=../docs/TinyAra_Config_Variables.html
-BKUPFILE=../docs/TinyAra_Config_Variables.bkp
+HTMLFILE=../docs/TizenRT_Config_Variables.html
+BKUPFILE=../docs/TizenRT_Config_Variables.bkp
 
 if [ -x ./${MYNAME} ] ; then
    cd .. || { echo "ERROR: cd .. failed" ; exit 1 ; }
 fi
 
 if [ ! -x tools/${MYNAME} ] ; then
-   echo "ERROR:  This file must be executed from the top-level TinyAra directory: $PWD"
+   echo "ERROR:  This file must be executed from the top-level TizenRT directory: $PWD"
    exit 1
 fi
 

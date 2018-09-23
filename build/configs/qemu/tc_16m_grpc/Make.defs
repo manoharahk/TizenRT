@@ -123,7 +123,7 @@ CFLAGS = $(ARCHCFLAGS) $(ARCHWARNINGS) $(ARCHOPTIMIZATION) $(ARCHCPUFLAGS) $(ARC
 CPICFLAGS = $(ARCHPICFLAGS) $(CFLAGS)
 CXXFLAGS = $(ARCHCXXFLAGS) $(ARCHWARNINGSXX) $(ARCHOPTIMIZATION) $(ARCHCPUFLAGS) $(ARCHXXINCLUDES) $(ARCHDEFINES) $(EXTRADEFINES) -pipe
 
-CXXFLAGS += -std=c++11 -D__TINYARA__
+CXXFLAGS += -std=c++11 -D__TIZENRT__
 CXXFLAGS += -fno-builtin -fno-exceptions -fcheck-new
 CXXFLAGS += -D_DEBUG -D_LIBCPP_BUILD_STATIC -D_LIBCPP_NO_EXCEPTIONS -ffunction-sections -fdata-sections
 ifeq ($(CONFIG_LIBCXX),y)
@@ -149,6 +149,6 @@ HOSTCFLAGS = -Wall -Wstrict-prototypes -Wshadow -g -pipe
 HOSTLDFLAGS =
 
 define DOWNLOAD
-@gnome-terminal -e "bash -c \"sudo qemu-system-arm -M lm3s6965evb -kernel $(TOPDIR)/../build/output/bin/tinyara.bin -nographic -gdb tcp::3333 -net nic -net tap,ifname=tap0,script=no; exec bash\""
-# sudo qemu-system-arm -M lm3s6965evb -kernel $(TOPDIR)/../build/output/bin/tinyara.bin -nographic -gdb tcp::3333
+@gnome-terminal -e "bash -c \"sudo qemu-system-arm -M lm3s6965evb -kernel $(TOPDIR)/../build/output/bin/tizenrt.bin -nographic -gdb tcp::3333 -net nic -net tap,ifname=tap0,script=no; exec bash\""
+# sudo qemu-system-arm -M lm3s6965evb -kernel $(TOPDIR)/../build/output/bin/tizenrt.bin -nographic -gdb tcp::3333
 endef

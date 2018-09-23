@@ -59,7 +59,7 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdio.h>
@@ -67,8 +67,8 @@
 #include <errno.h>
 #include <assert.h>
 #include <debug.h>
-#include <tinyara/arch.h>
-#include <tinyara/i2c.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/i2c.h>
 #include <arch/board/board.h>
 
 #include "up_arch.h"

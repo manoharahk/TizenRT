@@ -54,13 +54,13 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdlib.h>
 #include <assert.h>
 #include <debug.h>
 #include <unistd.h>
-#include <tinyara/mm/mm.h>
-#include <tinyara/sched.h>
+#include <tizenrt/mm/mm.h>
+#include <tizenrt/sched.h>
 /****************************************************************************
  * Pre-processor Definitions
  ****************************************************************************/

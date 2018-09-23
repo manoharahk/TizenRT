@@ -32,7 +32,7 @@
 #include "mbulk.h"
 #include <sys/types.h>
 #include "utils_scsc.h"
-#include <tinyara/wqueue.h>
+#include <tizenrt/wqueue.h>
 #include "max_buf.h"
 
 #define MIF_HIP_COMPAT_FLAG_NEED_MLME_RESET     (1 << 0)

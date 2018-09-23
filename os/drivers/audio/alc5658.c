@@ -56,7 +56,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <sys/types.h>
 #include <sys/ioctl.h>
 #include <stdint.h>
@@ -66,18 +66,18 @@
 #include <errno.h>
 #include <fixedmath.h>
 #include <debug.h>
-#include <tinyara/irq.h>
-#include <tinyara/kmalloc.h>
-#include <tinyara/clock.h>
-#include <tinyara/wqueue.h>
-#include <tinyara/fs/fs.h>
-#include <tinyara/fs/ioctl.h>
-#include <tinyara/audio/i2s.h>
-#include <tinyara/audio/audio.h>
-#include <tinyara/audio/alc5658.h>
-#include <tinyara/math.h>
+#include <tizenrt/irq.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/clock.h>
+#include <tizenrt/wqueue.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/fs/ioctl.h>
+#include <tizenrt/audio/i2s.h>
+#include <tizenrt/audio/audio.h>
+#include <tizenrt/audio/alc5658.h>
+#include <tizenrt/math.h>
 #include <math.h>
-#include <tinyara/i2c.h>
+#include <tizenrt/i2c.h>
 #include <stdbool.h>
 
 #include "alc5658.h"

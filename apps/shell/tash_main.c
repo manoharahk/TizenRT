@@ -16,7 +16,7 @@
  *
  ****************************************************************************/
 /// @file   tash_main.c
-/// @brief  Main functions of TinyAra SHell (TASH)
+/// @brief  Main functions of TizenRT SHell (TASH)
 
 #include <string.h>
 #include <stdio.h>
@@ -28,7 +28,7 @@
 #if !defined(CONFIG_DISABLE_POLL)
 #include <sys/select.h>
 #endif
-#include <tinyara/ascii.h>
+#include <tizenrt/ascii.h>
 #include "tash_internal.h"
 
 enum tash_input_state_e {

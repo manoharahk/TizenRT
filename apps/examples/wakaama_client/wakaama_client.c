@@ -24,8 +24,8 @@
 #include "dm_connectivity.h"
 #include "lwm2mclient.h"
 #include "connection.h"
-#include <tinyara/wqueue.h>
-#include <tinyara/clock.h>
+#include <tizenrt/wqueue.h>
+#include <tizenrt/clock.h>
 #include <protocols/dhcpc.h>
 #include <slsi_wifi/slsi_wifi_api.h>
 

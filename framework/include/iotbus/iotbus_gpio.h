@@ -31,7 +31,7 @@
 #ifndef IOTBUS_GPIO_H_
 #define IOTBUS_GPIO_H_
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 /**
  * @brief Enumeration of Gpio output mode
  * @details

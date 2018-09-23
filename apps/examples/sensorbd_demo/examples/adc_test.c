@@ -52,8 +52,8 @@
 
 #include <errno.h>
 #include <fcntl.h>
-#include <tinyara/analog/adc.h>
-#include <tinyara/analog/ioctl.h>
+#include <tizenrt/analog/adc.h>
+#include <tizenrt/analog/ioctl.h>
 
 #define ADC_MAX_SAMPLES	4
 

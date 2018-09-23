@@ -48,7 +48,7 @@
 * @postcondition
 */
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/ioctl.h>
 #include <stdint.h>
@@ -61,7 +61,7 @@
 #include <net/if.h>
 #include <netinet/in.h>
 
-#include <tinyara/net/ethernet.h>
+#include <tizenrt/net/ethernet.h>
 #include <netutils/netlib.h>
 #include <protocols/webserver/http_server.h>
 #include <protocols/webserver/http_keyvalue_list.h>

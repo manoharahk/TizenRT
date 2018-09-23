@@ -18,7 +18,7 @@
 #ifndef ERROR_REPORT_H
 #define ERROR_REPORT_H
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <time.h>
 #include <stdint.h>
 

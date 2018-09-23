@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdint.h>
@@ -67,11 +67,11 @@
 #include <stdio.h>
 #include <sys/stat.h>
 
-#include <tinyara/fs/mtd.h>
-#include <tinyara/kmalloc.h>
-#include <tinyara/fs/ioctl.h>
+#include <tizenrt/fs/mtd.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/fs/ioctl.h>
 #ifdef CONFIG_FS_PROCFS
-#include <tinyara/fs/procfs.h>
+#include <tizenrt/fs/procfs.h>
 #endif
 
 /****************************************************************************

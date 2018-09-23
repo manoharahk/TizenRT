@@ -19,7 +19,7 @@
 CSRCS += \
 	common.c \
 	edit.c \
-	os_tinyara.c \
+	os_tizenrt.c \
 	ip_addr.c \
 	eloop.c \
 	wpa_debug.c \

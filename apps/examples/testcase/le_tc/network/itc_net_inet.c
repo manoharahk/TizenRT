@@ -22,7 +22,7 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include "tc_internal.h"
 
 /**

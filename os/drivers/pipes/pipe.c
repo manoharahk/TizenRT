@@ -58,10 +58,10 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
-#include <tinyara/fs/fs.h>
+#include <tizenrt/fs/fs.h>
 #include <stdio.h>
 #include <unistd.h>
 #include <semaphore.h>

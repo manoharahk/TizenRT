@@ -20,14 +20,14 @@
 // Included Files
 //***************************************************************************
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <cstdio>
 #include <vector>
 #include <iostream>
 #include <debug.h>
 
-#include <tinyara/init.h>
+#include <tizenrt/init.h>
 
 #include <apps/platform/cxxinitialize.h>
 

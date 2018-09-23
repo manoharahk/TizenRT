@@ -49,13 +49,13 @@
  *
  ****************************************************************************/
 /// @file   tash_init.c
-/// @brief  functions to initialize TinyAra SHell (TASH)
+/// @brief  functions to initialize TizenRT SHell (TASH)
 
 #include <stdio.h>
 #include <sys/types.h>
 #include <fcntl.h>
 #if defined(CONFIG_CDCACM_CONSOLE)
-#include <tinyara/usb/cdcacm.h>
+#include <tizenrt/usb/cdcacm.h>
 #endif
 #include "tash_internal.h"
 

@@ -1,4 +1,4 @@
-# TASH - TinyAra SHell
+# TASH - TizenRT SHell
 
 lightweight shell
 

@@ -54,7 +54,7 @@
  * Included Files
  ************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdbool.h>
@@ -62,7 +62,7 @@
 #include <errno.h>
 #include <assert.h>
 #include <debug.h>
-#include <tinyara/ttrace.h>
+#include <tizenrt/ttrace.h>
 
 #include "sched/sched.h"
 #include "group/group.h"

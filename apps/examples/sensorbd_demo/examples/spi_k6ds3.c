@@ -50,7 +50,7 @@
  *
  ****************************************************************************/
 
-#include <tinyara/spi/spi.h>
+#include <tizenrt/spi/spi.h>
 
 #define K6DS3_FACTORY_ID		0x69
 #define K6DS3_REG_WHO_AM_I		0x0F

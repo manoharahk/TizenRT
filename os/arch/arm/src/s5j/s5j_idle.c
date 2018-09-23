@@ -53,14 +53,14 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <debug.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/board.h>
-#include <tinyara/pm/pm.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/board.h>
+#include <tizenrt/pm/pm.h>
 
-#include <tinyara/irq.h>
+#include <tizenrt/irq.h>
 
 #include "up_internal.h"
 #include "s5j_pm.h"

@@ -57,7 +57,7 @@
  * Included Files
  ************************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 #include <stdbool.h>
@@ -92,7 +92,7 @@ extern "C" {
  * The external functions, tiva_spiselect, tiva_spistatus, and
  * tiva_spicmddata must be provided by board-specific logic.  These are
  * implementations of the select, status, and cmddata methods of the SPI
- * interface defined by struct spi_ops_s (see include/tinyara/spi/spi.h).
+ * interface defined by struct spi_ops_s (see include/tizenrt/spi/spi.h).
  * All other methods (including up_spiinitialize()) are provided by common
  * logic.  To use this common SPI logic on your board:
  *

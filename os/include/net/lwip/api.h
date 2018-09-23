@@ -264,7 +264,7 @@ struct netconn {
 #if LWIP_SOCKET
 	int socket;
 	struct socketlist *slist;
-	/* interoperability with tinyara network stack */
+	/* interoperability with tizenrt network stack */
 	int crefs;				/* for dup */
 #endif							/* LWIP_SOCKET */
 #if LWIP_SO_SNDTIMEO

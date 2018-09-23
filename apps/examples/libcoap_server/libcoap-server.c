@@ -38,7 +38,7 @@
 #define NI_MAXSERV 32
 #endif
 
-#if defined(__TINYARA__)
+#if defined(__TIZENRT__)
 #define COAP_SERVER_SCHED_PRI    100
 #define COAP_SERVER_SCHED_POLICY SCHED_RR
 #define COAP_SERVER_STACK_SIZE   (1024 * 16)
@@ -52,7 +52,7 @@ struct coap_server_input {
 #ifndef FD_SETSIZE
 #define FD_SETSIZE	(CONFIG_NFILE_DESCRIPTORS + CONFIG_NSOCKET_DESCRIPTORS)
 #endif
-#endif /* __TINYARA__ */
+#endif /* __TIZENRT__ */
 
 #define COAP_STANDARD_PORT "5683"
 #define COAP_SECURITY_PORT "5684"
@@ -78,7 +78,7 @@ struct coap_resource_t *time_resource = NULL;
 static coap_async_state_t *async = NULL;
 #endif							/* WITHOUT_ASYNC */
 
-#if !defined(__TINYARA__)
+#if !defined(__TIZENRT__)
 /* SIGINT handler: set quit to 1 for graceful termination */
 static void handle_sigint(int signum)
 {
@@ -397,7 +397,7 @@ static void usage(const char *program, const char *version)
 					, program, version, program);
 }
 
-#if defined(__TINYARA__)
+#if defined(__TIZENRT__)
 int coap_server_test_run(void *arg)
 #else
 int main(int argc, char **argv)
@@ -418,7 +418,7 @@ int main(int argc, char **argv)
 	coap_log_t log_level = LOG_WARNING;
 	coap_protocol_t protocol = COAP_PROTO_UDP;
 
-#if defined(__TINYARA__)
+#if defined(__TIZENRT__)
 	int argc;
 	char **argv;
 
@@ -586,7 +586,7 @@ int main(int argc, char **argv)
 
 	init_resources(ctx);
 
-#if !defined(__TINYARA__)
+#if !defined(__TIZENRT__)
 	signal(SIGINT, handle_sigint);
 #endif
 
@@ -678,7 +678,7 @@ exit:
 	return 0;
 }
 
-#if defined(__TINYARA__)
+#if defined(__TIZENRT__)
 int coap_server_test_main(int argc, char **argv)
 {
 	int status;
@@ -724,4 +724,4 @@ int coap_server_test_main(int argc, char **argv)
 
 	return 0;
 }
-#endif /* __TINYARA__ */
+#endif /* __TIZENRT__ */

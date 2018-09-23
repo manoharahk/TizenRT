@@ -54,14 +54,14 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdio.h>
 #include <syslog.h>
 
-#include <tinyara/streams.h>
+#include <tizenrt/streams.h>
 #if defined(CONFIG_LOGM) && defined(CONFIG_SYSLOG2LOGM)
-#include <tinyara/logm.h>
+#include <tizenrt/logm.h>
 #endif
 #include "syslog/syslog.h"
 

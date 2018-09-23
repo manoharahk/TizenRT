@@ -19,7 +19,7 @@ menuconfig LIB_SYSCALL
 
 		If if there are no privilege issues preventing the call, system
 		calls may also be of value because it can eliminate the need for
-		symbol tables when linking external modules to the TinyAra base code.
+		symbol tables when linking external modules to the TizenRT base code.
 		The selection will build libsyscall.  External modules can then link
 		with libsyscall when they are built and they can call into the OS
 		with no knowledge of the actual address in the OS.  In this case,

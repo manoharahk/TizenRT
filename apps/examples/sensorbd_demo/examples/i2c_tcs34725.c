@@ -52,8 +52,8 @@
 
 #include <stdio.h>
 #include <sys/types.h>
-#include <tinyara/i2c.h>
-#include <tinyara/math.h>
+#include <tizenrt/i2c.h>
+#include <tizenrt/math.h>
 
 #define TCS34725_ADDRESS          (0x29)
 #define TCS34725_COMMAND_BIT      (0x80)

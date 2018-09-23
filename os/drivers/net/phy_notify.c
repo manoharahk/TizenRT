@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 /* Force verbose debug on in this file only to support unit-level testing. */
 
@@ -73,9 +73,9 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/irq.h>
-#include <tinyara/net/phy.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/irq.h>
+#include <tizenrt/net/phy.h>
 
 #ifdef CONFIG_ARCH_PHY_INTERRUPT
 

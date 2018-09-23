@@ -139,11 +139,11 @@ int uncaught_exceptions() _NOEXCEPT
 #   if defined(_MSC_VER) && ! defined(__clang__)
         _LIBCPP_WARNING("uncaught_exceptions not yet implemented")
 #   else
-#       if !defined(__TINYARA__)
+#       if !defined(__TIZENRT__)
 #           warning uncaught_exception not yet implemented
 #       endif
 #   endif
-#if defined(__TINYARA__)
+#if defined(__TIZENRT__)
     return 0;
 #else
     fprintf(stderr, "uncaught_exceptions not yet implemented\n");
@@ -218,7 +218,7 @@ exception_ptr::~exception_ptr() _NOEXCEPT
 #   if defined(_MSC_VER) && ! defined(__clang__)
         _LIBCPP_WARNING("exception_ptr not yet implemented")
 #   else
-#       if !defined(__TINYARA__)
+#       if !defined(__TIZENRT__)
 #           warning exception_ptr not yet implemented
 #       endif
 #   endif
@@ -239,7 +239,7 @@ exception_ptr::exception_ptr(const exception_ptr& other) _NOEXCEPT
 #   if defined(_MSC_VER) && ! defined(__clang__)
         _LIBCPP_WARNING("exception_ptr not yet implemented")
 #   else
-#       if !defined(__TINYARA__)
+#       if !defined(__TIZENRT__)
 #           warning exception_ptr not yet implemented
 #       endif
 #   endif
@@ -266,7 +266,7 @@ exception_ptr& exception_ptr::operator=(const exception_ptr& other) _NOEXCEPT
 #   if defined(_MSC_VER) && ! defined(__clang__)
         _LIBCPP_WARNING("exception_ptr not yet implemented")
 #   else
-#       if !defined(__TINYARA__)
+#       if !defined(__TIZENRT__)
 #           warning exception_ptr not yet implemented
 #       endif
 #   endif
@@ -312,7 +312,7 @@ exception_ptr current_exception() _NOEXCEPT
 #   if defined(_MSC_VER) && ! defined(__clang__)
         _LIBCPP_WARNING( "exception_ptr not yet implemented" )
 #   else
-#       if !defined(__TINYARA__)
+#       if !defined(__TIZENRT__)
 #           warning exception_ptr not yet implemented
 #       endif
 #   endif
@@ -336,7 +336,7 @@ void rethrow_exception(exception_ptr p)
 #   if defined(_MSC_VER) && ! defined(__clang__)
         _LIBCPP_WARNING("exception_ptr not yet implemented")
 #   else
-#       if !defined(__TINYARA__)
+#       if !defined(__TIZENRT__)
 #           warning exception_ptr not yet implemented
 #       endif
 #   endif

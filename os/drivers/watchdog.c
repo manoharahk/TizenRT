@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdint.h>
@@ -66,10 +66,10 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/fs/fs.h>
-#include <tinyara/irq.h>
-#include <tinyara/kmalloc.h>
-#include <tinyara/watchdog.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/irq.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/watchdog.h>
 
 #ifdef CONFIG_WATCHDOG
 
@@ -433,7 +433,7 @@ static int wdog_ioctl(FAR struct file *filep, int cmd, unsigned long arg)
  *   disabled state (as if the stop() method had already been called).
  *
  * Input parameters:
- *   dev path - The full path to the driver to be registers in the TinyAra
+ *   dev path - The full path to the driver to be registers in the TizenRT
  *     pseudo-filesystem.  The recommended convention is to name all watchdog
  *     drivers as "/dev/watchdog0", "/dev/watchdog1", etc.  where the driver
  *     path differs only in the "minor" number at the end of the device name.

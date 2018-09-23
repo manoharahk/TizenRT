@@ -54,11 +54,11 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <unistd.h>
-#include <tinyara/mm/mm.h>
-#include <tinyara/addrenv.h>
-#include <tinyara/pgalloc.h>
+#include <tizenrt/mm/mm.h>
+#include <tizenrt/addrenv.h>
+#include <tizenrt/pgalloc.h>
 
 #if defined(CONFIG_BUILD_KERNEL)
 

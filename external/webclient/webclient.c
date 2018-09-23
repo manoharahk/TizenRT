@@ -65,8 +65,8 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/compiler.h>
+#include <tizenrt/config.h>
+#include <tizenrt/compiler.h>
 #include <debug.h>
 
 #include <sys/socket.h>
@@ -84,7 +84,7 @@
 #include <arpa/inet.h>
 #include <netinet/in.h>
 
-#include <tinyara/version.h>
+#include <tizenrt/version.h>
 #include <netutils/netlib.h>
 
 #include "../webserver/http_string_util.h"
@@ -121,7 +121,7 @@
 #endif
 
 #ifndef CONFIG_WGET_USERAGENT
-# define CONFIG_WGET_USERAGENT "TinyARA"
+# define CONFIG_WGET_USERAGENT "TizenRT"
 #endif
 
 /****************************************************************************

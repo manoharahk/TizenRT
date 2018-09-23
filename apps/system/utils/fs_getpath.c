@@ -52,11 +52,11 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <tinyara/fs/fs_utils.h>
+#include <tizenrt/fs/fs_utils.h>
 
 /****************************************************************************
  * Public Functions

@@ -29,8 +29,8 @@
 #include <errno.h>
 #include <string.h>
 
-#include <tinyara/config.h>
-#include <tinyara/fs/mtd.h>
+#include <tizenrt/config.h>
+#include <tizenrt/fs/mtd.h>
 
 /****************************************************************************
  * Pre-processor Definitions

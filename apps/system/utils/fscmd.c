@@ -51,7 +51,7 @@
  ****************************************************************************/
 /// @file fscmd.c
 /// @brief Cursor functions.
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #if CONFIG_NFILE_DESCRIPTORS > 0
 #include <stdio.h>
 #include <stdlib.h>
@@ -63,17 +63,17 @@
 #include <libgen.h>
 #include <sys/statfs.h>
 #include <sys/stat.h>
-#include <tinyara/fs/fs_utils.h>
+#include <tizenrt/fs/fs_utils.h>
 #ifdef CONFIG_TASH
 #include <apps/shell/tash.h>
 #endif
 #ifndef CONFIG_DISABLE_MOUNTPOINT
 #include <sys/mount.h>
 #ifdef CONFIG_FS_SMARTFS
-#include <tinyara/fs/mksmartfs.h>
+#include <tizenrt/fs/mksmartfs.h>
 #endif
 #ifdef CONFIG_RAMDISK
-#include <tinyara/fs/ramdisk.h>
+#include <tizenrt/fs/ramdisk.h>
 #endif
 #endif
 

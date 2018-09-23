@@ -54,7 +54,7 @@
  * Included Files
  ************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <sched.h>
@@ -75,7 +75,7 @@
  *   The kill() system call can be used to send any signal to any task.
  *
  *   Limitation: Sending of signals to 'process groups' is not
- *   supported in TinyAra
+ *   supported in TizenRT
  *
  * Parameters:
  *   pid - The id of the task to receive the signal.  The POSIX kill

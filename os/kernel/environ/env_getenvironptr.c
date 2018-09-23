@@ -54,12 +54,12 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #ifndef CONFIG_DISABLE_ENVIRON
 #include <errno.h>
 #include <sys/types.h>
-#include <tinyara/sched.h>
+#include <tizenrt/sched.h>
 #include "sched/sched.h"
 
 /****************************************************************************

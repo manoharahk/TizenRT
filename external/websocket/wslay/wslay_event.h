@@ -42,7 +42,7 @@
 #ifndef WSLAY_EVENT_H
 #define WSLAY_EVENT_H
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <protocols/wslay/wslay.h>
 
 struct wslay_stack;

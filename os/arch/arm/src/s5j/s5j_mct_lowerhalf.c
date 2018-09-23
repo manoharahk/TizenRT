@@ -53,7 +53,7 @@
 /****************************************************************************
  * Included Files
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <stdbool.h>
@@ -62,8 +62,8 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/timer.h>
-#include <tinyara/irq.h>
+#include <tizenrt/timer.h>
+#include <tizenrt/irq.h>
 
 #include "chip.h"
 #include "s5j_mct.h"

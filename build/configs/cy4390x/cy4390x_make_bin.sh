@@ -24,8 +24,8 @@
 OS_DIR_PATH=${PWD}
 BIN_DIR_PATH=${OS_DIR_PATH}/../build/output/bin
 
-TIZENRT_BIN=${BIN_DIR_PATH}/tinyara
-STRIP_FILE=${BIN_DIR_PATH}/tinyara_master_strip
+TIZENRT_BIN=${BIN_DIR_PATH}/tizenrt
+STRIP_FILE=${BIN_DIR_PATH}/tizenrt_master_strip
 
 make_strip_elf()
 {

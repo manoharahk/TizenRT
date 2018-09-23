@@ -55,13 +55,13 @@
  * Included Files
  ************************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 #include <stdbool.h>
 #include <debug.h>
 
-#include <tinyara/spi/spi.h>
+#include <tizenrt/spi/spi.h>
 #include <arch/board/board.h>
 
 #include "up_arch.h"
@@ -134,7 +134,7 @@ void weak_function lm_ssiinitialize(void)
 /****************************************************************************
  * The external functions, tiva_spiselect and tiva_spistatus must be provided
  * by board-specific logic.  The are implementations of the select and status
- * methods SPI interface defined by struct spi_ops_s (see include/tinyara/spi/spi.h).
+ * methods SPI interface defined by struct spi_ops_s (see include/tizenrt/spi/spi.h).
  * All othermethods (including up_spiinitialize()) are provided by common
  * logic.  To use this common SPI logic on your board:
  *

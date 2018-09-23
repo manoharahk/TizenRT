@@ -54,11 +54,11 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 
-#include <tinyara/usb/usbdev_trace.h>
+#include <tizenrt/usb/usbdev_trace.h>
 
 #ifdef CONFIG_USBDEV_TRACE_STRINGS
 

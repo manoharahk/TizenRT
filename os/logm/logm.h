@@ -18,7 +18,7 @@
 #ifndef __OS_LOGM_LOGM_H
 #define __OS_LOGM_LOGM_H
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdint.h>
 
 /****************************************************************************

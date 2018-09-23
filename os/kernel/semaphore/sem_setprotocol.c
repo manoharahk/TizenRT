@@ -54,12 +54,12 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <assert.h>
 #include <errno.h>
 
-#include <tinyara/semaphore.h>
+#include <tizenrt/semaphore.h>
 
 #include "semaphore/semaphore.h"
 

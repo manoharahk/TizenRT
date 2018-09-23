@@ -19,7 +19,7 @@
 #ifndef __TASK_MANAGER_INTERNAL_H__
 #define __TASK_MANAGER_INTERNAL_H__
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>

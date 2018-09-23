@@ -56,7 +56,7 @@
 #include <net/lwip/opt.h>
 
 #include <net/lwip/sys.h>
-#include <tinyara/clock.h>
+#include <tizenrt/clock.h>
 
 /* Most of the functions defined in sys.h must be implemented in the
  * architecture-dependent file sys_arch.c */

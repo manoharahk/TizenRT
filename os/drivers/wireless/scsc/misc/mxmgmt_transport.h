@@ -32,7 +32,7 @@
 
 /** Uses */
 //#include <sys/wait.h>
-#include <tinyara/kthread.h>
+#include <tizenrt/kthread.h>
 #include "mifstream.h"
 
 struct mxmgmt_transport;

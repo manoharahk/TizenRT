@@ -57,13 +57,13 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/compiler.h>
+#include <tizenrt/config.h>
+#include <tizenrt/compiler.h>
 
 #include <sys/types.h>
 #include <stdbool.h>
 
-#include <tinyara/sched.h>
+#include <tizenrt/sched.h>
 
 /****************************************************************************
  * Pre-processor Definitions

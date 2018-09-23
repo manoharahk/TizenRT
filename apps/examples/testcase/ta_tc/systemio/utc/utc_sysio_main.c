@@ -19,7 +19,7 @@
 /// @file sysio_tc_main.c
 
 /// @brief Main Function for Test Case Example
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdio.h>
 #include <string.h>
 #include <semaphore.h>

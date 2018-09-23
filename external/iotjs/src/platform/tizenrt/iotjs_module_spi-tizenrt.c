@@ -15,7 +15,7 @@
 
 #if defined(__TIZENRT__)
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #if !defined(CONFIG_SPI)
 #error "\n\nTizenRT CONFIG_SPI configuration flag required for SPI module\n\n"

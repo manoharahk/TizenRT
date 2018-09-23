@@ -73,7 +73,7 @@ static void* thread_body(void* v) {
 
 #ifndef GRPC_THD_CLIENT_STACK_SIZE
 #ifdef __TizenRT__
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #define GRPC_THD_CLIENT_STACK_SIZE CONFIG_GRPC_PTHREAD_SIZE
 #else
 #define GRPC_THD_CLIENT_STACK_SIZE 10240

@@ -54,12 +54,12 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdio.h>
 #include <errno.h>
 
-#include <tinyara/fs/fs.h>
+#include <tizenrt/fs/fs.h>
 
 #if CONFIG_NFILE_STREAMS > 0
 

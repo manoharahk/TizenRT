@@ -51,7 +51,7 @@
  ****************************************************************************/
 
 /* This file should never be included directed but, rather,
- * only indirectly through tinyara/arch.h
+ * only indirectly through tizenrt/arch.h
  */
 
 #ifndef __ARCH_ARM_INCLUDE_ARCH_H
@@ -61,11 +61,11 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #ifndef __ASSEMBLY__
 #include <stdint.h>
-#include <tinyara/pgalloc.h>
-#include <tinyara/addrenv.h>
+#include <tizenrt/pgalloc.h>
+#include <tizenrt/addrenv.h>
 #endif
 
 /****************************************************************************
@@ -146,7 +146,7 @@
 
 #ifdef CONFIG_ARCH_ADDRENV
 /* The task group resources are retained in a single structure, task_group_s
- * that is defined in the header file os/include/tinyara/sched.h. The type
+ * that is defined in the header file os/include/tizenrt/sched.h. The type
  * group_addrenv_t must be defined by platform specific logic in
  * os/arch/<architecture>/include/arch.h.
  *

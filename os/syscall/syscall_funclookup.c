@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <syscall.h>
 
 /* The content of this file is only meaningful during the kernel phase of
@@ -100,8 +100,8 @@
 #undef get_errno
 #undef set_errno
 
-#include <tinyara/errno.h>
-#include <tinyara/clock.h>
+#include <tizenrt/errno.h>
+#include <tizenrt/clock.h>
 
 /****************************************************************************
  * Pre-processor Definitions

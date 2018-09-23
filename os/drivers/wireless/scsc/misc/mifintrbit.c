@@ -22,7 +22,7 @@
 #include "scsc_mif_abs.h"
 #include "utils_misc.h"
 #include <errno.h>
-#include <tinyara/irq.h>
+#include <tizenrt/irq.h>
 /* Implements */
 #include "mifintrbit.h"
 

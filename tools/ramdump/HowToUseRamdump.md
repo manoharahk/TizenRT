@@ -63,7 +63,7 @@ DumpParser Script provides two interfaces: CUI and GUI
 1. Run Ramdump Parser Script
 ```
 cd $TIZENRT_BASEDIR/tools/ramdump/
-python dumpParser.py -r $TIZENRT_BASEDIR/build/output/bin/ramdump_0x02020000_0x0210c800.bin -e $TIZENRT_BASEDIR/build/output/bin/tinyara -g 0
+python dumpParser.py -r $TIZENRT_BASEDIR/build/output/bin/ramdump_0x02020000_0x0210c800.bin -e $TIZENRT_BASEDIR/build/output/bin/tizenrt -g 0
 ```
 2. See the Output
 

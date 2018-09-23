@@ -4,7 +4,7 @@ examples
   Selecting examples:
 
     The examples directory contains several sample applications that
-    can be linked with TinyAra.  The specific example is selected in the
+    can be linked with TizenRT.  The specific example is selected in the
     configs/<board-name>/defconfig file via the CONFIG_EXAMPLES_xyz
     setting where xyz is the name of the example. For example,
 

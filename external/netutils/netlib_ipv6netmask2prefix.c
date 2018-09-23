@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 #include <arpa/inet.h>
@@ -156,7 +156,7 @@ static inline uint8_t netlib_msbits16(uint16_t hword)
  * Name: netlib_ipv6netmask2prefix
  *
  * Description:
- *   Convert a 128-bit netmask to a prefix length.  The TinyAra IPv6
+ *   Convert a 128-bit netmask to a prefix length.  The TizenRT IPv6
  *   networking uses 128-bit network masks internally.  This function
  *   converts the IPv6 netmask to a prefix length.
  *

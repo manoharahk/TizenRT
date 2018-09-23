@@ -54,14 +54,14 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <semaphore.h>
 #include <sched.h>
 #include <assert.h>
 #include <errno.h>
 
-#include <tinyara/irq.h>
+#include <tizenrt/irq.h>
 
 #include "semaphore/semaphore.h"
 

@@ -15,7 +15,7 @@
  * language governing permissions and limitations under the License.
  *
  ****************************************************************************/
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -28,7 +28,7 @@
 #include <sys/time.h>
 #include <sys/stat.h>
 #include <mqueue.h>
-#include <tinyara/audio/audio.h>
+#include <tizenrt/audio/audio.h>
 #include <tinyalsa/tinyalsa.h>
 
 #include "audio_manager.h"

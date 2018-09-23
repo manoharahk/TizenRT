@@ -67,8 +67,8 @@
  * Included Files
  ********************************************************************************/
 
-#include <tinyara/config.h>
-#include <tinyara/compiler.h>
+#include <tizenrt/config.h>
+#include <tizenrt/compiler.h>
 
 #include <stdint.h>
 #include <time.h>
@@ -152,7 +152,7 @@
 #endif
 #endif
 
-/* SIGWORK is used to wake up various internal, TinyAra worker thread */
+/* SIGWORK is used to wake up various internal, TizenRT worker thread */
 
 #if defined(CONFIG_SCHED_WORKQUEUE) || defined(CONFIG_PAGING)
 #ifndef CONFIG_SIG_SIGWORK
@@ -307,7 +307,7 @@ struct siginfo {
 typedef struct siginfo siginfo_t;
 
 /* Non-standard convenience definition of signal handling function types.
- * These should be used only internally within the TinyAra signal logic.
+ * These should be used only internally within the TizenRT signal logic.
  */
 
 typedef CODE void (*_sa_handler_t)(int);

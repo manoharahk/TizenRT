@@ -59,7 +59,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <sys/socket.h>
@@ -77,9 +77,9 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/fs/fs.h>
-#include <tinyara/net/net.h>
-#include <tinyara/net/telnet.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/net/net.h>
+#include <tizenrt/net/telnet.h>
 
 #ifdef CONFIG_NETDEV_TELNET
 

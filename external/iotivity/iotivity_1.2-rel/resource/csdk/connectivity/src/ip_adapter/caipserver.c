@@ -26,7 +26,7 @@
 #endif
 
 #ifdef __TIZENRT__
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <uio.h>
 #endif
 

@@ -1,9 +1,9 @@
 examples/kernel_sample
 ^^^^^^^^^^^^^^^^^^^^^^
 
-  This is the TinyAra 'qualification' suite.  It attempts to exercise
+  This is the TizenRT 'qualification' suite.  It attempts to exercise
   a broad set of OS functionality.  Its coverage is not very extensive
-  as of this writing, but it is used to qualify each TinyAra release.
+  as of this writing, but it is used to qualify each TizenRT release.
 
   The behavior of the kernel_sample can be modified with the following
   settings.

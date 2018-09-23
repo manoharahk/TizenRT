@@ -20,7 +20,7 @@
 
 #ifndef __APPS_SHELL_TASH_INTERNAL_H
 #define __APPS_SHELL_TASH_INTERNAL_H
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 #include <stdlib.h>
 #include <debug.h>
 

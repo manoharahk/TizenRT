@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 #include <stdbool.h>
@@ -62,8 +62,8 @@
 #include <errno.h>
 #include <assert.h>
 
-#include <tinyara/arch.h>
-#include <tinyara/irq.h>
+#include <tizenrt/arch.h>
+#include <tizenrt/irq.h>
 
 #include <arch/irq.h>
 #include <arch/board/board.h>

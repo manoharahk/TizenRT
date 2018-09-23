@@ -51,7 +51,7 @@
  ****************************************************************************/
 
 #include <fcntl.h>
-#include <tinyara/gpio.h>
+#include <tizenrt/gpio.h>
 
 static void gpio_write(int port, int value)
 {

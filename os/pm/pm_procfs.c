@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <sys/types.h>
 #include <sys/statfs.h>
@@ -70,12 +70,12 @@
 #include <errno.h>
 #include <debug.h>
 
-#include <tinyara/kmalloc.h>
-#include <tinyara/fs/fs.h>
-#include <tinyara/fs/procfs.h>
-#include <tinyara/fs/dirent.h>
+#include <tizenrt/kmalloc.h>
+#include <tizenrt/fs/fs.h>
+#include <tizenrt/fs/procfs.h>
+#include <tizenrt/fs/dirent.h>
 
-#include <tinyara/pm/pm.h>
+#include <tizenrt/pm/pm.h>
 
 #include "pm.h"
 #ifdef CONFIG_PM_METRICS
@@ -169,7 +169,7 @@ static const uint8_t g_power_statescount = sizeof(g_power_states) / sizeof(g_pow
  * Public Data
  ****************************************************************************/
 
-/* See include/tinyara/fs/procfs.h
+/* See include/tizenrt/fs/procfs.h
  * We use the old-fashioned kind of initializers so that this will compile
  * with any compiler.
  */

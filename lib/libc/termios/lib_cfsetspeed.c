@@ -88,7 +88,7 @@
  *   There is no effect on the baud set in the hardware until a subsequent
  *   successful call to tcsetattr() on the same termios structure.
  *
- *   NOTE 1: TinyAra does not control input/output baud independently.  Both
+ *   NOTE 1: TizenRT does not control input/output baud independently.  Both
  *   must be the same.  The POSIX standard interfaces, cfisetispeed() and
  *   cfisetospeed() are defined to be cfsetspeed() in termios.h.
  *
@@ -100,7 +100,7 @@
  *   the input baud rate given to the hardware will be the same as the output
  *   baud rate stored in the termios structure."
  *
- *   NOTE 2.  In TinyAra, the speed_t is defined to be uint32_t and the baud
+ *   NOTE 2.  In TizenRT, the speed_t is defined to be uint32_t and the baud
  *   encodings of termios.h are the actual baud values themselves.  Therefore,
  *   any baud value can be provided as the speed argument here.  However, if
  *   you do so, your code will *NOT* be portable to other environments where

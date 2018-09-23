@@ -54,7 +54,7 @@
  * Included Files
  ****************************************************************************/
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #include <stdint.h>
 #include <syslog.h>
@@ -92,7 +92,7 @@ uint8_t g_syslog_mask = LOG_ALL;
  *   priorities in the above list up to and including p.
  *
  *   REVISIT: Per POSIX the syslog mask should be a per-process value but in
- *   TinyAra, the scope of the mask is dependent on the nature of the build.
+ *   TizenRT, the scope of the mask is dependent on the nature of the build.
  *
  *   Flat Build:  There is one, global SYSLOG mask that controls all output.
  *   Protected Build:  There are two SYSLOG masks.  One within the kernel

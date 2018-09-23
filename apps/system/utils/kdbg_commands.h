@@ -19,7 +19,7 @@
 #ifndef __APPS_SYSTEM_UTILS_KDBG_COMMANDS_H
 #define __APPS_SYSTEM_UTILS_KDBG_COMMANDS_H
 
-#include <tinyara/config.h>
+#include <tizenrt/config.h>
 
 #if defined(CONFIG_ENABLE_CPULOAD_CMD)
 int kdbg_cpuload(int argc, char **args);

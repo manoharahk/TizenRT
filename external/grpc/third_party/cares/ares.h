@@ -50,11 +50,11 @@
 #if defined(WATT32)
 #  include <netinet/in.h>
 #  include <sys/socket.h>
-#if defined(__TINYARA__)
+#if defined(__TIZENRT__)
 #include <net/lwip/tcp.h>
 #else
 #  include <tcp.h>
-#endif // defined(__TINYARA__)
+#endif // defined(__TIZENRT__)
 #elif defined(_WIN32_WCE)
 #  ifndef WIN32_LEAN_AND_MEAN
 #    define WIN32_LEAN_AND_MEAN
