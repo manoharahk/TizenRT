@@ -174,6 +174,9 @@ erase()
 		USERFS|userfs)
 			PART_NAME=user
 			;;
+		ROMFS|romfs)
+			PART_NAME=rom
+			;;
 		ALL|all)
 			PART_NAME=all
 			;;
@@ -188,7 +191,7 @@ erase()
 
 	# Download all binaries using openocd script
 	pushd ${OPENOCD_DIR_PATH} > /dev/null
-	${OPENOCD} -f ${CFG_FILE} -s ${SCRIPTS_PATH} -c "flash_erase_part ${PART_NAME};	exit" || exit 1
+	${OPENOCD} -f ${CFG_FILE} -s ${SCRIPTS_PATH} -c "flash_protect off; flash_erase_part ${PART_NAME};	exit" || exit 1
 	popd > /dev/null
 }
 

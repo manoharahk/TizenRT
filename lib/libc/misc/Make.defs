@@ -88,8 +88,14 @@ endif
 
 CSRCS += lib_match.c lib_crc32.c lib_crc16.c lib_crc8.c lib_dumpbuffer.c
 
+# Environment search path support
+
 ifeq ($(CONFIG_DEBUG),y)
 CSRCS += lib_dbg.c
+endif
+
+ifeq ($(CONFIG_LIB_ENVPATH),y)
+CSRCS += lib_envpath.c
 endif
 
 # Add the misc directory to the build

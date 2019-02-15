@@ -1,0 +1,3 @@
+config ENTRY_ELF
+	bool "ELF Loader"
+	depends on EXAMPLES_ELF

@@ -336,6 +336,11 @@ struct dspace_s {
 struct join_s;					/* Forward reference                        */
 /* Defined in kernel/pthread/pthread.h       */
 #endif
+
+#ifdef CONFIG_BINFMT_LOADABLE
+struct binary_s;                    /* Forward reference                        */
+                                    /* Defined in include/nuttx/binfmt/binfmt.h */
+#endif
 /** @brief Structure for Task Group Information */
 struct task_group_s {
 #if defined(HAVE_GROUP_MEMBERS) || defined(CONFIG_ARCH_ADDRENV)
@@ -367,6 +372,12 @@ struct task_group_s {
 #ifdef CONFIG_SCHED_ONEXIT
 	/* on_exit support ********************************************************** */
 	sq_queue_t tg_onexitfunc;
+#endif
+
+#ifdef CONFIG_BINFMT_LOADABLE
+  /* Loadable module support ****************************************************/
+
+  FAR struct binary_s *tg_bininfo;  /* Describes resources used by program      */
 #endif
 
 #if defined(CONFIG_SCHED_HAVE_PARENT) && defined(CONFIG_SCHED_CHILD_STATUS)
@@ -817,6 +828,36 @@ pid_t task_vforkstart(FAR struct task_tcb_s *child);
  * @internal
  */
 void task_vforkabort(FAR struct task_tcb_s *child, int errcode);
+
+#ifdef CONFIG_BINFMT_LOADABLE
+/****************************************************************************
+ * Name: group_exitinfo
+ *
+ * Description:
+ *   This function may be called to when a task is loaded into memory.  It
+ *   will setup the to automatically unload the module when the task exits.
+ *
+ * Input Parameters:
+ *   pid     - The task ID of the newly loaded task
+ *   bininfo - This structure allocated with kmm_malloc().  This memory
+ *             persists until the task exits and will be used unloads
+ *             the module from memory.
+ *
+ * Returned Value:
+ *   This is a NuttX internal function so it follows the convention that
+ *   0 (OK) is returned on success and a negated errno is returned on
+ *   failure.
+ *
+ ****************************************************************************/
+/**
+ * @internal
+ */
+struct binary_s;  /* Forward reference */
+/**
+ * @internal
+ */
+int group_exitinfo(pid_t pid, FAR struct binary_s *bininfo);
+#endif
 /**
  * @endcond
  */

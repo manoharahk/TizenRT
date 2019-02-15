@@ -62,6 +62,7 @@ endif
 # Force the start-up logic to be at the beginning of the .text to simplify
 # debug.
 
+
 ifeq ($(CONFIG_PAGING),y)
 CMN_ASRCS  = arm_pghead.S
 else
@@ -107,6 +108,14 @@ endif
 
 ifeq ($(CONFIG_BUILD_KERNEL),y)
 CMN_CSRCS += up_task_start.c up_pthread_start.c arm_signal_dispatch.c
+endif
+
+ifeq ($(CONFIG_ELF),y)
+CMN_CSRCS += arm_elf.c
+CMN_CSRCS += arm_coherent_dcache.c
+else ifeq ($(CONFIG_MODULE),y)
+CMN_CSRCS += arm_elf.c
+CMN_CSRCS += arm_coherent_dcache.c
 endif
 
 ifneq ($(CONFIG_SCHED_TICKLESS),y)
