@@ -293,6 +293,20 @@ static inline void os_do_appstart(void)
 	pid = task_create("appmain", SCHED_PRIORITY_DEFAULT, CONFIG_USERMAIN_STACKSIZE, (main_t)CONFIG_USER_ENTRYPOINT, (FAR char *const *)NULL);
 #endif
 	ASSERT(pid > 0);
+
+#if defined(CONFIG_EXAMPLES_ELF)
+	if ((pid = exec("/rom/micomapp", NULL, NULL, 0)) > 0) {
+		dbg("Exec(%s) is successful with pid = %d\n", "/rom/micomapp", pid);
+	} else {
+		dbg("ERROR: exec(%s) failed", "/rom/micomapp");
+	}
+
+	if ((pid = exec("/rom/wifiapp", NULL, NULL, 0)) > 0) {
+		dbg("Exec(%s) is successful with pid = %d\n", "/rom/wifiapp", pid);
+	} else {
+		dbg("ERROR: exec(%s) failed", "/rom/wifiapp");
+	}
+#endif /* CONFIG_EXAMPLES_ELF */
 }
 
 #elif defined(CONFIG_INIT_NONE)
