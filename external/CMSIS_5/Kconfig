@@ -1,0 +1,27 @@
+#
+# For a description of the syntax of this configuration file,
+# see kconfig-language at https://www.kernel.org/doc/Documentation/kbuild/kconfig-language.txt
+#
+
+config CMSIS
+	bool "CMSIS Library"
+	default n
+	---help---
+		Enable ARM CMSIS Library
+
+if CMSIS
+
+config CMSIS_DSP
+	bool "CMSIS DSP Library"
+	default n
+	---help---
+		Enable CMSIS DSP Library Support
+
+config CMSIS_NN
+	bool "CMSIS NN Library"
+	default n
+	depends on CMSIS_DSP
+	---help---
+		Enable CMSIS NN(Neural Network) Library Support
+
+endif # CMSIS
