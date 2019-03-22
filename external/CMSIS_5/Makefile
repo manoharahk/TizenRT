@@ -323,6 +323,27 @@ CSRCS += CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast.c
 CSRCS += CMSIS/NN/Source/PoolingFunctions/arm_pool_q7_HWC.c
 endif
 
+ifeq ($(CONFIG_EXAMPLES_NN_TEST),y)
+CFLAGS += -I CMSIS/NN/NN_Lib_Tests/nn_test
+CFLAGS += -I CMSIS/NN/NN_Lib_Tests/nn_test/Ref_Implementations
+
+CSRCS += CMSIS/NN/NN_Lib_Tests/nn_test/Ref_Implementations/arm_convolve_HWC_q7_ref.c
+CSRCS += CMSIS/NN/NN_Lib_Tests/nn_test/Ref_Implementations/arm_convolve_HWC_q15_ref_nonsquare.c
+CSRCS += CMSIS/NN/NN_Lib_Tests/nn_test/Ref_Implementations/arm_fully_connected_q7_ref.c
+CSRCS += CMSIS/NN/NN_Lib_Tests/nn_test/Ref_Implementations/arm_depthwise_separable_conv_HWC_q7_ref_nonsquare.c
+CSRCS += CMSIS/NN/NN_Lib_Tests/nn_test/Ref_Implementations/arm_fully_connected_q15_opt_ref.c
+CSRCS += CMSIS/NN/NN_Lib_Tests/nn_test/Ref_Implementations/arm_nn_mult_ref.c
+CSRCS += CMSIS/NN/NN_Lib_Tests/nn_test/Ref_Implementations/arm_fully_connected_q15_ref.c
+CSRCS += CMSIS/NN/NN_Lib_Tests/nn_test/Ref_Implementations/arm_fully_connected_mat_q7_vec_q15_ref.c
+CSRCS += CMSIS/NN/NN_Lib_Tests/nn_test/Ref_Implementations/arm_convolve_HWC_q15_ref.c
+CSRCS += CMSIS/NN/NN_Lib_Tests/nn_test/Ref_Implementations/arm_convolve_HWC_q7_ref_nonsquare.c
+CSRCS += CMSIS/NN/NN_Lib_Tests/nn_test/Ref_Implementations/arm_depthwise_separable_conv_HWC_q7_ref.c
+CSRCS += CMSIS/NN/NN_Lib_Tests/nn_test/Ref_Implementations/arm_fully_connected_q7_opt_ref.c
+CSRCS += CMSIS/NN/NN_Lib_Tests/nn_test/Ref_Implementations/arm_relu_ref.c
+CSRCS += CMSIS/NN/NN_Lib_Tests/nn_test/Ref_Implementations/arm_pool_ref.c
+CSRCS += CMSIS/NN/NN_Lib_Tests/nn_test/Ref_Implementations/arm_fully_connected_mat_q7_vec_q15_opt_ref.c
+endif
+
 AOBJS		= $(ASRCS:.S=$(OBJEXT))
 COBJS		= $(CSRCS:.c=$(OBJEXT))
 

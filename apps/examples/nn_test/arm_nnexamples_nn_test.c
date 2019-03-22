@@ -42,7 +42,7 @@
 //#define TEST_TANH
 #define TEST_POOL
 #define TEST_RELU
-#define TEST_IP
+//#define TEST_IP
 #define TEST_CONV
 #define TEST_NONSQUARE
 #define TEST_NNMULT
@@ -51,7 +51,7 @@ int test_index = 0;
 q7_t test_flags[50];
 bool test_pass;
 
-int main()
+int nn_test_main()
 {
     printf("start tests\n");
 
@@ -70,10 +70,10 @@ int main()
 
 #ifdef TEST_NNMULT
 #define NNMULT_DIM 128
-    test1 = new q7_t[NNMULT_DIM*2];
-    test2 = new q15_t[NNMULT_DIM*2];
-    test3 = new q7_t[NNMULT_DIM*2];
-    test4 = new q15_t[NNMULT_DIM*2];
+    test1 = malloc(sizeof(q7_t) * NNMULT_DIM*2);
+    test2 = malloc(sizeof(q15_t) * NNMULT_DIM*2);
+    test3 = malloc(sizeof(q7_t) * NNMULT_DIM*2);
+    test4 = malloc(sizeof(q15_t) * NNMULT_DIM*2);
 
     q7_t * mult_out_q7 = test3;
     q7_t * mult_ref_q7 = test3 + NNMULT_DIM;
@@ -119,10 +119,10 @@ int main()
 
     /* This part tests the running of sigmoid functions */
 
-    test1 = new q7_t[SIGMOID_DIM];
-    test2 = new q15_t[SIGMOID_DIM];
-    test3 = new q7_t[SIGMOID_DIM];
-    test4 = new q15_t[SIGMOID_DIM];
+    test1 = malloc(sizeof(q7_t) * SIGMOID_DIM);
+    test2 = malloc(sizeof(q15_t) * SIGMOID_DIM);
+    test3 = malloc(sizeof(q7_t) * SIGMOID_DIM);
+    test4 = malloc(sizeof(q15_t) * SIGMOID_DIM);
 
     srand(1);
 
@@ -150,10 +150,10 @@ int main()
         printf("in: %d  out: %d\n", test2[i], test4[i]);
     }
 
-    delete[]test1;
-    delete[]test2;
-    delete[]test3;
-    delete[]test4;
+    free(test1);
+    free(test2);
+    free(test3);
+    free(test4);
 
 #endif
 
@@ -163,10 +163,10 @@ int main()
 
     /* This part tests the running of sigmoid functions */
 
-    test1 = new q7_t[TANH_DIM];
-    test2 = new q15_t[TANH_DIM];
-    test3 = new q7_t[TANH_DIM];
-    test4 = new q15_t[TANH_DIM];
+    test1 = malloc(sizeof(q7_t) * TANH_DIM);
+    test2 = malloc(sizeof(q15_t) * TANH_DIM);
+    test3 = malloc(sizeof(q7_t) * TANH_DIM);
+    test4 = malloc(sizeof(q15_t) * TANH_DIM);
 
     srand(1);
 
@@ -196,10 +196,10 @@ int main()
         printf("in: %d  out: %d\n", test2[i], test4[i]);
     }
 
-    delete[]test1;
-    delete[]test2;
-    delete[]test3;
-    delete[]test4;
+    free(test1);
+    free(test2);
+    free(test3);
+    free(test4);
 
 #endif
 
@@ -208,9 +208,9 @@ int main()
 #define POOL_IM_DIM 32
 #define POOL_IM_CH 8
 
-    test1 = new q7_t[POOL_IM_DIM * POOL_IM_DIM * POOL_IM_CH * 2];
-    test2 = new q15_t[POOL_IM_DIM * POOL_IM_CH];
-    test3 = new q7_t[POOL_IM_DIM * POOL_IM_DIM * POOL_IM_CH];
+    test1 = malloc(sizeof(q7_t) * POOL_IM_DIM * POOL_IM_DIM * POOL_IM_CH * 2);
+    test2 = malloc(sizeof(q15_t) * POOL_IM_DIM * POOL_IM_CH);
+    test3 = malloc(sizeof(q7_t) * POOL_IM_DIM * POOL_IM_DIM * POOL_IM_CH);
 
     for (int i = 0; i < POOL_IM_DIM * POOL_IM_DIM * POOL_IM_CH; i++)
     {
@@ -292,9 +292,9 @@ int main()
         printf("Outputs match.\n");
     }
 
-    delete[]test1;
-    delete[]test2;
-    delete[]test3;
+    free(test1);
+    free(test2);
+    free(test3);
 
 #endif
 
@@ -302,10 +302,10 @@ int main()
 
 #define RELU_DIM 127
 
-    test1 = new q7_t[RELU_DIM];
-    test2 = new q15_t[RELU_DIM];
-    test3 = new q7_t[RELU_DIM];
-    test4 = new q15_t[RELU_DIM];
+    test1 = malloc(sizeof(q7_t) * RELU_DIM);
+    test2 = malloc(sizeof(q15_t) * RELU_DIM);
+    test3 = malloc(sizeof(q7_t) * RELU_DIM);
+    test4 = malloc(sizeof(q15_t) * RELU_DIM);
 
     for (int i = 0; i < RELU_DIM; i++)
     {
@@ -340,10 +340,10 @@ int main()
 
     verify_results_q15(relu_ref_data_q15, relu_opt_data_q15, RELU_DIM);
 
-    delete[]test1;
-    delete[]test2;
-    delete[]test3;
-    delete[]test4;
+    free(test1);
+    free(test2);
+    free(test3);
+    free(test4);
 
 #endif
 
@@ -358,10 +358,10 @@ int main()
     q15_t     ip_q15_weights[IP_ROW_DIM * IP_COL_DIM] = IP2_WEIGHT;
     q15_t     ip_q15_opt_weights[IP_ROW_DIM * IP_COL_DIM] = IP4_WEIGHT_Q15;
 
-    test1 = new q7_t[IP_COL_DIM + IP_ROW_DIM];
-    test2 = new q15_t[IP_COL_DIM];
-    test3 = new q7_t[IP_ROW_DIM * 3];
-    test4 = new q15_t[IP_COL_DIM + IP_ROW_DIM * 2];
+    test1 = malloc(sizeof(q7_t) * (IP_COL_DIM + IP_ROW_DIM));
+    test2 = malloc(sizeof(q15_t) * IP_COL_DIM);
+    test3 = malloc(sizeof(q7_t) * IP_ROW_DIM * 3);
+    test4 = malloc(sizeof(q15_t) * (IP_COL_DIM + IP_ROW_DIM * 2));
 
     for (int i = 0; i < IP_ROW_DIM + IP_COL_DIM; i++)
     {
@@ -466,10 +466,10 @@ int main()
 
     verify_results_q15(ip_out_q15_ref, ip_out_q15_opt, IP_ROW_DIM);
 
-    delete[]test1;
-    delete[]test2;
-    delete[]test3;
-    delete[]test4;
+    free(test1);
+    free(test2);
+    free(test3);
+    free(test4);
 
 #endif
 
@@ -490,10 +490,9 @@ int main()
 #define RCONV_OUT_DIM_X 10
 #define RCONV_OUT_DIM_Y 8
 
-    test1 = new q7_t[RCONV_KER_DIM_Y * RCONV_KER_DIM_X * RCONV_IM_CH * RCONV_OUT_CH + RCONV_OUT_CH];
-    test2 = new q15_t[2 * RCONV_KER_DIM_Y * RCONV_KER_DIM_X * RCONV_IM_CH];
-    test3 =
-        new q7_t[RCONV_IM_DIM_Y * RCONV_IM_DIM_X * RCONV_IM_CH + 2 * RCONV_OUT_DIM_Y * RCONV_OUT_DIM_X * RCONV_OUT_CH];
+    test1 = malloc(sizeof(q7_t) * (RCONV_KER_DIM_Y * RCONV_KER_DIM_X * RCONV_IM_CH * RCONV_OUT_CH + RCONV_OUT_CH));
+    test2 = malloc(sizeof(q15_t) * (2 * RCONV_KER_DIM_Y * RCONV_KER_DIM_X * RCONV_IM_CH));
+    test3 = malloc(sizeof(q7_t) * (RCONV_IM_DIM_Y * RCONV_IM_DIM_X * RCONV_IM_CH + 2 * RCONV_OUT_DIM_Y * RCONV_OUT_DIM_X * RCONV_OUT_CH));
 
     for (int i = 0; i < RCONV_KER_DIM_Y * RCONV_KER_DIM_X * RCONV_IM_CH * RCONV_OUT_CH + RCONV_OUT_CH; i++)
     {
@@ -580,13 +579,13 @@ int main()
 
     verify_results_q7(rconv_im_out_ref_q7, rconv_im_out_opt_q7, RCONV_OUT_DIM_Y * RCONV_OUT_DIM_X * RCONV_OUT_CH);
 
-    delete[]test1;
-    delete[]test2;
-    delete[]test3;
+    free(test1);
+    free(test2);
+    free(test3);
 	
-	test2 = new q15_t[RCONV_KER_DIM_Y * RCONV_KER_DIM_X * RCONV_IM_CH * RCONV_OUT_CH + RCONV_OUT_CH]; // weights + bias
-	test4 = new q15_t[2 * RCONV_KER_DIM_Y * RCONV_KER_DIM_X * RCONV_IM_CH   //buffer
-	         + RCONV_IM_DIM_Y * RCONV_IM_DIM_X * RCONV_IM_CH + 2 * RCONV_OUT_DIM_Y * RCONV_OUT_DIM_X * RCONV_OUT_CH]; // i/o
+	test2 = malloc(sizeof(q15_t) * (RCONV_KER_DIM_Y * RCONV_KER_DIM_X * RCONV_IM_CH * RCONV_OUT_CH + RCONV_OUT_CH)); // weights + bias
+	test4 = malloc(sizeof(q15_t) * (2 * RCONV_KER_DIM_Y * RCONV_KER_DIM_X * RCONV_IM_CH   //buffer
+	         + RCONV_IM_DIM_Y * RCONV_IM_DIM_X * RCONV_IM_CH + 2 * RCONV_OUT_DIM_Y * RCONV_OUT_DIM_X * RCONV_OUT_CH)); // i/o
 
     for (int i = 0; i < RCONV_KER_DIM_Y * RCONV_KER_DIM_X * RCONV_IM_CH * RCONV_OUT_CH + RCONV_OUT_CH; i++)
     {
@@ -626,8 +625,8 @@ int main()
 
     verify_results_q15(rconv_im_out_ref_q15, rconv_im_out_opt_q15, RCONV_OUT_DIM_Y * RCONV_OUT_DIM_X * RCONV_OUT_CH);
 	
-    delete [] test2;
-    delete [] test4;
+    free(test2);
+    free(test4);
 #endif
 
 #ifdef TEST_CONV
@@ -638,12 +637,11 @@ int main()
 #define CONV_OUT_CH 16
 #define CONV_OUT_DIM 16
 
-    test1 = new q7_t[CONV_KER_DIM * CONV_KER_DIM * CONV_IM_CH * CONV_OUT_CH + CONV_OUT_CH];
-    test2 =
-        new q15_t[CONV_KER_DIM * CONV_KER_DIM * CONV_IM_CH * CONV_OUT_CH +
-                  2 * CONV_KER_DIM * CONV_KER_DIM * CONV_IM_CH * CONV_OUT_CH + CONV_OUT_CH];
-    test3 = new q7_t[CONV_IM_DIM * CONV_IM_DIM * CONV_IM_CH + 2 * CONV_OUT_DIM * CONV_OUT_DIM * CONV_OUT_CH];
-    test4 = new q15_t[CONV_IM_DIM * CONV_IM_DIM * CONV_IM_CH + 2 * CONV_OUT_DIM * CONV_OUT_DIM * CONV_OUT_CH];
+    test1 = malloc(sizeof(q7_t) * (CONV_KER_DIM * CONV_KER_DIM * CONV_IM_CH * CONV_OUT_CH + CONV_OUT_CH));
+    test2 = malloc(sizeof(q15_t) * (CONV_KER_DIM * CONV_KER_DIM * CONV_IM_CH * CONV_OUT_CH +
+                  2 * CONV_KER_DIM * CONV_KER_DIM * CONV_IM_CH * CONV_OUT_CH + CONV_OUT_CH));
+    test3 = malloc(sizeof(q7_t) * (CONV_IM_DIM * CONV_IM_DIM * CONV_IM_CH + 2 * CONV_OUT_DIM * CONV_OUT_DIM * CONV_OUT_CH));
+    test4 = malloc(sizeof(q15_t) * (CONV_IM_DIM * CONV_IM_DIM * CONV_IM_CH + 2 * CONV_OUT_DIM * CONV_OUT_DIM * CONV_OUT_CH));
 
     for (int i = 0; i < CONV_KER_DIM * CONV_KER_DIM * CONV_IM_CH * CONV_OUT_CH + CONV_OUT_CH; i++)
     {
@@ -776,10 +774,10 @@ int main()
 
     verify_results_q7(conv_im_out_ref_q7, conv_im_out_opt_q7, CONV_OUT_DIM * CONV_OUT_DIM * CONV_OUT_CH);
 
-    delete[]test1;
-    delete[]test2;
-    delete[]test3;
-    delete[]test4;
+    free(test1);
+    free(test2);
+    free(test3);
+    free(test4);
 
 #endif
 

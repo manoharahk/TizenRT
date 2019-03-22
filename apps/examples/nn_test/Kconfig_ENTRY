@@ -1,0 +1,3 @@
+config ENTRY_NN_TEST
+	bool "CMSIS-NN(Neural Network) Test Example"
+	depends on EXAMPLES_NN_TEST
