@@ -1,0 +1,3 @@
+config ENTRY_CIFAR10_TEST
+	bool "NN(Neural Network) CIFAR10 Test Example"
+	depends on EXAMPLES_CIFAR10_TEST
