@@ -122,20 +122,93 @@ q7_t col_buffer[2 * 5 * 5 * 32 * 2];
 
 q7_t scratch_buffer[32 * 32 * 10 * 4];
 
+#define N_LAYERS	(11)
+
+struct inference_time {
+	char *layer_name;
+	struct time_diff {
+		struct timespec sts;
+		struct timespec ets;
+	} td[2];
+} it[N_LAYERS];
+
+static int set_layer_inference_time(int layer_id, int iter, char *name, struct timespec *sts, struct timespec *ets)
+ {
+	/* Check parameters */
+	if (layer_id < 0 && layer_id >= N_LAYERS) {
+		goto wrong_inp_error;
+	}
+
+	if (iter < 0 && iter >= 2) {
+		goto wrong_inp_error;
+	}
+
+	printf("----------------------------\n");
+	/* set name */
+	if (!it[layer_id].layer_name) {
+		it[layer_id].layer_name = name;
+	}
+
+	/* start time */
+	it[layer_id].td[iter].sts.tv_sec = sts->tv_sec;
+	it[layer_id].td[iter].sts.tv_nsec = sts->tv_nsec;
+
+	/* end time */
+	it[layer_id].td[iter].ets.tv_sec = ets->tv_sec;
+	it[layer_id].td[iter].ets.tv_nsec = ets->tv_nsec;
+
+	goto success;
+ 
+wrong_inp_error:
+	printf("Wrong parameters");
+	return -1;
+ 
+success:
+	return 0;
+}
+
+static void print_layer_inference_time(int iter)
+{
+	int j = iter;
+	struct timespec td;
+
+	printf("--------------------------------------------------\n");
+	printf("Benchmark Results\n");
+	printf("%12s: Time(msec)\n", "Layer name");
+	printf("--------------------------------------------------\n");
+
+	for (int i = 0; i < N_LAYERS; i++) {
+		if (it[i].td[j].sts.tv_sec == it[i].td[j].ets.tv_sec) {
+			td.tv_sec = 0;
+			td.tv_nsec = it[i].td[j].ets.tv_nsec - it[i].td[j].sts.tv_nsec;
+		} else {
+			td.tv_sec = it[i].td[j].ets.tv_sec - it[i].td[j].sts.tv_sec;
+			if (it[i].td[j].sts.tv_nsec < it[i].td[j].ets.tv_nsec) {
+				td.tv_sec -= 1;
+				td.tv_nsec = (it[i].td[j].sts.tv_nsec * 10000000000) - it[i].td[j].ets.tv_nsec;
+			}
+		}
+		printf("%12s: %.3f \n", it[i].layer_name, (float)td.tv_nsec / 1000000);
+	}
+}
+
+#define MEASURE_TIME(layer_id, name, func)						\
+	do {														\
+		struct timespec t1, t2;									\
+		clock_gettime(CLOCK_REALTIME, &t1);						\
+		(func);													\
+		clock_gettime(CLOCK_REALTIME, &t2);						\
+		set_layer_inference_time(layer_id, k, name, &t1, &t2);	\
+	} while (0);												\
+
 int cifar10_main()
 {
 
-	printf("Running CIFAR-10\n");
-
-	printf("----------------------------\n");
-
+	printf("\n**************** Running CIFAR-10 ****************\n");
 
 	/* start the execution */
 	for (int k = 0; k < 2; k++) {
-
-
-		printf(" Test Image : %d\n", k + 1);
-
+		int layer_id = 0;
 
 		q7_t *img_buffer1 = scratch_buffer;
 
@@ -161,60 +234,67 @@ int cifar10_main()
 		}
 
 		// conv1 img_buffer2 -> img_buffer1
-		arm_convolve_HWC_q7_RGB(img_buffer2, CONV1_IM_DIM, CONV1_IM_CH, conv1_wt, CONV1_OUT_CH, CONV1_KER_DIM, CONV1_PADDING,
+		MEASURE_TIME(layer_id++, "conv1", arm_convolve_HWC_q7_RGB(img_buffer2, CONV1_IM_DIM, CONV1_IM_CH, conv1_wt, CONV1_OUT_CH, CONV1_KER_DIM, CONV1_PADDING,
 								CONV1_STRIDE, conv1_bias, CONV1_BIAS_LSHIFT, CONV1_OUT_RSHIFT, img_buffer1, CONV1_OUT_DIM,
-								(q15_t *) col_buffer, NULL);
+								(q15_t *) col_buffer, NULL));
 
 
-		arm_relu_q7(img_buffer1, CONV1_OUT_DIM * CONV1_OUT_DIM * CONV1_OUT_CH);
+	    MEASURE_TIME(layer_id++, "relu1", arm_relu_q7(img_buffer1, CONV1_OUT_DIM * CONV1_OUT_DIM * CONV1_OUT_CH));
 
 
 		// pool1 img_buffer1 -> img_buffer2
-		arm_maxpool_q7_HWC(img_buffer1, CONV1_OUT_DIM, CONV1_OUT_CH, POOL1_KER_DIM,
-						   POOL1_PADDING, POOL1_STRIDE, POOL1_OUT_DIM, NULL, img_buffer2);
+		 MEASURE_TIME(layer_id++, "pool1", arm_maxpool_q7_HWC(img_buffer1, CONV1_OUT_DIM, CONV1_OUT_CH, POOL1_KER_DIM,
+						   POOL1_PADDING, POOL1_STRIDE, POOL1_OUT_DIM, NULL, img_buffer2));
 
 
 		// conv2 img_buffer2 -> img_buffer1
-		arm_convolve_HWC_q7_fast(img_buffer2, CONV2_IM_DIM, CONV2_IM_CH, conv2_wt, CONV2_OUT_CH, CONV2_KER_DIM,
+		 MEASURE_TIME(layer_id++, "conv2", arm_convolve_HWC_q7_fast(img_buffer2, CONV2_IM_DIM, CONV2_IM_CH, conv2_wt, CONV2_OUT_CH, CONV2_KER_DIM,
 								 CONV2_PADDING, CONV2_STRIDE, conv2_bias, CONV2_BIAS_LSHIFT, CONV2_OUT_RSHIFT, img_buffer1,
-								 CONV2_OUT_DIM, (q15_t *) col_buffer, NULL);
+								 CONV2_OUT_DIM, (q15_t *) col_buffer, NULL));
 
 
-		arm_relu_q7(img_buffer1, CONV2_OUT_DIM * CONV2_OUT_DIM * CONV2_OUT_CH);
+		 MEASURE_TIME(layer_id++, "relu2", arm_relu_q7(img_buffer1, CONV2_OUT_DIM * CONV2_OUT_DIM * CONV2_OUT_CH));
 
 
 		// pool2 img_buffer1 -> img_buffer2
-		arm_maxpool_q7_HWC(img_buffer1, CONV2_OUT_DIM, CONV2_OUT_CH, POOL2_KER_DIM,
-						   POOL2_PADDING, POOL2_STRIDE, POOL2_OUT_DIM, col_buffer, img_buffer2);
+		 MEASURE_TIME(layer_id++, "pool2", arm_maxpool_q7_HWC(img_buffer1, CONV2_OUT_DIM, CONV2_OUT_CH, POOL2_KER_DIM,
+						   POOL2_PADDING, POOL2_STRIDE, POOL2_OUT_DIM, col_buffer, img_buffer2));
 
 
 		// conv3 img_buffer2 -> img_buffer1
-		arm_convolve_HWC_q7_fast(img_buffer2, CONV3_IM_DIM, CONV3_IM_CH, conv3_wt, CONV3_OUT_CH, CONV3_KER_DIM,
+		 MEASURE_TIME(layer_id++, "conv3", arm_convolve_HWC_q7_fast(img_buffer2, CONV3_IM_DIM, CONV3_IM_CH, conv3_wt, CONV3_OUT_CH, CONV3_KER_DIM,
 								 CONV3_PADDING, CONV3_STRIDE, conv3_bias, CONV3_BIAS_LSHIFT, CONV3_OUT_RSHIFT, img_buffer1,
-								 CONV3_OUT_DIM, (q15_t *) col_buffer, NULL);
+								 CONV3_OUT_DIM, (q15_t *) col_buffer, NULL));
 
 
-		arm_relu_q7(img_buffer1, CONV3_OUT_DIM * CONV3_OUT_DIM * CONV3_OUT_CH);
+		 MEASURE_TIME(layer_id++, "relu3", arm_relu_q7(img_buffer1, CONV3_OUT_DIM * CONV3_OUT_DIM * CONV3_OUT_CH));
 
 
 		// pool3 img_buffer-> img_buffer2
-		arm_maxpool_q7_HWC(img_buffer1, CONV3_OUT_DIM, CONV3_OUT_CH, POOL3_KER_DIM,
-						   POOL3_PADDING, POOL3_STRIDE, POOL3_OUT_DIM, col_buffer, img_buffer2);
+		 MEASURE_TIME(layer_id++, "pool3", arm_maxpool_q7_HWC(img_buffer1, CONV3_OUT_DIM, CONV3_OUT_CH, POOL3_KER_DIM,
+						   POOL3_PADDING, POOL3_STRIDE, POOL3_OUT_DIM, col_buffer, img_buffer2));
 
 
-		arm_fully_connected_q7_opt(img_buffer2, ip1_wt, IP1_DIM, IP1_OUT, IP1_BIAS_LSHIFT, IP1_OUT_RSHIFT, ip1_bias,
-								   output_data, (q15_t *) img_buffer1);
+		 MEASURE_TIME(layer_id++, "fullyconn", arm_fully_connected_q7_opt(img_buffer2, ip1_wt, IP1_DIM, IP1_OUT, IP1_BIAS_LSHIFT, IP1_OUT_RSHIFT, ip1_bias,
+								   output_data, (q15_t *) img_buffer1));
 
 
-		arm_softmax_q7(output_data, 10, output_data);
+		 MEASURE_TIME(layer_id++, "softmax", arm_softmax_q7(output_data, 10, output_data));
 
 
-		/* print output */
+		/* Print output */
+		printf("--------------------------------------------------\n");
+		printf("Output of Test Image : %d\n", k + 1);
+		printf("%12s: Percentage Match\n", "Output Class");
+		printf("--------------------------------------------------\n");
 		for (int i = 0; i < IP1_OUT; i++) {
 
 			printf("%12s: %d %%\n", output_class[i], ((output_data[i] * 100) / 128));
 
 		}
+
+		/* Print inference time */
+		print_layer_inference_time(k);
 
 	}
 
