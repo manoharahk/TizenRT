@@ -388,6 +388,50 @@ int nn_test_main()
     free(test2);
     free(test3);
     free(test4);
+
+    /* Test Relu lu bounded */
+    test1 = malloc(sizeof(q7_t) * RELU_DIM);
+    test2 = malloc(sizeof(q15_t) * RELU_DIM);
+    test3 = malloc(sizeof(q7_t) * RELU_DIM);
+    test4 = malloc(sizeof(q15_t) * RELU_DIM);
+
+    for (int i = 0; i < RELU_DIM; i++)
+    {
+        test1[i] = (rand() % 256 - 128);
+        test2[i] = (rand() % 65536 - 32768);
+        test3[i] = test1[i];
+        test4[i] = test2[i];
+    }
+
+    relu_ref_data_q7 = test1;
+    relu_opt_data_q7 = test3;
+    relu_ref_data_q15 = test2;
+    relu_opt_data_q15 = test4;
+
+    printf("Start ref lu bounded relu q7 implementation\n");
+
+    arm_lu_bounded_relu_q7_ref(relu_ref_data_q7, 6, -6, RELU_DIM);
+
+    printf("Start opt lu bounded relu q7 implementation\n");
+
+    arm_lu_bounded_relu_q7(relu_opt_data_q7, 6, -6, RELU_DIM);
+
+    verify_results_q7(relu_ref_data_q7, relu_opt_data_q7, RELU_DIM);
+
+    printf("Start ref lu bounded relu q15 implementation\n");
+
+    arm_lu_bounded_relu_q15_ref(relu_ref_data_q15, 6, -6, RELU_DIM);
+
+    printf("Start opt lu bounded relu q15 implementation\n");
+
+    arm_lu_bounded_relu_q15(relu_opt_data_q15, 6, -6, RELU_DIM);
+
+    verify_results_q15(relu_ref_data_q15, relu_opt_data_q15, RELU_DIM);
+
+    free(test1);
+    free(test2);
+    free(test3);
+    free(test4);
 #endif
 
 #ifdef TEST_IP
